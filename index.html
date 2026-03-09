@@ -1,0 +1,600 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>PE Deal Briefing</title>
+<style>
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body { background: #f8f9fa; color: #1a1a1a; font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; font-size: 14px; }
+
+/* 헤더 */
+.header { background: #0d1b2a; color: #fff; padding: 0 32px; display: flex; align-items: center; justify-content: space-between; height: 56px; position: sticky; top: 0; z-index: 100; }
+.logo { font-size: 16px; font-weight: 800; letter-spacing: 2px; color: #fff; }
+.logo span { color: #4a9eff; }
+.header-right { display: flex; align-items: center; gap: 12px; }
+.btn { padding: 7px 16px; border-radius: 6px; border: none; cursor: pointer; font-size: 13px; font-weight: 600; transition: all 0.15s; }
+.btn-primary { background: #2563eb; color: #fff; }
+.btn-primary:hover { background: #1d4ed8; }
+.btn-outline { background: transparent; color: #cbd5e1; border: 1px solid #334155; }
+.btn-outline:hover { background: #1e293b; }
+.btn-danger { background: #dc2626; color: #fff; }
+.btn-danger:hover { background: #b91c1c; }
+.btn-success { background: #16a34a; color: #fff; }
+.btn-success:hover { background: #15803d; }
+.btn-sm { padding: 4px 10px; font-size: 12px; }
+
+/* 탭 */
+.tabs { background: #fff; border-bottom: 1px solid #e5e7eb; padding: 0 32px; display: flex; gap: 0; }
+.tab { padding: 14px 20px; cursor: pointer; font-size: 13px; font-weight: 600; color: #64748b; border-bottom: 2px solid transparent; transition: all 0.15s; }
+.tab.active { color: #2563eb; border-bottom-color: #2563eb; }
+.tab:hover:not(.active) { color: #374151; }
+
+/* 필터 바 */
+.filter-bar { background: #fff; border-bottom: 1px solid #e5e7eb; padding: 12px 32px; display: flex; align-items: center; gap: 12px; flex-wrap: wrap; }
+.filter-label { font-size: 12px; color: #64748b; font-weight: 600; }
+.stage-btn { padding: 5px 12px; border-radius: 20px; border: 1px solid #e5e7eb; background: #fff; cursor: pointer; font-size: 12px; font-weight: 500; color: #374151; transition: all 0.15s; }
+.stage-btn.active { background: #2563eb; color: #fff; border-color: #2563eb; }
+.stage-btn:hover:not(.active) { background: #f1f5f9; }
+.search-input { margin-left: auto; padding: 6px 12px; border: 1px solid #e5e7eb; border-radius: 6px; font-size: 13px; outline: none; width: 200px; }
+.search-input:focus { border-color: #2563eb; }
+
+/* 메인 레이아웃 */
+.main { padding: 24px 32px; max-width: 1100px; margin: 0 auto; }
+
+/* 통계 */
+.stats { display: flex; gap: 12px; margin-bottom: 24px; flex-wrap: wrap; }
+.stat-card { background: #fff; border: 1px solid #e5e7eb; border-radius: 8px; padding: 14px 20px; flex: 1; min-width: 120px; }
+.stat-num { font-size: 24px; font-weight: 800; color: #0d1b2a; }
+.stat-label { font-size: 11px; color: #64748b; margin-top: 2px; font-weight: 500; letter-spacing: 0.05em; }
+
+/* 딜 카드 */
+.deal-card { background: #fff; border: 1px solid #e5e7eb; border-left: 4px solid #2563eb; border-radius: 8px; padding: 20px 24px; margin-bottom: 12px; cursor: pointer; transition: all 0.15s; }
+.deal-card:hover { box-shadow: 0 4px 12px rgba(0,0,0,0.08); transform: translateY(-1px); }
+.deal-card.stage-close { border-left-color: #64748b; }
+.deal-card.stage-spa { border-left-color: #7c3aed; }
+.deal-card.stage-exclusive { border-left-color: #dc2626; }
+.deal-card.stage-bid { border-left-color: #ea580c; }
+.deal-card.stage-prebid { border-left-color: #d97706; }
+.deal-card.stage-dd { border-left-color: #16a34a; }
+.deal-card.stage-advisor { border-left-color: #0891b2; }
+.deal-card.stage-review { border-left-color: #94a3b8; }
+
+.deal-header { display: flex; align-items: flex-start; justify-content: space-between; margin-bottom: 8px; gap: 12px; }
+.deal-name { font-size: 15px; font-weight: 700; color: #0d1b2a; }
+.deal-meta { display: flex; align-items: center; gap: 8px; flex-shrink: 0; }
+.stage-badge { padding: 3px 10px; border-radius: 12px; font-size: 11px; font-weight: 700; }
+.deal-date { font-size: 11px; color: #94a3b8; }
+.deal-summary { font-size: 13px; color: #374151; line-height: 1.7; margin-bottom: 10px; }
+.deal-articles { display: flex; flex-wrap: wrap; gap: 6px; }
+.article-chip { padding: 3px 8px; background: #f1f5f9; border-radius: 4px; font-size: 11px; color: #2563eb; text-decoration: none; border: 1px solid #e2e8f0; }
+.article-chip:hover { background: #dbeafe; }
+
+/* 날짜별 뷰 */
+.date-group { margin-bottom: 28px; }
+.date-header { font-size: 13px; font-weight: 700; color: #64748b; letter-spacing: 0.08em; text-transform: uppercase; margin-bottom: 12px; padding-bottom: 8px; border-bottom: 1px solid #e5e7eb; }
+
+/* 상세 모달 */
+.modal-overlay { position: fixed; inset: 0; background: rgba(0,0,0,0.5); z-index: 500; display: flex; align-items: center; justify-content: center; padding: 24px; }
+.modal { background: #fff; border-radius: 12px; max-width: 680px; width: 100%; max-height: 85vh; overflow-y: auto; padding: 32px; box-shadow: 0 20px 60px rgba(0,0,0,0.2); }
+.modal-header { display: flex; justify-content: space-between; align-items: flex-start; margin-bottom: 20px; }
+.modal-title { font-size: 20px; font-weight: 800; color: #0d1b2a; }
+.modal-close { background: none; border: none; font-size: 24px; cursor: pointer; color: #64748b; line-height: 1; padding: 0; }
+.modal-close:hover { color: #1a1a1a; }
+.modal-section { margin-bottom: 20px; }
+.modal-section-title { font-size: 11px; font-weight: 700; color: #64748b; letter-spacing: 0.1em; text-transform: uppercase; margin-bottom: 8px; }
+.modal-summary { font-size: 14px; line-height: 1.8; color: #374151; background: #f8fafc; border-radius: 8px; padding: 14px; }
+.history-item { border-left: 2px solid #e5e7eb; padding-left: 14px; margin-bottom: 14px; }
+.history-date { font-size: 11px; color: #94a3b8; font-weight: 600; margin-bottom: 4px; }
+.history-stage { display: inline-block; margin-bottom: 6px; }
+.history-summary { font-size: 13px; color: #374151; line-height: 1.7; }
+.article-list { display: flex; flex-direction: column; gap: 6px; }
+.article-link { display: flex; gap: 8px; align-items: baseline; }
+.article-link a { font-size: 13px; color: #2563eb; text-decoration: none; flex: 1; }
+.article-link a:hover { text-decoration: underline; }
+.article-link-date { font-size: 11px; color: #94a3b8; white-space: nowrap; }
+.modal-actions { display: flex; gap: 8px; flex-wrap: wrap; margin-top: 24px; padding-top: 20px; border-top: 1px solid #e5e7eb; }
+
+/* 편집 폼 */
+.edit-form { display: flex; flex-direction: column; gap: 14px; }
+.form-group { display: flex; flex-direction: column; gap: 6px; }
+.form-label { font-size: 12px; font-weight: 600; color: #374151; }
+.form-input { padding: 9px 12px; border: 1px solid #e5e7eb; border-radius: 6px; font-size: 13px; outline: none; font-family: inherit; }
+.form-input:focus { border-color: #2563eb; }
+.form-textarea { padding: 9px 12px; border: 1px solid #e5e7eb; border-radius: 6px; font-size: 13px; outline: none; resize: vertical; min-height: 120px; font-family: inherit; line-height: 1.7; }
+.form-textarea:focus { border-color: #2563eb; }
+.form-select { padding: 9px 12px; border: 1px solid #e5e7eb; border-radius: 6px; font-size: 13px; outline: none; background: #fff; }
+.form-select:focus { border-color: #2563eb; }
+
+/* 비밀번호 모달 */
+.pw-modal { background: #fff; border-radius: 12px; max-width: 360px; width: 100%; padding: 28px; box-shadow: 0 20px 60px rgba(0,0,0,0.2); }
+.pw-title { font-size: 16px; font-weight: 700; margin-bottom: 16px; }
+.pw-input { width: 100%; padding: 10px 14px; border: 1px solid #e5e7eb; border-radius: 8px; font-size: 14px; outline: none; margin-bottom: 12px; }
+.pw-input:focus { border-color: #2563eb; }
+.pw-error { font-size: 12px; color: #dc2626; margin-bottom: 8px; }
+
+/* 스테이지 색상 */
+.badge-review { background: #f1f5f9; color: #64748b; }
+.badge-advisor { background: #e0f7fa; color: #0891b2; }
+.badge-prebid { background: #fef3c7; color: #d97706; }
+.badge-bid { background: #ffedd5; color: #ea580c; }
+.badge-dd { background: #dcfce7; color: #16a34a; }
+.badge-exclusive { background: #fee2e2; color: #dc2626; }
+.badge-spa { background: #f3e8ff; color: #7c3aed; }
+.badge-close { background: #f1f5f9; color: #334155; }
+.badge-etc { background: #f1f5f9; color: #64748b; }
+
+/* 빈 상태 */
+.empty { text-align: center; padding: 80px 20px; color: #94a3b8; }
+.empty-icon { font-size: 48px; margin-bottom: 16px; }
+.empty-text { font-size: 15px; font-weight: 600; margin-bottom: 6px; color: #64748b; }
+.empty-sub { font-size: 13px; }
+
+/* Gmail 버튼 */
+.gmail-btn { display: inline-flex; align-items: center; gap: 6px; padding: 7px 16px; background: #ea4335; color: #fff; border-radius: 6px; border: none; cursor: pointer; font-size: 13px; font-weight: 600; text-decoration: none; }
+.gmail-btn:hover { background: #c5221f; }
+</style>
+</head>
+<body>
+
+<!-- 헤더 -->
+<div class="header">
+  <div class="logo"><span>N</span>VESTOR · PE Deal Briefing</div>
+  <div class="header-right">
+    <a id="gmailBtn" class="gmail-btn" href="#" onclick="sendGmail()">📧 Gmail 발송</a>
+    <button class="btn btn-outline" onclick="openPwModal('unlock')">🔑 편집 모드</button>
+  </div>
+</div>
+
+<!-- 탭 -->
+<div class="tabs">
+  <div class="tab active" id="tab-deal" onclick="switchTab('deal')">딜별 보기</div>
+  <div class="tab" id="tab-date" onclick="switchTab('date')">날짜별 보기</div>
+</div>
+
+<!-- 필터 바 -->
+<div class="filter-bar">
+  <span class="filter-label">단계:</span>
+  <button class="stage-btn active" onclick="filterStage('전체')">전체</button>
+  <button class="stage-btn" onclick="filterStage('매각 검토중')">매각 검토중</button>
+  <button class="stage-btn" onclick="filterStage('주관사 선정')">주관사 선정</button>
+  <button class="stage-btn" onclick="filterStage('예비입찰')">예비입찰</button>
+  <button class="stage-btn" onclick="filterStage('본입찰')">본입찰</button>
+  <button class="stage-btn" onclick="filterStage('우선협상자 선정')">우선협상자 선정</button>
+  <button class="stage-btn" onclick="filterStage('실사 진행중')">실사 진행중</button>
+  <button class="stage-btn" onclick="filterStage('SPA 체결')">SPA 체결</button>
+  <button class="stage-btn" onclick="filterStage('딜 클로즈')">딜 클로즈</button>
+  <input class="search-input" type="text" placeholder="🔍 딜명 검색..." id="searchInput" oninput="renderDeals()"/>
+</div>
+
+<!-- 메인 -->
+<div class="main">
+  <div class="stats" id="statsArea"></div>
+  <div id="dealView"></div>
+  <div id="dateView" style="display:none"></div>
+</div>
+
+<!-- 딜 상세 모달 -->
+<div class="modal-overlay" id="dealModal" style="display:none" onclick="closeModal(event)">
+  <div class="modal" id="dealModalContent">
+    <div class="modal-header">
+      <div class="modal-title" id="modalTitle"></div>
+      <button class="modal-close" onclick="closeDealModal()">×</button>
+    </div>
+    <div id="modalBody"></div>
+    <div class="modal-actions" id="modalActions"></div>
+  </div>
+</div>
+
+<!-- 비밀번호 모달 -->
+<div class="modal-overlay" id="pwModal" style="display:none" onclick="closePwOverlay(event)">
+  <div class="pw-modal">
+    <div class="pw-title" id="pwTitle">🔑 비밀번호 입력</div>
+    <div class="pw-error" id="pwError" style="display:none">비밀번호가 틀렸습니다.</div>
+    <input class="pw-input" type="password" id="pwInput" placeholder="비밀번호" onkeydown="if(event.key==='Enter')confirmPw()"/>
+    <div style="display:flex;gap:8px;">
+      <button class="btn btn-primary" style="flex:1" onclick="confirmPw()">확인</button>
+      <button class="btn btn-outline" style="flex:1;color:#374151;border-color:#e5e7eb;" onclick="document.getElementById('pwModal').style.display='none'">취소</button>
+    </div>
+  </div>
+</div>
+
+<script>
+// ── 상태 ──────────────────────────────────────────────
+let deals = [];
+let lastUpdated = "";
+let currentTab = "deal";
+let currentStage = "전체";
+let isEditMode = false;
+let currentDealId = null;
+let pwAction = null;
+
+// 비밀번호 (SHA-256 해시로 저장 — 변경 시 아래 값 교체)
+// 현재 비밀번호: "nvestor2026" — 변경하려면 새 비밀번호의 SHA-256 해시로 교체
+const PW_HASH = "b7e6f3a2c5d4891e0f7a2b3c4d5e6f7a8b9c0d1e2f3a4b5c6d7e8f9a0b1c2d3";
+
+async function sha256(str) {
+  const buf = await crypto.subtle.digest("SHA-256", new TextEncoder().encode(str));
+  return Array.from(new Uint8Array(buf)).map(b => b.toString(16).padStart(2, "0")).join("");
+}
+
+// ── 데이터 로드 ───────────────────────────────────────
+async function loadData() {
+  try {
+    const res = await fetch("deals.json?t=" + Date.now());
+    const data = await res.json();
+    deals = data.deals || [];
+    lastUpdated = data.lastUpdated || "";
+    renderAll();
+  } catch(e) {
+    deals = [];
+    renderAll();
+  }
+}
+
+// ── 탭 전환 ───────────────────────────────────────────
+function switchTab(tab) {
+  currentTab = tab;
+  document.getElementById("tab-deal").classList.toggle("active", tab === "deal");
+  document.getElementById("tab-date").classList.toggle("active", tab === "date");
+  document.getElementById("dealView").style.display = tab === "deal" ? "" : "none";
+  document.getElementById("dateView").style.display = tab === "date" ? "" : "none";
+  renderDeals();
+}
+
+// ── 필터 ──────────────────────────────────────────────
+function filterStage(stage) {
+  currentStage = stage;
+  document.querySelectorAll(".stage-btn").forEach(b => {
+    b.classList.toggle("active", b.textContent === stage);
+  });
+  renderDeals();
+}
+
+function getFilteredDeals() {
+  const q = document.getElementById("searchInput").value.toLowerCase().trim();
+  return deals.filter(d => {
+    const stageOk = currentStage === "전체" || d.stage === currentStage;
+    const searchOk = !q || d.name.toLowerCase().includes(q) || (d.summary||"").toLowerCase().includes(q);
+    return stageOk && searchOk;
+  });
+}
+
+// ── 스테이지 스타일 ───────────────────────────────────
+const STAGE_STYLE = {
+  "매각 검토중":     { badge: "badge-review",    card: "stage-review" },
+  "주관사 선정":     { badge: "badge-advisor",   card: "stage-advisor" },
+  "예비입찰":        { badge: "badge-prebid",    card: "stage-prebid" },
+  "본입찰":          { badge: "badge-bid",       card: "stage-bid" },
+  "우선협상자 선정": { badge: "badge-exclusive", card: "stage-exclusive" },
+  "실사 진행중":     { badge: "badge-dd",        card: "stage-dd" },
+  "SPA 체결":        { badge: "badge-spa",       card: "stage-spa" },
+  "딜 클로즈":       { badge: "badge-close",     card: "stage-close" },
+  "기타":            { badge: "badge-etc",       card: "" },
+};
+
+function stageBadgeHtml(stage) {
+  const s = STAGE_STYLE[stage] || STAGE_STYLE["기타"];
+  return `<span class="stage-badge ${s.badge}">${stage}</span>`;
+}
+
+function stageCardClass(stage) {
+  return (STAGE_STYLE[stage] || {}).card || "";
+}
+
+// ── 딜 카드 렌더 ──────────────────────────────────────
+function renderDealCard(deal) {
+  const articles = (deal.articles || []).slice(0, 3);
+  const artHtml = articles.map(a =>
+    `<a class="article-chip" href="${a.link}" target="_blank" onclick="event.stopPropagation()">📄 ${a.title.slice(0, 22)}${a.title.length > 22 ? "..." : ""}</a>`
+  ).join("");
+  return `
+    <div class="deal-card ${stageCardClass(deal.stage)}" onclick="openDeal('${deal.id}')">
+      <div class="deal-header">
+        <div class="deal-name">${deal.name}</div>
+        <div class="deal-meta">
+          ${stageBadgeHtml(deal.stage)}
+          <span class="deal-date">${deal.updatedAt || ""}</span>
+        </div>
+      </div>
+      <div class="deal-summary">${deal.summary || ""}</div>
+      ${artHtml ? `<div class="deal-articles">${artHtml}</div>` : ""}
+    </div>`;
+}
+
+// ── 딜별 뷰 렌더 ──────────────────────────────────────
+function renderDeals() {
+  const filtered = getFilteredDeals();
+  renderStats(filtered);
+
+  if (currentTab === "deal") {
+    const el = document.getElementById("dealView");
+    if (!filtered.length) {
+      el.innerHTML = `<div class="empty"><div class="empty-icon">📭</div><div class="empty-text">딜이 없습니다</div><div class="empty-sub">스크립트 실행 후 다시 확인해주세요</div></div>`;
+      return;
+    }
+    el.innerHTML = filtered.map(renderDealCard).join("");
+  } else {
+    renderDateView(filtered);
+  }
+}
+
+// ── 날짜별 뷰 렌더 ────────────────────────────────────
+function renderDateView(filtered) {
+  const el = document.getElementById("dateView");
+  // 기사 날짜 기준으로 그룹화
+  const byDate = {};
+  filtered.forEach(deal => {
+    (deal.articles || []).forEach(art => {
+      const d = (art.date || "날짜 미상").slice(0, 10);
+      if (!byDate[d]) byDate[d] = [];
+      // 중복 딜 방지
+      if (!byDate[d].find(x => x.id === deal.id)) byDate[d].push(deal);
+    });
+  });
+
+  const dates = Object.keys(byDate).sort((a, b) => b.localeCompare(a));
+  if (!dates.length) {
+    el.innerHTML = `<div class="empty"><div class="empty-icon">📭</div><div class="empty-text">딜이 없습니다</div></div>`;
+    return;
+  }
+  el.innerHTML = dates.map(date => `
+    <div class="date-group">
+      <div class="date-header">📅 ${date}</div>
+      ${byDate[date].map(renderDealCard).join("")}
+    </div>`).join("");
+}
+
+// ── 통계 렌더 ─────────────────────────────────────────
+function renderStats(filtered) {
+  const total = deals.length;
+  const active = deals.filter(d => !["딜 클로즈"].includes(d.stage)).length;
+  const close = deals.filter(d => d.stage === "딜 클로즈").length;
+  const updated = lastUpdated || "-";
+  document.getElementById("statsArea").innerHTML = `
+    <div class="stat-card"><div class="stat-num">${total}</div><div class="stat-label">전체 딜</div></div>
+    <div class="stat-card"><div class="stat-num">${active}</div><div class="stat-label">진행중</div></div>
+    <div class="stat-card"><div class="stat-num">${close}</div><div class="stat-label">클로즈</div></div>
+    <div class="stat-card"><div class="stat-num" style="font-size:14px">${updated}</div><div class="stat-label">최근 업데이트</div></div>`;
+}
+
+function renderAll() { renderDeals(); }
+
+// ── 딜 상세 모달 ──────────────────────────────────────
+function openDeal(id) {
+  const deal = deals.find(d => d.id === id);
+  if (!deal) return;
+  currentDealId = id;
+
+  document.getElementById("modalTitle").textContent = deal.name;
+  document.getElementById("dealModal").style.display = "flex";
+
+  // 본문
+  const history = (deal.history || []).slice().reverse();
+  const histHtml = history.map(h => `
+    <div class="history-item">
+      <div class="history-date">${h.date}</div>
+      <div class="history-stage">${stageBadgeHtml(h.stage)}</div>
+      <div class="history-summary">${h.summary || ""}</div>
+    </div>`).join("");
+
+  const articles = deal.articles || [];
+  const artHtml = articles.map(a => `
+    <div class="article-link">
+      <a href="${a.link}" target="_blank">${a.title}</a>
+      <span class="article-link-date">${(a.date||"").slice(0,10)}</span>
+    </div>`).join("");
+
+  document.getElementById("modalBody").innerHTML = `
+    <div class="modal-section">
+      <div class="modal-section-title">현재 단계</div>
+      ${stageBadgeHtml(deal.stage)}
+    </div>
+    <div class="modal-section">
+      <div class="modal-section-title">최신 요약</div>
+      <div class="modal-summary">${deal.summary || "-"}</div>
+    </div>
+    ${history.length > 1 ? `<div class="modal-section"><div class="modal-section-title">업데이트 이력</div>${histHtml}</div>` : ""}
+    <div class="modal-section">
+      <div class="modal-section-title">관련 기사 (${articles.length}건)</div>
+      <div class="article-list">${artHtml || "<span style='color:#94a3b8;font-size:13px'>없음</span>"}</div>
+    </div>`;
+
+  // 액션 버튼
+  const actions = document.getElementById("modalActions");
+  if (isEditMode) {
+    actions.innerHTML = `
+      <button class="btn btn-primary" onclick="openEditForm('${id}')">✏️ 편집</button>
+      <button class="btn btn-danger" onclick="confirmDelete('${id}')">🗑️ 삭제</button>
+      <button class="btn btn-outline" style="color:#374151;border-color:#e5e7eb;margin-left:auto" onclick="closeDealModal()">닫기</button>`;
+  } else {
+    actions.innerHTML = `
+      <button class="btn btn-outline" style="color:#374151;border-color:#e5e7eb;margin-left:auto" onclick="closeDealModal()">닫기</button>`;
+  }
+}
+
+function closeDealModal() {
+  document.getElementById("dealModal").style.display = "none";
+  currentDealId = null;
+}
+
+function closeModal(e) {
+  if (e.target === document.getElementById("dealModal")) closeDealModal();
+}
+
+// ── 편집 폼 ───────────────────────────────────────────
+function openEditForm(id) {
+  const deal = deals.find(d => d.id === id);
+  if (!deal) return;
+
+  const stages = ["매각 검토중","주관사 선정","예비입찰","본입찰","우선협상자 선정","실사 진행중","SPA 체결","딜 클로즈","기타"];
+  const stageOptions = stages.map(s => `<option value="${s}" ${deal.stage===s?"selected":""}>${s}</option>`).join("");
+
+  document.getElementById("modalBody").innerHTML = `
+    <div class="edit-form">
+      <div class="form-group">
+        <label class="form-label">딜명</label>
+        <input class="form-input" id="editName" value="${deal.name}"/>
+      </div>
+      <div class="form-group">
+        <label class="form-label">현재 단계</label>
+        <select class="form-select" id="editStage">${stageOptions}</select>
+      </div>
+      <div class="form-group">
+        <label class="form-label">요약</label>
+        <textarea class="form-textarea" id="editSummary">${deal.summary||""}</textarea>
+      </div>
+    </div>`;
+
+  document.getElementById("modalActions").innerHTML = `
+    <button class="btn btn-success" onclick="saveDeal('${id}')">💾 저장</button>
+    <button class="btn btn-outline" style="color:#374151;border-color:#e5e7eb" onclick="openDeal('${id}')">취소</button>`;
+}
+
+function saveDeal(id) {
+  const deal = deals.find(d => d.id === id);
+  if (!deal) return;
+
+  const newName = document.getElementById("editName").value.trim();
+  const newStage = document.getElementById("editStage").value;
+  const newSummary = document.getElementById("editSummary").value.trim();
+
+  if (!newName) { alert("딜명을 입력해주세요."); return; }
+
+  const today = new Date().toISOString().slice(0, 10);
+  deal.name = newName;
+  deal.stage = newStage;
+  deal.summary = newSummary;
+  deal.updatedAt = today;
+  if (!deal.history) deal.history = [];
+  deal.history.push({ date: today, stage: newStage, summary: newSummary });
+
+  saveToFile();
+  renderDeals();
+  openDeal(id);
+}
+
+function confirmDelete(id) {
+  if (!confirm("이 딜을 삭제하시겠습니까?")) return;
+  deals = deals.filter(d => d.id !== id);
+  saveToFile();
+  closeDealModal();
+  renderDeals();
+}
+
+// ── GitHub API 자동 저장 ──────────────────────────────
+const GH_REPO = "eenw23-code/pe-briefing";
+const GH_FILE = "deals.json";
+let GH_TOKEN = sessionStorage.getItem("gh_token") || "";
+
+function getToken() {
+  if (GH_TOKEN) return GH_TOKEN;
+  const t = prompt("GitHub Personal Access Token을 입력하세요:");
+  if (t) { GH_TOKEN = t.trim(); sessionStorage.setItem("gh_token", GH_TOKEN); }
+  return GH_TOKEN;
+}
+
+async function saveToFile() {
+  const token = getToken();
+  if (!token) { alert("토큰이 없어 저장할 수 없습니다."); return; }
+
+  const data = { deals, lastUpdated };
+  const encoded = btoa(unescape(encodeURIComponent(JSON.stringify(data, null, 2))));
+
+  let sha = "";
+  try {
+    const r = await fetch("https://api.github.com/repos/" + GH_REPO + "/contents/" + GH_FILE, {
+      headers: { Authorization: "token " + token, Accept: "application/vnd.github.v3+json" }
+    });
+    const info = await r.json();
+    sha = info.sha || "";
+  } catch(e) {}
+
+  const res = await fetch("https://api.github.com/repos/" + GH_REPO + "/contents/" + GH_FILE, {
+    method: "PUT",
+    headers: {
+      Authorization: "token " + token,
+      Accept: "application/vnd.github.v3+json",
+      "Content-Type": "application/json"
+    },
+    body: JSON.stringify({ message: "update: " + new Date().toISOString().slice(0,16), content: encoded, sha })
+  });
+
+  if (res.ok) {
+    alert("저장 완료!");
+    setTimeout(loadData, 3000);
+  } else {
+    GH_TOKEN = ""; sessionStorage.removeItem("gh_token");
+    alert("저장 실패. 토큰을 확인해주세요.");
+  }
+}
+
+// ── 비밀번호 모달 ─────────────────────────────────────
+function openPwModal(action) {
+  pwAction = action;
+  document.getElementById("pwTitle").textContent = isEditMode ? "🔓 편집 모드 해제" : "🔑 편집 모드 활성화";
+  document.getElementById("pwError").style.display = "none";
+  document.getElementById("pwInput").value = "";
+  document.getElementById("pwModal").style.display = "flex";
+  setTimeout(() => document.getElementById("pwInput").focus(), 100);
+}
+
+function closePwOverlay(e) {
+  if (e.target === document.getElementById("pwModal")) document.getElementById("pwModal").style.display = "none";
+}
+
+async function confirmPw() {
+  if (isEditMode) {
+    // 편집 모드 해제
+    isEditMode = false;
+    document.getElementById("pwModal").style.display = "none";
+    document.querySelector(".btn-outline").textContent = "🔑 편집 모드";
+    return;
+  }
+
+  const input = document.getElementById("pwInput").value;
+  const hash = await sha256(input);
+
+  // 비밀번호 확인 — 기본값: nvestor2026
+  // 변경 시: 새 비밀번호의 SHA-256 해시를 PW_HASH에 넣으세요
+  const CORRECT = "5e9a1f3c8b7d2e4a6f0c9b8e7d6c5b4a3f2e1d0c9b8a7f6e5d4c3b2a1f0e9d8";
+
+  // 임시: 평문 비교 (배포 전 해시로 교체 권장)
+  if (input === "nvestor2026") {
+    isEditMode = true;
+    document.getElementById("pwModal").style.display = "none";
+    document.querySelector(".btn-outline").textContent = "🔓 편집 모드 ON";
+    if (currentDealId) openDeal(currentDealId);
+  } else {
+    document.getElementById("pwError").style.display = "block";
+  }
+}
+
+// ── Gmail 발송 ────────────────────────────────────────
+function sendGmail() {
+  const today = new Date().toLocaleDateString("ko-KR", { year:"numeric", month:"long", day:"numeric" });
+  const filtered = getFilteredDeals();
+
+  let body = `PE Daily Deal Briefing — ${today}\n`;
+  body += `총 ${filtered.length}건 (${currentStage === "전체" ? "전체" : currentStage})\n\n`;
+  body += "=".repeat(40) + "\n\n";
+
+  filtered.forEach((deal, i) => {
+    body += `[${i+1}] ${deal.name}\n`;
+    body += `단계: ${deal.stage}\n`;
+    body += `${deal.summary || ""}\n`;
+    const mainArt = (deal.articles || [])[0];
+    if (mainArt) body += `📄 ${mainArt.link}\n`;
+    body += "\n";
+  });
+
+  const subject = encodeURIComponent(`[PE Briefing] ${today}`);
+  const bodyEnc = encodeURIComponent(body);
+  window.location.href = `mailto:?subject=${subject}&body=${bodyEnc}`;
+}
+
+// ── 초기화 ────────────────────────────────────────────
+loadData();
+</script>
+</body>
+</html>

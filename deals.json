@@ -1,0 +1,502 @@
+{
+  "deals": [
+    {
+      "id": "deal_20260310_001",
+      "name": "대웅그룹 시지바이오 매각",
+      "stage": "우선협상자 선정",
+      "summary": "대웅제약이 자회사 시지바이오를 매각하는 추진 중이며, IMM PE가 우선협상대상자로 선정되었다. 추정 규모는 6,000억원대로 알려졌으며, 대웅 오너 윤재승 회장이 6,000억원의 실탄으로 지배력 강화를 도모하는 배경으로 분석된다.",
+      "articles": [
+        {
+          "title": "[메디컬투데이 - 쇼츠뉴스] 대웅그룹, 시지바이오 매각우선협상대상자...",
+          "link": "https://mdtoday.co.kr/news/view/1065607916704034",
+          "date": "2026-03-09"
+        },
+        {
+          "title": "대웅제약, 알짜 기업 '시지바이오' 매각 추진…신약 개발 강화",
+          "link": "https://www.g-enews.com/view.php?ud=202603091604001562b065b72042_1",
+          "date": "2026-03-09"
+        },
+        {
+          "title": "대웅 오너 윤재승 시지바이오 매각 추진, 6천억 실탄으로 지배력 강화 ...",
+          "link": "https://www.businesspost.co.kr/BP?command=article_view&num=432325",
+          "date": "2026-03-09"
+        },
+        {
+          "title": "대웅, 시지바이오 매각 본격화…IMM PE우선협상대상자선정",
+          "link": "https://mdtoday.co.kr/news/view/1065598828732866",
+          "date": "2026-03-09"
+        }
+      ],
+      "createdAt": "2026-03-10",
+      "updatedAt": "2026-03-10",
+      "history": [
+        {
+          "date": "2026-03-10",
+          "stage": "우선협상자 선정",
+          "summary": "대웅제약이 자회사 시지바이오를 매각하는 추진 중이며, IMM PE가 우선협상대상자로 선정되었다. 추정 규모는 6,000억원대로 알려졌으며, 대웅 오너 윤재승 회장이 6,000억원의 실탄으로 지배력 강화를 도모하는 배경으로 분석된다."
+        }
+      ]
+    },
+    {
+      "id": "deal_20260310_003",
+      "name": "대치쌍용1차 재개발 시공사 선정",
+      "stage": "기타",
+      "summary": "대치쌍용1차 재개발 사업에서 삼성물산이 우선협력사로 지정되었으며, 최종 결정은 4월 11일로 예정되어 있다.",
+      "articles": [
+        {
+          "title": "대치쌍용1차, 삼성물산우선협 지정…4월 11일 최종 결정",
+          "link": "https://www.m-i.kr/news/articleView.html?idxno=1344330",
+          "date": "2026-03-09"
+        }
+      ],
+      "createdAt": "2026-03-10",
+      "updatedAt": "2026-03-10",
+      "history": [
+        {
+          "date": "2026-03-10",
+          "stage": "기타",
+          "summary": "대치쌍용1차 재개발 사업에서 삼성물산이 우선협력사로 지정되었으며, 최종 결정은 4월 11일로 예정되어 있다."
+        }
+      ]
+    },
+    {
+      "id": "deal_20260310_004",
+      "name": "플래스크 최대주주 변경 협상",
+      "stage": "기타",
+      "summary": "플래스크의 최대주주 변경 우선협상대상자 선정이 취소되었으며, 회사가 미수금 56억원 회수 청신호를 받아 공개매각 추진에 탄력이 예상된다.",
+      "articles": [
+        {
+          "title": "플래스크, 최대주주 변경우선협상대상자선정 취소",
+          "link": "https://www.digitaltoday.co.kr/news/articleView.html?idxno=638596",
+          "date": "2026-03-09"
+        },
+        {
+          "title": "상폐 위기 플래스크, 못받았던 56억 회수 청신호… 공개매각도 탄력 기...",
+          "link": "https://biz.chosun.com/stock/market_trend/2026/03/09/BTMMAKF7G5FFZHBIZ73ZWC6QPU/?utm_source=naver&utm_medium=original&utm_campaign=biz",
+          "date": "2026-03-09"
+        }
+      ],
+      "createdAt": "2026-03-10",
+      "updatedAt": "2026-03-10",
+      "history": [
+        {
+          "date": "2026-03-10",
+          "stage": "기타",
+          "summary": "플래스크의 최대주주 변경 우선협상대상자 선정이 취소되었으며, 회사가 미수금 56억원 회수 청신호를 받아 공개매각 추진에 탄력이 예상된다."
+        }
+      ]
+    },
+    {
+      "id": "deal_20260310_005",
+      "name": "미래아이앤지그룹 매각",
+      "stage": "우선협상자 선정",
+      "summary": "미래아이앤지그룹의 매각이 본궤도에 진입했으며, 우선협상자 선정이 임박한 상황이다.",
+      "articles": [
+        {
+          "title": "[TOP's Pick] 미래아이앤지그룹, 매각 '본궤도'…우선협상자 선정 임박",
+          "link": "https://www.topdaily.kr/articles/109117",
+          "date": "2026-03-09"
+        }
+      ],
+      "createdAt": "2026-03-10",
+      "updatedAt": "2026-03-10",
+      "history": [
+        {
+          "date": "2026-03-10",
+          "stage": "우선협상자 선정",
+          "summary": "미래아이앤지그룹의 매각이 본궤도에 진입했으며, 우선협상자 선정이 임박한 상황이다."
+        }
+      ]
+    },
+    {
+      "id": "deal_20260310_006",
+      "name": "KB자산운용 로지스포인트 평택 매각",
+      "stage": "매각 검토중",
+      "summary": "KB자산운용이 로지스포인트 평택을 매각하는 절차를 착수했으며, 올 상반기 거래 종결을 목표로 하고 있다.",
+      "articles": [
+        {
+          "title": "KB자산운용, '로지스포인트 평택' 매각 착수…올 상반기 거래 종결 목표",
+          "link": "http://www.press9.kr/news/articleView.html?idxno=73201",
+          "date": "2026-03-09"
+        }
+      ],
+      "createdAt": "2026-03-10",
+      "updatedAt": "2026-03-10",
+      "history": [
+        {
+          "date": "2026-03-10",
+          "stage": "매각 검토중",
+          "summary": "KB자산운용이 로지스포인트 평택을 매각하는 절차를 착수했으며, 올 상반기 거래 종결을 목표로 하고 있다."
+        }
+      ]
+    },
+    {
+      "id": "deal_20260310_007",
+      "name": "중기중앙회 블라인드 펀드 출자",
+      "stage": "기타",
+      "summary": "중기중앙회가 5,000억원 규모의 블라인드 펀드에 출자하며, 이지스, 마스턴, 코람코 등 펀드들이 모두 출사 완료되었다.",
+      "articles": [
+        {
+          "title": "중기중앙회, 5000억 블라인드 출자...이지스·마스턴·코람코 모두 출사...",
+          "link": "https://www.sedaily.com/article/20016914?ref=naver",
+          "date": "2026-03-09"
+        }
+      ],
+      "createdAt": "2026-03-10",
+      "updatedAt": "2026-03-10",
+      "history": [
+        {
+          "date": "2026-03-10",
+          "stage": "기타",
+          "summary": "중기중앙회가 5,000억원 규모의 블라인드 펀드에 출자하며, 이지스, 마스턴, 코람코 등 펀드들이 모두 출사 완료되었다."
+        }
+      ]
+    },
+    {
+      "id": "deal_20260310_008",
+      "name": "태광그룹 애경산업 인수",
+      "stage": "딜 클로즈",
+      "summary": "태광그룹이 우여곡절 끝에 애경산업 인수를 마무리했으며, 유태호 동성제약 케이드 회장 등의 관심사로 부각된다.",
+      "articles": [
+        {
+          "title": "태광그룹 우여곡절 끝에 애경산업 인수 마무리, 유태호 동성제약·케이...",
+          "link": "https://www.businesspost.co.kr/BP?command=article_view&num=432324",
+          "date": "2026-03-09"
+        }
+      ],
+      "createdAt": "2026-03-10",
+      "updatedAt": "2026-03-10",
+      "history": [
+        {
+          "date": "2026-03-10",
+          "stage": "딜 클로즈",
+          "summary": "태광그룹이 우여곡절 끝에 애경산업 인수를 마무리했으며, 유태호 동성제약 케이드 회장 등의 관심사로 부각된다."
+        }
+      ]
+    },
+    {
+      "id": "deal_20260310_009",
+      "name": "베이스그룹 감곡CC 인수",
+      "stage": "매각 검토중",
+      "summary": "트럼프 차남의 파트너로 알려진 베이스그룹이 감곡컨트리클럽을 1,600억원에 인수 추진 중이다.",
+      "articles": [
+        {
+          "title": "[단독] '트럼프 차남의 파트너' 베이스그룹, 1600억에 감곡CC 인수 추...",
+          "link": "https://biz.chosun.com/stock/market_trend/2026/03/09/BG56QEUZANCRJNFCOKACGPPDBU/?utm_source=naver&utm_medium=original&utm_campaign=biz",
+          "date": "2026-03-09"
+        }
+      ],
+      "createdAt": "2026-03-10",
+      "updatedAt": "2026-03-10",
+      "history": [
+        {
+          "date": "2026-03-10",
+          "stage": "매각 검토중",
+          "summary": "트럼프 차남의 파트너로 알려진 베이스그룹이 감곡컨트리클럽을 1,600억원에 인수 추진 중이다."
+        }
+      ]
+    },
+    {
+      "id": "deal_20260310_010",
+      "name": "한화·대우 신대방역세권 재개발 시공자 선정",
+      "stage": "기타",
+      "summary": "한화와 대우가 신대방역세권 재개발의 시공자로 유력하게 거론되고 있다.",
+      "articles": [
+        {
+          "title": "한화·대우, 신대방역세권 재개발 시공자로 유력",
+          "link": "https://www.arunews.com/news/articleView.html?idxno=60427",
+          "date": "2026-03-09"
+        }
+      ],
+      "createdAt": "2026-03-10",
+      "updatedAt": "2026-03-10",
+      "history": [
+        {
+          "date": "2026-03-10",
+          "stage": "기타",
+          "summary": "한화와 대우가 신대방역세권 재개발의 시공자로 유력하게 거론되고 있다."
+        }
+      ]
+    },
+    {
+      "id": "deal_20260310_011",
+      "name": "글로벌세아 제지 사업 통매각",
+      "stage": "매각 검토중",
+      "summary": "2.6조원의 빚을 부담하고 있는 글로벌세아가 제지 사업을 통매각 나선 상황이다.",
+      "articles": [
+        {
+          "title": "2.6조 빚 부담인데…글로벌세아, 제지 사업 통매각나서",
+          "link": "https://www.sentv.co.kr/article/view/sentv202603090096",
+          "date": "2026-03-09"
+        }
+      ],
+      "createdAt": "2026-03-10",
+      "updatedAt": "2026-03-10",
+      "history": [
+        {
+          "date": "2026-03-10",
+          "stage": "매각 검토중",
+          "summary": "2.6조원의 빚을 부담하고 있는 글로벌세아가 제지 사업을 통매각 나선 상황이다."
+        }
+      ]
+    },
+    {
+      "id": "deal_20260310_012",
+      "name": "모다이노칩 로젠 흡수합병",
+      "stage": "딜 클로즈",
+      "summary": "모다이노칩이 로젠에 흡수합병되며, 합병비율은 1대 0.9754112로 결정되었다.",
+      "articles": [
+        {
+          "title": "모다이노칩, 로젠에 흡수합병 결정",
+          "link": "https://www.digitaltoday.co.kr/news/articleView.html?idxno=638693",
+          "date": "2026-03-09"
+        },
+        {
+          "title": "로젠, 모다이노칩 흡수합병 결정…합병비율 1대 0.9754112",
+          "link": "https://www.digitaltoday.co.kr/news/articleView.html?idxno=638694",
+          "date": "2026-03-09"
+        }
+      ],
+      "createdAt": "2026-03-10",
+      "updatedAt": "2026-03-10",
+      "history": [
+        {
+          "date": "2026-03-10",
+          "stage": "딜 클로즈",
+          "summary": "모다이노칩이 로젠에 흡수합병되며, 합병비율은 1대 0.9754112로 결정되었다."
+        }
+      ]
+    },
+    {
+      "id": "deal_20260310_013",
+      "name": "롯데손보 매각",
+      "stage": "매각 검토중",
+      "summary": "금융위가 롯데손보에 '경영개선요구'를 의결했으며, 회사의 매각 절차가 속도를 낼 것으로 예상된다. 신평사도 긍정적인 평가를 내리지 않고 있는 상황이다.",
+      "articles": [
+        {
+          "title": "금융위 '경영개선요구' 의결...롯데손보, 매각 속도날까",
+          "link": "http://www.ttlnews.com/news/articleView.html?idxno=3086926",
+          "date": "2026-03-09"
+        },
+        {
+          "title": "[마켓인]새 주인 찾기 사실상 시계제로…신평사도 고개 저은 롯데손보 ...",
+          "link": "http://www.edaily.co.kr/news/newspath.asp?newsid=01420246645382008",
+          "date": "2026-03-10"
+        }
+      ],
+      "createdAt": "2026-03-10",
+      "updatedAt": "2026-03-10",
+      "history": [
+        {
+          "date": "2026-03-10",
+          "stage": "매각 검토중",
+          "summary": "금융위가 롯데손보에 '경영개선요구'를 의결했으며, 회사의 매각 절차가 속도를 낼 것으로 예상된다. 신평사도 긍정적인 평가를 내리지 않고 있는 상황이다."
+        }
+      ]
+    },
+    {
+      "id": "deal_20260310_014",
+      "name": "대성미생물 인실리코 최대주주 변경",
+      "stage": "SPA 체결",
+      "summary": "대성미생물이 인실리코와 최대주주 변경 수반 주식양수도 계약을 체결했다.",
+      "articles": [
+        {
+          "title": "대성미생물, 인실리코와 최대주주 변경 수반 주식양수도 계약 체결",
+          "link": "https://www.digitaltoday.co.kr/news/articleView.html?idxno=638631",
+          "date": "2026-03-09"
+        }
+      ],
+      "createdAt": "2026-03-10",
+      "updatedAt": "2026-03-10",
+      "history": [
+        {
+          "date": "2026-03-10",
+          "stage": "SPA 체결",
+          "summary": "대성미생물이 인실리코와 최대주주 변경 수반 주식양수도 계약을 체결했다."
+        }
+      ]
+    },
+    {
+      "id": "deal_20260310_015",
+      "name": "에코마케팅 최대주주 변경",
+      "stage": "기타",
+      "summary": "에코마케팅의 최대주주가 비씨피이이에이비드코원에서 변경되었다.",
+      "articles": [
+        {
+          "title": "에코마케팅 최대주주 비씨피이이에이비드코원, 에코마케팅주식등의 수...",
+          "link": "https://www.digitaltoday.co.kr/news/articleView.html?idxno=638719",
+          "date": "2026-03-09"
+        }
+      ],
+      "createdAt": "2026-03-10",
+      "updatedAt": "2026-03-10",
+      "history": [
+        {
+          "date": "2026-03-10",
+          "stage": "기타",
+          "summary": "에코마케팅의 최대주주가 비씨피이이에이비드코원에서 변경되었다."
+        }
+      ]
+    },
+    {
+      "id": "deal_20260310_016",
+      "name": "더케이트윈타워 매각",
+      "stage": "매각 검토중",
+      "summary": "더케이트윈타워 매각이 착수되었으며, 서울스퀘어에 이어 또 다른 빅딜이 나올 것으로 기대된다.",
+      "articles": [
+        {
+          "title": "더케이트윈타워 매각 착수…서울스퀘어 이어 또 '빅딜' 나오나",
+          "link": "http://www.edaily.co.kr/news/newspath.asp?newsid=04913446645381680",
+          "date": "2026-03-09"
+        }
+      ],
+      "createdAt": "2026-03-10",
+      "updatedAt": "2026-03-10",
+      "history": [
+        {
+          "date": "2026-03-10",
+          "stage": "매각 검토중",
+          "summary": "더케이트윈타워 매각이 착수되었으며, 서울스퀘어에 이어 또 다른 빅딜이 나올 것으로 기대된다."
+        }
+      ]
+    },
+    {
+      "id": "deal_20260310_017",
+      "name": "KKR 쿨IT시스템스 매각",
+      "stage": "매각 검토중",
+      "summary": "KKR이 쿨IT시스템스를 30억달러에 매각 추진 중이다.",
+      "articles": [
+        {
+          "title": "KKR, 쿨IT시스템스…30억달러에 매각 추진",
+          "link": "https://www.hankyung.com/article/2026030991451",
+          "date": "2026-03-09"
+        }
+      ],
+      "createdAt": "2026-03-10",
+      "updatedAt": "2026-03-10",
+      "history": [
+        {
+          "date": "2026-03-10",
+          "stage": "매각 검토중",
+          "summary": "KKR이 쿨IT시스템스를 30억달러에 매각 추진 중이다."
+        }
+      ]
+    },
+    {
+      "id": "deal_20260310_018",
+      "name": "현대모비스 미국 배터리 설비 매각",
+      "stage": "매각 검토중",
+      "summary": "현대모비스가 미국 조지아 전동화 부품 공장이 화재로 손상된 가운데, 배터리 설비를 스텔란티스에 매각 검토 중이다.",
+      "articles": [
+        {
+          "title": "현대모비스, 美 배터리 설비 스텔란티스에매각검토",
+          "link": "https://www.mk.co.kr/article/11983030",
+          "date": "2026-03-09"
+        }
+      ],
+      "createdAt": "2026-03-10",
+      "updatedAt": "2026-03-10",
+      "history": [
+        {
+          "date": "2026-03-10",
+          "stage": "매각 검토중",
+          "summary": "현대모비스가 미국 조지아 전동화 부품 공장이 화재로 손상된 가운데, 배터리 설비를 스텔란티스에 매각 검토 중이다."
+        }
+      ]
+    },
+    {
+      "id": "deal_20260310_019",
+      "name": "어피니티 SK렌터카·롯데렌탈 거래 검토",
+      "stage": "매각 검토중",
+      "summary": "어피니티가 SK렌터카 매각 또는 롯데렌탈 인수를 두고 저울질 중이며, 현대차 인수 가능성도 거론되고 있다.",
+      "articles": [
+        {
+          "title": "어피니티, SK렌터카매각·롯데렌탈 인수 '저울질'…현대차 인수 가능...",
+          "link": "https://thetracker.co.kr/View.aspx?No=3995841",
+          "date": "2026-03-09"
+        }
+      ],
+      "createdAt": "2026-03-10",
+      "updatedAt": "2026-03-10",
+      "history": [
+        {
+          "date": "2026-03-10",
+          "stage": "매각 검토중",
+          "summary": "어피니티가 SK렌터카 매각 또는 롯데렌탈 인수를 두고 저울질 중이며, 현대차 인수 가능성도 거론되고 있다."
+        }
+      ]
+    },
+    {
+      "id": "deal_20260310_020",
+      "name": "한앤코 SK이터닉스 매각",
+      "stage": "딜 클로즈",
+      "summary": "한앤코가 SK이터닉스 엑시트를 완료했으며, 분할매각 전략으로 성공을 거두었다.",
+      "articles": [
+        {
+          "title": "한앤코, SK이터닉스 엑시트 완료",
+          "link": "https://www.newstopkorea.com/news/articleView.html?idxno=43660",
+          "date": "2026-03-09"
+        }
+      ],
+      "createdAt": "2026-03-10",
+      "updatedAt": "2026-03-10",
+      "history": [
+        {
+          "date": "2026-03-10",
+          "stage": "딜 클로즈",
+          "summary": "한앤코가 SK이터닉스 엑시트를 완료했으며, 분할매각 전략으로 성공을 거두었다."
+        }
+      ]
+    },
+    {
+      "id": "deal_20260310_021",
+      "name": "KG스틸 자회사 흡수합병",
+      "stage": "딜 클로즈",
+      "summary": "KG스틸이 KG스틸에스앤디와 KG스틸에스앤아이를 흡수합병하기로 결정했다.",
+      "articles": [
+        {
+          "title": "KG스틸, KG스틸에스앤디 흡수합병 결정",
+          "link": "https://www.digitaltoday.co.kr/news/articleView.html?idxno=638669",
+          "date": "2026-03-09"
+        },
+        {
+          "title": "KG스틸, KG스틸에스앤아이 흡수합병 결정",
+          "link": "https://www.digitaltoday.co.kr/news/articleView.html?idxno=638664",
+          "date": "2026-03-09"
+        }
+      ],
+      "createdAt": "2026-03-10",
+      "updatedAt": "2026-03-10",
+      "history": [
+        {
+          "date": "2026-03-10",
+          "stage": "딜 클로즈",
+          "summary": "KG스틸이 KG스틸에스앤디와 KG스틸에스앤아이를 흡수합병하기로 결정했다."
+        }
+      ]
+    },
+    {
+      "id": "deal_20260310_022",
+      "name": "신한서부티엔디리츠 나인트리 동대문 매각",
+      "stage": "딜 클로즈",
+      "summary": "신한서부티엔디리츠가 나인트리 동대문을 810억원에 매각했으며, IRR 약 27%의 성과를 기록했다.",
+      "articles": [
+        {
+          "title": "신한서부티엔디리츠 '나인트리 동대문' 810억원 매각…IRR 약 27% 성과",
+          "link": "http://www.edaily.co.kr/news/newspath.asp?newsid=04680566645381680",
+          "date": "2026-03-09"
+        }
+      ],
+      "createdAt": "2026-03-10",
+      "updatedAt": "2026-03-10",
+      "history": [
+        {
+          "date": "2026-03-10",
+          "stage": "딜 클로즈",
+          "summary": "신한서부티엔디리츠가 나인트리 동대문을 810억원에 매각했으며, IRR 약 27%의 성과를 기록했다."
+        }
+      ]
+    }
+  ],
+  "lastUpdated": "2026-03-10 06:04"
+}
