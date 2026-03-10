@@ -165,7 +165,7 @@ body { background: var(--bg); color: var(--ink); font-family: "IBM Plex Sans", s
 <body>
 
 <div class="header">
-  <div class="logo" onclick="goHome()">PE Deal Briefing</div>
+  <div class="logo" onclick="location.reload()">PE Deal Briefing</div>
   <div class="header-right">
     <button class="gmail-btn" onclick="sendGmail()">📧 Gmail 발송<span class="gmail-count" id="gmailCount" style="display:none">0</span></button>
     <button class="btn btn-danger" id="deleteCheckedBtn" onclick="deleteChecked()" style="display:none">🗑️ 선택 삭제 <span id="deleteCount"></span></button>
@@ -176,6 +176,7 @@ body { background: var(--bg); color: var(--ink); font-family: "IBM Plex Sans", s
 <div class="tabs">
   <div class="tab active" id="tab-deal" onclick="switchTab('deal')">딜별 보기</div>
   <div class="tab" id="tab-date" onclick="switchTab('date')">날짜별 보기</div>
+  <div class="tab" id="tab-re" onclick="switchTab('re')">🏢 부동산</div>
   <div class="tab" id="tab-scrap" onclick="switchTab('scrap')">&#11088; 스크랩</div>
 </div>
 
@@ -197,6 +198,7 @@ body { background: var(--bg); color: var(--ink); font-family: "IBM Plex Sans", s
   <div class="stats" id="statsArea"></div>
   <div id="dealView"></div>
   <div id="dateView" style="display:none"></div>
+  <div id="reView" style="display:none"></div>
   <div id="scrapView" style="display:none"></div>
 </div>
 
@@ -213,6 +215,7 @@ body { background: var(--bg); color: var(--ink); font-family: "IBM Plex Sans", s
 
 <script>
 let deals = [];
+let realestate = [];
 let lastUpdated = "";
 let currentTab = "deal";
 let currentStage = "전체";
@@ -245,9 +248,10 @@ async function loadData() {
     const res = await fetch("deals.json?t=" + Date.now());
     const data = await res.json();
     deals = data.deals || [];
+    realestate = data.realestate || [];
     lastUpdated = data.lastUpdated || "";
     renderAll();
-  } catch(e) { deals = []; renderAll(); }
+  } catch(e) { deals = []; realestate = []; renderAll(); }
 }
 
 function goHome() {
@@ -268,11 +272,11 @@ function toggleEditMode() {
 
 function switchTab(tab) {
   currentTab = tab;
-  ["deal","date","scrap"].forEach(t => {
+  ["deal","date","re","scrap"].forEach(t => {
     document.getElementById("tab-"+t).classList.toggle("active", t === tab);
     document.getElementById(t+"View").style.display = t === tab ? "" : "none";
   });
-  document.getElementById("filterBar").style.display = tab === "scrap" ? "none" : "";
+  document.getElementById("filterBar").style.display = (tab === "scrap" || tab === "re") ? "none" : "";
   renderDeals();
 }
 
@@ -408,7 +412,26 @@ function renderStats() {
     '<div class="stat-card"><div class="stat-num" style="font-size:13px">' + updated + '</div><div class="stat-label">최근 업데이트</div></div>';
 }
 
-function renderAll() { renderDeals(); }
+function renderAll() { renderDeals(); renderRealestate(); }
+
+function renderRealestate() {
+  const container = document.getElementById("reView");
+  if (!realestate.length) {
+    container.innerHTML = '<div class="empty"><div class="empty-icon">🏢</div><div class="empty-text">부동산 딜 없음</div><div class="empty-sub">다음 실행 후 데이터가 채워집니다</div></div>';
+    return;
+  }
+  container.innerHTML = realestate.map(d => {
+    const arts = (d.articles || []).map(a =>
+      '<div class="article-link"><a href="' + a.link + '" target="_blank">' + a.title + '</a><span class="article-link-date">' + (a.date||"").slice(0,10) + '</span></div>'
+    ).join("");
+    return '<div class="deal-card" style="border-left-color:#c8963e">' +
+      '<div class="deal-header"><div class="deal-name">' + d.name + '</div>' +
+      '<div class="deal-meta">' + stageBadgeHtml(d.stage) + '<span class="deal-date">' + (d.updatedAt||"") + '</span></div></div>' +
+      '<div class="deal-summary">' + (d.summary||"") + '</div>' +
+      '<div class="article-list">' + arts + '</div>' +
+    '</div>';
+  }).join("");
+}
 
 function renderDeals() {
   renderStats();
@@ -637,6 +660,12 @@ function sendGmail() {
     }
     briefing += "\n";
   });
+  var now = new Date();
+  var yy = String(now.getFullYear()).slice(2);
+  var mm = String(now.getMonth()+1).padStart(2,"0");
+  var dd = String(now.getDate()).padStart(2,"0");
+  var subject = yy + "." + mm + "." + dd + " Daily News Run";
+
   var body =
     "안녕하세요.\n\n" +
     "오늘자 주요 Deal 브리핑 드립니다.\n\n" +
@@ -645,9 +674,15 @@ function sendGmail() {
     "https://eenw23-code.github.io/pe-briefing/\n\n" +
     "감사합니다.\n" +
     "최인우 드림.";
-  var subject = encodeURIComponent("[PE Briefing] " + today);
-  var bodyEnc = encodeURIComponent(body);
-  window.open("https://mail.google.com/mail/?view=cm&su=" + subject + "&body=" + bodyEnc, "_blank");
+
+  // 클립보드에 본문 복사 후 Gmail 열기
+  navigator.clipboard.writeText(body).then(function() {
+    alert("본문이 클립보드에 복사됐습니다.\nGmail에서 붙여넣기(Ctrl+V) 해주세요.");
+    window.open("https://mail.google.com/mail/?view=cm&su=" + encodeURIComponent(subject), "_blank");
+  }).catch(function() {
+    // 클립보드 실패 시 기존 방식 폴백
+    window.open("https://mail.google.com/mail/?view=cm&su=" + encodeURIComponent(subject) + "&body=" + encodeURIComponent(body.slice(0, 1500)), "_blank");
+  });
 }
 
 loadData();
