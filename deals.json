@@ -1,0 +1,722 @@
+{
+  "deals": [
+    {
+      "id": "deal_20260310_001",
+      "name": "시지바이오 매각 (대웅 → IMM PE)",
+      "stage": "우선협상자 선정",
+      "summary": "대웅그룹이 보유한 시지바이오(골이식재 전문기업) 지분 매각을 추진 중이며, IMM PE가 우선협상대상자로 선정됨. 거래 규모는 약 6000억원 수준으로 추정됨. 대웅 오너 윤재승 전 회장의 지배구조 개편 및 신약 개발 역량 집중을 위한 포석으로 분석됨. 잔여지분 처리 방식에도 시장의 관심이 집중되고 있음.",
+      "repArticle": {
+        "title": "[더벨]IMM 손잡는 시지바이오, 잔여지분 처리 방식에 '시선집중'",
+        "link": "https://www.thebell.co.kr/free/content/ArticleView.asp?key=202603061514246560109243",
+        "date": "2026-03-10",
+        "source": "thebell"
+      },
+      "articles": [
+        {
+          "title": "[더벨]IMM 손잡는 시지바이오, 잔여지분 처리 방식에 '시선집중'",
+          "link": "https://www.thebell.co.kr/free/content/ArticleView.asp?key=202603061514246560109243",
+          "date": "2026-03-10"
+        },
+        {
+          "title": "'알짜' 시지바이오 매각 나선 대웅 … 신약 집중인가 승계 포석인가",
+          "link": "https://biz.newdaily.co.kr/site/data/html/2026/03/10/2026031000125.html",
+          "date": "2026-03-10"
+        },
+        {
+          "title": "대웅, '헬스케어' 앞세워 승계 맞춤 지배구조 개편 나설까",
+          "link": "https://www.topdaily.kr/articles/109114",
+          "date": "2026-03-10"
+        },
+        {
+          "title": "6000억 시지바이오 매각 왜 지금일까…윤재승 대웅 전 회장 지배구조 변...",
+          "link": "https://www.apsk.co.kr/news/articleView.html?idxno=538805",
+          "date": "2026-03-10"
+        },
+        {
+          "title": "[메디컬투데이] 대웅그룹, 시지바이오 매각 우선협상대상자...",
+          "link": "https://mdtoday.co.kr/news/view/1065607916704034",
+          "date": "2026-03-09"
+        },
+        {
+          "title": "대웅제약, 알짜 기업 '시지바이오' 매각 추진…신약 개발 강화",
+          "link": "https://www.g-enews.com/view.php?ud=202603091604001562b065b72042_1",
+          "date": "2026-03-09"
+        },
+        {
+          "title": "대웅 오너 윤재승 시지바이오 매각 추진, 6천억 실탄으로 지배력 강화...",
+          "link": "https://www.businesspost.co.kr/BP?command=article_view&num=432325",
+          "date": "2026-03-09"
+        },
+        {
+          "title": "대웅, 시지바이오 매각 본격화…IMMPE 우선협상대상자 선정",
+          "link": "https://mdtoday.co.kr/news/view/1065598828732866",
+          "date": "2026-03-09"
+        }
+      ],
+      "createdAt": "2026-03-10",
+      "updatedAt": "2026-03-10",
+      "history": [
+        {
+          "date": "2026-03-10",
+          "stage": "우선협상자 선정",
+          "summary": "대웅그룹이 보유한 시지바이오(골이식재 전문기업) 지분 매각을 추진 중이며, IMM PE가 우선협상대상자로 선정됨. 거래 규모는 약 6000억원 수준으로 추정됨. 대웅 오너 윤재승 전 회장의 지배구조 개편 및 신약 개발 역량 집중을 위한 포석으로 분석됨. 잔여지분 처리 방식에도 시장의 관심이 집중되고 있음."
+        }
+      ]
+    },
+    {
+      "id": "deal_20260310_002",
+      "name": "SK렌터카 매각 (어피니티 엑시트)",
+      "stage": "매각 검토중",
+      "summary": "어피니티에쿼티파트너스가 8200억원에 인수한 SK렌터카의 투자금 회수를 모색 중임. 롯데렌탈 인수와 SK렌터카 매각을 동시에 저울질하고 있으나, 높은 인수가 대비 실적 부진으로 엑시트 시나리오가 불투명한 상황. 롯데렌탈 인수도 포기 가능성이 제기되는 등 출구 전략 수립에 어려움을 겪고 있음.",
+      "repArticle": {
+        "title": "[더벨][PE포트폴리오 엿보기] 실적은 탄탄한데 비싸게 샀다…SK렌터카...",
+        "link": "https://www.thebell.co.kr/free/content/ArticleView.asp?key=202603051352329760106923",
+        "date": "2026-03-09",
+        "source": "thebell"
+      },
+      "articles": [
+        {
+          "title": "[더벨][PE포트폴리오 엿보기] 실적은 탄탄한데 비싸게 샀다…SK렌터카...",
+          "link": "https://www.thebell.co.kr/free/content/ArticleView.asp?key=202603051352329760106923",
+          "date": "2026-03-09"
+        },
+        {
+          "title": "출구 찾아야 하는 어피니티…롯데렌탈 포기할 수도",
+          "link": "https://view.asiae.co.kr/article/2026030916132935181",
+          "date": "2026-03-10"
+        },
+        {
+          "title": "8200억에 SK렌터카 인수한 어피니티…투자금 회수 가능할까",
+          "link": "https://www.etoday.co.kr/news/view/2563282",
+          "date": "2026-03-09"
+        },
+        {
+          "title": "어피니티, SK렌터카 매각·롯데렌탈 인수 '저울질'…현대차 인수 가능...",
+          "link": "https://thetracker.co.kr/View.aspx?No=3995841",
+          "date": "2026-03-09"
+        }
+      ],
+      "createdAt": "2026-03-10",
+      "updatedAt": "2026-03-10",
+      "history": [
+        {
+          "date": "2026-03-10",
+          "stage": "매각 검토중",
+          "summary": "어피니티에쿼티파트너스가 8200억원에 인수한 SK렌터카의 투자금 회수를 모색 중임. 롯데렌탈 인수와 SK렌터카 매각을 동시에 저울질하고 있으나, 높은 인수가 대비 실적 부진으로 엑시트 시나리오가 불투명한 상황. 롯데렌탈 인수도 포기 가능성이 제기되는 등 출구 전략 수립에 어려움을 겪고 있음."
+        }
+      ]
+    },
+    {
+      "id": "deal_20260310_003",
+      "name": "한앤코 → SK이터닉스 투자",
+      "stage": "딜 클로즈",
+      "summary": "한앤컴퍼니가 SK이터닉스에 대한 투자를 마무리한 것으로 확인됨. 생산적 금융 붐과 맞물려 국내 재생에너지 인프라에 대한 PE 자금 유입이 확대되는 흐름 속에서 이루어진 투자임. 향후 밸류업 스토리 및 엑시트 전략이 시장의 주목을 받고 있음.",
+      "repArticle": {
+        "title": "[더벨]한앤코, SK이터닉스 투자 '마침표'…밸류업 스토리 '주목'",
+        "link": "https://www.thebell.co.kr/free/content/ArticleView.asp?key=202603060929456800107618",
+        "date": "2026-03-10",
+        "source": "thebell"
+      },
+      "articles": [
+        {
+          "title": "[더벨]한앤코, SK이터닉스 투자 '마침표'…밸류업 스토리 '주목'",
+          "link": "https://www.thebell.co.kr/free/content/ArticleView.asp?key=202603060929456800107618",
+          "date": "2026-03-10"
+        },
+        {
+          "title": "'생산적금융' 붐에 … SK발전소 투자 몰려",
+          "link": "https://www.mk.co.kr/article/11983048",
+          "date": "2026-03-09"
+        },
+        {
+          "title": "'생산적금융' 붐 타고…울산 전력인프라에 자금 몰려",
+          "link": "https://www.mk.co.kr/article/11982892",
+          "date": "2026-03-09"
+        }
+      ],
+      "createdAt": "2026-03-10",
+      "updatedAt": "2026-03-10",
+      "history": [
+        {
+          "date": "2026-03-10",
+          "stage": "딜 클로즈",
+          "summary": "한앤컴퍼니가 SK이터닉스에 대한 투자를 마무리한 것으로 확인됨. 생산적 금융 붐과 맞물려 국내 재생에너지 인프라에 대한 PE 자금 유입이 확대되는 흐름 속에서 이루어진 투자임. 향후 밸류업 스토리 및 엑시트 전략이 시장의 주목을 받고 있음."
+        }
+      ]
+    },
+    {
+      "id": "deal_20260310_004",
+      "name": "에스앤에스밸브 인수 (미래에셋벤처PE)",
+      "stage": "딜 클로즈",
+      "summary": "미래에셋벤처PE가 에스앤에스밸브를 인수하면서 덕산네오룩스와 공동으로 손잡은 것으로 확인됨. 전략적 투자자와 PE의 협력 구조를 통해 인수를 진행한 사례로 주목받고 있음. 구체적인 거래 규모는 미공개 상태임.",
+      "repArticle": {
+        "title": "[더벨]'에스앤에스밸브 인수' 미래에셋벤처PE, 덕산네오룩스와 맞손",
+        "link": "https://www.thebell.co.kr/free/content/ArticleView.asp?key=202603051224086200102991",
+        "date": "2026-03-10",
+        "source": "thebell"
+      },
+      "articles": [
+        {
+          "title": "[더벨]'에스앤에스밸브 인수' 미래에셋벤처PE, 덕산네오룩스와 맞손",
+          "link": "https://www.thebell.co.kr/free/content/ArticleView.asp?key=202603051224086200102991",
+          "date": "2026-03-10"
+        }
+      ],
+      "createdAt": "2026-03-10",
+      "updatedAt": "2026-03-10",
+      "history": [
+        {
+          "date": "2026-03-10",
+          "stage": "딜 클로즈",
+          "summary": "미래에셋벤처PE가 에스앤에스밸브를 인수하면서 덕산네오룩스와 공동으로 손잡은 것으로 확인됨. 전략적 투자자와 PE의 협력 구조를 통해 인수를 진행한 사례로 주목받고 있음. 구체적인 거래 규모는 미공개 상태임."
+        }
+      ]
+    },
+    {
+      "id": "deal_20260310_005",
+      "name": "어센트PE 블라인드펀드 결성",
+      "stage": "딜 클로즈",
+      "summary": "어센트PE가 첫 번째 블라인드펀드 조성에 성공하여 1300억원 규모의 펀드를 결성함. 향후 이를 바탕으로 투자를 확대할 계획임. 신규 PE하우스의 블라인드펀드 결성 성공 사례로 시장의 주목을 받고 있음.",
+      "repArticle": {
+        "title": "어센트PE, 첫 블라인드펀드 1300억 결성 성공… 투자 늘린다",
+        "link": "https://www.etoday.co.kr/news/view/2563656",
+        "date": "2026-03-10",
+        "source": "기타"
+      },
+      "articles": [
+        {
+          "title": "어센트PE, 첫 블라인드펀드 1300억 결성 성공… 투자 늘린다",
+          "link": "https://www.etoday.co.kr/news/view/2563656",
+          "date": "2026-03-10"
+        }
+      ],
+      "createdAt": "2026-03-10",
+      "updatedAt": "2026-03-10",
+      "history": [
+        {
+          "date": "2026-03-10",
+          "stage": "딜 클로즈",
+          "summary": "어센트PE가 첫 번째 블라인드펀드 조성에 성공하여 1300억원 규모의 펀드를 결성함. 향후 이를 바탕으로 투자를 확대할 계획임. 신규 PE하우스의 블라인드펀드 결성 성공 사례로 시장의 주목을 받고 있음."
+        }
+      ]
+    },
+    {
+      "id": "deal_20260310_006",
+      "name": "현대힘스 매각 (제이앤PE 엑시트)",
+      "stage": "매각 검토중",
+      "summary": "제이앤PE가 포트폴리오 기업 현대힘스의 엑시트를 준비 중이며, 5배 수익(5x MoM)을 목표로 하고 있음. 현대힘스는 해양플랜트 및 조선 기자재 업체로, 조선업 업황 개선에 따른 기업가치 상승이 기대됨. 구체적인 매각 일정 및 방식은 미정임.",
+      "repArticle": {
+        "title": "현대힘스 잘 키운 제이앤PE, 5배 수익 노린다",
+        "link": "https://www.newstopkorea.com/news/articleView.html?idxno=43658",
+        "date": "2026-03-09",
+        "source": "기타"
+      },
+      "articles": [
+        {
+          "title": "현대힘스 잘 키운 제이앤PE, 5배 수익 노린다",
+          "link": "https://www.newstopkorea.com/news/articleView.html?idxno=43658",
+          "date": "2026-03-09"
+        }
+      ],
+      "createdAt": "2026-03-10",
+      "updatedAt": "2026-03-10",
+      "history": [
+        {
+          "date": "2026-03-10",
+          "stage": "매각 검토중",
+          "summary": "제이앤PE가 포트폴리오 기업 현대힘스의 엑시트를 준비 중이며, 5배 수익(5x MoM)을 목표로 하고 있음. 현대힘스는 해양플랜트 및 조선 기자재 업체로, 조선업 업황 개선에 따른 기업가치 상승이 기대됨. 구체적인 매각 일정 및 방식은 미정임."
+        }
+      ]
+    },
+    {
+      "id": "deal_20260310_007",
+      "name": "미래아이앤지그룹 매각",
+      "stage": "우선협상자 선정",
+      "summary": "미래아이앤지그룹의 매각 절차가 본궤도에 올랐으며 우선협상자 선정이 임박한 것으로 알려짐. 구체적인 인수 후보 및 거래 규모는 미공개 상태임. 매각 주관사를 중심으로 딜 클로징을 위한 협상이 진행 중인 것으로 파악됨.",
+      "repArticle": {
+        "title": "[TOP's Pick] 미래아이앤지그룹, 매각 '본궤도'…우선협상자 선정 임박",
+        "link": "https://www.topdaily.kr/articles/109117",
+        "date": "2026-03-09",
+        "source": "기타"
+      },
+      "articles": [
+        {
+          "title": "[TOP's Pick] 미래아이앤지그룹, 매각 '본궤도'…우선협상자 선정 임박",
+          "link": "https://www.topdaily.kr/articles/109117",
+          "date": "2026-03-09"
+        }
+      ],
+      "createdAt": "2026-03-10",
+      "updatedAt": "2026-03-10",
+      "history": [
+        {
+          "date": "2026-03-10",
+          "stage": "우선협상자 선정",
+          "summary": "미래아이앤지그룹의 매각 절차가 본궤도에 올랐으며 우선협상자 선정이 임박한 것으로 알려짐. 구체적인 인수 후보 및 거래 규모는 미공개 상태임. 매각 주관사를 중심으로 딜 클로징을 위한 협상이 진행 중인 것으로 파악됨."
+        }
+      ]
+    },
+    {
+      "id": "deal_20260310_008",
+      "name": "글로벌세아 제지 사업 매각",
+      "stage": "매각 검토중",
+      "summary": "글로벌세아가 2.6조원에 달하는 부채 부담을 해소하기 위해 제지 사업부문 통매각에 나섰음. 재무구조 개선을 목적으로 한 사업부 매각으로, 구체적인 인수 후보 및 가격은 아직 확정되지 않은 상황임.",
+      "repArticle": {
+        "title": "2.6조 빚 부담인데…글로벌세아, 제지 사업 통매각 나서",
+        "link": "https://www.sentv.co.kr/article/view/sentv202603090096",
+        "date": "2026-03-09",
+        "source": "기타"
+      },
+      "articles": [
+        {
+          "title": "2.6조 빚 부담인데…글로벌세아, 제지 사업 통매각 나서",
+          "link": "https://www.sentv.co.kr/article/view/sentv202603090096",
+          "date": "2026-03-09"
+        }
+      ],
+      "createdAt": "2026-03-10",
+      "updatedAt": "2026-03-10",
+      "history": [
+        {
+          "date": "2026-03-10",
+          "stage": "매각 검토중",
+          "summary": "글로벌세아가 2.6조원에 달하는 부채 부담을 해소하기 위해 제지 사업부문 통매각에 나섰음. 재무구조 개선을 목적으로 한 사업부 매각으로, 구체적인 인수 후보 및 가격은 아직 확정되지 않은 상황임."
+        }
+      ]
+    },
+    {
+      "id": "deal_20260310_009",
+      "name": "스킨푸드 인수 (함승호/스틱인베스트먼트)",
+      "stage": "기타",
+      "summary": "티르티르 투자로 대박을 낸 함승호 대표(스틱인베스트먼트)가 다음 타깃으로 스킨푸드 인수를 추진 중인 것으로 알려짐. 티르티르 성공 방정식을 스킨푸드에 적용하는 브랜드 밸류업 전략이 핵심으로 분석됨. 구체적인 딜 조건 및 단계는 미확인 상태임.",
+      "repArticle": {
+        "title": "'티르티르 대박' 함승호 매직, 다음 타자는 '스킨푸드' [넘버스]",
+        "link": "https://www.bloter.net/news/articleView.html?idxno=656180",
+        "date": "2026-03-09",
+        "source": "기타"
+      },
+      "articles": [
+        {
+          "title": "'티르티르 대박' 함승호 매직, 다음 타자는 '스킨푸드' [넘버스]",
+          "link": "https://www.bloter.net/news/articleView.html?idxno=656180",
+          "date": "2026-03-09"
+        }
+      ],
+      "createdAt": "2026-03-10",
+      "updatedAt": "2026-03-10",
+      "history": [
+        {
+          "date": "2026-03-10",
+          "stage": "기타",
+          "summary": "티르티르 투자로 대박을 낸 함승호 대표(스틱인베스트먼트)가 다음 타깃으로 스킨푸드 인수를 추진 중인 것으로 알려짐. 티르티르 성공 방정식을 스킨푸드에 적용하는 브랜드 밸류업 전략이 핵심으로 분석됨. 구체적인 딜 조건 및 단계는 미확인 상태임."
+        }
+      ]
+    },
+    {
+      "id": "deal_20260310_010",
+      "name": "EQT → KJ환경 인수 재실사",
+      "stage": "실사 진행중",
+      "summary": "EQT가 고밸류 논란을 빚었던 KJ환경 인수 건에 대해 재실사를 진행 중임. 인프라 부문 수장 공백 등 조직 이슈가 겹치며 딜 불확실성이 높아진 상황. 최종 거래 성사 여부에 시장의 관심이 집중되고 있음.",
+      "repArticle": {
+        "title": "[Invest]EQT, '고밸류 인수' KJ환경 재실사…인프라 수장 공백에 조직...",
+        "link": "https://www.investchosun.com/site/data/html_dir/2026/03/09/2026030980057.html",
+        "date": "2026-03-10",
+        "source": "기타"
+      },
+      "articles": [
+        {
+          "title": "[Invest]EQT, '고밸류 인수' KJ환경 재실사…인프라 수장 공백에 조직...",
+          "link": "https://www.investchosun.com/site/data/html_dir/2026/03/09/2026030980057.html",
+          "date": "2026-03-10"
+        }
+      ],
+      "createdAt": "2026-03-10",
+      "updatedAt": "2026-03-10",
+      "history": [
+        {
+          "date": "2026-03-10",
+          "stage": "실사 진행중",
+          "summary": "EQT가 고밸류 논란을 빚었던 KJ환경 인수 건에 대해 재실사를 진행 중임. 인프라 부문 수장 공백 등 조직 이슈가 겹치며 딜 불확실성이 높아진 상황. 최종 거래 성사 여부에 시장의 관심이 집중되고 있음."
+        }
+      ]
+    },
+    {
+      "id": "deal_20260310_011",
+      "name": "KB-스톤브릿지 세컨더리 펀드 엑시트",
+      "stage": "딜 클로즈",
+      "summary": "KB와 스톤브릿지가 공동으로 운용한 세컨더리 펀드가 IRR 20% 이상을 달성하며 성공적인 엑시트를 기록함. 국내 세컨더리 시장에서의 대표적인 성공 사례로 평가받고 있음. 구체적인 투자 대상 및 회수 금액은 미공개 상태임.",
+      "repArticle": {
+        "title": "KB-스톤브릿지 세컨더리 대성공…IRR 20% 넘는다",
+        "link": "https://dealsite.co.kr/articles/157556",
+        "date": "2026-03-09",
+        "source": "dealsite"
+      },
+      "articles": [
+        {
+          "title": "KB-스톤브릿지 세컨더리 대성공…IRR 20% 넘는다",
+          "link": "https://dealsite.co.kr/articles/157556",
+          "date": "2026-03-09"
+        }
+      ],
+      "createdAt": "2026-03-10",
+      "updatedAt": "2026-03-10",
+      "history": [
+        {
+          "date": "2026-03-10",
+          "stage": "딜 클로즈",
+          "summary": "KB와 스톤브릿지가 공동으로 운용한 세컨더리 펀드가 IRR 20% 이상을 달성하며 성공적인 엑시트를 기록함. 국내 세컨더리 시장에서의 대표적인 성공 사례로 평가받고 있음. 구체적인 투자 대상 및 회수 금액은 미공개 상태임."
+        }
+      ]
+    },
+    {
+      "id": "deal_20260310_012",
+      "name": "한샘 이사회 개편 (IMM PE)",
+      "stage": "기타",
+      "summary": "IMM PE가 한샘 이사회를 개편하면서 세대 교체를 단행함. PE 포트폴리오 관리 차원에서의 지배구조 개선 작업으로, 향후 엑시트를 위한 밸류업 준비 과정으로 해석됨.",
+      "repArticle": {
+        "title": "[더벨][Board Change] 한샘 이사회 개편, IMMPE 세대 교체 반영",
+        "link": "https://www.thebell.co.kr/free/content/ArticleView.asp?key=202603041258346280102385",
+        "date": "2026-03-09",
+        "source": "thebell"
+      },
+      "articles": [
+        {
+          "title": "[더벨][Board Change] 한샘 이사회 개편, IMMPE 세대 교체 반영",
+          "link": "https://www.thebell.co.kr/free/content/ArticleView.asp?key=202603041258346280102385",
+          "date": "2026-03-09"
+        }
+      ],
+      "createdAt": "2026-03-10",
+      "updatedAt": "2026-03-10",
+      "history": [
+        {
+          "date": "2026-03-10",
+          "stage": "기타",
+          "summary": "IMM PE가 한샘 이사회를 개편하면서 세대 교체를 단행함. PE 포트폴리오 관리 차원에서의 지배구조 개선 작업으로, 향후 엑시트를 위한 밸류업 준비 과정으로 해석됨."
+        }
+      ]
+    },
+    {
+      "id": "deal_20260310_013",
+      "name": "한화에너지 FI 지분 매입",
+      "stage": "딜 클로즈",
+      "summary": "한화에너지가 재무적 투자자(FI) 보유 지분을 매입하면서 이사회에 기타비상무이사를 처음으로 선임함. FI 엑시트와 동시에 지배구조 변화가 이루어진 딜로 주목받고 있음.",
+      "repArticle": {
+        "title": "[더벨][Board Change] 한화에너지, FI 지분 매입에 기타비상무이사 첫 선...",
+        "link": "https://www.thebell.co.kr/free/content/ArticleView.asp?key=202603041353129880101418",
+        "date": "2026-03-09",
+        "source": "thebell"
+      },
+      "articles": [
+        {
+          "title": "[더벨][Board Change] 한화에너지, FI 지분 매입에 기타비상무이사 첫 선...",
+          "link": "https://www.thebell.co.kr/free/content/ArticleView.asp?key=202603041353129880101418",
+          "date": "2026-03-09"
+        }
+      ],
+      "createdAt": "2026-03-10",
+      "updatedAt": "2026-03-10",
+      "history": [
+        {
+          "date": "2026-03-10",
+          "stage": "딜 클로즈",
+          "summary": "한화에너지가 재무적 투자자(FI) 보유 지분을 매입하면서 이사회에 기타비상무이사를 처음으로 선임함. FI 엑시트와 동시에 지배구조 변화가 이루어진 딜로 주목받고 있음."
+        }
+      ]
+    },
+    {
+      "id": "deal_20260310_014",
+      "name": "VIG 3호 펀드 포트폴리오 청산",
+      "stage": "매각 검토중",
+      "summary": "VIG파트너스의 3호 펀드가 청산 모드에 접어들면서 잔여 4개 포트폴리오 기업의 매각을 서두르고 있음. 펀드 만기 도래에 따른 엑시트 압박이 가중되고 있으며, 각 포트폴리오별 매각 속도를 높이는 전략을 구사 중임.",
+      "repArticle": {
+        "title": "[더벨]'청산 모드' VIG 3호 펀드, 남은 4곳 매각 속도",
+        "link": "https://www.thebell.co.kr/free/content/ArticleView.asp?key=202603051611422760104574",
+        "date": "2026-03-10",
+        "source": "thebell"
+      },
+      "articles": [
+        {
+          "title": "[더벨]'청산 모드' VIG 3호 펀드, 남은 4곳 매각 속도",
+          "link": "https://www.thebell.co.kr/free/content/ArticleView.asp?key=202603051611422760104574",
+          "date": "2026-03-10"
+        }
+      ],
+      "createdAt": "2026-03-10",
+      "updatedAt": "2026-03-10",
+      "history": [
+        {
+          "date": "2026-03-10",
+          "stage": "매각 검토중",
+          "summary": "VIG파트너스의 3호 펀드가 청산 모드에 접어들면서 잔여 4개 포트폴리오 기업의 매각을 서두르고 있음. 펀드 만기 도래에 따른 엑시트 압박이 가중되고 있으며, 각 포트폴리오별 매각 속도를 높이는 전략을 구사 중임."
+        }
+      ]
+    },
+    {
+      "id": "deal_20260310_015",
+      "name": "베인캐피탈 → 클래시스 투자 회수",
+      "stage": "기타",
+      "summary": "베인캐피탈이 클래시스 투자로 이미 2.1배 수익을 실현했으며, 최종 5배(5x) 수익 달성 가능성이 제기되고 있음. 미용의료기기 기업 클래시스의 성장성에 대한 시장 평가가 높아지면서 잔여 지분 가치도 상승 중인 것으로 분석됨.",
+      "repArticle": {
+        "title": "베인캐피탈, 클래시스 투자로 벌써 2.1배 회수… '5x'까지 기대하는 이유",
+        "link": "https://www.hankyung.com/article/202603036447r",
+        "date": "2026-03-09",
+        "source": "기타"
+      },
+      "articles": [
+        {
+          "title": "베인캐피탈, 클래시스 투자로 벌써 2.1배 회수… '5x'까지 기대하는 이유",
+          "link": "https://www.hankyung.com/article/202603036447r",
+          "date": "2026-03-09"
+        }
+      ],
+      "createdAt": "2026-03-10",
+      "updatedAt": "2026-03-10",
+      "history": [
+        {
+          "date": "2026-03-10",
+          "stage": "기타",
+          "summary": "베인캐피탈이 클래시스 투자로 이미 2.1배 수익을 실현했으며, 최종 5배(5x) 수익 달성 가능성이 제기되고 있음. 미용의료기기 기업 클래시스의 성장성에 대한 시장 평가가 높아지면서 잔여 지분 가치도 상승 중인 것으로 분석됨."
+        }
+      ]
+    },
+    {
+      "id": "deal_20260310_016",
+      "name": "랩지노믹스 (루하PE 인수 후 경영)",
+      "stage": "기타",
+      "summary": "루하PE가 랩지노믹스를 인수한 이후 3년째 연속 적자가 지속되고 있음. 수익성 개선이 핵심 과제로 부각되고 있으며, 인수 후 경영 정상화 전략의 실효성에 의문이 제기되는 상황임.",
+      "repArticle": {
+        "title": "랩지노믹스, 루하PE 인수 이후 3년째 적자…수익성 개선 열쇠는?",
+        "link": "http://www.edaily.co.kr/news/newspath.asp?newsid=02892966645382008",
+        "date": "2026-03-10",
+        "source": "기타"
+      },
+      "articles": [
+        {
+          "title": "랩지노믹스, 루하PE 인수 이후 3년째 적자…수익성 개선 열쇠는?",
+          "link": "http://www.edaily.co.kr/news/newspath.asp?newsid=02892966645382008",
+          "date": "2026-03-10"
+        }
+      ],
+      "createdAt": "2026-03-10",
+      "updatedAt": "2026-03-10",
+      "history": [
+        {
+          "date": "2026-03-10",
+          "stage": "기타",
+          "summary": "루하PE가 랩지노믹스를 인수한 이후 3년째 연속 적자가 지속되고 있음. 수익성 개선이 핵심 과제로 부각되고 있으며, 인수 후 경영 정상화 전략의 실효성에 의문이 제기되는 상황임."
+        }
+      ]
+    },
+    {
+      "id": "deal_20260310_017",
+      "name": "무신사 IPO",
+      "stage": "기타",
+      "summary": "무신사가 상장 삼수 도전에 나선 가운데, 대표 최영준의 IPO 추진 의지가 확인됨. 시장에서는 IPO 여건이 개선되었음에도 10조원 밸류에이션은 과도하다는 평가가 우세함. 상장 시기 및 공모 구조에 대한 논의가 진행 중인 것으로 알려짐.",
+      "repArticle": {
+        "title": "[무신사 IPO] 상장 삼수 최영준…IPO 여건 좋아도 10조는 무리",
+        "link": "https://dealsite.co.kr/articles/157982",
+        "date": "2026-03-10",
+        "source": "dealsite"
+      },
+      "articles": [
+        {
+          "title": "[무신사 IPO] 상장 삼수 최영준…IPO 여건 좋아도 10조는 무리",
+          "link": "https://dealsite.co.kr/articles/157982",
+          "date": "2026-03-10"
+        }
+      ],
+      "createdAt": "2026-03-10",
+      "updatedAt": "2026-03-10",
+      "history": [
+        {
+          "date": "2026-03-10",
+          "stage": "기타",
+          "summary": "무신사가 상장 삼수 도전에 나선 가운데, 대표 최영준의 IPO 추진 의지가 확인됨. 시장에서는 IPO 여건이 개선되었음에도 10조원 밸류에이션은 과도하다는 평가가 우세함. 상장 시기 및 공모 구조에 대한 논의가 진행 중인 것으로 알려짐."
+        }
+      ]
+    },
+    {
+      "id": "deal_20260310_018",
+      "name": "SK케미칼 제약 부문 매각 검토",
+      "stage": "매각 검토중",
+      "summary": "SK케미칼이 매각을 검토하던 제약 부문에 오히려 힘을 싣는 방향으로 전략을 선회하는 조짐이 포착됨. 등기임원 인사를 통해 제약 사업에 대한 경영 의지를 내보인 것으로 해석됨. 매각 추진 여부에 대한 시장의 해석이 엇갈리고 있음.",
+      "repArticle": {
+        "title": "SK케미칼, '매각'하려던 제약부문에 힘준다…등기임원 인사 눈길",
+        "link": "https://www.medipana.com/news/articleView.html?idxno=407872",
+        "date": "2026-03-09",
+        "source": "기타"
+      },
+      "articles": [
+        {
+          "title": "SK케미칼, '매각'하려던 제약부문에 힘준다…등기임원 인사 눈길",
+          "link": "https://www.medipana.com/news/articleView.html?idxno=407872",
+          "date": "2026-03-09"
+        }
+      ],
+      "createdAt": "2026-03-10",
+      "updatedAt": "2026-03-10",
+      "history": [
+        {
+          "date": "2026-03-10",
+          "stage": "매각 검토중",
+          "summary": "SK케미칼이 매각을 검토하던 제약 부문에 오히려 힘을 싣는 방향으로 전략을 선회하는 조짐이 포착됨. 등기임원 인사를 통해 제약 사업에 대한 경영 의지를 내보인 것으로 해석됨. 매각 추진 여부에 대한 시장의 해석이 엇갈리고 있음."
+        }
+      ]
+    },
+    {
+      "id": "deal_20260310_019",
+      "name": "롯데손보 매각",
+      "stage": "매각 검토중",
+      "summary": "롯데손해보험 매각이 새 주인 찾기에 사실상 시계 제로 상태에 빠진 것으로 전해짐. 신용평가사들도 부정적 시각을 보내는 등 인수 후보자 확보에 어려움을 겪고 있음. 금융당국은 안심하라고 하나, 시장 우려는 지속되고 있음.",
+      "repArticle": {
+        "title": "[마켓인]새 주인 찾기 사실상 시계제로…신평사도 고개 저은 롯데손보...",
+        "link": "http://www.edaily.co.kr/news/newspath.asp?newsid=01420246645382008",
+        "date": "2026-03-10",
+        "source": "기타"
+      },
+      "articles": [
+        {
+          "title": "[마켓인]새 주인 찾기 사실상 시계제로…신평사도 고개 저은 롯데손보...",
+          "link": "http://www.edaily.co.kr/news/newspath.asp?newsid=01420246645382008",
+          "date": "2026-03-10"
+        },
+        {
+          "title": "금융위는 안심하라는데…롯데손보 신용등급 하락 왜?",
+          "link": "https://www.newspost.kr/news/articleView.html?idxno=221601",
+          "date": "2026-03-10"
+        }
+      ],
+      "createdAt": "2026-03-10",
+      "updatedAt": "2026-03-10",
+      "history": [
+        {
+          "date": "2026-03-10",
+          "stage": "매각 검토중",
+          "summary": "롯데손해보험 매각이 새 주인 찾기에 사실상 시계 제로 상태에 빠진 것으로 전해짐. 신용평가사들도 부정적 시각을 보내는 등 인수 후보자 확보에 어려움을 겪고 있음. 금융당국은 안심하라고 하나, 시장 우려는 지속되고 있음."
+        }
+      ]
+    },
+    {
+      "id": "deal_20260310_020",
+      "name": "로킷헬스케어 625억 투자 유치",
+      "stage": "딜 클로즈",
+      "summary": "로킷헬스케어가 글로벌 대형 사모펀드 및 자산운용사로부터 총 625억원 규모의 투자를 유치함. 해외 자본 450억원이 포함된 글로벌 투자 유치로, 3D 바이오프린팅 기반 헬스케어 기업의 글로벌 시장 확장 자금으로 활용될 예정임. 유상증자 방식으로 자금을 조달한 것으로 확인됨.",
+      "repArticle": {
+        "title": "로킷헬스케어, 625억 규모 글로벌 투자 유치",
+        "link": "http://www.hansbiz.co.kr/news/articleView.html?idxno=822869",
+        "date": "2026-03-10",
+        "source": "기타"
+      },
+      "articles": [
+        {
+          "title": "625억 유치한 로킷헬스케어, 글로벌 시장 확장 나선다",
+          "link": "https://www.newstopkorea.com/news/articleView.html?idxno=43696",
+          "date": "2026-03-10"
+        },
+        {
+          "title": "로킷헬스케어, 해외 자본 450억 유입…총 625억 투자 유치",
+          "link": "https://www.etoday.co.kr/news/view/2563727",
+          "date": "2026-03-10"
+        },
+        {
+          "title": "르켓헬스케어, 글로벌 대형사모펀드서 625억원 투자 유치",
+          "link": "https://www.yakup.com/news/index.html?mode=view&cat=12&nid=324362",
+          "date": "2026-03-10"
+        },
+        {
+          "title": "로킷헬스케어, 624억9939만원 유상증자 결정",
+          "link": "https://www.digitaltoday.co.kr/news/articleView.html?idxno=638937",
+          "date": "2026-03-10"
+        },
+        {
+          "title": "로킷헬스케어, 글로벌 기관서 625억원 투자 유치…글로벌 시장 확장 '본...",
+          "link": "http://www.newsprime.co.kr/news/article.html?no=726536",
+          "date": "2026-03-10"
+        },
+        {
+          "title": "로킷헬스케어, 글로벌 대형사모펀드와 자산운용사로부터 625억 투자 유...",
+          "link": "http://www.newstown.co.kr/news/articleView.html?idxno=696447",
+          "date": "2026-03-10"
+        },
+        {
+          "title": "로킷헬스케어, 글로벌 대형사모펀드와 자산운용사로부터 625억원 투자...",
+          "link": "http://www.paxetv.com/news/articleView.html?idxno=264575",
+          "date": "2026-03-10"
+        },
+        {
+          "title": "로킷헬스케어, 625억 규모 글로벌 투자 유치",
+          "link": "https://www.biotimes.co.kr/news/articleView.html?idxno=30302",
+          "date": "2026-03-10"
+        }
+      ],
+      "createdAt": "2026-03-10",
+      "updatedAt": "2026-03-10",
+      "history": [
+        {
+          "date": "2026-03-10",
+          "stage": "딜 클로즈",
+          "summary": "로킷헬스케어가 글로벌 대형 사모펀드 및 자산운용사로부터 총 625억원 규모의 투자를 유치함. 해외 자본 450억원이 포함된 글로벌 투자 유치로, 3D 바이오프린팅 기반 헬스케어 기업의 글로벌 시장 확장 자금으로 활용될 예정임. 유상증자 방식으로 자금을 조달한 것으로 확인됨."
+        }
+      ]
+    },
+    {
+      "id": "deal_20260310_021",
+      "name": "뉴마운틴캐피탈 한국 진출",
+      "stage": "기타",
+      "summary": "미국 사모펀드 뉴마운틴캐피탈이 한국 시장 진출을 추진하는 것으로 알려짐. 글로벌 PE의 국내 시장 진입 확대 흐름의 일환으로 분석되며, 구체적인 투자 전략 및 타깃 섹터는 미공개 상태임.",
+      "repArticle": {
+        "title": "美 사모펀드 '뉴마운틴캐피탈', 韓 진출한다",
+        "link": "https://www.newstopkorea.com/news/articleView.html?idxno=43682",
+        "date": "2026-03-10",
+        "source": "기타"
+      },
+      "articles": [
+        {
+          "title": "美 사모펀드 '뉴마운틴캐피탈', 韓 진출한다",
+          "link": "https://www.newstopkorea.com/news/articleView.html?idxno=43682",
+          "date": "2026-03-10"
+        }
+      ],
+      "createdAt": "2026-03-10",
+      "updatedAt": "2026-03-10",
+      "history": [
+        {
+          "date": "2026-03-10",
+          "stage": "기타",
+          "summary": "미국 사모펀드 뉴마운틴캐피탈이 한국 시장 진출을 추진하는 것으로 알려짐. 글로벌 PE의 국내 시장 진입 확대 흐름의 일환으로 분석되며, 구체적인 투자 전략 및 타깃 섹터는 미공개 상태임."
+        }
+      ]
+    },
+    {
+      "id": "deal_20260310_022",
+      "name": "두산밥캣 모트롤 인도 법인 설립",
+      "stage": "기타",
+      "summary": "두산밥캣이 모트롤(유압부품) 사업의 해외 확장을 위해 인도 법인을 설립함. M&A가 아닌 그린필드 방식의 해외 사업 확장 전략으로, 인도 시장 공략을 본격화하는 신호로 해석됨.",
+      "repArticle": {
+        "title": "두산밥캣, 모트롤 인도 법인 설립 … 유압부품 사업 해외 확장 나선다",
+        "link": "https://biz.newdaily.co.kr/site/data/html/2026/03/10/2026031000069.html",
+        "date": "2026-03-10",
+        "source": "기타"
+      },
+      "articles": [
+        {
+          "title": "두산밥캣, 모트롤 인도 법인 설립 … 유압부품 사업 해외 확장 나선다",
+          "link": "https://biz.newdaily.co.kr/site/data/html/2026/03/10/2026031000069.html",
+          "date": "2026-03-10"
+        }
+      ],
+      "createdAt": "2026-03-10",
+      "updatedAt": "2026-03-10",
+      "history": [
+        {
+          "date": "2026-03-10",
+          "stage": "기타",
+          "summary": "두산밥캣이 모트롤(유압부품) 사업의 해외 확장을 위해 인도 법인을 설립함. M&A가 아닌 그린필드 방식의 해외 사업 확장 전략으로, 인도 시장 공략을 본격화하는 신호로 해석됨."
+        }
+      ]
+    }
+  ],
+  "lastUpdated": "2026-03-10 13:42",
+  "realestate": []
+}
