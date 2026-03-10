@@ -502,8 +502,17 @@ function renderScrapView() {
 
 function toggleDealScrap(id, e) {
   e.stopPropagation();
-  if (scrappedDeals.has(id)) scrappedDeals.delete(id);
-  else scrappedDeals.add(id);
+  if (scrappedDeals.has(id)) {
+    scrappedDeals.delete(id);
+  } else {
+    scrappedDeals.add(id);
+  }
+  // deals.json에도 scrapped 필드 저장
+  const deal = deals.find(d => d.id === id);
+  if (deal) {
+    deal.scrapped = scrappedDeals.has(id);
+    saveToFile();
+  }
   saveScraps();
   renderDeals();
 }

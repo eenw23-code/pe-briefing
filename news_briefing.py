@@ -29,7 +29,7 @@ HEADERS = {
     "Accept-Language": "ko-KR,ko;q=0.9,en-US;q=0.8,en;q=0.7",
 }
 
-MAX_PAGES = 5
+MAX_PAGES = 3
 OUTPUT_DIR = os.path.dirname(os.path.abspath(__file__))
 DEALS_JSON_PATH = os.path.join(OUTPUT_DIR, "deals.json")
 
@@ -45,15 +45,15 @@ BLOCKLIST = [
 KEYWORDS = [
     # 딜 단계
     "우선협상대상자", "우협선정", "본입찰", "예비입찰",
-    "주식매매계약", "SPA 체결", "딜 클로즈", "딜 클로징", "매각 주관", "인수금융",
+    "주식매매계약", "SPA 체결", "딜 클로징", "매각 주관", "인수금융",
     # PE 전문 용어
-    "바이아웃", "LBO", "MBO", "카브아웃", "Carve-out",
+    "바이아웃", "카브아웃",
     "PEF", "사모펀드", "PE 매각", "PE 인수", "PE 회수", "프라이빗에쿼티",
     # 거래 구조
     "경영권 인수", "경영권 매각",
     "SI 매각", "FI 매각",
     "엑싯", "세컨더리",
-    "투자금 회수",
+    "투자금 회수", "드라이파우더",
 ]
 
 
@@ -556,6 +556,18 @@ def main():
 
     # 4) 머지 및 저장
     merged = merge_deals(existing_deals, new_deals)
+
+    # 30일 지난 딜 자동 제거 (scrapped=True 제외)
+    cutoff = (datetime.now() - timedelta(days=30)).strftime("%Y-%m-%d")
+    before_cleanup = len(merged)
+    merged = [
+        d for d in merged
+        if d.get("updatedAt", "9999") >= cutoff or d.get("scrapped") == True
+    ]
+    removed = before_cleanup - len(merged)
+    if removed:
+        print(f"[정리] 30일 경과 딜 {removed}건 자동 제거")
+
     deals_data["deals"] = merged
 
     # 부동산 딜 머지 (기존 + 신규, 이름 기준 중복 제거)
