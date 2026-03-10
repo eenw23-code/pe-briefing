@@ -53,7 +53,7 @@ body { background: var(--bg); color: var(--ink); font-family: "IBM Plex Sans", s
 .stage-btn { padding: 4px 11px; border-radius: 2px; border: 1px solid var(--rule); background: var(--white); cursor: pointer; font-size: 11px; font-weight: 500; color: var(--ink-2); transition: all 0.12s; }
 .stage-btn.active { background: var(--accent-2); color: #fff; border-color: var(--accent-2); }
 .stage-btn:hover:not(.active) { background: var(--bg-2); border-color: #bbb; }
-.search-input { margin-left: auto; padding: 5px 12px; border: 1px solid var(--rule); border-radius: 2px; font-size: 12px; outline: none; width: 200px; font-family: "IBM Plex Sans", sans-serif; background: var(--white); }
+.search-input { margin-left: auto; padding: 5px 12px; border: 1px solid var(--rule); border-radius: 2px; font-size: 12px; outline: none; width: 300px; font-family: "IBM Plex Sans", sans-serif; background: var(--white); }
 .search-input:focus { border-color: var(--accent-2); }
 
 .main { padding: 28px 40px; max-width: 1080px; margin: 0 auto; }
@@ -502,7 +502,16 @@ function openDeal(id) {
     '<div class="history-summary">' + (h.summary||"") + '</div></div>'
   ).join("");
 
-  const articles = deal.articles || [];
+  const articles = (deal.articles || []).slice().sort((a, b) => {
+    const priority = link => {
+      if (!link) return 3;
+      if (link.includes("thebell.co.kr")) return 0;
+      if (link.includes("dealsite.co.kr")) return 1;
+      if (link.includes("investchosun.com")) return 2;
+      return 3;
+    };
+    return priority(a.link) - priority(b.link);
+  });
   const artHtml = articles.map(a => {
     const starred = scrappedArticles.has(a.link);
     return '<div class="article-link">' +
@@ -599,19 +608,27 @@ function sendGmail() {
   var selected = deals.filter(function(d) { return checkedDeals.has(d.id); });
   if (!selected.length) { alert("체크한 딜이 없습니다."); return; }
   var today = new Date().toLocaleDateString("ko-KR", { year:"numeric", month:"long", day:"numeric" });
-  var body = "[PE Deal Briefing] " + today + "\n\n";
+  var briefing = "";
   selected.forEach(function(deal, i) {
-    body += (i+1) + ". " + deal.name + "\n";
-    body += "단계: " + deal.stage + "\n";
-    body += (deal.summary||"") + "\n";
+    briefing += (i+1) + ". " + deal.name + "\n";
+    briefing += "단계: " + deal.stage + "\n";
+    briefing += (deal.summary||"") + "\n";
     var rep = deal.repArticle || (deal.articles||[])[0];
     if (rep) {
-      body += rep.title + "\n";
-      body += rep.link + "\n";
-      body += (rep.date||"").slice(0,10) + "\n";
+      briefing += rep.title + "\n";
+      briefing += rep.link + "\n";
+      briefing += (rep.date||"").slice(0,10) + "\n";
     }
-    body += "\n";
+    briefing += "\n";
   });
+  var body =
+    "안녕하세요.\n\n" +
+    "오늘자 주요 Deal 브리핑 드립니다.\n\n" +
+    briefing +
+    "이외 모든 딜은 아래 링크에서 확인 가능합니다.\n" +
+    "https://eenw23-code.github.io/pe-briefing/\n\n" +
+    "감사합니다.\n" +
+    "최인우 드림.";
   var subject = encodeURIComponent("[PE Briefing] " + today);
   var bodyEnc = encodeURIComponent(body);
   window.open("https://mail.google.com/mail/?view=cm&su=" + subject + "&body=" + bodyEnc, "_blank");
