@@ -5,130 +5,161 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
 <title>PE Deal Briefing</title>
 <style>
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;800&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap');
+
+:root {
+  --black: #0a0a0a;
+  --ink: #1a1a1a;
+  --ink-2: #3d3d3d;
+  --ink-3: #6b6b6b;
+  --ink-4: #9b9b9b;
+  --rule: #d4d4d4;
+  --rule-light: #ebebeb;
+  --bg: #fafaf8;
+  --bg-2: #f4f3ef;
+  --white: #ffffff;
+  --accent: #b5132a;
+  --accent-2: #1a3a6b;
+  --gold: #c8963e;
+}
+
 * { box-sizing: border-box; margin: 0; padding: 0; }
-body { background: #f8f9fa; color: #1a1a1a; font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; font-size: 14px; }
+body { background: var(--bg); color: var(--ink); font-family: "IBM Plex Sans", sans-serif; font-size: 14px; }
 
-.header { background: #0d1b2a; color: #fff; padding: 0 32px; display: flex; align-items: center; justify-content: space-between; height: 56px; position: sticky; top: 0; z-index: 100; }
-.logo { font-size: 16px; font-weight: 800; letter-spacing: 2px; color: #fff; cursor: pointer; user-select: none; }
-.logo:hover { color: #93c5fd; }
-.header-right { display: flex; align-items: center; gap: 12px; }
-.btn { padding: 7px 16px; border-radius: 6px; border: none; cursor: pointer; font-size: 13px; font-weight: 600; transition: all 0.15s; }
-.btn-primary { background: #2563eb; color: #fff; }
-.btn-primary:hover { background: #1d4ed8; }
-.btn-outline { background: transparent; color: #cbd5e1; border: 1px solid #334155; }
-.btn-outline:hover { background: #1e293b; }
-.btn-danger { background: #dc2626; color: #fff; }
-.btn-danger:hover { background: #b91c1c; }
-.btn-success { background: #16a34a; color: #fff; }
-.btn-success:hover { background: #15803d; }
-.btn-edit-active { background: #f59e0b; color: #fff; border: none; }
-.btn-edit-active:hover { background: #d97706; }
+.header { background: var(--black); color: #fff; padding: 0 40px; display: flex; align-items: center; justify-content: space-between; height: 52px; position: sticky; top: 0; z-index: 100; border-bottom: 2px solid var(--accent); }
+.logo { font-family: "Playfair Display", serif; font-size: 18px; font-weight: 700; letter-spacing: 0.5px; color: #fff; cursor: pointer; user-select: none; }
+.logo:hover { color: #e5e5e5; }
+.logo-wrap { display: flex; align-items: center; }
+.header-right { display: flex; align-items: center; gap: 10px; }
+.btn { padding: 6px 14px; border-radius: 2px; border: none; cursor: pointer; font-size: 12px; font-weight: 600; font-family: "IBM Plex Sans", sans-serif; transition: all 0.12s; letter-spacing: 0.03em; }
+.btn-primary { background: var(--accent-2); color: #fff; }
+.btn-primary:hover { background: #14306b; }
+.btn-outline { background: transparent; color: #aaa; border: 1px solid #444; }
+.btn-outline:hover { background: #1a1a1a; color: #fff; }
+.btn-danger { background: var(--accent); color: #fff; }
+.btn-danger:hover { background: #9a0f22; }
+.btn-success { background: #1a5c36; color: #fff; }
+.btn-success:hover { background: #144a2b; }
+.btn-edit-active { background: var(--gold); color: #fff; border: none; }
+.btn-edit-active:hover { background: #b07d30; }
 
-.tabs { background: #fff; border-bottom: 1px solid #e5e7eb; padding: 0 32px; display: flex; }
-.tab { padding: 14px 20px; cursor: pointer; font-size: 13px; font-weight: 600; color: #64748b; border-bottom: 2px solid transparent; transition: all 0.15s; }
-.tab.active { color: #2563eb; border-bottom-color: #2563eb; }
-.tab:hover:not(.active) { color: #374151; }
+.tabs { background: var(--white); border-bottom: 1px solid var(--rule); padding: 0 40px; display: flex; }
+.tab { padding: 12px 18px; cursor: pointer; font-size: 11px; font-weight: 600; color: var(--ink-3); border-bottom: 2px solid transparent; transition: all 0.12s; letter-spacing: 0.08em; text-transform: uppercase; font-family: "IBM Plex Sans", sans-serif; }
+.tab.active { color: var(--accent); border-bottom-color: var(--accent); }
+.tab:hover:not(.active) { color: var(--ink); }
 
-.filter-bar { background: #fff; border-bottom: 1px solid #e5e7eb; padding: 12px 32px; display: flex; align-items: center; gap: 12px; flex-wrap: wrap; }
-.filter-label { font-size: 12px; color: #64748b; font-weight: 600; }
-.stage-btn { padding: 5px 12px; border-radius: 20px; border: 1px solid #e5e7eb; background: #fff; cursor: pointer; font-size: 12px; font-weight: 500; color: #374151; transition: all 0.15s; }
-.stage-btn.active { background: #2563eb; color: #fff; border-color: #2563eb; }
-.stage-btn:hover:not(.active) { background: #f1f5f9; }
-.search-input { margin-left: auto; padding: 6px 12px; border: 1px solid #e5e7eb; border-radius: 6px; font-size: 13px; outline: none; width: 200px; }
-.search-input:focus { border-color: #2563eb; }
+.filter-bar { background: var(--bg-2); border-bottom: 1px solid var(--rule); padding: 10px 40px; display: flex; align-items: center; gap: 8px; flex-wrap: wrap; }
+.filter-label { font-size: 10px; color: var(--ink-3); font-weight: 600; letter-spacing: 0.1em; text-transform: uppercase; font-family: "IBM Plex Mono", monospace; margin-right: 4px; }
+.stage-btn { padding: 4px 11px; border-radius: 2px; border: 1px solid var(--rule); background: var(--white); cursor: pointer; font-size: 11px; font-weight: 500; color: var(--ink-2); transition: all 0.12s; }
+.stage-btn.active { background: var(--accent-2); color: #fff; border-color: var(--accent-2); }
+.stage-btn:hover:not(.active) { background: var(--bg-2); border-color: #bbb; }
+.search-input { margin-left: auto; padding: 5px 12px; border: 1px solid var(--rule); border-radius: 2px; font-size: 12px; outline: none; width: 200px; font-family: "IBM Plex Sans", sans-serif; background: var(--white); }
+.search-input:focus { border-color: var(--accent-2); }
 
-.main { padding: 24px 32px; max-width: 1100px; margin: 0 auto; }
+.main { padding: 28px 40px; max-width: 1080px; margin: 0 auto; }
 
-.stats { display: flex; gap: 12px; margin-bottom: 24px; flex-wrap: wrap; }
-.stat-card { background: #fff; border: 1px solid #e5e7eb; border-radius: 8px; padding: 14px 20px; flex: 1; min-width: 120px; transition: all 0.15s; }
+.stats { display: flex; gap: 0; margin-bottom: 28px; border: 1px solid var(--rule); background: var(--white); }
+.stat-card { padding: 16px 24px; flex: 1; min-width: 100px; transition: all 0.12s; border-right: 1px solid var(--rule); }
+.stat-card:last-child { border-right: none; }
 .stat-card.clickable { cursor: pointer; }
-.stat-card.clickable:hover { border-color: #2563eb; box-shadow: 0 2px 8px rgba(37,99,235,0.12); }
-.stat-card.stat-active { border-color: #2563eb; background: #eff6ff; }
-.stat-num { font-size: 24px; font-weight: 800; color: #0d1b2a; }
-.stat-label { font-size: 11px; color: #64748b; margin-top: 2px; font-weight: 500; letter-spacing: 0.05em; }
-.stat-card.stat-active .stat-label { color: #2563eb; }
+.stat-card.clickable:hover { background: var(--bg-2); }
+.stat-card.stat-active { background: var(--accent-2); }
+.stat-card.stat-active .stat-num { color: #fff; }
+.stat-card.stat-active .stat-label { color: rgba(255,255,255,0.7); }
+.stat-num { font-family: "Playfair Display", serif; font-size: 26px; font-weight: 700; color: var(--black); line-height: 1; margin-bottom: 4px; }
+.stat-label { font-size: 10px; color: var(--ink-3); font-weight: 500; letter-spacing: 0.1em; text-transform: uppercase; font-family: "IBM Plex Mono", monospace; }
 
-.deal-card { background: #fff; border: 1px solid #e5e7eb; border-left: 4px solid #2563eb; border-radius: 8px; padding: 20px 24px; margin-bottom: 12px; transition: all 0.15s; }
-.deal-card:hover { box-shadow: 0 4px 12px rgba(0,0,0,0.08); transform: translateY(-1px); }
-.deal-card.stage-close { border-left-color: #64748b; }
-.deal-card.stage-spa { border-left-color: #7c3aed; }
-.deal-card.stage-exclusive { border-left-color: #dc2626; }
-.deal-card.stage-bid { border-left-color: #ea580c; }
-.deal-card.stage-prebid { border-left-color: #d97706; }
-.deal-card.stage-dd { border-left-color: #16a34a; }
-.deal-card.stage-advisor { border-left-color: #0891b2; }
-.deal-card.stage-review { border-left-color: #94a3b8; }
+.deal-card { background: var(--white); border: none; border-top: 1px solid var(--rule-light); border-left: 3px solid var(--accent-2); padding: 18px 20px 16px 20px; margin-bottom: 0; transition: background 0.12s; }
+.deal-card:first-child { border-top: 1px solid var(--rule); }
+.deal-card:hover { background: #f7f7f3; }
+.deal-card.stage-close { border-left-color: #9b9b9b; }
+.deal-card.stage-spa { border-left-color: #6d28d9; }
+.deal-card.stage-exclusive { border-left-color: var(--accent); }
+.deal-card.stage-bid { border-left-color: #c2410c; }
+.deal-card.stage-prebid { border-left-color: #b45309; }
+.deal-card.stage-dd { border-left-color: #166534; }
+.deal-card.stage-advisor { border-left-color: #0e7490; }
+.deal-card.stage-review { border-left-color: #9b9b9b; }
 
-.deal-header { display: flex; align-items: flex-start; justify-content: space-between; margin-bottom: 8px; gap: 12px; }
-.deal-name { font-size: 15px; font-weight: 700; color: #0d1b2a; cursor: pointer; flex: 1; }
-.deal-name:hover { color: #2563eb; }
-.deal-meta { display: flex; align-items: center; gap: 8px; flex-shrink: 0; }
-.stage-badge { padding: 3px 10px; border-radius: 12px; font-size: 11px; font-weight: 700; }
-.deal-date { font-size: 11px; color: #94a3b8; }
-.deal-summary { font-size: 13px; color: #374151; line-height: 1.7; margin-bottom: 10px; cursor: pointer; }
-.deal-articles { display: flex; flex-wrap: wrap; gap: 6px; }
-.article-chip { padding: 3px 8px; background: #f1f5f9; border-radius: 4px; font-size: 11px; color: #2563eb; text-decoration: none; border: 1px solid #e2e8f0; }
-.article-chip:hover { background: #dbeafe; }
+.deal-header { display: flex; align-items: flex-start; justify-content: space-between; margin-bottom: 6px; gap: 16px; }
+.deal-name { font-family: "Playfair Display", serif; font-size: 16px; font-weight: 700; color: var(--black); cursor: pointer; flex: 1; line-height: 1.3; }
+.deal-name:hover { color: var(--accent); }
+.deal-meta { display: flex; align-items: center; gap: 8px; flex-shrink: 0; padding-top: 3px; }
+.stage-badge { padding: 2px 7px; border-radius: 1px; font-size: 10px; font-weight: 600; letter-spacing: 0.06em; text-transform: uppercase; font-family: "IBM Plex Mono", monospace; }
+.deal-date { font-size: 10px; color: var(--ink-4); font-family: "IBM Plex Mono", monospace; }
+.deal-summary { font-size: 13px; color: var(--ink-2); line-height: 1.8; margin-bottom: 10px; cursor: pointer; }
+.deal-articles { display: flex; flex-wrap: wrap; gap: 5px; }
+.article-chip { padding: 2px 7px; background: var(--bg-2); border-radius: 1px; font-size: 10px; color: var(--accent-2); text-decoration: none; border: 1px solid var(--rule); font-family: "IBM Plex Mono", monospace; }
+.article-chip:hover { background: #e8eef7; border-color: var(--accent-2); }
+.rep-article { display: flex; align-items: center; gap: 7px; margin-bottom: 8px; }
+.rep-article a { font-size: 12px; color: var(--accent-2); text-decoration: none; font-weight: 500; }
+.rep-article a:hover { color: var(--accent); text-decoration: underline; }
+.source-badge { display: inline-block; padding: 1px 6px; font-size: 9px; font-weight: 700; font-family: "IBM Plex Mono", monospace; letter-spacing: 0.06em; border-radius: 1px; flex-shrink: 0; }
+.source-badge.thebell { background: #0a2a5c; color: #fff; }
+.source-badge.dealsite { background: #7c1a1a; color: #fff; }
+.deal-checkbox { width: 15px; height: 15px; cursor: pointer; accent-color: var(--accent-2); flex-shrink: 0; margin-top: 3px; }
+.gmail-count { display: inline-block; background: var(--accent); color: #fff; border-radius: 10px; font-size: 10px; padding: 1px 6px; margin-left: 4px; font-family: "IBM Plex Mono", monospace; }
 
-.star-btn { background: none; border: none; cursor: pointer; font-size: 18px; line-height: 1; padding: 0 2px; color: #d1d5db; transition: color 0.15s; flex-shrink: 0; }
-.star-btn.starred { color: #f59e0b; }
-.star-btn:hover { color: #f59e0b; }
+.star-btn { background: none; border: none; cursor: pointer; font-size: 16px; line-height: 1; padding: 0 2px; color: var(--rule); transition: color 0.12s; flex-shrink: 0; }
+.star-btn.starred { color: var(--gold); }
+.star-btn:hover { color: var(--gold); }
 
-.date-group { margin-bottom: 28px; }
-.date-header { font-size: 13px; font-weight: 700; color: #64748b; letter-spacing: 0.08em; margin-bottom: 12px; padding-bottom: 8px; border-bottom: 1px solid #e5e7eb; }
+.date-group { margin-bottom: 36px; }
+.date-header { font-size: 10px; font-weight: 600; color: var(--ink-3); letter-spacing: 0.12em; text-transform: uppercase; margin-bottom: 0; padding: 8px 0 6px; border-top: 2px solid var(--black); font-family: "IBM Plex Mono", monospace; }
 
-.modal-overlay { position: fixed; inset: 0; background: rgba(0,0,0,0.5); z-index: 500; display: flex; align-items: center; justify-content: center; padding: 24px; }
-.modal { background: #fff; border-radius: 12px; max-width: 680px; width: 100%; max-height: 85vh; overflow-y: auto; padding: 32px; box-shadow: 0 20px 60px rgba(0,0,0,0.2); }
-.modal-header { display: flex; justify-content: space-between; align-items: flex-start; margin-bottom: 20px; gap: 12px; }
-.modal-title { font-size: 20px; font-weight: 800; color: #0d1b2a; }
-.modal-close { background: none; border: none; font-size: 24px; cursor: pointer; color: #64748b; line-height: 1; padding: 0; flex-shrink: 0; }
-.modal-close:hover { color: #1a1a1a; }
+.modal-overlay { position: fixed; inset: 0; background: rgba(0,0,0,0.6); z-index: 500; display: flex; align-items: center; justify-content: center; padding: 24px; }
+.modal { background: var(--white); border-radius: 0; max-width: 680px; width: 100%; max-height: 85vh; overflow-y: auto; padding: 36px; box-shadow: 0 24px 80px rgba(0,0,0,0.25); border-top: 4px solid var(--accent); }
+.modal-header { display: flex; justify-content: space-between; align-items: flex-start; margin-bottom: 24px; padding-bottom: 16px; border-bottom: 1px solid var(--rule); gap: 16px; }
+.modal-title { font-family: "Playfair Display", serif; font-size: 22px; font-weight: 700; color: var(--black); line-height: 1.3; }
+.modal-close { background: none; border: none; font-size: 22px; cursor: pointer; color: var(--ink-3); line-height: 1; padding: 0; flex-shrink: 0; }
+.modal-close:hover { color: var(--black); }
 .modal-section { margin-bottom: 20px; }
-.modal-section-title { font-size: 11px; font-weight: 700; color: #64748b; letter-spacing: 0.1em; text-transform: uppercase; margin-bottom: 8px; }
-.modal-summary { font-size: 14px; line-height: 1.8; color: #374151; background: #f8fafc; border-radius: 8px; padding: 14px; }
-.history-item { border-left: 2px solid #e5e7eb; padding-left: 14px; margin-bottom: 14px; }
-.history-date { font-size: 11px; color: #94a3b8; font-weight: 600; margin-bottom: 4px; }
+.modal-section-title { font-size: 10px; font-weight: 600; color: var(--ink-3); letter-spacing: 0.12em; text-transform: uppercase; margin-bottom: 8px; font-family: "IBM Plex Mono", monospace; }
+.modal-summary { font-size: 14px; line-height: 1.85; color: var(--ink-2); background: var(--bg-2); padding: 16px; border-left: 3px solid var(--rule); }
+.history-item { border-left: 2px solid var(--rule); padding-left: 14px; margin-bottom: 14px; }
+.history-date { font-size: 10px; color: var(--ink-4); font-weight: 500; margin-bottom: 4px; font-family: "IBM Plex Mono", monospace; }
 .history-stage { display: inline-block; margin-bottom: 6px; }
-.history-summary { font-size: 13px; color: #374151; line-height: 1.7; }
-.article-list { display: flex; flex-direction: column; gap: 8px; }
-.article-link { display: flex; gap: 8px; align-items: center; }
-.article-link a { font-size: 13px; color: #2563eb; text-decoration: none; flex: 1; }
-.article-link a:hover { text-decoration: underline; }
-.article-link-date { font-size: 11px; color: #94a3b8; white-space: nowrap; }
-.article-star-btn { background: none; border: none; cursor: pointer; font-size: 15px; color: #d1d5db; transition: color 0.15s; padding: 0; flex-shrink: 0; }
-.article-star-btn.starred { color: #f59e0b; }
-.article-star-btn:hover { color: #f59e0b; }
-.modal-actions { display: flex; gap: 8px; flex-wrap: wrap; margin-top: 24px; padding-top: 20px; border-top: 1px solid #e5e7eb; }
+.history-summary { font-size: 13px; color: var(--ink-2); line-height: 1.75; }
+.article-list { display: flex; flex-direction: column; gap: 0; }
+.article-link { display: flex; gap: 8px; align-items: center; padding: 8px 0; border-bottom: 1px solid var(--rule-light); }
+.article-link a { font-size: 13px; color: var(--accent-2); text-decoration: none; flex: 1; }
+.article-link a:hover { color: var(--accent); text-decoration: underline; }
+.article-link-date { font-size: 10px; color: var(--ink-4); white-space: nowrap; font-family: "IBM Plex Mono", monospace; }
+.article-star-btn { background: none; border: none; cursor: pointer; font-size: 14px; color: var(--rule); transition: color 0.12s; padding: 0; flex-shrink: 0; }
+.article-star-btn.starred { color: var(--gold); }
+.article-star-btn:hover { color: var(--gold); }
+.modal-actions { display: flex; gap: 8px; flex-wrap: wrap; margin-top: 24px; padding-top: 20px; border-top: 1px solid var(--rule); }
 
 .edit-form { display: flex; flex-direction: column; gap: 14px; }
 .form-group { display: flex; flex-direction: column; gap: 6px; }
-.form-label { font-size: 12px; font-weight: 600; color: #374151; }
-.form-input { padding: 9px 12px; border: 1px solid #e5e7eb; border-radius: 6px; font-size: 13px; outline: none; font-family: inherit; }
-.form-input:focus { border-color: #2563eb; }
-.form-textarea { padding: 9px 12px; border: 1px solid #e5e7eb; border-radius: 6px; font-size: 13px; outline: none; resize: vertical; min-height: 120px; font-family: inherit; line-height: 1.7; }
-.form-textarea:focus { border-color: #2563eb; }
-.form-select { padding: 9px 12px; border: 1px solid #e5e7eb; border-radius: 6px; font-size: 13px; outline: none; background: #fff; }
-.form-select:focus { border-color: #2563eb; }
+.form-label { font-size: 10px; font-weight: 600; color: var(--ink-3); letter-spacing: 0.1em; text-transform: uppercase; font-family: "IBM Plex Mono", monospace; }
+.form-input { padding: 9px 12px; border: 1px solid var(--rule); border-radius: 0; font-size: 13px; outline: none; font-family: "IBM Plex Sans", sans-serif; }
+.form-input:focus { border-color: var(--accent-2); }
+.form-textarea { padding: 9px 12px; border: 1px solid var(--rule); border-radius: 0; font-size: 13px; outline: none; resize: vertical; min-height: 120px; font-family: "IBM Plex Sans", sans-serif; line-height: 1.7; }
+.form-textarea:focus { border-color: var(--accent-2); }
+.form-select { padding: 9px 12px; border: 1px solid var(--rule); border-radius: 0; font-size: 13px; outline: none; background: var(--white); font-family: "IBM Plex Sans", sans-serif; }
+.form-select:focus { border-color: var(--accent-2); }
 
-.badge-review   { background: #f1f5f9; color: #64748b; }
-.badge-advisor  { background: #e0f7fa; color: #0891b2; }
-.badge-prebid   { background: #fef3c7; color: #d97706; }
-.badge-bid      { background: #ffedd5; color: #ea580c; }
-.badge-dd       { background: #dcfce7; color: #16a34a; }
-.badge-exclusive{ background: #fee2e2; color: #dc2626; }
-.badge-spa      { background: #f3e8ff; color: #7c3aed; }
-.badge-close    { background: #f1f5f9; color: #334155; }
-.badge-etc      { background: #f1f5f9; color: #64748b; }
+.badge-review   { background: #f5f5f5; color: #6b6b6b; }
+.badge-advisor  { background: #e0f2fe; color: #0369a1; }
+.badge-prebid   { background: #fef9c3; color: #854d0e; }
+.badge-bid      { background: #fff7ed; color: #9a3412; }
+.badge-dd       { background: #f0fdf4; color: #166534; }
+.badge-exclusive{ background: #fff1f2; color: #9f1239; }
+.badge-spa      { background: #f5f3ff; color: #5b21b6; }
+.badge-close    { background: #f5f5f5; color: #404040; }
+.badge-etc      { background: #f5f5f5; color: #6b6b6b; }
 
-.empty { text-align: center; padding: 80px 20px; color: #94a3b8; }
-.empty-icon { font-size: 48px; margin-bottom: 16px; }
-.empty-text { font-size: 15px; font-weight: 600; margin-bottom: 6px; color: #64748b; }
-.empty-sub { font-size: 13px; }
+.empty { text-align: center; padding: 80px 20px; color: var(--ink-4); }
+.empty-icon { font-size: 40px; margin-bottom: 16px; }
+.empty-text { font-family: "Playfair Display", serif; font-size: 18px; font-weight: 700; margin-bottom: 6px; color: var(--ink-2); }
+.empty-sub { font-size: 12px; color: var(--ink-4); font-family: "IBM Plex Mono", monospace; }
 
-.gmail-btn { display: inline-flex; align-items: center; gap: 6px; padding: 7px 16px; background: #ea4335; color: #fff; border-radius: 6px; border: none; cursor: pointer; font-size: 13px; font-weight: 600; }
-.gmail-btn:hover { background: #c5221f; }
+.gmail-btn { display: inline-flex; align-items: center; gap: 6px; padding: 6px 14px; background: transparent; color: #aaa; border-radius: 2px; border: 1px solid #444; cursor: pointer; font-size: 12px; font-weight: 600; font-family: "IBM Plex Sans", sans-serif; letter-spacing: 0.03em; }
+.gmail-btn:hover { background: #1a1a1a; color: #fff; }
 
-.scrap-section-title { font-size: 12px; font-weight: 700; color: #f59e0b; letter-spacing: 0.08em; text-transform: uppercase; margin: 20px 0 10px; padding-bottom: 6px; border-bottom: 1px solid #fef3c7; }
+.scrap-section-title { font-size: 10px; font-weight: 600; color: var(--gold); letter-spacing: 0.12em; text-transform: uppercase; margin: 24px 0 0; padding: 8px 0 6px; border-top: 2px solid var(--black); font-family: "IBM Plex Mono", monospace; }
+/* build:1773103222 */
 </style>
 </head>
 <body>
@@ -136,8 +167,8 @@ body { background: #f8f9fa; color: #1a1a1a; font-family: -apple-system, BlinkMac
 <div class="header">
   <div class="logo" onclick="goHome()">PE Deal Briefing</div>
   <div class="header-right">
-    <button class="gmail-btn" onclick="sendGmail()">&#128231; Gmail &#bc1c;&#xd1a1;</button>
-    <button class="btn btn-outline" id="editModeBtn" onclick="toggleEditMode()">&#9998; &#xd3b8;&#xc9d1; &#xBAA8;&#xB4DC;</button>
+    <button class="gmail-btn" onclick="sendGmail()">📧 Gmail 발송<span class="gmail-count" id="gmailCount" style="display:none">0</span></button>
+    <button class="btn btn-outline" id="editModeBtn" onclick="toggleEditMode()">✏️ 편집 모드</button>
   </div>
 </div>
 
@@ -188,6 +219,7 @@ let currentStatFilter = "전체";
 let isEditMode = false;
 let currentDealId = null;
 
+let checkedDeals = new Set();
 let scrappedDeals = new Set(JSON.parse(localStorage.getItem("scrappedDeals") || "[]"));
 let scrappedArticles = new Set(JSON.parse(localStorage.getItem("scrappedArticles") || "[]"));
 
@@ -294,14 +326,49 @@ function stageBadgeHtml(stage) {
 
 function stageCardClass(stage) { return (STAGE_STYLE[stage] || {}).card || ""; }
 
+function getSourceBadge(source) {
+  if (!source) return "";
+  var s = (source || "").toLowerCase();
+  if (s.indexOf("thebell") >= 0 || s.indexOf("더벨") >= 0) return '<span class="source-badge thebell">THE BELL</span>';
+  if (s.indexOf("dealsite") >= 0 || s.indexOf("딜사이트") >= 0) return '<span class="source-badge dealsite">DEALSITE</span>';
+  return "";
+}
+
+
+function updateGmailCount() {
+  var el = document.getElementById("gmailCount");
+  if (!el) return;
+  var n = checkedDeals.size;
+  el.textContent = n;
+  el.style.display = n > 0 ? "inline-block" : "none";
+}
+
+function toggleCheck(id, e) {
+  e.stopPropagation();
+  if (checkedDeals.has(id)) checkedDeals.delete(id);
+  else checkedDeals.add(id);
+  updateGmailCount();
+  var cb = document.getElementById("cb_" + id);
+  if (cb) cb.checked = checkedDeals.has(id);
+}
+
 function renderDealCard(deal) {
-  const articles = (deal.articles || []).slice(0, 3);
-  const artHtml = articles.map(a =>
-    '<a class="article-chip" href="' + a.link + '" target="_blank" onclick="event.stopPropagation()">📄 ' + a.title.slice(0,22) + (a.title.length>22?"...":"") + '</a>'
-  ).join("");
-  const starred = scrappedDeals.has(deal.id);
+  var starred = scrappedDeals.has(deal.id);
+  var checked = checkedDeals.has(deal.id);
+  var repHtml = "";
+  var rep = deal.repArticle;
+  if (rep && rep.link) {
+    var badge = getSourceBadge(rep.source);
+    repHtml = '<div class="rep-article">' + (badge ? badge + " " : "") + '<a href="' + rep.link + '" target="_blank" onclick="event.stopPropagation()">' + (rep.title||"").slice(0,50) + ((rep.title||"").length>50?"...":"") + '</a></div>';
+  } else {
+    var firstArt = (deal.articles||[])[0];
+    if (firstArt) {
+      repHtml = '<div class="rep-article"><a href="' + firstArt.link + '" target="_blank" onclick="event.stopPropagation()">' + (firstArt.title||"").slice(0,50) + ((firstArt.title||"").length>50?"...":"") + '</a></div>';
+    }
+  }
   return '<div class="deal-card ' + stageCardClass(deal.stage) + '">' +
     '<div class="deal-header">' +
+      '<input type="checkbox" class="deal-checkbox" id="cb_' + deal.id + '" ' + (checked?"checked":"") + ' onclick="toggleCheck(\'' + deal.id + '\',event)"/>' +
       '<div class="deal-name" onclick="openDeal(\'' + deal.id + '\')">' + deal.name + '</div>' +
       '<div class="deal-meta">' +
         stageBadgeHtml(deal.stage) +
@@ -310,10 +377,9 @@ function renderDealCard(deal) {
       '</div>' +
     '</div>' +
     '<div class="deal-summary" onclick="openDeal(\'' + deal.id + '\')">' + (deal.summary||"") + '</div>' +
-    (artHtml ? '<div class="deal-articles">' + artHtml + '</div>' : '') +
+    repHtml +
   '</div>';
 }
-
 function renderStats() {
   const total = deals.length;
   const active = deals.filter(d => d.stage !== "딜 클로즈").length;
@@ -530,23 +596,29 @@ async function saveToFile() {
 }
 
 function sendGmail() {
-  const today = new Date().toLocaleDateString("ko-KR", { year:"numeric", month:"long", day:"numeric" });
-  const filtered = currentTab === "scrap" ? deals.filter(d => scrappedDeals.has(d.id)) : getFilteredDeals();
-  let body = "PE Daily Deal Briefing — " + today + "\n총 " + filtered.length + "건\n\n" + "=".repeat(40) + "\n\n";
-  filtered.forEach(function(deal, i) {
-    body += "[" + (i+1) + "] " + deal.name + "\n단계: " + deal.stage + "\n" + (deal.summary||"") + "\n";
-    const art = (deal.articles||[])[0];
-    if (art) body += "📄 " + art.link + "\n";
+  var selected = deals.filter(function(d) { return checkedDeals.has(d.id); });
+  if (!selected.length) { alert("체크한 딜이 없습니다."); return; }
+  var today = new Date().toLocaleDateString("ko-KR", { year:"numeric", month:"long", day:"numeric" });
+  var body = "[PE Deal Briefing] " + today + "\n\n";
+  selected.forEach(function(deal, i) {
+    body += (i+1) + ". " + deal.name + "\n";
+    body += "단계: " + deal.stage + "\n";
+    body += (deal.summary||"") + "\n";
+    var rep = deal.repArticle || (deal.articles||[])[0];
+    if (rep) {
+      body += rep.title + "\n";
+      body += rep.link + "\n";
+      body += (rep.date||"").slice(0,10) + "\n";
+    }
     body += "\n";
   });
-  const a = document.createElement("a");
-  a.href = "mailto:?subject=" + encodeURIComponent("[PE Briefing] " + today) + "&body=" + encodeURIComponent(body);
-  document.body.appendChild(a);
-  a.click();
-  document.body.removeChild(a);
+  var subject = encodeURIComponent("[PE Briefing] " + today);
+  var bodyEnc = encodeURIComponent(body);
+  window.open("https://mail.google.com/mail/?view=cm&su=" + subject + "&body=" + bodyEnc, "_blank");
 }
 
 loadData();
 </script>
 </body>
 </html>
+
