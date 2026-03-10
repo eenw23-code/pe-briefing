@@ -168,6 +168,7 @@ body { background: var(--bg); color: var(--ink); font-family: "IBM Plex Sans", s
   <div class="logo" onclick="goHome()">PE Deal Briefing</div>
   <div class="header-right">
     <button class="gmail-btn" onclick="sendGmail()">📧 Gmail 발송<span class="gmail-count" id="gmailCount" style="display:none">0</span></button>
+    <button class="btn btn-danger" id="deleteCheckedBtn" onclick="deleteChecked()" style="display:none">🗑️ 선택 삭제 <span id="deleteCount"></span></button>
     <button class="btn btn-outline" id="editModeBtn" onclick="toggleEditMode()">✏️ 편집 모드</button>
   </div>
 </div>
@@ -230,12 +231,12 @@ function saveScraps() {
 
 const GH_REPO = "eenw23-code/pe-briefing";
 const GH_FILE = "deals.json";
-let GH_TOKEN = sessionStorage.getItem("gh_token") || "";
+let GH_TOKEN = localStorage.getItem("gh_token") || "";
 
 function getToken() {
   if (GH_TOKEN) return GH_TOKEN;
-  const t = prompt("GitHub Personal Access Token을 입력하세요:");
-  if (t) { GH_TOKEN = t.trim(); sessionStorage.setItem("gh_token", GH_TOKEN); }
+  const t = prompt("GitHub Personal Access Token을 입력하세요:\n(한 번만 입력하면 이후 자동 사용됩니다)");
+  if (t) { GH_TOKEN = t.trim(); localStorage.setItem("gh_token", GH_TOKEN); }
   return GH_TOKEN;
 }
 
@@ -341,6 +342,10 @@ function updateGmailCount() {
   var n = checkedDeals.size;
   el.textContent = n;
   el.style.display = n > 0 ? "inline-block" : "none";
+  var delBtn = document.getElementById("deleteCheckedBtn");
+  var delCount = document.getElementById("deleteCount");
+  if (delBtn) delBtn.style.display = n > 0 ? "inline-block" : "none";
+  if (delCount) delCount.textContent = "(" + n + ")";
 }
 
 function toggleCheck(id, e) {
@@ -574,6 +579,17 @@ function saveDeal(id) {
   openDeal(id);
 }
 
+function deleteChecked() {
+  var n = checkedDeals.size;
+  if (!n) { alert("체크한 딜이 없습니다."); return; }
+  if (!confirm(n + "건을 삭제하시겠습니까?")) return;
+  deals = deals.filter(d => !checkedDeals.has(d.id));
+  checkedDeals.clear();
+  updateGmailCount();
+  saveToFile();
+  renderDeals();
+}
+
 function confirmDelete(id) {
   if (!confirm("이 딜을 삭제하시겠습니까?")) return;
   deals = deals.filter(d => d.id !== id);
@@ -601,7 +617,7 @@ async function saveToFile() {
     body: JSON.stringify({ message: "update: " + new Date().toISOString().slice(0,16), content: encoded, sha })
   });
   if (res.ok) { alert("저장 완료!"); setTimeout(loadData, 3000); }
-  else { GH_TOKEN = ""; sessionStorage.removeItem("gh_token"); alert("저장 실패. 토큰을 확인해주세요."); }
+  else { GH_TOKEN = ""; localStorage.removeItem("gh_token"); alert("저장 실패. 토큰을 확인해주세요."); }
 }
 
 function sendGmail() {
