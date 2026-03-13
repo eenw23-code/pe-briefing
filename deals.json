@@ -1,6 +1,162 @@
 {
   "deals": [
     {
+      "id": "deal_20260313_001",
+      "name": "대한항공 기내식·기내면세 사업 재확보 (씨앤디서비스 완전 자회사화)",
+      "stage": "딜 클로즈",
+      "summary": "대한항공이 약 6년 만에 기내식·기내면세 사업을 재확보하며 씨앤디서비스를 완전 자회사로 편입함. 기내식 사업의 내재화를 통해 서비스 품질 제고 및 '초격차 미식' 전략 추진 계획. 구체적 인수 금액은 미공개 상태이나 사업 경쟁력 강화 차원의 전략적 딜로 평가됨.",
+      "repArticle": {
+        "title": "대한항공, 기내식·기내면세 사업 재확보… 씨앤디서비스 완전 자회사 ...",
+        "link": "https://www.pointdaily.co.kr/news/articleView.html?idxno=295890",
+        "date": "2026-03-13",
+        "source": "포인트데일리"
+      },
+      "articles": [
+        {
+          "title": "대한항공, 기내식 사업 6년 만에 탈환…'초격차 미식' 시동",
+          "link": "http://www.4th.kr/news/articleView.html?idxno=2108995",
+          "date": "2026-03-13"
+        },
+        {
+          "title": "대한항공, 기내식·기내면세 사업 재확보… 씨앤디서비스 완전 자회사 ...",
+          "link": "https://www.pointdaily.co.kr/news/articleView.html?idxno=295890",
+          "date": "2026-03-13"
+        }
+      ],
+      "createdAt": "2026-03-13",
+      "updatedAt": "2026-03-13",
+      "history": [
+        {
+          "date": "2026-03-13",
+          "stage": "딜 클로즈",
+          "summary": "대한항공이 약 6년 만에 기내식·기내면세 사업을 재확보하며 씨앤디서비스를 완전 자회사로 편입함. 기내식 사업의 내재화를 통해 서비스 품질 제고 및 '초격차 미식' 전략 추진 계획. 구체적 인수 금액은 미공개 상태이나 사업 경쟁력 강화 차원의 전략적 딜로 평가됨."
+        }
+      ]
+    },
+    {
+      "id": "deal_20260313_002",
+      "name": "한미약품 대표 교체 (황상연 신임 대표 내정)",
+      "stage": "기타",
+      "summary": "한미약품이 33년 내부 출신인 박재현 대표의 사의 표명에 따라 후임으로 前종근당홀딩스 대표 황상연을 내정함. 창사 53년 만에 첫 외부 출신 CEO 선임으로, 오는 3월 31일 주주총회에서 공식 선임될 전망. 경영권 분쟁에 따른 내홍 봉합 시도로 해석되나, 향후 R&D 기조 유지 및 내부 결속 여부가 관건으로 꼽힘.",
+      "repArticle": {
+        "title": "33년 한미약품맨 박재현 대표 퇴진",
+        "link": "https://news.dealsitetv.com/articles/166818",
+        "date": "2026-03-13",
+        "source": "dealsite"
+      },
+      "articles": [
+        {
+          "title": "한미약품, R&D 기조 지속 여부 '촉각'...창사 53년 만에 외부 출신 수장",
+          "link": "http://www.press9.kr/news/articleView.html?idxno=73438",
+          "date": "2026-03-13"
+        },
+        {
+          "title": "한미, 첫 외부 출신 CEO 선임된다…박재현 대표 \"'임성기정신', 흔들림 없어야\"",
+          "link": "https://www.newsquest.co.kr/news/articleView.html?idxno=263113",
+          "date": "2026-03-13"
+        },
+        {
+          "title": "한미약품 차기 대표에 황상연 내정…첫 외부 출신 CEO",
+          "link": "https://www.financialpost.co.kr/news/articleView.html?idxno=251214",
+          "date": "2026-03-13"
+        },
+        {
+          "title": "한미약품 대표에 황상연 前종근당홀딩스 대표 내정",
+          "link": "https://www.seoulfn.com/news/articleView.html?idxno=623486",
+          "date": "2026-03-13"
+        },
+        {
+          "title": "한미약품, 박재현 대표 퇴진…신임 대표에 '투자 전문가' 황상연 내정",
+          "link": "http://www.dailypop.kr/news/articleView.html?idxno=97221",
+          "date": "2026-03-13"
+        },
+        {
+          "title": "한미약품 대표에 황상연 내정… 첫 외부 출신 CEO",
+          "link": "https://www.segye.com/newsView/20260313503926?OutUrl=naver",
+          "date": "2026-03-13"
+        },
+        {
+          "title": "\"임성기 정신 지켜야\" 한미약품 박재현 대표 퇴진...새 대표로 첫 외부...",
+          "link": "http://www.popcornnews.net/news/articleView.html?idxno=115034",
+          "date": "2026-03-13"
+        },
+        {
+          "title": "한미약품, 황상연 새 대표 내정…박재현 대표 사의, '임성기정신' 강...",
+          "link": "https://www.etoday.co.kr/news/view/2564934",
+          "date": "2026-03-13"
+        },
+        {
+          "title": "한미약품 차기 대표에 황상연 내정…외부 출신 첫선임",
+          "link": "https://www.cstimes.com/news/articleView.html?idxno=697349",
+          "date": "2026-03-13"
+        },
+        {
+          "title": "한미약품 새 대표이사에 황상연···오는 31일 주총서 선임 전망",
+          "link": "https://www.newsfreezone.co.kr/news/articleView.html?idxno=679541",
+          "date": "2026-03-13"
+        },
+        {
+          "title": "한미약품 대표에 황상연 내정…첫 외부 출신 대표",
+          "link": "http://www.yonhapnewstv.co.kr/AKR20260313080521IP1",
+          "date": "2026-03-13"
+        },
+        {
+          "title": "33년 한미약품맨 박재현 대표 퇴진",
+          "link": "https://news.dealsitetv.com/articles/166818",
+          "date": "2026-03-13"
+        },
+        {
+          "title": "한미약품 첫 외부 출신 CEO로 황상연 내정...박재현 퇴장",
+          "link": "https://biz.sbs.co.kr/article_hub/20000297160?division=NAVER",
+          "date": "2026-03-13"
+        },
+        {
+          "title": "한미약품, 첫 외부 출신 CEO로 황상연 내정…31일 주총서 선임 유력",
+          "link": "http://www.newsroad.co.kr/news/articleView.html?idxno=55981",
+          "date": "2026-03-13"
+        },
+        {
+          "title": "한미약품 대표에 황상연 내정…첫 외부 출신 CEO",
+          "link": "https://www.yna.co.kr/view/AKR20260313021200017?input=1195m",
+          "date": "2026-03-13"
+        },
+        {
+          "title": "한미약품, 박재현 대표 사의 표명…후임 황상연 내정",
+          "link": "https://www.sentv.co.kr/article/view/sentv202603130004",
+          "date": "2026-03-13"
+        },
+        {
+          "title": "기로에 선 한미약품 전문경영…체질 전환-내부 결속 관건",
+          "link": "https://www.medipana.com/news/articleView.html?idxno=408131",
+          "date": "2026-03-13"
+        },
+        {
+          "title": "한미약품 첫 외부 출신 CEO '황상연 대표' 예고",
+          "link": "https://www.dailymedi.com/news/news_view.php?wr_id=934622",
+          "date": "2026-03-13"
+        },
+        {
+          "title": "한미약품, 대표 교체로 '내홍봉합' 시도..갈등 불씨는 여전",
+          "link": "http://www.4th.kr/news/articleView.html?idxno=2108991",
+          "date": "2026-03-13"
+        },
+        {
+          "title": "한미약품 새 대표에 황상연… 확정땐 창사이래 첫 외부 인사",
+          "link": "https://www.donga.com/news/Economy/article/all/20260312/133520049/2",
+          "date": "2026-03-13"
+        }
+      ],
+      "createdAt": "2026-03-13",
+      "updatedAt": "2026-03-13",
+      "history": [
+        {
+          "date": "2026-03-13",
+          "stage": "기타",
+          "summary": "한미약품이 33년 내부 출신인 박재현 대표의 사의 표명에 따라 후임으로 前종근당홀딩스 대표 황상연을 내정함. 창사 53년 만에 첫 외부 출신 CEO 선임으로, 오는 3월 31일 주주총회에서 공식 선임될 전망. 경영권 분쟁에 따른 내홍 봉합 시도로 해석되나, 향후 R&D 기조 유지 및 내부 결속 여부가 관건으로 꼽힘."
+        }
+      ]
+    },
+    {
       "id": "deal_20260312_001",
       "name": "SGPE 5000억 블라인드펀드 결성",
       "stage": "기타",
@@ -1761,6 +1917,6 @@
       ]
     }
   ],
-  "lastUpdated": "2026-03-12 09:12",
+  "lastUpdated": "2026-03-13 09:41",
   "realestate": []
 }

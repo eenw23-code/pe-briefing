@@ -116,7 +116,7 @@ def fetch_page(url: str) -> BeautifulSoup | None:
 
 def extract_articles(soup: BeautifulSoup) -> list[dict]:
     articles = []
-    news_items = soup.select("div.sds-comps-vertical-layout.pWTWygOCIQOq6pgqKPBD")
+    news_items = soup.select("div[class*='sds-comps-vertical-layout']")
     if not news_items:
         news_items = soup.select("div.news_area")
     for item in news_items:
