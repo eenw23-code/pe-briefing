@@ -45,6 +45,8 @@ BLOCKLIST = [
 KEYWORDS = [
     "PE 매각", "PE 인수", "PE 회수",
     "PEF", "사모펀드", "프라이빗에쿼티",
+    "경영권 인수", "엑시트", "바이아웃", "FI 매각", "투자조합 결성",
+    "공개매수", "우선협상대상자", "우협선정",
 ]
 
 
@@ -132,7 +134,8 @@ def extract_articles(soup: BeautifulSoup) -> list[dict]:
             subtexts = item.select(".sds-comps-profile-info-subtext")
             for st in subtexts:
                 txt = st.get_text(strip=True)
-                if txt and any(k in txt for k in ["전", ".", "2025", "2026"]):
+                current_year = str(datetime.now().year)
+                if txt and any(k in txt for k in ["전", ".", current_year]):
                     date_str = parse_date_text(txt)
                     break
             if not date_str:
@@ -370,7 +373,7 @@ def extract_and_match_deals(articles: list[dict], existing_deals: list[dict]) ->
     print("  2단계: Claude API — 딜 추출 및 매칭")
     print("=" * 50)
 
-    BATCH_SIZE = 80
+    BATCH_SIZE = 60
     batches = [articles[i:i+BATCH_SIZE] for i in range(0, len(articles), BATCH_SIZE)]
     total_batches = len(batches)
     print(f"  총 {len(articles)}건 → {total_batches}개 배치로 처리")
