@@ -147,6 +147,68 @@ body { background: var(--bg); color: var(--ink); font-family: "IBM Plex Sans", s
 .gmail-btn:hover { background: #1a1a1a; color: #fff; }
 
 .scrap-section-title { font-size: 10px; font-weight: 600; color: var(--gold); letter-spacing: 0.12em; text-transform: uppercase; margin: 24px 0 0; padding: 8px 0 6px; border-top: 2px solid var(--black); font-family: "IBM Plex Mono", monospace; }
+
+/* ── News Run 아카이브 ──────────────────────────────────── */
+.newsrun-item { background: var(--white); border: 1px solid var(--rule-light); border-left: 3px solid var(--accent); margin-bottom: 12px; }
+.newsrun-header { display: flex; justify-content: space-between; align-items: center; padding: 12px 18px; cursor: pointer; border-bottom: 1px solid var(--rule-light); }
+.newsrun-header:hover { background: var(--bg-2); }
+.newsrun-subject { font-family: "Playfair Display", serif; font-size: 15px; font-weight: 700; color: var(--black); }
+.newsrun-meta { font-size: 10px; color: var(--ink-4); font-family: "IBM Plex Mono", monospace; display: flex; align-items: center; gap: 12px; flex-shrink: 0; }
+.newsrun-count { background: var(--accent); color: #fff; border-radius: 10px; padding: 1px 7px; font-size: 10px; font-family: "IBM Plex Mono", monospace; }
+.newsrun-body { padding: 16px 18px; display: none; }
+.newsrun-body.open { display: block; }
+.newsrun-deal { padding: 10px 0; border-bottom: 1px solid var(--rule-light); }
+.newsrun-deal:last-child { border-bottom: none; }
+.newsrun-deal-name { font-weight: 600; font-size: 13px; color: var(--black); margin-bottom: 4px; }
+.newsrun-deal-summary { font-size: 12px; color: var(--ink-2); line-height: 1.7; margin-bottom: 4px; }
+.newsrun-deal-link { font-size: 11px; color: var(--accent-2); text-decoration: none; font-family: "IBM Plex Mono", monospace; }
+.newsrun-deal-link:hover { text-decoration: underline; }
+.newsrun-add-btn { margin: 0 0 20px; }
+.newsrun-form { background: var(--white); border: 1px solid var(--rule); padding: 20px; margin-bottom: 20px; }
+.newsrun-form-title { font-family: "Playfair Display", serif; font-size: 15px; font-weight: 700; margin-bottom: 16px; color: var(--black); }
+.newsrun-deals-input { display: flex; flex-direction: column; gap: 10px; margin-bottom: 10px; }
+.newsrun-deal-row { display: grid; grid-template-columns: 1fr 2fr 1fr; gap: 8px; align-items: start; }
+.newsrun-deal-row input, .newsrun-deal-row textarea { padding: 7px 10px; border: 1px solid var(--rule); font-size: 12px; font-family: "IBM Plex Sans", sans-serif; outline: none; width: 100%; }
+.newsrun-deal-row input:focus, .newsrun-deal-row textarea:focus { border-color: var(--accent-2); }
+.newsrun-deal-row textarea { resize: vertical; min-height: 56px; }
+.newsrun-row-del { background: none; border: none; color: var(--ink-4); cursor: pointer; font-size: 16px; padding: 6px; align-self: center; }
+.newsrun-row-del:hover { color: var(--accent); }
+
+/* ── 칸반 보드 ───────────────────────────────────────────── */
+.kanban-wrap { overflow-x: auto; padding: 24px 40px 40px; }
+.kanban-board { display: flex; gap: 14px; min-width: max-content; align-items: flex-start; }
+.kanban-col { width: 240px; flex-shrink: 0; }
+.kanban-col-header { padding: 8px 12px; font-size: 10px; font-weight: 700; letter-spacing: 0.1em; text-transform: uppercase; font-family: "IBM Plex Mono", monospace; border-radius: 2px 2px 0 0; display: flex; justify-content: space-between; align-items: center; }
+.kanban-col-count { font-size: 11px; font-weight: 700; font-family: "IBM Plex Mono", monospace; }
+.kanban-col-body { display: flex; flex-direction: column; gap: 8px; padding: 10px 0 0; min-height: 60px; }
+.kanban-card { background: var(--white); border: 1px solid var(--rule-light); border-left: 3px solid var(--rule); border-radius: 2px; padding: 12px 14px; cursor: pointer; transition: box-shadow 0.12s, transform 0.1s; }
+.kanban-card:hover { box-shadow: 0 4px 16px rgba(0,0,0,0.10); transform: translateY(-1px); }
+.kanban-card-name { font-family: "Playfair Display", serif; font-size: 13px; font-weight: 700; color: var(--black); line-height: 1.35; margin-bottom: 6px; }
+.kanban-card-summary { font-size: 11px; color: var(--ink-3); line-height: 1.6; margin-bottom: 8px; display: -webkit-box; -webkit-line-clamp: 3; -webkit-box-orient: vertical; overflow: hidden; }
+.kanban-card-footer { display: flex; justify-content: space-between; align-items: center; gap: 6px; }
+.kanban-card-date { font-size: 10px; color: var(--ink-4); font-family: "IBM Plex Mono", monospace; }
+.kanban-card-star { background: none; border: none; cursor: pointer; font-size: 13px; color: var(--rule); transition: color 0.12s; padding: 0; line-height: 1; }
+.kanban-card-star.starred { color: var(--gold); }
+.kanban-card-star:hover { color: var(--gold); }
+/* 컬럼별 카드 좌측 컬러 */
+.kanban-card.stage-review   { border-left-color: #9b9b9b; }
+.kanban-card.stage-advisor  { border-left-color: #0e7490; }
+.kanban-card.stage-prebid   { border-left-color: #b45309; }
+.kanban-card.stage-bid      { border-left-color: #c2410c; }
+.kanban-card.stage-exclusive{ border-left-color: var(--accent); }
+.kanban-card.stage-dd       { border-left-color: #166534; }
+.kanban-card.stage-spa      { border-left-color: #6d28d9; }
+.kanban-card.stage-close    { border-left-color: #9b9b9b; opacity: 0.75; }
+/* 컬럼 헤더 배경 */
+.kh-review   { background: #f5f5f5; color: #6b6b6b; }
+.kh-advisor  { background: #e0f2fe; color: #0369a1; }
+.kh-prebid   { background: #fef9c3; color: #854d0e; }
+.kh-bid      { background: #fff7ed; color: #9a3412; }
+.kh-exclusive{ background: #fff1f2; color: #9f1239; }
+.kh-dd       { background: #f0fdf4; color: #166534; }
+.kh-spa      { background: #f5f3ff; color: #5b21b6; }
+.kh-close    { background: #f5f5f5; color: #404040; }
+.kh-etc      { background: #f5f5f5; color: #6b6b6b; }
 /* build:1773103222 */
 </style>
 </head>
@@ -162,9 +224,10 @@ body { background: var(--bg); color: var(--ink); font-family: "IBM Plex Sans", s
 </div>
 
 <div class="tabs">
-  <div class="tab" id="tab-deal" onclick="switchTab('deal')">딜별 보기</div>
   <div class="tab active" id="tab-date" onclick="switchTab('date')">날짜별 보기</div>
+  <div class="tab" id="tab-deal" onclick="switchTab('deal')">딜별 보기</div>
   <div class="tab" id="tab-scrap" onclick="switchTab('scrap')">&#11088; 스크랩</div>
+  <div class="tab" id="tab-newsrun" onclick="switchTab('newsrun')">📬 발송한 News Run</div>
 </div>
 
 <div class="filter-bar" id="filterBar">
@@ -172,9 +235,10 @@ body { background: var(--bg); color: var(--ink); font-family: "IBM Plex Sans", s
 </div>
 
 <div class="main">
-  <div id="dealView" style="display:none"></div>
+  <div id="dealView" style="display:none"><div class="kanban-wrap"><div class="kanban-board" id="kanbanBoard"></div></div></div>
   <div id="dateView"></div>
   <div id="scrapView" style="display:none"></div>
+  <div id="newsrunView" style="display:none"></div>
 </div>
 
 <div class="modal-overlay" id="dealModal" style="display:none" onclick="closeModalOverlay(event)">
@@ -243,12 +307,13 @@ function toggleEditMode() {
 
 function switchTab(tab) {
   currentTab = tab;
-  ["deal","date","scrap"].forEach(t => {
+  ["deal","date","scrap","newsrun"].forEach(t => {
     document.getElementById("tab-"+t).classList.toggle("active", t === tab);
     document.getElementById(t+"View").style.display = t === tab ? "" : "none";
   });
-  document.getElementById("filterBar").style.display = tab === "scrap" ? "none" : "";
-  renderDeals();
+  document.getElementById("filterBar").style.display = (tab === "scrap" || tab === "deal" || tab === "newsrun") ? "none" : "";
+  if (tab === "newsrun") renderNewsRun();
+  else renderDeals();
 }
 
 
@@ -341,16 +406,57 @@ function renderDealCard(deal) {
 }
 function renderAll() { renderDeals(); }
 
+const KANBAN_STAGES = [
+  { key: "매각 검토중",     hClass: "kh-review",    cardClass: "stage-review" },
+  { key: "주관사 선정",     hClass: "kh-advisor",   cardClass: "stage-advisor" },
+  { key: "예비입찰",        hClass: "kh-prebid",    cardClass: "stage-prebid" },
+  { key: "본입찰",          hClass: "kh-bid",       cardClass: "stage-bid" },
+  { key: "우선협상자 선정", hClass: "kh-exclusive", cardClass: "stage-exclusive" },
+  { key: "실사 진행중",     hClass: "kh-dd",        cardClass: "stage-dd" },
+  { key: "SPA 체결",        hClass: "kh-spa",       cardClass: "stage-spa" },
+  { key: "딜 클로즈",       hClass: "kh-close",     cardClass: "stage-close" },
+  { key: "기타",             hClass: "kh-etc",       cardClass: "" },
+];
+
+function renderKanbanCard(deal) {
+  var starred = scrappedDeals.has(deal.id);
+  var summary = (deal.summary || "").slice(0, 120) + ((deal.summary||"").length > 120 ? "…" : "");
+  var cardClass = (KANBAN_STAGES.find(s => s.key === deal.stage) || {}).cardClass || "";
+  return '<div class="kanban-card ' + cardClass + '" onclick="openDeal(\'' + deal.id + '\')">' +
+    '<div class="kanban-card-name">' + deal.name + '</div>' +
+    '<div class="kanban-card-summary">' + summary + '</div>' +
+    '<div class="kanban-card-footer">' +
+      '<span class="kanban-card-date">' + (deal.updatedAt || "").slice(0, 10) + '</span>' +
+      '<button class="kanban-card-star ' + (starred ? "starred" : "") + '" onclick="toggleDealScrap(\'' + deal.id + '\',event)" title="스크랩">★</button>' +
+    '</div>' +
+  '</div>';
+}
+
+function renderKanban(filtered) {
+  var board = document.getElementById("kanbanBoard");
+  if (!filtered.length) {
+    board.innerHTML = '<div class="empty" style="min-width:300px"><div class="empty-icon">📭</div><div class="empty-text">딜이 없습니다</div></div>';
+    return;
+  }
+  board.innerHTML = KANBAN_STAGES.map(function(stage) {
+    var stagDeals = filtered.filter(d => d.stage === stage.key);
+    var cards = stagDeals.map(renderKanbanCard).join("") ||
+      '<div style="font-size:11px;color:var(--ink-4);padding:8px 4px;font-family:\'IBM Plex Mono\',monospace;">—</div>';
+    return '<div class="kanban-col">' +
+      '<div class="kanban-col-header ' + stage.hClass + '">' +
+        '<span>' + stage.key + '</span>' +
+        '<span class="kanban-col-count">' + (stagDeals.length || "") + '</span>' +
+      '</div>' +
+      '<div class="kanban-col-body">' + cards + '</div>' +
+    '</div>';
+  }).join("");
+}
+
 function renderDeals() {
   if (currentTab === "scrap") { renderScrapView(); return; }
   const filtered = getFilteredDeals();
   if (currentTab === "deal") {
-    const el = document.getElementById("dealView");
-    if (!filtered.length) {
-      el.innerHTML = '<div class="empty"><div class="empty-icon">📭</div><div class="empty-text">딜이 없습니다</div><div class="empty-sub">스크립트 실행 후 다시 확인해주세요</div></div>';
-      return;
-    }
-    el.innerHTML = filtered.map(renderDealCard).join("");
+    renderKanban(filtered);
   } else {
     renderDateView(filtered);
   }
@@ -559,6 +665,135 @@ async function saveToFile() {
   else { GH_TOKEN = ""; localStorage.removeItem("gh_token"); alert("저장 실패. 토큰을 확인해주세요."); }
 }
 
+function saveNewsRun(subject, selected) {
+  var runs = JSON.parse(localStorage.getItem("newsRuns") || "[]");
+  runs.unshift({
+    subject: subject,
+    date: new Date().toISOString().slice(0, 16).replace("T", " "),
+    deals: selected.map(function(deal) {
+      var rep = deal.repArticle
+             || (deal.articles||[]).find(a => a.link && (a.link.includes("thebell.co.kr") || a.link.includes("dealsite.co.kr")))
+             || (deal.articles||[])[0] || {};
+      return { name: deal.name, summary: deal.summary || "", link: rep.link || "", date: (rep.date||"").slice(0,10) };
+    })
+  });
+  localStorage.setItem("newsRuns", JSON.stringify(runs));
+}
+
+function renderNewsRun() {
+  var el = document.getElementById("newsrunView");
+  var runs = JSON.parse(localStorage.getItem("newsRuns") || "[]");
+  var listHtml = runs.length ? runs.map(function(run, i) {
+    var dealHtml = run.deals.map(function(d) {
+      return '<div class="newsrun-deal">' +
+        '<div class="newsrun-deal-name">' + d.name + '</div>' +
+        '<div class="newsrun-deal-summary">' + (d.summary||"") + '</div>' +
+        (d.link ? '<a class="newsrun-deal-link" href="' + d.link + '" target="_blank">' + d.link + '</a>' : '') +
+      '</div>';
+    }).join("");
+    return '<div class="newsrun-item">' +
+      '<div class="newsrun-header" onclick="toggleNewsRun(' + i + ')">' +
+        '<span class="newsrun-subject">' + run.subject + '</span>' +
+        '<span class="newsrun-meta">' +
+          '<span class="newsrun-count">' + run.deals.length + '건</span>' +
+          '<span>' + run.date + '</span>' +
+          '<button class="btn btn-danger" style="font-size:10px;padding:2px 8px;" onclick="deleteNewsRun(event,' + i + ')">삭제</button>' +
+        '</span>' +
+      '</div>' +
+      '<div class="newsrun-body" id="newsrun-body-' + i + '">' + dealHtml + '</div>' +
+    '</div>';
+  }).join("") : '<div class="empty"><div class="empty-icon">📬</div><div class="empty-text">발송한 News Run이 없습니다</div><div class="empty-sub">아래 버튼으로 과거 뉴스런을 추가하거나 Gmail 발송 시 자동 저장됩니다</div></div>';
+
+  el.innerHTML = '<div class="main">' +
+    '<div class="newsrun-add-btn"><button class="btn btn-primary" onclick="showNewsRunForm()">+ News Run 추가</button></div>' +
+    '<div id="newsrunFormWrap"></div>' +
+    listHtml +
+  '</div>';
+}
+
+function showNewsRunForm() {
+  var wrap = document.getElementById("newsrunFormWrap");
+  if (wrap.innerHTML) { wrap.innerHTML = ""; return; }
+  wrap.innerHTML =
+    '<div class="newsrun-form">' +
+      '<div class="newsrun-form-title">과거 News Run 추가</div>' +
+      '<div class="form-group" style="margin-bottom:10px">' +
+        '<label class="form-label">날짜</label>' +
+        '<input class="form-input" id="nrDate" type="date" style="width:180px"/>' +
+      '</div>' +
+      '<div class="form-label" style="margin-bottom:8px">딜 목록 (딜명 / 요약 / 링크)</div>' +
+      '<div class="newsrun-deals-input" id="nrDealsWrap">' +
+        newsDealRowHtml(0) +
+      '</div>' +
+      '<button class="btn btn-outline" style="margin-bottom:14px;margin-top:4px" onclick="addNrDealRow()">+ 딜 추가</button><br>' +
+      '<button class="btn btn-primary" onclick="submitNewsRunForm()">저장</button>' +
+      '<button class="btn btn-outline" style="margin-left:8px" onclick="document.getElementById(\'newsrunFormWrap\').innerHTML=\'\'">취소</button>' +
+    '</div>';
+}
+
+function newsDealRowHtml(i) {
+  return '<div class="newsrun-deal-row" id="nrRow-' + i + '">' +
+    '<input placeholder="딜명" id="nrName-' + i + '"/>' +
+    '<textarea placeholder="요약" id="nrSummary-' + i + '"></textarea>' +
+    '<input placeholder="링크 (선택)" id="nrLink-' + i + '"/>' +
+    (i > 0 ? '<button class="newsrun-row-del" onclick="removeNrRow(' + i + ')">×</button>' : '<div></div>') +
+  '</div>';
+}
+
+var nrRowCount = 1;
+function addNrDealRow() {
+  var wrap = document.getElementById("nrDealsWrap");
+  var div = document.createElement("div");
+  div.innerHTML = newsDealRowHtml(nrRowCount);
+  wrap.appendChild(div.firstChild);
+  nrRowCount++;
+}
+
+function removeNrRow(i) {
+  var row = document.getElementById("nrRow-" + i);
+  if (row) row.remove();
+}
+
+function submitNewsRunForm() {
+  var dateVal = document.getElementById("nrDate").value;
+  if (!dateVal) { alert("날짜를 입력해주세요."); return; }
+  var dealsList = [];
+  document.querySelectorAll("[id^='nrName-']").forEach(function(el) {
+    var i = el.id.split("-")[1];
+    var name = el.value.trim();
+    if (!name) return;
+    dealsList.push({
+      name: name,
+      summary: (document.getElementById("nrSummary-" + i)||{}).value || "",
+      link: (document.getElementById("nrLink-" + i)||{}).value || "",
+      date: dateVal
+    });
+  });
+  if (!dealsList.length) { alert("딜을 하나 이상 입력해주세요."); return; }
+  var yy = dateVal.slice(2,4), mm = dateVal.slice(5,7), dd = dateVal.slice(8,10);
+  var subject = yy + "." + mm + "." + dd + " Daily News Run";
+  var runs = JSON.parse(localStorage.getItem("newsRuns") || "[]");
+  runs.push({ subject: subject, date: dateVal + " 00:00", deals: dealsList });
+  runs.sort(function(a,b){ return b.date.localeCompare(a.date); });
+  localStorage.setItem("newsRuns", JSON.stringify(runs));
+  nrRowCount = 1;
+  renderNewsRun();
+}
+
+function deleteNewsRun(e, i) {
+  e.stopPropagation();
+  if (!confirm("이 News Run을 삭제하시겠습니까?")) return;
+  var runs = JSON.parse(localStorage.getItem("newsRuns") || "[]");
+  runs.splice(i, 1);
+  localStorage.setItem("newsRuns", JSON.stringify(runs));
+  renderNewsRun();
+}
+
+function toggleNewsRun(i) {
+  var body = document.getElementById("newsrun-body-" + i);
+  if (body) body.classList.toggle("open");
+}
+
 function sendGmail() {
   var selected = deals.filter(function(d) { return checkedDeals.has(d.id); });
   if (!selected.length) { alert("체크한 딜이 없습니다."); return; }
@@ -587,6 +822,7 @@ function sendGmail() {
     "https://eenw23-code.github.io/pe-briefing/\n\n" +
     "감사합니다.\n" +
     "최인우 드림.";
+  saveNewsRun(subject, selected);
   navigator.clipboard.writeText(body).then(function() {
     alert("본문이 클립보드에 복사됐습니다.\nGmail에서 붙여넣기(Ctrl+V) 해주세요.");
     window.open("https://mail.google.com/mail/?view=cm&su=" + encodeURIComponent(subject), "_blank");
