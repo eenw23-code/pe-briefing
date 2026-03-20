@@ -48,26 +48,14 @@ body { background: var(--bg); color: var(--ink); font-family: "IBM Plex Sans", s
 .tab.active { color: var(--accent); border-bottom-color: var(--accent); }
 .tab:hover:not(.active) { color: var(--ink); }
 
-.filter-bar { background: var(--bg-2); border-bottom: 1px solid var(--rule); padding: 10px 40px; display: flex; align-items: center; gap: 8px; flex-wrap: wrap; }
-.filter-label { font-size: 10px; color: var(--ink-3); font-weight: 600; letter-spacing: 0.1em; text-transform: uppercase; font-family: "IBM Plex Mono", monospace; margin-right: 4px; }
-.stage-btn { padding: 4px 11px; border-radius: 2px; border: 1px solid var(--rule); background: var(--white); cursor: pointer; font-size: 11px; font-weight: 500; color: var(--ink-2); transition: all 0.12s; }
-.stage-btn.active { background: var(--accent-2); color: #fff; border-color: var(--accent-2); }
-.stage-btn:hover:not(.active) { background: var(--bg-2); border-color: #bbb; }
-.search-input { margin-left: auto; padding: 5px 12px; border: 1px solid var(--rule); border-radius: 2px; font-size: 12px; outline: none; width: 300px; font-family: "IBM Plex Sans", sans-serif; background: var(--white); }
+.filter-bar { background: var(--bg-2); border-bottom: 1px solid var(--rule); padding: 10px 40px; display: flex; align-items: center; }
+.search-input { padding: 8px 16px; border: 1px solid var(--rule); border-radius: 2px; font-size: 13px; outline: none; width: 100%; font-family: "IBM Plex Sans", sans-serif; background: var(--white); }
 .search-input:focus { border-color: var(--accent-2); }
 
 .main { padding: 28px 40px; max-width: 1080px; margin: 0 auto; }
 
 .stats { display: flex; gap: 0; margin-bottom: 28px; border: 1px solid var(--rule); background: var(--white); }
-.stat-card { padding: 16px 24px; flex: 1; min-width: 100px; transition: all 0.12s; border-right: 1px solid var(--rule); }
-.stat-card:last-child { border-right: none; }
-.stat-card.clickable { cursor: pointer; }
-.stat-card.clickable:hover { background: var(--bg-2); }
-.stat-card.stat-active { background: var(--accent-2); }
-.stat-card.stat-active .stat-num { color: #fff; }
-.stat-card.stat-active .stat-label { color: rgba(255,255,255,0.7); }
-.stat-num { font-family: "Playfair Display", serif; font-size: 26px; font-weight: 700; color: var(--black); line-height: 1; margin-bottom: 4px; }
-.stat-label { font-size: 10px; color: var(--ink-3); font-weight: 500; letter-spacing: 0.1em; text-transform: uppercase; font-family: "IBM Plex Mono", monospace; }
+
 
 .deal-card { background: var(--white); border: none; border-top: 1px solid var(--rule-light); border-left: 3px solid var(--accent-2); padding: 18px 20px 16px 20px; margin-bottom: 0; transition: background 0.12s; }
 .deal-card:first-child { border-top: 1px solid var(--rule); }
@@ -174,31 +162,18 @@ body { background: var(--bg); color: var(--ink); font-family: "IBM Plex Sans", s
 </div>
 
 <div class="tabs">
-  <div class="tab active" id="tab-deal" onclick="switchTab('deal')">딜별 보기</div>
-  <div class="tab" id="tab-date" onclick="switchTab('date')">날짜별 보기</div>
-  <div class="tab" id="tab-re" onclick="switchTab('re')">🏢 부동산</div>
+  <div class="tab" id="tab-deal" onclick="switchTab('deal')">딜별 보기</div>
+  <div class="tab active" id="tab-date" onclick="switchTab('date')">날짜별 보기</div>
   <div class="tab" id="tab-scrap" onclick="switchTab('scrap')">&#11088; 스크랩</div>
 </div>
 
 <div class="filter-bar" id="filterBar">
-  <span class="filter-label">단계:</span>
-  <button class="stage-btn active" onclick="filterStage('전체')">전체</button>
-  <button class="stage-btn" onclick="filterStage('매각 검토중')">매각 검토중</button>
-  <button class="stage-btn" onclick="filterStage('주관사 선정')">주관사 선정</button>
-  <button class="stage-btn" onclick="filterStage('예비입찰')">예비입찰</button>
-  <button class="stage-btn" onclick="filterStage('본입찰')">본입찰</button>
-  <button class="stage-btn" onclick="filterStage('우선협상자 선정')">우선협상자 선정</button>
-  <button class="stage-btn" onclick="filterStage('실사 진행중')">실사 진행중</button>
-  <button class="stage-btn" onclick="filterStage('SPA 체결')">SPA 체결</button>
-  <button class="stage-btn" onclick="filterStage('딜 클로즈')">딜 클로즈</button>
   <input class="search-input" type="text" placeholder="&#128269; 딜명 검색..." id="searchInput" oninput="renderDeals()"/>
 </div>
 
 <div class="main">
-  <div class="stats" id="statsArea"></div>
-  <div id="dealView"></div>
-  <div id="dateView" style="display:none"></div>
-  <div id="reView" style="display:none"></div>
+  <div id="dealView" style="display:none"></div>
+  <div id="dateView"></div>
   <div id="scrapView" style="display:none"></div>
 </div>
 
@@ -215,11 +190,11 @@ body { background: var(--bg); color: var(--ink); font-family: "IBM Plex Sans", s
 
 <script>
 let deals = [];
-let realestate = [];
+
 let lastUpdated = "";
-let currentTab = "deal";
-let currentStage = "전체";
-let currentStatFilter = "전체";
+let currentTab = "date";
+
+
 let isEditMode = false;
 let currentDealId = null;
 
@@ -248,18 +223,14 @@ async function loadData() {
     const res = await fetch("deals.json?t=" + Date.now());
     const data = await res.json();
     deals = data.deals || [];
-    realestate = data.realestate || [];
     lastUpdated = data.lastUpdated || "";
     renderAll();
-  } catch(e) { deals = []; realestate = []; renderAll(); }
+  } catch(e) { deals = []; renderAll(); }
 }
 
 function goHome() {
-  currentStage = "전체";
-  currentStatFilter = "전체";
   document.getElementById("searchInput").value = "";
-  document.querySelectorAll(".stage-btn").forEach(b => b.classList.toggle("active", b.textContent.trim() === "전체"));
-  switchTab("deal");
+  switchTab("date");
 }
 
 function toggleEditMode() {
@@ -272,43 +243,19 @@ function toggleEditMode() {
 
 function switchTab(tab) {
   currentTab = tab;
-  ["deal","date","re","scrap"].forEach(t => {
+  ["deal","date","scrap"].forEach(t => {
     document.getElementById("tab-"+t).classList.toggle("active", t === tab);
     document.getElementById(t+"View").style.display = t === tab ? "" : "none";
   });
-  document.getElementById("filterBar").style.display = (tab === "scrap" || tab === "re") ? "none" : "";
+  document.getElementById("filterBar").style.display = tab === "scrap" ? "none" : "";
   renderDeals();
 }
 
-function setStatFilter(f) {
-  currentStatFilter = f;
-  currentTab = "deal";
-  ["deal","date","scrap"].forEach(t => {
-    document.getElementById("tab-"+t).classList.toggle("active", t === "deal");
-    document.getElementById(t+"View").style.display = t === "deal" ? "" : "none";
-  });
-  document.getElementById("filterBar").style.display = "";
-  renderAll();
-}
-
-function filterStage(stage) {
-  currentStage = stage;
-  currentStatFilter = "전체";
-  document.querySelectorAll(".stage-btn").forEach(b => {
-    b.classList.toggle("active", b.textContent.trim() === stage);
-  });
-  renderDeals();
-}
 
 function getFilteredDeals() {
   const q = document.getElementById("searchInput").value.toLowerCase().trim();
   return deals.filter(d => {
-    let statOk = true;
-    if (currentStatFilter === "진행중") statOk = d.stage !== "딜 클로즈";
-    else if (currentStatFilter === "클로즈") statOk = d.stage === "딜 클로즈";
-    const stageOk = currentStage === "전체" || d.stage === currentStage;
-    const searchOk = !q || d.name.toLowerCase().includes(q) || (d.summary||"").toLowerCase().includes(q);
-    return statOk && stageOk && searchOk;
+    return !q || d.name.toLowerCase().includes(q) || (d.summary||"").toLowerCase().includes(q);
   });
 }
 
@@ -370,7 +317,10 @@ function renderDealCard(deal) {
     var badge = getSourceBadge(rep.source);
     repHtml = '<div class="rep-article">' + (badge ? badge + " " : "") + '<a href="' + rep.link + '" target="_blank" onclick="event.stopPropagation()">' + (rep.title||"").slice(0,50) + ((rep.title||"").length>50?"...":"") + '</a></div>';
   } else {
-    var firstArt = (deal.articles||[])[0];
+    var arts = deal.articles || [];
+    var firstArt = arts.find(a => a.link && (a.link.includes("thebell.co.kr") || a.link.includes("dealsite.co.kr")))
+                || arts.find(a => a.link && a.link.includes("investchosun.com"))
+                || arts[0];
     if (firstArt) {
       repHtml = '<div class="rep-article"><a href="' + firstArt.link + '" target="_blank" onclick="event.stopPropagation()">' + (firstArt.title||"").slice(0,50) + ((firstArt.title||"").length>50?"...":"") + '</a></div>';
     }
@@ -389,52 +339,9 @@ function renderDealCard(deal) {
     repHtml +
   '</div>';
 }
-function renderStats() {
-  const total = deals.length;
-  const active = deals.filter(d => d.stage !== "딜 클로즈").length;
-  const close = deals.filter(d => d.stage === "딜 클로즈").length;
-  const scrapCount = scrappedDeals.size + scrappedArticles.size;
-  const updated = lastUpdated || "-";
-  const isTotal  = currentStatFilter === "전체" && currentTab !== "scrap";
-  const isActive = currentStatFilter === "진행중";
-  const isClose  = currentStatFilter === "클로즈";
-  const isScrap  = currentTab === "scrap";
-
-  document.getElementById("statsArea").innerHTML =
-    '<div class="stat-card clickable ' + (isTotal?"stat-active":"") + '" onclick="setStatFilter(\'전체\')">' +
-      '<div class="stat-num">' + total + '</div><div class="stat-label">전체 딜</div></div>' +
-    '<div class="stat-card clickable ' + (isActive?"stat-active":"") + '" onclick="setStatFilter(\'진행중\')">' +
-      '<div class="stat-num">' + active + '</div><div class="stat-label">진행중</div></div>' +
-    '<div class="stat-card clickable ' + (isClose?"stat-active":"") + '" onclick="setStatFilter(\'클로즈\')">' +
-      '<div class="stat-num">' + close + '</div><div class="stat-label">클로즈</div></div>' +
-    '<div class="stat-card clickable" onclick="switchTab(\'scrap\')" style="border-color:' + (isScrap?"#f59e0b":"#e5e7eb") + ';background:' + (isScrap?"#fffbeb":"#fff") + '">' +
-      '<div class="stat-num" style="color:#f59e0b">' + scrapCount + '</div><div class="stat-label" style="color:#f59e0b">⭐ 스크랩</div></div>' +
-    '<div class="stat-card"><div class="stat-num" style="font-size:13px">' + updated + '</div><div class="stat-label">최근 업데이트</div></div>';
-}
-
-function renderAll() { renderDeals(); renderRealestate(); }
-
-function renderRealestate() {
-  const container = document.getElementById("reView");
-  if (!realestate.length) {
-    container.innerHTML = '<div class="empty"><div class="empty-icon">🏢</div><div class="empty-text">부동산 딜 없음</div><div class="empty-sub">다음 실행 후 데이터가 채워집니다</div></div>';
-    return;
-  }
-  container.innerHTML = realestate.map(d => {
-    const arts = (d.articles || []).map(a =>
-      '<div class="article-link"><a href="' + a.link + '" target="_blank">' + a.title + '</a><span class="article-link-date">' + (a.date||"").slice(0,10) + '</span></div>'
-    ).join("");
-    return '<div class="deal-card" style="border-left-color:#c8963e">' +
-      '<div class="deal-header"><div class="deal-name">' + d.name + '</div>' +
-      '<div class="deal-meta">' + stageBadgeHtml(d.stage) + '<span class="deal-date">' + (d.updatedAt||"") + '</span></div></div>' +
-      '<div class="deal-summary">' + (d.summary||"") + '</div>' +
-      '<div class="article-list">' + arts + '</div>' +
-    '</div>';
-  }).join("");
-}
+function renderAll() { renderDeals(); }
 
 function renderDeals() {
-  renderStats();
   if (currentTab === "scrap") { renderScrapView(); return; }
   const filtered = getFilteredDeals();
   if (currentTab === "deal") {
@@ -655,18 +562,16 @@ async function saveToFile() {
 function sendGmail() {
   var selected = deals.filter(function(d) { return checkedDeals.has(d.id); });
   if (!selected.length) { alert("체크한 딜이 없습니다."); return; }
-  var today = new Date().toLocaleDateString("ko-KR", { year:"numeric", month:"long", day:"numeric" });
   var briefing = "";
   selected.forEach(function(deal, i) {
+    var rep = deal.repArticle
+           || (deal.articles||[]).find(a => a.link && (a.link.includes("thebell.co.kr") || a.link.includes("dealsite.co.kr")))
+           || (deal.articles||[])[0]
+           || {};
     briefing += (i+1) + ". " + deal.name + "\n";
-    briefing += "단계: " + deal.stage + "\n";
+    briefing += ((rep.date||"").slice(0,10)) + "\n";
+    briefing += (rep.link||"") + "\n";
     briefing += (deal.summary||"") + "\n";
-    var rep = deal.repArticle || (deal.articles||[])[0];
-    if (rep) {
-      briefing += rep.title + "\n";
-      briefing += rep.link + "\n";
-      briefing += (rep.date||"").slice(0,10) + "\n";
-    }
     briefing += "\n";
   });
   var now = new Date();
@@ -674,7 +579,6 @@ function sendGmail() {
   var mm = String(now.getMonth()+1).padStart(2,"0");
   var dd = String(now.getDate()).padStart(2,"0");
   var subject = yy + "." + mm + "." + dd + " Daily News Run";
-
   var body =
     "안녕하세요.\n\n" +
     "오늘자 주요 Deal 브리핑 드립니다.\n\n" +
@@ -683,13 +587,10 @@ function sendGmail() {
     "https://eenw23-code.github.io/pe-briefing/\n\n" +
     "감사합니다.\n" +
     "최인우 드림.";
-
-  // 클립보드에 본문 복사 후 Gmail 열기
   navigator.clipboard.writeText(body).then(function() {
     alert("본문이 클립보드에 복사됐습니다.\nGmail에서 붙여넣기(Ctrl+V) 해주세요.");
     window.open("https://mail.google.com/mail/?view=cm&su=" + encodeURIComponent(subject), "_blank");
   }).catch(function() {
-    // 클립보드 실패 시 기존 방식 폴백
     window.open("https://mail.google.com/mail/?view=cm&su=" + encodeURIComponent(subject) + "&body=" + encodeURIComponent(body.slice(0, 1500)), "_blank");
   });
 }
