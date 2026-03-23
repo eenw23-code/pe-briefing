@@ -16,7 +16,7 @@ import requests
 from bs4 import BeautifulSoup
 
 # ── 설정 ──────────────────────────────────────────────────────────────────────
-ANTHROPIC_API_KEY = os.environ.get("ANTHROPIC_API_KEY", "여기에_API_KEY_입력")
+ANTHROPIC_API_KEY = os.environ.get("ANTHROPIC_API_KEY", "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")
 MODEL = "claude-sonnet-4-6"
 
 HEADERS = {

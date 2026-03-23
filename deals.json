@@ -1,6 +1,2588 @@
 {
   "deals": [
     {
+      "id": "deal_20260320_008",
+      "name": "적대적 M&A 관련 경영권 방어 이슈 (상법 개정 영향)",
+      "stage": "기타",
+      "summary": "개정 상법 시행을 앞두고 주총 시즌 관전 포인트로 경영권 방어 이슈가 부각되고 있으며, 이사 충실의무 확대 등 상법 개정 내용이 M&A 및 주주행동주의 환경에 미치는 영향이 주목됨. 10대 제약사들도 잇달아 주총을 소집하며 상법 개정 대비 방안 마련에 나서고 있음.",
+      "repArticle": {
+        "title": "개정 상법에 '살얼음판'…주총 시즌 관전 포인트 5 [스페셜 리포트]",
+        "link": "https://www.mk.co.kr/article/11987545",
+        "date": "2026-03-20",
+        "source": "기타매체명"
+      },
+      "articles": [
+        {
+          "title": "문 열린 적대적 M&A…기업들 경영권 방어 고심 깊어진다 [시그널INSIDE]",
+          "link": "https://www.sedaily.com/article/20021613?ref=naver",
+          "date": "2026-03-19"
+        },
+        {
+          "title": "증권사 주총 시즌 돌입… 키워드는 '집중투표제·감사위 강화'",
+          "link": "https://www.asiatoday.co.kr/view.php?key=20260320010006030",
+          "date": "2026-03-19"
+        },
+        {
+          "title": "대주주에 유리한 합병 비율 개선… 당정, 자본시장법도 개정 시동",
+          "link": "https://www.hankookilbo.com/news/article/A2026031916060004371?did=NA",
+          "date": "2026-03-19"
+        },
+        {
+          "title": "[우리금융보험사 통합] ② 유동성 엇갈린 동양·ABL…통합 비용 부담은",
+          "link": "https://www.topdaily.kr/articles/109295",
+          "date": "2026-03-20"
+        },
+        {
+          "title": "개정 상법에 '살얼음판'…주총 시즌 관전 포인트 5 [스페셜 리포트]",
+          "link": "https://www.mk.co.kr/article/11987545",
+          "date": "2026-03-20"
+        },
+        {
+          "title": "10대 제약사 잇달아 주총 소집…상법 개정 대비 방안 주목",
+          "link": "http://www.srtimes.kr/news/articleView.html?idxno=199080",
+          "date": "2026-03-20"
+        }
+      ],
+      "createdAt": "2026-03-20",
+      "updatedAt": "2026-03-23",
+      "history": [
+        {
+          "date": "2026-03-20",
+          "stage": "기타",
+          "summary": "상법 개정 이후 적대적 M&A에 대한 문이 열리면서 기업들의 경영권 방어 고심이 깊어지고 있음. 행동주의 펀드 및 외부 세력의 주주권 강화와 함께 기업 지배구조 취약 기업들의 경영권 불안 고조. 집중투표제·감사위 강화 등이 주총 시즌 핵심 키워드로 부상."
+        },
+        {
+          "date": "2026-03-20",
+          "stage": "기타",
+          "summary": "우리금융그룹이 편입한 동양생명과 ABL생명의 통합을 검토 중으로, 양사의 유동성 상황이 엇갈리는 가운데 통합 비용 부담이 변수로 부각됨. 동양생명 100% 편입 완료 이후 후속 절차로 통합 논의가 본격화된 것으로 파악됨."
+        },
+        {
+          "date": "2026-03-23",
+          "stage": "기타",
+          "summary": "개정 상법 시행을 앞두고 주총 시즌 관전 포인트로 경영권 방어 이슈가 부각되고 있으며, 이사 충실의무 확대 등 상법 개정 내용이 M&A 및 주주행동주의 환경에 미치는 영향이 주목됨. 10대 제약사들도 잇달아 주총을 소집하며 상법 개정 대비 방안 마련에 나서고 있음."
+        }
+      ]
+    },
+    {
+      "id": "deal_20260320_013",
+      "name": "JW홀딩스 솔리더스인베스트먼트 100% 자회사 편입",
+      "stage": "딜 클로즈",
+      "summary": "JW홀딩스가 솔리더스인베스트먼트를 100% 자회사로 편입한 이후 김정현 대표 체제 유지에 무게가 실리고 있으며, 조직 안정화 및 향후 운용 방향에 시장의 관심이 집중됨. 새 둥지를 튼 솔리더스인베스트먼트의 지배구조 및 경영진 구성에 대한 후속 동향이 주목됨.",
+      "repArticle": {
+        "title": "새 둥지 튼 솔리더스인베스트…김정현 체제 유지에 무게 [넘버스]",
+        "link": "https://www.bloter.net/news/articleView.html?idxno=657319",
+        "date": "2026-03-20",
+        "source": "bloter"
+      },
+      "articles": [
+        {
+          "title": "[더벨][새주인 맞은 솔리더스인베] '딜 마침표' JW홀딩스, 김정현 대표와...",
+          "link": "https://www.thebell.co.kr/free/content/ArticleView.asp?key=202603161405130080107235",
+          "date": "2026-03-19"
+        },
+        {
+          "title": "새 둥지 튼 솔리더스인베스트…김정현 체제 유지에 무게 [넘버스]",
+          "link": "https://www.bloter.net/news/articleView.html?idxno=657319",
+          "date": "2026-03-20"
+        }
+      ],
+      "createdAt": "2026-03-20",
+      "updatedAt": "2026-03-23",
+      "history": [
+        {
+          "date": "2026-03-20",
+          "stage": "딜 클로즈",
+          "summary": "JW홀딩스가 솔리더스인베스트먼트를 100% 자회사로 편입하는 딜을 마무리하고 김정현 대표와 새 출발을 알리는 것으로 더벨이 보도. 딜 클로징 이후 경영진 체계 및 투자 전략 방향 주목."
+        },
+        {
+          "date": "2026-03-23",
+          "stage": "딜 클로즈",
+          "summary": "JW홀딩스가 솔리더스인베스트먼트를 100% 자회사로 편입한 이후 김정현 대표 체제 유지에 무게가 실리고 있으며, 조직 안정화 및 향후 운용 방향에 시장의 관심이 집중됨. 새 둥지를 튼 솔리더스인베스트먼트의 지배구조 및 경영진 구성에 대한 후속 동향이 주목됨."
+        }
+      ]
+    },
+    {
+      "id": "deal_20260320_017",
+      "name": "국민성장펀드 간접투자 GP 선정 (1.5조)",
+      "stage": "주관사 선정",
+      "summary": "국민성장펀드가 산업지원 소형 및 집중지원 지역전용 공고를 임박한 상황으로, VC 협회 차원에서 코스닥 활성화 펀드 등 숙원 사업 추진과 연계하여 플랜B도 모색 중임. 펀드 결성 및 GP 선정 작업이 본격화되는 단계에 접어듦.",
+      "repArticle": {
+        "title": "[더벨][국민성장펀드 시동] 산업지원 소형·집중지원 지역전용 공고 임박",
+        "link": "https://www.thebell.co.kr/free/content/ArticleView.asp?key=202603190800485720104143",
+        "date": "2026-03-23",
+        "source": "thebell"
+      },
+      "articles": [
+        {
+          "title": "[더벨][국민성장펀드 시동] 간접투자 GP 선정 착수 '1.5조' 큰 장 열린다",
+          "link": "https://www.thebell.co.kr/free/content/ArticleView.asp?key=202603170822399580105244",
+          "date": "2026-03-20"
+        },
+        {
+          "title": "[더벨][국민성장펀드 시동] 산업지원 소형·집중지원 지역전용 공고 임박",
+          "link": "https://www.thebell.co.kr/free/content/ArticleView.asp?key=202603190800485720104143",
+          "date": "2026-03-23"
+        },
+        {
+          "title": "[더벨][VC협회 김학균호 1년] 숙원 사업 '코스닥 활성화 펀드'…플랜B도 모색",
+          "link": "https://www.thebell.co.kr/free/content/ArticleView.asp?key=202603191212146880104394",
+          "date": "2026-03-23"
+        }
+      ],
+      "createdAt": "2026-03-20",
+      "updatedAt": "2026-03-23",
+      "history": [
+        {
+          "date": "2026-03-20",
+          "stage": "주관사 선정",
+          "summary": "국민성장펀드의 간접투자 GP 선정 절차가 착수되며 총 1.5조원 규모의 큰 장이 열릴 예정. GP 선정 작업이 본격화되며 국내 주요 PE·VC들의 경쟁이 예상됨. 정부 주도 정책 펀드의 대규모 위탁운용사 선정 프로세스로 업계 주목."
+        },
+        {
+          "date": "2026-03-23",
+          "stage": "주관사 선정",
+          "summary": "국민성장펀드가 산업지원 소형 및 집중지원 지역전용 공고를 임박한 상황으로, VC 협회 차원에서 코스닥 활성화 펀드 등 숙원 사업 추진과 연계하여 플랜B도 모색 중임. 펀드 결성 및 GP 선정 작업이 본격화되는 단계에 접어듦."
+        }
+      ]
+    },
+    {
+      "id": "deal_20260319_007",
+      "name": "교보생명 SBI저축은행 인수 및 지주사 전환·IPO",
+      "stage": "딜 클로즈",
+      "summary": "교보생명이 SBI저축은행 인수를 막바지 단계까지 진행하며 사실상 인수 구부능선을 넘은 것으로 평가됨. 인수 완료 후 지주사 전환 및 IPO 재추진이 가시화되고 있으며, 신창재 회장의 숙원사업 실현이 눈앞에 다가옴.",
+      "repArticle": {
+        "title": "SBI저축銀 품은 교보생명…지주사 전환·IPO 속도 붙나",
+        "link": "http://www.hansbiz.co.kr/news/articleView.html?idxno=826088",
+        "date": "2026-03-23",
+        "source": "기타매체명"
+      },
+      "articles": [
+        {
+          "title": "'SBI저축은행' 품은 교보생명…지주사 전환·IPO 속도 붙나",
+          "link": "https://www.newsis.com/view/NISX20260318_0003554214",
+          "date": "2026-03-19"
+        },
+        {
+          "title": "닻올린 '정부 주도' 해상풍력 민간사업자 편입은 해결과제",
+          "link": "http://www.edaily.co.kr/news/newspath.asp?newsid=01626886645384632",
+          "date": "2026-03-18"
+        },
+        {
+          "title": "SBI저축銀 품은 교보생명,인수시너지 '군불'...IPO 재추진 '분수령'",
+          "link": "https://www.youthdaily.co.kr/news/article.html?no=215750",
+          "date": "2026-03-20"
+        },
+        {
+          "title": "[N2 포커스] 신창재 교보생명 의장, SBI저축은행 품고 '종합금융' 질주…",
+          "link": "https://www.news2day.co.kr/article/20260319500254",
+          "date": "2026-03-20"
+        },
+        {
+          "title": "교보생명, SBI저축은행 인수로 IPO 발판 마련…발목 잡는FI갈등",
+          "link": "https://www.mediapen.com/news/view/1087916",
+          "date": "2026-03-19"
+        },
+        {
+          "title": "[교보+SBI②] 교보생명의 '보은'인가 '승부수'인가",
+          "link": "https://www.ebn.co.kr/news/articleView.html?idxno=1702827",
+          "date": "2026-03-19"
+        },
+        {
+          "title": "\"지분 비싸게 사달라\"FI버티기…교보생명, 지주전환·증시상장 발목",
+          "link": "https://www.g-enews.com/view.php?ud=202603181546112518e30fcb1ba8_1",
+          "date": "2026-03-19"
+        },
+        {
+          "title": "SBI저축銀 품은 교보생명…지주사 전환·IPO 속도 붙나",
+          "link": "http://www.hansbiz.co.kr/news/articleView.html?idxno=826088",
+          "date": "2026-03-23"
+        },
+        {
+          "title": "SBI저축은행 품은 교보생명, 숙원사업 지주사 전환 '눈앞'",
+          "link": "http://www.segyebiz.com/newsView/20260321500652?OutUrl=naver",
+          "date": "2026-03-21"
+        },
+        {
+          "title": "교보생명, SBI저축銀 인수 '막바지'…IPO까지 한 걸음",
+          "link": "https://www.newstopkorea.com/news/articleView.html?idxno=43939",
+          "date": "2026-03-20"
+        },
+        {
+          "title": "[기획] SBI저축銀 인수 구부능선 넘은 교보생명…남은 건 IPO",
+          "link": "https://www.tleaves.co.kr/news/articleView.html?idxno=9006",
+          "date": "2026-03-20"
+        }
+      ],
+      "createdAt": "2026-03-19",
+      "updatedAt": "2026-03-23",
+      "history": [
+        {
+          "date": "2026-03-19",
+          "stage": "기타",
+          "summary": "교보생명이 SBI저축은행을 인수하며 지주사 전환 및 IPO 추진에 속도가 붙을 것으로 기대됨. SBI저축은행 편입을 통해 금융그룹으로서의 포트폴리오 확장을 도모하는 전략. 기존 교보생명 IPO 추진 딜과 연계되는 움직임."
+        },
+        {
+          "date": "2026-03-19",
+          "stage": "기타",
+          "summary": "정부 주도의 해상풍력 계획입지 체계로의 전환이 닻을 올리며 민간사업자 편입 방안이 핵심 과제로 부상함. 기존 민간 주도 개발 방식에서 정부가 입지를 선정하고 민간이 참여하는 구조로 전환되며, 인허가 간소화와 함께 투자 환경 변화에 관심이 집중됨."
+        },
+        {
+          "date": "2026-03-20",
+          "stage": "기타",
+          "summary": "교보생명이 SBI저축은행 인수를 통해 종합금융그룹으로 도약 및 IPO 발판 마련 추진. FI와의 지분 가격 갈등이 지주전환·상장의 발목을 잡는 상황. 신창재 회장의 승부수 또는 보은 성격으로 해석되며 인수 시너지 기대감과 불확실성 공존."
+        },
+        {
+          "date": "2026-03-23",
+          "stage": "딜 클로즈",
+          "summary": "교보생명이 SBI저축은행 인수를 막바지 단계까지 진행하며 사실상 인수 구부능선을 넘은 것으로 평가됨. 인수 완료 후 지주사 전환 및 IPO 재추진이 가시화되고 있으며, 신창재 회장의 숙원사업 실현이 눈앞에 다가옴."
+        }
+      ]
+    },
+    {
+      "id": "deal_20260319_009",
+      "name": "중복상장 원칙금지 관련 롯데글로벌로지스·SK에코플랜트 IPO 영향",
+      "stage": "기타",
+      "summary": "코스닥 중복상장 규제 강화로 디티에스 등 상장 추진 기업들이 표류하는 상황이 발생하고 있음. LS 계열사의 경우 대통령실의 중복상장 금지 발표 이후 시장이 환호하는 등 규제 변화가 기업 가치에 직접적 영향을 미치는 상황임.",
+      "repArticle": {
+        "title": "[송아지 상장] 코스닥도 중복상장 좁은 문…디티에스 등 표류",
+        "link": "https://dealsite.co.kr/articles/158783",
+        "date": "2026-03-23",
+        "source": "dealsite"
+      },
+      "articles": [
+        {
+          "title": "[더벨]중복상장 막힌 에식스솔루션즈, IPO 조직 해체",
+          "link": "https://www.thebell.co.kr/free/content/ArticleView.asp?key=202603191500178600109091",
+          "date": "2026-03-23"
+        },
+        {
+          "title": "[송아지 상장] 코스닥도 중복상장 좁은 문…디티에스 등 표류",
+          "link": "https://dealsite.co.kr/articles/158783",
+          "date": "2026-03-23"
+        },
+        {
+          "title": "[Invest]중복상장 '원칙금지' 내건 정부…\"기업도 FI도 다 죽는다\" 우...",
+          "link": "https://www.investchosun.com/site/data/html_dir/2026/03/18/2026031880192.html",
+          "date": "2026-03-18"
+        },
+        {
+          "title": "[막 내린 중복상장] IPO 물 건너간 롯데글로벌로지스, 롯데지주 부담만...",
+          "link": "https://www.topdaily.kr/articles/109263",
+          "date": "2026-03-19"
+        },
+        {
+          "title": "[막 내린 중복상장] '시계제로' SK에코플랜트, 정면돌파 할까",
+          "link": "https://www.topdaily.kr/articles/109271",
+          "date": "2026-03-19"
+        },
+        {
+          "title": "로빈후드, 비상장 투자 문 열었다…스트라이프·일레븐랩스 첫 편입",
+          "link": "https://www.tokenpost.kr/news/market/340706",
+          "date": "2026-03-18"
+        },
+        {
+          "title": "로빈후드 벤처펀드, 스트라이프·ElevenLabs 첫 투자 공개",
+          "link": "https://www.tokenpost.kr/news/breaking/340428",
+          "date": "2026-03-18"
+        },
+        {
+          "title": "중복상장 '모회사 주주 先배정률' 온도차…금융위 15% vs 與 70%",
+          "link": "https://www.hankyung.com/article/2026031933181",
+          "date": "2026-03-19"
+        },
+        {
+          "title": "[중복상장 디코드] ②대통령이 멈춘 LS, 시장은 '환호'",
+          "link": "https://www.smarttoday.co.kr/ko-kr/articles/105401",
+          "date": "2026-03-23"
+        },
+        {
+          "title": "['중복상장 금지' 쇼크] HD현대로보틱스ㆍSK에코플랜트 어쩌나",
+          "link": "https://www.dnews.co.kr/uhtml/view.jsp?idxno=202603191402331560866",
+          "date": "2026-03-22"
+        }
+      ],
+      "createdAt": "2026-03-19",
+      "updatedAt": "2026-03-23",
+      "history": [
+        {
+          "date": "2026-03-19",
+          "stage": "기타",
+          "summary": "정부의 중복상장 원칙금지 방침으로 롯데글로벌로지스의 IPO가 사실상 물 건너간 것으로 평가되며 롯데지주의 부담이 가중됨. SK에코플랜트는 시계제로 상황에서 정면돌파를 검토 중. FI 입장에서도 엑시트 루트가 막히는 상황에 처하며 업계 우려가 커지는 중."
+        },
+        {
+          "date": "2026-03-19",
+          "stage": "딜 클로즈",
+          "summary": "미국 로빈후드가 비상장 투자 서비스를 출시하며 스트라이프, ElevenLabs 등을 첫 편입 종목으로 공개함. 개인 투자자들에게 비상장 기업 투자 기회를 제공하는 새로운 플랫폼 서비스로 글로벌 사모시장 접근성 확대라는 측면에서 주목받고 있음."
+        },
+        {
+          "date": "2026-03-20",
+          "stage": "기타",
+          "summary": "중복상장 전면 금지 정책으로 SK에코플랜트의 IPO 추진이 시계제로 상황에 빠짐. 금융위원회가 15% 모회사 주주 선배정을 주장하는 반면 여당은 70%를 요구하며 온도차 노출. SK에코플랜트의 정면돌파 여부 및 IPO 플랜B 모색 필요성 부각."
+        },
+        {
+          "date": "2026-03-23",
+          "stage": "기타",
+          "summary": "코스닥 중복상장 규제 강화로 디티에스 등 상장 추진 기업들이 표류하는 상황이 발생하고 있음. LS 계열사의 경우 대통령실의 중복상장 금지 발표 이후 시장이 환호하는 등 규제 변화가 기업 가치에 직접적 영향을 미치는 상황임."
+        }
+      ]
+    },
+    {
+      "id": "deal_20260319_010",
+      "name": "AIM인베스트먼트 M&A 자문 역량 강화",
+      "stage": "기타",
+      "summary": "고려아연 주총을 앞두고 국민연금이 자문사 7곳의 반대 의견에도 불구하고 MBK·영풍 측 일부 후보에 찬성표를 행사하거나 의결권을 미행사하는 '엇박자' 행보를 보여 논란이 확산됨. 노동계·업계는 국민연금의 의결권 행사 방향에 강하게 반발하며 '기만적 결정'이라고 맹비난하고 있어 표대결의 변수로 부상함.",
+      "repArticle": {
+        "title": "국민연금, 고려아연 주총서 MBK 측 일부 후보 찬성…노동계·업계 논란",
+        "link": "https://www.naeil.com/news/read/582234?ref=naver",
+        "date": "2026-03-22",
+        "source": "기타매체명"
+      },
+      "articles": [
+        {
+          "title": "[더벨]AIM인베, PE 역량 앞세워 M&A 자문도 '실력 입증'",
+          "link": "https://www.thebell.co.kr/free/content/ArticleView.asp?key=202603161120188040106623",
+          "date": "2026-03-18"
+        },
+        {
+          "title": "[더벨][매니저 프로파일 | 삼호그린인베스트먼트] '흐름을 읽는 베테랑'",
+          "link": "https://www.thebell.co.kr/free/content/ArticleView.asp?key=202603131247347280103270",
+          "date": "2026-03-18"
+        },
+        {
+          "title": "IMA 조달 경쟁 종료…운용 성과로 갈린다",
+          "link": "http://www.ftoday.co.kr/news/articleView.html?idxno=356637",
+          "date": "2026-03-19"
+        },
+        {
+          "title": "국민연금, 고려아연 주총서 MBK 측 일부 후보 찬성…노동계·업계 논란",
+          "link": "https://www.naeil.com/news/read/582234?ref=naver",
+          "date": "2026-03-22"
+        },
+        {
+          "title": "국민연금, 자문사 7곳 반대한 MBK 임원 찬성…노조·업계 반발 확산",
+          "link": "http://www.queen.co.kr/news/articleView.html?idxno=453481",
+          "date": "2026-03-22"
+        },
+        {
+          "title": "여당·자문사도 'MBK 반대'라는데…국민연금, 홀로 '의아한 찬성표'",
+          "link": "https://www.apnews.kr/news/articleView.html?idxno=3047008",
+          "date": "2026-03-22"
+        },
+        {
+          "title": "고려아연 노조, 국민연금에 맹비난 \"기만적 결정\"",
+          "link": "http://www.fntimes.com/html/view.php?ud=2026032218131471887de3572ddd_18",
+          "date": "2026-03-22"
+        },
+        {
+          "title": "고려아연 주총 앞, 국민연금 '엇박자'…자문사 7곳 반대에도 MBK·영풍 선...",
+          "link": "https://www.joongangenews.com/news/articleView.html?idxno=504712",
+          "date": "2026-03-22"
+        },
+        {
+          "title": "주총 앞둔 고려아연, 국민연금 의결권 '미행사'…표대결 변수 부상",
+          "link": "https://www.g-enews.com/view.php?ud=202603221030499246112616b072_1",
+          "date": "2026-03-22"
+        }
+      ],
+      "createdAt": "2026-03-19",
+      "updatedAt": "2026-03-23",
+      "history": [
+        {
+          "date": "2026-03-19",
+          "stage": "기타",
+          "summary": "AIM인베스트먼트가 PE 역량을 앞세워 M&A 자문 분야에서도 실력을 입증하고 있음. PE 운용사가 자문 역량까지 겸비하는 새로운 비즈니스 모델로 주목받는 중."
+        },
+        {
+          "date": "2026-03-19",
+          "stage": "기타",
+          "summary": "더벨이 삼호그린인베스트먼트의 핵심 매니저를 조명하며 투자 철학과 운용 전략을 분석함. 흐름을 읽는 베테랑 투자자로 평가받으며 국내 PE/VC 시장에서의 차별화된 접근 방식이 소개됨."
+        },
+        {
+          "date": "2026-03-20",
+          "stage": "기타",
+          "summary": "IMA 조달 경쟁이 종료되며 운용 성과에 따라 향후 선별이 이루어질 전망임. 국내 M&A 자문 시장에서 운용사 간 성과 경쟁이 본격화되는 구도임. 자문사별 트랙레코드 및 딜 실행력이 핵심 차별화 요소로 부각됨."
+        },
+        {
+          "date": "2026-03-23",
+          "stage": "기타",
+          "summary": "고려아연 주총을 앞두고 국민연금이 자문사 7곳의 반대 의견에도 불구하고 MBK·영풍 측 일부 후보에 찬성표를 행사하거나 의결권을 미행사하는 '엇박자' 행보를 보여 논란이 확산됨. 노동계·업계는 국민연금의 의결권 행사 방향에 강하게 반발하며 '기만적 결정'이라고 맹비난하고 있어 표대결의 변수로 부상함."
+        }
+      ]
+    },
+    {
+      "id": "deal_20260319_011",
+      "name": "미국 사모대출(Private Credit) 부실화 우려 확산",
+      "stage": "기타",
+      "summary": "은행권이 사모신용 시장의 혼란을 부추기고 있다는 분석이 제기되며, 오히려 은행에 유리한 구도가 형성될 수 있다는 시각이 공존함. 글로벌 사모대출펀드 부실화 우려가 지속 확산되는 가운데 시장 참여자들의 대응 전략에 관심이 집중됨.",
+      "repArticle": {
+        "title": "[주末머니]\"사모신용 시장 혼란 부추기는 은행…오히려 좋아?\"",
+        "link": "https://view.asiae.co.kr/article/2026032015430113150",
+        "date": "2026-03-22",
+        "source": "기타매체명"
+      },
+      "articles": [
+        {
+          "title": "'그림자 금융' 그 속엔 '바퀴벌레' 득실?...월가 비명 터진다",
+          "link": "https://www.mt.co.kr/world/2026/03/19/2026031818120069560",
+          "date": "2026-03-19"
+        },
+        {
+          "title": "환매중단→파산 재현?…2조달러사모신용에 2008년 떠올린다",
+          "link": "https://www.mt.co.kr/world/2026/03/19/2026031716175053024",
+          "date": "2026-03-18"
+        },
+        {
+          "title": "\"투자금 뺀다고? 지금은 안돼\"...자꾸만 떠오르는 2008년 악몽, 왜",
+          "link": "https://www.mt.co.kr/world/2026/03/19/2026031818353099233",
+          "date": "2026-03-19"
+        },
+        {
+          "title": "美사모대출 리스크 확산 우려…국내 증시 '잠재 위험 변수'로",
+          "link": "http://www.opinionnews.co.kr/news/articleView.html?idxno=135160",
+          "date": "2026-03-18"
+        },
+        {
+          "title": "'태광이 뿔났다'…이호진 전 회장 경영복귀 앞두고 이슈 대응 '강경'",
+          "link": "https://biz.newdaily.co.kr/site/data/html/2026/03/18/2026031800170.html",
+          "date": "2026-03-18"
+        },
+        {
+          "title": "0.5배 이하 260여개, 심지어 0.1배짜리도 … '낙인 찍힐까' 벌벌떠는 저...",
+          "link": "https://biz.newdaily.co.kr/site/data/html/2026/03/19/2026031900103.html",
+          "date": "2026-03-19"
+        },
+        {
+          "title": "[주末머니]\"사모신용 시장 혼란 부추기는 은행…오히려 좋아?\"",
+          "link": "https://view.asiae.co.kr/article/2026032015430113150",
+          "date": "2026-03-22"
+        }
+      ],
+      "createdAt": "2026-03-19",
+      "updatedAt": "2026-03-23",
+      "history": [
+        {
+          "date": "2026-03-19",
+          "stage": "기타",
+          "summary": "미국 사모대출펀드(Private Credit) 시장에서 부실화 우려가 확산되며 월가에 2008년 금융위기 악몽이 재현될 수 있다는 경고가 나옴. 환매중단 및 파산 가능성이 제기되며 국내 증시에도 잠재적 위험 변수로 인식됨. 2조달러 규모의 사모신용 시장이 흔들릴 경우 글로벌 금융시장 전반에 충격이 예상됨."
+        },
+        {
+          "date": "2026-03-19",
+          "stage": "기타",
+          "summary": "이호진 전 태광그룹 회장의 경영 복귀가 임박한 가운데 태광이 주요 이슈에 대한 강경 대응에 나서고 있음. 애경산업 티투PE 투자 등 그룹 관련 PE 딜과 맞물려 향후 태광그룹의 지배구조 변화에 관심이 집중되고 있음."
+        },
+        {
+          "date": "2026-03-20",
+          "stage": "기타",
+          "summary": "사모대출 펀드 포트폴리오 중 0.5배 이하 260여개, 심지어 0.1배짜리 딜도 존재하며 부실화 우려 확산. LP들의 낙인 우려로 GP들이 실적 공개를 꺼리는 분위기. 글로벌 사모대출 시장 전반의 건전성 이슈로 번질 가능성 주목."
+        },
+        {
+          "date": "2026-03-23",
+          "stage": "기타",
+          "summary": "은행권이 사모신용 시장의 혼란을 부추기고 있다는 분석이 제기되며, 오히려 은행에 유리한 구도가 형성될 수 있다는 시각이 공존함. 글로벌 사모대출펀드 부실화 우려가 지속 확산되는 가운데 시장 참여자들의 대응 전략에 관심이 집중됨."
+        }
+      ]
+    },
+    {
+      "id": "deal_20260319_014",
+      "name": "신한투자증권·SKS PE 수양켐텍 경영권 인수",
+      "stage": "딜 클로즈",
+      "summary": "신한투자증권이 수양켐텍 경영권 인수를 계기로 PE 딜 본격 확대 전략을 가속화하고 있음. 증권사가 직접 PE 딜에 참여하는 구조로, 향후 추가 딜 수주 행보가 주목됨.",
+      "repArticle": {
+        "title": "[더벨]'수양켐텍 인수' 신한투자증권, PE 딜 본격 확대",
+        "link": "https://www.thebell.co.kr/free/content/ArticleView.asp?key=202603191029542120108848",
+        "date": "2026-03-23",
+        "source": "thebell"
+      },
+      "articles": [
+        {
+          "title": "[더벨]'수양켐텍 인수' 신한투자증권, PE 딜 본격 확대",
+          "link": "https://www.thebell.co.kr/free/content/ArticleView.asp?key=202603191029542120108848",
+          "date": "2026-03-23"
+        },
+        {
+          "title": "신한투자증권, 수양켐텍 경영권인수거래 마무리",
+          "link": "http://www.seoulwire.com/news/articleView.html?idxno=711920",
+          "date": "2026-03-18"
+        },
+        {
+          "title": "신한투자증권, 수양켐텍 경영권인수거래 마무리",
+          "link": "http://www.thefirstmedia.net/news/articleView.html?idxno=195808",
+          "date": "2026-03-18"
+        },
+        {
+          "title": "신한투자증권, 수양켐텍 경영권인수거래 마무리",
+          "link": "https://economist.co.kr/article/view/ecn202603180050",
+          "date": "2026-03-18"
+        },
+        {
+          "title": "신한투자증권, 수양켐텍 경영권인수마무리",
+          "link": "https://www.cstimes.com/news/articleView.html?idxno=698146",
+          "date": "2026-03-18"
+        },
+        {
+          "title": "신한투자증권, 수양켐텍 경영권 인수거래 마무리",
+          "link": "https://www.newsis.com/view/NISX20260318_0003553753",
+          "date": "2026-03-18"
+        },
+        {
+          "title": "신한투자증권, 수양켐텍 M&A딜 성공적 클로징",
+          "link": "https://www.pinpointnews.co.kr/news/articleView.html?idxno=437773",
+          "date": "2026-03-18"
+        },
+        {
+          "title": "신한투 'IB종합금융부' 역할 확대…수양켐텍 M&A딜 클로징",
+          "link": "http://www.newsfc.co.kr/news/articleView.html?idxno=77442",
+          "date": "2026-03-18"
+        },
+        {
+          "title": "신한투자증권, 수양켐텍 M&A딜 마무리…\"모험자본 공급 지속 실천\"",
+          "link": "http://www.smarttimes.co.kr/news/articleView.html?idxno=43813",
+          "date": "2026-03-18"
+        },
+        {
+          "title": "신한투자증권, 수양켐텍 경영권 인수 딜 성료…모험자본 공급 확대",
+          "link": "https://www.ezyeconomy.com/news/articleView.html?idxno=233563",
+          "date": "2026-03-18"
+        },
+        {
+          "title": "신한투자증권, 수양켐텍 M&A딜 마무리…'IB종합금융부' 첫 성과",
+          "link": "http://www.popcornnews.net/news/articleView.html?idxno=115479",
+          "date": "2026-03-18"
+        },
+        {
+          "title": "신한투자증권, 수양켐텍 M&A 딜 클로징",
+          "link": "https://www.mydaily.co.kr/page/view/2026031814010154333",
+          "date": "2026-03-18"
+        },
+        {
+          "title": "신한투자증권, 수양켐텍 M&A딜 클로징",
+          "link": "https://www.financialpost.co.kr/news/articleView.html?idxno=251855",
+          "date": "2026-03-18"
+        },
+        {
+          "title": "신한투자증권, 수양켐텍 경영권 인수 마무리",
+          "link": "https://www.newspim.com/news/view/20260318000789",
+          "date": "2026-03-18"
+        },
+        {
+          "title": "신한證, 수양켐텍 M&A딜 성공적 마무리…IB종합금융부 첫 성과",
+          "link": "http://www.fnnews.com/news/202603181329541270",
+          "date": "2026-03-18"
+        },
+        {
+          "title": "신한투자증권, 수양켐텍 M&A딜 클로징",
+          "link": "https://daily.hankooki.com/news/articleView.html?idxno=1348464",
+          "date": "2026-03-18"
+        },
+        {
+          "title": "신한투증, SKS PE와 수양켐텍 M&A 성공적 마무리",
+          "link": "https://www.newsinside.kr/news/articleView.html?idxno=4514626",
+          "date": "2026-03-18"
+        },
+        {
+          "title": "신한證, 수양켐텍 M&A딜 클로징…\"IB종합금융부 첫 성과\"",
+          "link": "https://www.sedaily.com/article/20020912?ref=naver",
+          "date": "2026-03-18"
+        },
+        {
+          "title": "신한투자증권, 수양켐텍 M&A딜 성공적 클로징...강소기업 성장 지원 '첫 성과'",
+          "link": "https://www.greened.kr/news/articleView.html?idxno=338152",
+          "date": "2026-03-18"
+        },
+        {
+          "title": "신한투자증권, 수양켐텍 M&A딜 마무리…\"모험자본 공급 박차\"",
+          "link": "https://www.delighti.co.kr/news/articleView.html?idxno=113634",
+          "date": "2026-03-18"
+        },
+        {
+          "title": "신한투자증권, 수양켐텍 M&A딜 마무리…\"모험자본 공급 박차\"",
+          "link": "http://www.edaily.co.kr/news/newspath.asp?newsid=03814646645384632",
+          "date": "2026-03-18"
+        },
+        {
+          "title": "[오늘 뭐했니?] 신한은행·신한투자증권",
+          "link": "http://www.financialreview.co.kr/news/articleView.html?idxno=41004",
+          "date": "2026-03-18"
+        },
+        {
+          "title": "신한투자증권, 수양켐텍 M&A딜 성공…첨단전략산업 강소기업 성장 지원",
+          "link": "http://www.sisacast.kr/news/articleView.html?idxno=93606",
+          "date": "2026-03-19"
+        },
+        {
+          "title": "신한투자증권, 수양켐텍 M&A딜 성공적 클로징",
+          "link": "https://www.inthenews.co.kr/news/article.html?no=84457",
+          "date": "2026-03-19"
+        }
+      ],
+      "createdAt": "2026-03-19",
+      "updatedAt": "2026-03-23",
+      "history": [
+        {
+          "date": "2026-03-19",
+          "stage": "딜 클로즈",
+          "summary": "신한투자증권과 SKS PE가 약 500억원을 투입해 수양켐텍 경영권 지분 60%를 인수하는 M&A 딜을 성공적으로 클로징함. 신한투자증권 IB종합금융부의 첫 성과로 주목받으며, 강소기업 성장 지원 및 모험자본 공급 확대 차원에서 추진됨. 수양켐텍은 화학 소재 관련 기업으로 파악됨."
+        },
+        {
+          "date": "2026-03-20",
+          "stage": "딜 클로즈",
+          "summary": "신한투자증권이 SKS PE와 함께 추진한 수양켐텍 M&A 딜이 성공적으로 클로징됨. 첨단전략산업 강소기업 성장 지원 목적으로 추진된 딜로, 신한투자증권의 M&A 자문 역량 강화 사례로 주목. 관련 기사 다수 보도."
+        },
+        {
+          "date": "2026-03-23",
+          "stage": "딜 클로즈",
+          "summary": "신한투자증권이 수양켐텍 경영권 인수를 계기로 PE 딜 본격 확대 전략을 가속화하고 있음. 증권사가 직접 PE 딜에 참여하는 구조로, 향후 추가 딜 수주 행보가 주목됨."
+        }
+      ]
+    },
+    {
+      "id": "deal_20260319_017",
+      "name": "경찰공제회 PE 출자사업 GP 선정",
+      "stage": "주관사 선정",
+      "summary": "경찰공제회가 10년 만에 PE 출자를 재개하며 케이스톤파트너스, 제네시스PE, BNW인베스트먼트를 GP로 낙점함. 장기 공백 이후 재개된 출자사업으로 국내 중형 PE들의 자금 유치 경쟁에 긍정적 신호로 평가됨.",
+      "repArticle": {
+        "title": "경찰공제회, 10년만 PE 출자 재개…제네시스·BNW·케이스톤 낙점",
+        "link": "https://www.newstopkorea.com/news/articleView.html?idxno=43931",
+        "date": "2026-03-20",
+        "source": "기타매체명"
+      },
+      "articles": [
+        {
+          "title": "[더벨][LP Radar] 경찰공제회 VC 출자사업, K2인베·우리벤처·SBVA 선정",
+          "link": "https://www.thebell.co.kr/free/content/ArticleView.asp?key=202603191051248720108452",
+          "date": "2026-03-20"
+        },
+        {
+          "title": "숏리스트 PE 정성평가 마친 경찰공제회, 이르면 내주 결과[마켓인]",
+          "link": "http://www.edaily.co.kr/news/newspath.asp?newsid=05064326645384632",
+          "date": "2026-03-18"
+        },
+        {
+          "title": "경찰공제회, PE 블라인드에 제네시스·케이스톤·BNW 선정",
+          "link": "https://www.bloter.net/news/articleView.html?idxno=657127",
+          "date": "2026-03-19"
+        },
+        {
+          "title": "경찰공제회 PE 출자 케이스톤·제네시스·BNW인베 낙점[only이데일리]",
+          "link": "http://www.edaily.co.kr/news/newspath.asp?newsid=03991766645384960",
+          "date": "2026-03-19"
+        },
+        {
+          "title": "경찰공제회 PE 출자에 케이스톤·제네시스·BNW인베 [시그널]",
+          "link": "https://www.sedaily.com/article/20021622?ref=naver",
+          "date": "2026-03-20"
+        },
+        {
+          "title": "경찰공제회, 10년만 PE 출자 재개…제네시스·BNW·케이스톤 낙점",
+          "link": "https://www.newstopkorea.com/news/articleView.html?idxno=43931",
+          "date": "2026-03-20"
+        }
+      ],
+      "createdAt": "2026-03-19",
+      "updatedAt": "2026-03-23",
+      "history": [
+        {
+          "date": "2026-03-19",
+          "stage": "주관사 선정",
+          "summary": "경찰공제회가 PE 대상 정성평가를 마치고 이르면 다음 주 GP 선정 결과를 발표할 예정임. 숏리스트에 오른 PE들의 최종 선정을 앞두고 있으며 결과에 따른 자금 흐름이 주목됨."
+        },
+        {
+          "date": "2026-03-20",
+          "stage": "주관사 선정",
+          "summary": "경찰공제회가 PE 블라인드펀드 출자사업 GP로 케이스톤PE, 제네시스PE, BNW인베스트먼트 3곳을 선정함. 복수 GP 낙점을 통해 포트폴리오 분산 효과 도모. 국내 중견 PE들의 LP 확보 경쟁에서 의미 있는 성과."
+        },
+        {
+          "date": "2026-03-23",
+          "stage": "주관사 선정",
+          "summary": "경찰공제회가 10년 만에 PE 출자를 재개하며 케이스톤파트너스, 제네시스PE, BNW인베스트먼트를 GP로 낙점함. 장기 공백 이후 재개된 출자사업으로 국내 중형 PE들의 자금 유치 경쟁에 긍정적 신호로 평가됨."
+        }
+      ]
+    },
+    {
+      "id": "deal_20260318_007",
+      "name": "이지스자산운용 외국 PEF 매각",
+      "stage": "실사 진행중",
+      "summary": "이지스자산운용 매각 딜이 '9부 능선'을 넘어서는 단계로, 힐하우스캐피탈이 막바지 실사를 진행 중인 것으로 알려짐. SPA 체결을 앞두고 거래 완결 가능성이 높아지는 상황임.",
+      "repArticle": {
+        "title": "이지스운용 매각 '9부 능선' 넘나…힐하우스, 실사 막바지 [주간 '딜...'",
+        "link": "https://biz.heraldcorp.com/article/10699433?ref=naver",
+        "date": "2026-03-22",
+        "source": "기타매체명"
+      },
+      "articles": [
+        {
+          "title": "전략인프라 등 자산 73조 이지스운용, 외국 PEF로 매각 막바지",
+          "link": "https://www.yna.co.kr/view/AKR20260317173200002?input=1195m",
+          "date": "2026-03-18"
+        },
+        {
+          "title": "이지스자산운용,매각막바지…외국계사모펀드(PEF)로의매각가능성",
+          "link": "http://www.press9.kr/news/articleView.html?idxno=73707",
+          "date": "2026-03-18"
+        },
+        {
+          "title": "이지스운용 매각 '9부 능선' 넘나…힐하우스, 실사 막바지 [주간 '딜...'",
+          "link": "https://biz.heraldcorp.com/article/10699433?ref=naver",
+          "date": "2026-03-22"
+        }
+      ],
+      "createdAt": "2026-03-18",
+      "updatedAt": "2026-03-23",
+      "history": [
+        {
+          "date": "2026-03-18",
+          "stage": "SPA 체결",
+          "summary": "전략인프라 등 자산 73조원을 운용하는 이지스자산운용의 외국 PEF 매각이 막바지 단계에 진입한 것으로 알려짐. 구체적인 매수자 및 매각 금액은 미공개 상태이며, 국내 부동산·인프라 대형 운용사에 대한 외국계 PE의 인수로 시장 주목. 딜 클로즈가 임박한 것으로 보임."
+        },
+        {
+          "date": "2026-03-19",
+          "stage": "SPA 체결",
+          "summary": "이지스자산운용이 외국계 사모펀드(PEF)로의 매각이 막바지 단계에 접어든 것으로 보도됨. 외국계 PEF로의 매각 가능성이 높은 것으로 전해지며 SPA 체결 단계에 근접한 상황."
+        },
+        {
+          "date": "2026-03-23",
+          "stage": "실사 진행중",
+          "summary": "이지스자산운용 매각 딜이 '9부 능선'을 넘어서는 단계로, 힐하우스캐피탈이 막바지 실사를 진행 중인 것으로 알려짐. SPA 체결을 앞두고 거래 완결 가능성이 높아지는 상황임."
+        }
+      ]
+    },
+    {
+      "id": "deal_20260317_002",
+      "name": "MG손보 법인 파산 절차 및 새 주인 찾기",
+      "stage": "기타",
+      "summary": "박영한 서울시의원이 국민연금과 기관사모펀드의 기업지배 시대에 따른 서울시 대응전략을 주제로 토론회를 개최함. 기관 사모펀드의 영향력 확대 속에서 지방정부 차원의 대응 전략 마련 필요성이 제기되는 상황임.",
+      "repArticle": {
+        "title": "박영한 서울시의원, '국민연금·기관사모펀드와 서울시 대응전략' 토론...",
+        "link": "https://www.discoverynews.kr/news/articleView.html?idxno=1087436",
+        "date": "2026-03-23",
+        "source": "기타매체명"
+      },
+      "articles": [
+        {
+          "title": "[단독] MG손보 법인도 파산 절차…새 주인 찾기는 여전히 오리무중",
+          "link": "https://www.bizhankook.com/bk/article/31748",
+          "date": "2026-03-16"
+        },
+        {
+          "title": "우리금융, 동양·ABL생명 통합? \"결정된 것 없어\"",
+          "link": "http://www.newswatch.kr/news/articleView.html?idxno=78509",
+          "date": "2026-03-18"
+        },
+        {
+          "title": "우리금융, 동양생명 완전자회사화 추진…\"ABL생명 통합 사전작업\"",
+          "link": "http://www.joseilbo.com/news/news_read.php?uid=564809&class=53&grp=",
+          "date": "2026-03-18"
+        },
+        {
+          "title": "서울시의회 박영한 의원, '국민연금과 기관사모펀드경쟁력 강화 따른 ...",
+          "link": "https://www.tournews21.com/news/articleView.html?idxno=132236",
+          "date": "2026-03-23"
+        },
+        {
+          "title": "박영한 서울시의원, '국민연금·기관사모펀드와 서울시 대응전략' 토론...",
+          "link": "https://www.discoverynews.kr/news/articleView.html?idxno=1087436",
+          "date": "2026-03-23"
+        },
+        {
+          "title": "박영한 서울시의원, 국민연금과 기관사모펀드의 시대, 서울시 대응전략...",
+          "link": "https://www.seoul.co.kr/news/publicnews/local_govern/smc_movement/2026/03/23/20260323500025?wlog_tag3=naver",
+          "date": "2026-03-23"
+        },
+        {
+          "title": "박영한 서울시의원, '국민연금과 기관사모펀드의 기업지배 시대, 서울시...",
+          "link": "http://www.enewstoday.co.kr/news/articleView.html?idxno=2409109",
+          "date": "2026-03-23"
+        }
+      ],
+      "createdAt": "2026-03-17",
+      "updatedAt": "2026-03-23",
+      "history": [
+        {
+          "date": "2026-03-17",
+          "stage": "매각 검토중",
+          "summary": "MG손해보험 법인이 파산 절차에 돌입한 가운데 새 주인 찾기는 여전히 난항을 겪고 있음. 인수 희망자 확보가 되지 않으면서 매각 작업이 오리무중인 상황임. 금융당국 및 관련 채권단의 대응 방안이 주목됨."
+        },
+        {
+          "date": "2026-03-18",
+          "stage": "기타",
+          "summary": "우리금융이 동양생명 완전자회사화를 추진하며 ABL생명과의 통합 사전 작업에 나선 것으로 알려짐. 우리금융 측은 '결정된 것 없다'는 입장이나 하나증권 등 시장에서는 통합 가능성을 높게 보고 있음. 동양·ABL생명 통합은 우리금융의 보험 부문 경쟁력 강화를 위한 구조 재편 일환으로 분석됨."
+        },
+        {
+          "date": "2026-03-23",
+          "stage": "기타",
+          "summary": "박영한 서울시의원이 국민연금과 기관사모펀드의 기업지배 시대에 따른 서울시 대응전략을 주제로 토론회를 개최함. 기관 사모펀드의 영향력 확대 속에서 지방정부 차원의 대응 전략 마련 필요성이 제기되는 상황임."
+        }
+      ]
+    },
+    {
+      "id": "deal_20260317_026",
+      "name": "글로벌 PE 세컨더리 딜 투자 확대",
+      "stage": "기타",
+      "summary": "글로벌 사모시장에서 세컨더리 마켓이 성숙기 시장의 해결사로 부상하며 '뉴노멀'로 자리잡고 있음. PE 펀드 만기 연장·LP 유동성 수요 증가 등에 따라 세컨더리 딜 거래 규모가 지속 확대되는 추세임.",
+      "repArticle": {
+        "title": "[PE는 지금]'뉴노멀' 세컨더리 마켓…성숙기 시장 해결사로 등장",
+        "link": "https://view.asiae.co.kr/article/2026032009304880579",
+        "date": "2026-03-23",
+        "source": "기타매체명"
+      },
+      "articles": [
+        {
+          "title": "[마켓인] 또 터진 세컨더리 딜…투자 확대하는 글로벌 PE들",
+          "link": "http://www.edaily.co.kr/news/newspath.asp?newsid=04798646645383976",
+          "date": "2026-03-16"
+        },
+        {
+          "title": "[PE는 지금]'뉴노멀' 세컨더리 마켓…성숙기 시장 해결사로 등장",
+          "link": "https://view.asiae.co.kr/article/2026032009304880579",
+          "date": "2026-03-23"
+        }
+      ],
+      "createdAt": "2026-03-17",
+      "updatedAt": "2026-03-23",
+      "history": [
+        {
+          "date": "2026-03-17",
+          "stage": "기타",
+          "summary": "글로벌 PE들이 세컨더리 딜 투자를 확대하는 추세로 또다시 세컨더리 거래가 터지는 상황. 유동성 확보를 위한 GP-led 세컨더리 및 LP 지분 매각이 증가하는 시장 환경 분석. 국내외 세컨더리 시장 확대에 대한 트렌드 기사."
+        },
+        {
+          "date": "2026-03-23",
+          "stage": "기타",
+          "summary": "글로벌 사모시장에서 세컨더리 마켓이 성숙기 시장의 해결사로 부상하며 '뉴노멀'로 자리잡고 있음. PE 펀드 만기 연장·LP 유동성 수요 증가 등에 따라 세컨더리 딜 거래 규모가 지속 확대되는 추세임."
+        }
+      ]
+    },
+    {
+      "id": "deal_20260317_027",
+      "name": "남궁견 회장 구조조정 완료 기업 전략적 매각 (K-콘텐츠 중심 전환)",
+      "stage": "매각 검토중",
+      "summary": "남궁견 회장이 구조조정을 완료한 미래아이앤지를 전략적으로 매각 추진 중이며, 딜사이트 보도에 따르면 아직 완전히 넘긴 것이 아닌 단계로 매각 협상이 진행 중인 것으로 파악됨. K-콘텐츠 중심으로의 사업 재편 과정에서 비핵심 자산 정리 성격의 딜로 분석됨.",
+      "repArticle": {
+        "title": "[코스피 매물 스코프] \"다 넘긴 게 아니었다\"…남궁견, 미래아이앤지 매각 추진",
+        "link": "https://dealsite.co.kr/articles/158590",
+        "date": "2026-03-20",
+        "source": "dealsite"
+      },
+      "articles": [
+        {
+          "title": "[코스피 매물 스코프] \"다 넘긴 게 아니었다\"…남궁견, 미래아이앤지 매각 추진",
+          "link": "https://dealsite.co.kr/articles/158590",
+          "date": "2026-03-20"
+        },
+        {
+          "title": "남궁견 회장, 구조조정 완료 기업 전략적 매각… 엔터테인먼트 중심 투자",
+          "link": "http://www.thebigdata.co.kr/view.php?ud=2026031617555940479aeda69934_23",
+          "date": "2026-03-16"
+        },
+        {
+          "title": "남궁견 회장, 구조조정 완료 기업 전략적 매각",
+          "link": "https://www.getnews.co.kr/news/articleView.html?idxno=864414",
+          "date": "2026-03-16"
+        },
+        {
+          "title": "남궁견 회장, 상장사 일부 매각…구조조정 투자에서 K-콘텐츠로 무게 이동",
+          "link": "https://www.job-post.co.kr/news/articleView.html?idxno=210431",
+          "date": "2026-03-16"
+        },
+        {
+          "title": "남궁견 회장, 구조조정 마친 기업 전략적 매각 나서… '엔터 중심 사업'",
+          "link": "https://www.apnews.kr/news/articleView.html?idxno=3046807",
+          "date": "2026-03-16"
+        }
+      ],
+      "createdAt": "2026-03-17",
+      "updatedAt": "2026-03-23",
+      "history": [
+        {
+          "date": "2026-03-17",
+          "stage": "매각 검토중",
+          "summary": "남궁견 회장이 구조조정을 완료한 기업들을 전략적으로 매각하고 엔터테인먼트·K-콘텐츠 중심으로 사업 포트폴리오를 재편 중. 상장사 일부 매각을 추진하며 투자 무게 중심을 이동. 구체적 매각 대상 기업 및 규모는 미공개."
+        },
+        {
+          "date": "2026-03-23",
+          "stage": "매각 검토중",
+          "summary": "남궁견 회장이 구조조정을 완료한 미래아이앤지를 전략적으로 매각 추진 중이며, 딜사이트 보도에 따르면 아직 완전히 넘긴 것이 아닌 단계로 매각 협상이 진행 중인 것으로 파악됨. K-콘텐츠 중심으로의 사업 재편 과정에서 비핵심 자산 정리 성격의 딜로 분석됨."
+        }
+      ]
+    },
+    {
+      "id": "deal_20260317_032",
+      "name": "글로벌 사모대출펀드 블루아울 헤지펀드 공격 및 부실화 이슈",
+      "stage": "기타",
+      "summary": "블랙스톤 사모대출펀드가 2022년 이후 첫 월간 손실을 기록하며 글로벌 사모대출 부실화 우려가 확산되고 있음. 골드만삭스 CEO는 신용 사이클이 사라진 것은 아니라며 진화에 나섰으나, 한국투자·삼성증권 등 국내 기관의 익스포저에도 이목이 집중됨. 미국발 사모대출 펀드런 우려 속에서도 국내 주요 증권사들은 현재까지 이상 징후가 없다는 입장임.",
+      "repArticle": {
+        "title": "사모대출 부실 우려 확산…골드만 CEO \"신용 사이클 사라진 것 아냐\"",
+        "link": "https://www.sedaily.com/article/20022599?ref=naver",
+        "date": "2026-03-23",
+        "source": "기타매체명"
+      },
+      "articles": [
+        {
+          "title": "흔들리는사모대출펀드블루아울 노리는 헤지펀드…\"지분 헐값에 넘겨...\"",
+          "link": "https://www.mk.co.kr/article/11989906",
+          "date": "2026-03-17"
+        },
+        {
+          "title": "\"사모대출 환매 압박, 과거에서 해법 찾아야\"",
+          "link": "https://view.asiae.co.kr/article/2026031708453798881",
+          "date": "2026-03-17"
+        },
+        {
+          "title": "[Why&Next]'펀드런' 올까…사모대출 시장 어디로",
+          "link": "https://view.asiae.co.kr/article/2026031717124337038",
+          "date": "2026-03-18"
+        },
+        {
+          "title": "중국 그림자금융부터 LBO 버블까지…사모대출 위기 '데자뷔' [그림자...]",
+          "link": "https://www.etoday.co.kr/news/view/2566389",
+          "date": "2026-03-18"
+        },
+        {
+          "title": "[사모신용 경보] \"부도율 9.2% 금융위기 넘었다\"… 3조 달러사모신용 '...",
+          "link": "https://www.g-enews.com/view.php?ud=202603171730382870fbbec65dfb_1",
+          "date": "2026-03-18"
+        },
+        {
+          "title": "뉴욕증시사모대출 환매 폭탄 \"위험 수준\" ... 파이낸셜타임스(FT)",
+          "link": "https://www.g-enews.com/view.php?ud=202603180501089172906806b77b_1",
+          "date": "2026-03-18"
+        },
+        {
+          "title": "사모대출 한파 뚫고 'K-BDC' 출격…미국과는 다르다는데?",
+          "link": "https://www.newsquest.co.kr/news/articleView.html?idxno=263301",
+          "date": "2026-03-17"
+        },
+        {
+          "title": "[AI의 종목 이야기] 블랙스톤사모대출펀드, 2022년 이후 첫 월간 손실",
+          "link": "https://www.newspim.com/news/view/20260323000059",
+          "date": "2026-03-23"
+        },
+        {
+          "title": "미국발사모대출펀드런…한국투자·삼성증권 '이상무'",
+          "link": "http://www.sisaon.co.kr/news/articleView.html?idxno=181629",
+          "date": "2026-03-23"
+        },
+        {
+          "title": "사모대출 부실 우려 확산…골드만 CEO \"신용 사이클 사라진 것 아냐\"",
+          "link": "https://www.sedaily.com/article/20022599?ref=naver",
+          "date": "2026-03-23"
+        },
+        {
+          "title": "[박정식의 국내 주식시황] 이란 전쟁 장기화 및 美사모대출 부실 우려...",
+          "link": "https://www.newsquest.co.kr/news/articleView.html?idxno=263524",
+          "date": "2026-03-23"
+        },
+        {
+          "title": "월가 덮친사모대출 '펀드런 공포'…국내 금융시장 흔든다",
+          "link": "https://www.hankyung.com/article/2026032281681",
+          "date": "2026-03-22"
+        },
+        {
+          "title": "블랙스톤도 흔들…사모대출 깜깜이 공시까지 도마위",
+          "link": "https://www.sedaily.com/article/20022461?ref=naver",
+          "date": "2026-03-22"
+        },
+        {
+          "title": "[글로벌이코노믹 사설]사모대출 환매 리스크 은행도 불안",
+          "link": "https://www.g-enews.com/view.php?ud=20260322160730567935e857d010_1",
+          "date": "2026-03-22"
+        }
+      ],
+      "createdAt": "2026-03-17",
+      "updatedAt": "2026-03-23",
+      "history": [
+        {
+          "date": "2026-03-17",
+          "stage": "기타",
+          "summary": "글로벌 사모대출펀드 블루아울이 헤지펀드의 지분 헐값 매입 시도로 위기에 처함. 사모대출 환매 압박이 심화되고 있어 과거 사례에서 해법을 찾아야 한다는 분석. 글로벌 사모대출 시장 전반의 부실화 우려가 고조되는 상황."
+        },
+        {
+          "date": "2026-03-18",
+          "stage": "기타",
+          "summary": "글로벌 사모대출(Private Credit) 시장에서 부도율이 9.2%로 금융위기 수준을 넘어섰다는 경고가 나오며 3조 달러 규모 시장에 경보가 발령됨. FT 등 외신에서도 환매 폭탄 위험 수준을 경고하고 있으며, 중국 그림자금융 및 LBO 버블과의 데자뷔 현상으로 평가됨. 국내에서도 K-BDC 도입 논의와 맞물려 사모대출 시장의 안전성에 대한 논쟁이 이어지는 중."
+        },
+        {
+          "date": "2026-03-23",
+          "stage": "기타",
+          "summary": "블랙스톤 사모대출펀드가 2022년 이후 첫 월간 손실을 기록하며 글로벌 사모대출 부실화 우려가 확산되고 있음. 골드만삭스 CEO는 신용 사이클이 사라진 것은 아니라며 진화에 나섰으나, 한국투자·삼성증권 등 국내 기관의 익스포저에도 이목이 집중됨. 미국발 사모대출 펀드런 우려 속에서도 국내 주요 증권사들은 현재까지 이상 징후가 없다는 입장임."
+        }
+      ]
+    },
+    {
+      "id": "deal_20260316_052",
+      "name": "한앤코 남양유업 밸류업 경영 성과",
+      "stage": "기타",
+      "summary": "한앤코가 인수 후 남양유업의 경영 개선을 지속 추진 중으로, 브랜드 리포지셔닝·원가 절감·제품 포트폴리오 재편 등 밸류업 전략 실행 성과가 가시화되고 있음. PE 오너십 하에서 구조적 체질 개선이 이루어지고 있는 사례로 주목받고 있음.",
+      "repArticle": {
+        "title": "한앤코의 남양유업, 어떻게 달라졌나",
+        "link": "http://www.fntimes.com/html/view.php?ud=202603230229599802dd55077bc2_18",
+        "date": "2026-03-23",
+        "source": "기타매체명"
+      },
+      "articles": [
+        {
+          "title": "[더벨]한앤코, '남양유업 사옥' 비싼 매각가 고집 이유는",
+          "link": "https://www.thebell.co.kr/free/content/ArticleView.asp?key=202603121018521440107021",
+          "date": "2026-03-17"
+        },
+        {
+          "title": "한앤컴퍼니체제 전환 5년, '남양유업' 경영 초록불",
+          "link": "https://www.ilyoseoul.co.kr/news/articleView.html?idxno=514217",
+          "date": "2026-03-16"
+        },
+        {
+          "title": "남양유업, 오너 경영 지우고 '주주 중심'으로…한앤코표 밸류업 가속",
+          "link": "https://www.bloter.net/news/articleView.html?idxno=656639",
+          "date": "2026-03-15"
+        },
+        {
+          "title": "'김승언 매직 통했다' 남양유업, 흑자 전환에 310억원 규모 '통큰' 주주환원",
+          "link": "https://www.megaeconomy.co.kr/news/newsview.php?ncode=1065598084045896",
+          "date": "2026-03-16"
+        },
+        {
+          "title": "주가 띄운 남양유업 환원책…인수금융 짊어진 한앤코 셈법 복잡",
+          "link": "https://www.topdaily.kr/articles/109223",
+          "date": "2026-03-16"
+        },
+        {
+          "title": "남양유업, 흑자전환에 이은 '아시아 공략' 밸류업 본격화",
+          "link": "https://www.fetv.co.kr/news/article.html?no=215194",
+          "date": "2026-03-18"
+        },
+        {
+          "title": "남양유업, 중앙아시아·동아시아, '테이크핏·컵커피'로 편의점 채널 속공",
+          "link": "https://www.ilyoseoul.co.kr/news/articleView.html?idxno=514334",
+          "date": "2026-03-18"
+        },
+        {
+          "title": "한앤코의 남양유업, 어떻게 달라졌나",
+          "link": "http://www.fntimes.com/html/view.php?ud=202603230229599802dd55077bc2_18",
+          "date": "2026-03-23"
+        }
+      ],
+      "createdAt": "2026-03-16",
+      "updatedAt": "2026-03-23",
+      "history": [
+        {
+          "date": "2026-03-16",
+          "stage": "기타",
+          "summary": "한앤컴퍼니가 남양유업 인수 후 오너 경영 색채를 지우고 주주 중심의 밸류업 전략을 가속화 중임. 체제 전환 5년 만에 경영 성과가 가시화되며 실적 개선과 주주환원 확대가 동시에 이뤄지고 있음. PE 운용사의 포트폴리오 기업 경영 개선 사례로 주목받고 있음."
+        },
+        {
+          "date": "2026-03-17",
+          "stage": "기타",
+          "summary": "한앤코가 보유 중인 남양유업이 흑자 전환에 성공하며 310억원 규모 주주환원책을 발표함. 남양유업 사옥 매각과 관련해 한앤코가 높은 매각가를 고집하는 이유가 인수금융 상환 부담 때문인 것으로 분석됨. 케이카 이사회에 한앤코 2세대 인력이 전면 배치되는 등 포트폴리오 관리 강화 중."
+        },
+        {
+          "date": "2026-03-18",
+          "stage": "기타",
+          "summary": "한앤코 PE 포트폴리오인 남양유업이 흑자전환에 이어 중앙아시아·동아시아 등 아시아 시장 공략을 본격화함. 테이크핏·컵커피 등 핵심 제품으로 편의점 채널 확장 전략을 추진 중. 한앤코는 남양유업 사옥 매각에서도 높은 매각가를 고집하며 엑시트 가치 극대화를 도모하고 있음."
+        },
+        {
+          "date": "2026-03-23",
+          "stage": "기타",
+          "summary": "한앤코가 인수 후 남양유업의 경영 개선을 지속 추진 중으로, 브랜드 리포지셔닝·원가 절감·제품 포트폴리오 재편 등 밸류업 전략 실행 성과가 가시화되고 있음. PE 오너십 하에서 구조적 체질 개선이 이루어지고 있는 사례로 주목받고 있음."
+        }
+      ]
+    },
+    {
+      "id": "deal_20260316_064",
+      "name": "고려아연 경영권 분쟁 (영풍 vs 최윤범 주총)",
+      "stage": "기타",
+      "summary": "고려아연 주총 D-1을 앞두고 국민연금이 최윤범 회장의 주주가치 훼손을 인정하며 표 행사 방향이 주목받고 있으며, 영풍·MBK 측과 최윤범 측의 표 대결이 경영권 향배를 결정할 핵심 변수로 부상함. 국민연금의 중립 표심 향방과 함께 영풍의 지배구조 리스크가 한국 제조업 전반에 미치는 영향도 함께 논의되는 상황임.",
+      "repArticle": {
+        "title": "고려아연 주총 D-1, 표 대결 넘어 '경영의 시간' 가른다",
+        "link": "https://www.smartbizn.com/news/articleView.html?idxno=139821",
+        "date": "2026-03-23",
+        "source": "기타매체명"
+      },
+      "articles": [
+        {
+          "title": "[더벨][영풍-고려아연 경영권 분쟁] 청호컴넷 거래 둘러싼 공방, 공시로",
+          "link": "https://www.thebell.co.kr/free/content/ArticleView.asp?key=202603111457375560107418",
+          "date": "2026-03-13"
+        },
+        {
+          "title": "[더벨][영풍-고려아연 경영권 분쟁] 누가 결정하고 누가 책임지나…팽팽한 공방",
+          "link": "https://www.thebell.co.kr/free/content/ArticleView.asp?key=202603091329320760101386",
+          "date": "2026-03-13"
+        },
+        {
+          "title": "[더벨][thebell note] 고려아연 '왕좌의 게임'",
+          "link": "https://www.thebell.co.kr/free/content/ArticleView.asp?key=202603131456575320102543",
+          "date": "2026-03-18"
+        },
+        {
+          "title": "24일 고려아연 주총, 최윤범 표심 '3중 딜레마' 국민연금",
+          "link": "http://www.newsfc.co.kr/news/articleView.html?idxno=77371",
+          "date": "2026-03-16"
+        },
+        {
+          "title": "[단독] 고려아연, 오너가 선투자한 기업에 800억 투입",
+          "link": "https://www.hankyung.com/article/2026031647951",
+          "date": "2026-03-16"
+        },
+        {
+          "title": "[기획] 고려아연 주총 '이사 1석' 전쟁…표심 가를 변수는",
+          "link": "http://www.newswatch.kr/news/articleView.html?idxno=78465",
+          "date": "2026-03-16"
+        },
+        {
+          "title": "고려아연 주총 D-7…\"적대적 M&A\" vs \"경영 실패 책임\"",
+          "link": "https://www.ezyeconomy.com/news/articleView.html?idxno=233517",
+          "date": "2026-03-18"
+        },
+        {
+          "title": "고려아연 노동조합, 주총 앞두고 최윤범 회장 등 현 경영진 지지",
+          "link": "https://www.tournews21.com/news/articleView.html?idxno=131869",
+          "date": "2026-03-18"
+        },
+        {
+          "title": "ISS 이어 KCGS도 최윤범 사내이사 재선임안 '반대 권고'",
+          "link": "http://www.newsbrite.net/news/articleView.html?idxno=196969",
+          "date": "2026-03-17"
+        },
+        {
+          "title": "국내외 의결권 자문사, 고려아연 최윤범 회장 재선임 잇따라 '반대' 권고",
+          "link": "http://www.finomy.com/news/articleView.html?idxno=251595",
+          "date": "2026-03-17"
+        },
+        {
+          "title": "\"고려아연은 제2의 홈플러스 되어선 안 돼\" 노조, 회사 끝까지 지킨다",
+          "link": "http://www.fnnews.com/news/202603171806375158",
+          "date": "2026-03-17"
+        },
+        {
+          "title": "\"주총전야\"…영풍·MBK vs 고려아연, '경영권 공방' 격화",
+          "link": "https://www.seoultimes.news/news/article.html?no=2000093726",
+          "date": "2026-03-17"
+        },
+        {
+          "title": "MBK·영풍, 최윤범 투자 의혹 제기…고려아연 정면 반박",
+          "link": "https://www.asiatime.co.kr/article/20260318500002",
+          "date": "2026-03-18"
+        },
+        {
+          "title": "최윤범회장 개인투자 후 회사자금 1000억 투입에 '사익편취 논란'",
+          "link": "http://www.newsbrite.net/news/articleView.html?idxno=196966",
+          "date": "2026-03-17"
+        },
+        {
+          "title": "MBK \"崔 투자에 회사 자금 투입\"…고려아연 \"허위사실, 법적조치\"(종합)",
+          "link": "https://www.news1.kr/industry/general-industry/6104574",
+          "date": "2026-03-17"
+        },
+        {
+          "title": "고려아연 주총 앞두고 투자금 관련 논쟁 격화…MBK·영풍 \"사익편취\" vs ...",
+          "link": "https://www.industrynews.co.kr/news/articleView.html?idxno=79087",
+          "date": "2026-03-17"
+        },
+        {
+          "title": "고려아연, MBK·영풍 '최윤범 회장 개인투자에 회사자금 투입 논란으로...",
+          "link": "http://www.thebigdata.co.kr/view.php?ud=202603171806104697570d99e4c8_23",
+          "date": "2026-03-17"
+        },
+        {
+          "title": "고려아연 노조 , 주총 앞두고 \"MBK·영풍 적대적 M&A 반대\"",
+          "link": "https://www.industrynews.co.kr/news/articleView.html?idxno=79079",
+          "date": "2026-03-17"
+        },
+        {
+          "title": "고려아연, 개인 투자 뒤 회사자금 1000억 투입 구조 논란 확산",
+          "link": "http://www.ikld.kr/news/articleView.html?idxno=331052",
+          "date": "2026-03-17"
+        },
+        {
+          "title": "영풍·MBK \"최윤범 회장 투자 뒤 고려아연 자금 1000억 투입...사익 편취...\"",
+          "link": "http://www.econonews.co.kr/news/articleView.html?idxno=431381",
+          "date": "2026-03-17"
+        },
+        {
+          "title": "MBK·영풍, 최윤범 고려아연 회장의 사익편취 의혹 제기",
+          "link": "https://www.businesskorea.co.kr/news/articleView.html?idxno=265408",
+          "date": "2026-03-17"
+        },
+        {
+          "title": "영풍·MBK \"최윤범 개인투자 뒤 고려아연 자금 1000억원 투입…사익편취\"",
+          "link": "https://view.asiae.co.kr/article/2026031715304629698",
+          "date": "2026-03-17"
+        },
+        {
+          "title": "영풍·MBK \"최 회장 투자 뒤 회사서 1000억 투자…사익편취\" [시그널]",
+          "link": "https://www.sedaily.com/article/20020435?ref=naver",
+          "date": "2026-03-17"
+        },
+        {
+          "title": "고려아연 노조, 주총 앞두고 \"MBK·영풍의 결탁 규탄, 적대적 M&A 중단해\"",
+          "link": "https://www.newsis.com/view/NISX20260317_0003552416",
+          "date": "2026-03-17"
+        },
+        {
+          "title": "고려아연 노조, \"제2의 홈플러스 안 돼…영풍·MBK경영권확보 규탄\"",
+          "link": "http://www.ferrotimes.com/news/articleView.html?idxno=46903",
+          "date": "2026-03-18"
+        },
+        {
+          "title": "영풍 \"고려아연 투자 구조 논란…개인 투자 후 회사 자금 유입\" 지배구...",
+          "link": "https://www.megaeconomy.co.kr/news/newsview.php?ncode=1065601228459677",
+          "date": "2026-03-18"
+        },
+        {
+          "title": "영풍·MBK \"최윤범 고려아연 회장 1000억 유용 논란\"...금융위 안건 상정",
+          "link": "https://hbnpress.com/news/view/1065601879593354",
+          "date": "2026-03-18"
+        },
+        {
+          "title": "고려아연, 최윤범 회장 개인투자에 회삿돈 1000억원 '후속투자' 논란...",
+          "link": "https://swtvnews.com/news/newsview.php?ncode=1065600279616145",
+          "date": "2026-03-18"
+        },
+        {
+          "title": "주총 앞두고 '외국인 이사' 공방에... 고려아연 \"기술 유출과는 무관, 美...\"",
+          "link": "https://www.greened.kr/news/articleView.html?idxno=338191",
+          "date": "2026-03-18"
+        },
+        {
+          "title": "세계 정세 불안 속 고려아연의 미국 제련소 투자 '왜 중요한가'",
+          "link": "https://economist.co.kr/article/view/ecn202603180065",
+          "date": "2026-03-19"
+        },
+        {
+          "title": "[EBN 칼럼] 상법개정 후 첫 주총…고려아연 주주는 어떤 선택을 할까",
+          "link": "https://www.ebn.co.kr/news/articleView.html?idxno=1702886",
+          "date": "2026-03-20"
+        },
+        {
+          "title": "영풍 '고려아연 주총 본질은 지배구조 리스크… 논점 흐리기 중단해야'",
+          "link": "http://www.newsbrite.net/news/articleView.html?idxno=197024",
+          "date": "2026-03-19"
+        },
+        {
+          "title": "'실적 비교는 본질 흐리기'… 영풍, 고려아연 주총 앞두고 '거버넌스 리스크' 부각",
+          "link": "https://www.sisaweek.com/news/articleView.html?idxno=234374",
+          "date": "2026-03-19"
+        },
+        {
+          "title": "영풍 '고려아연 주총 본질은 최윤범 회장 리스크···논점 흐리기 중단'",
+          "link": "http://www.finomy.com/news/articleView.html?idxno=251707",
+          "date": "2026-03-19"
+        },
+        {
+          "title": "[진단] 44년 흑자 고려아연, 5년 적자 영풍…주총 전 국민연금 표심에 '촉각'",
+          "link": "http://www.economytalk.kr/news/articleView.html?idxno=419240",
+          "date": "2026-03-19"
+        },
+        {
+          "title": "영풍 '왜곡된 지배구조가 본질...최윤범 체제, 주주가치 훼손'",
+          "link": "https://www.banronbodo.com/news/articleView.html?idxno=31950",
+          "date": "2026-03-19"
+        },
+        {
+          "title": "영풍 '고려아연 주총 본질은 지배구조…경영능력 프레임은 논점 흐리기'",
+          "link": "http://www.ikld.kr/news/articleView.html?idxno=331175",
+          "date": "2026-03-19"
+        },
+        {
+          "title": "고려아연 최윤범 회장 투자 논란… 주총 앞두고 공방 가열",
+          "link": "https://www.job-post.co.kr/news/articleView.html?idxno=210835",
+          "date": "2026-03-19"
+        },
+        {
+          "title": "고려아연 주총 D-1, 표 대결 넘어 '경영의 시간' 가른다",
+          "link": "https://www.smartbizn.com/news/articleView.html?idxno=139821",
+          "date": "2026-03-23"
+        },
+        {
+          "title": "국민연금 \"기업가치 훼손 이력자에 표 행사 없다\"…금융위 '최윤범 봐주...",
+          "link": "http://www.newsroad.co.kr/news/articleView.html?idxno=56523",
+          "date": "2026-03-23"
+        },
+        {
+          "title": "고려아연 주총 '안갯속'...국민연금 '최윤범 주주가치 훼손' 인정",
+          "link": "https://www.ilyoseoul.co.kr/news/articleView.html?idxno=514547",
+          "date": "2026-03-23"
+        },
+        {
+          "title": "[이슈체크] 연속 적자에 노조 불신 확산까지…영풍·MBK, 고려아연 주총...",
+          "link": "https://www.thepublic.kr/news/articleView.html?idxno=298183",
+          "date": "2026-03-23"
+        },
+        {
+          "title": "영풍 지배구조 리스크, 한국 제조업 2030 역전 위기 키운다",
+          "link": "https://www.g-enews.com/view.php?ud=202603230743195740fbbec65dfb_1",
+          "date": "2026-03-23"
+        },
+        {
+          "title": "국민연금 변수 속 고려아연의 '중립 표심'의 향방은",
+          "link": "https://isplus.com/article/view/isp202603220143",
+          "date": "2026-03-23"
+        },
+        {
+          "title": "[데스크칼럼] 李 일침마저 패싱한 국민연금…김성주 시계는 멈췄나",
+          "link": "https://www.apnews.kr/news/articleView.html?idxno=3047009",
+          "date": "2026-03-23"
+        },
+        {
+          "title": "[이슈+]고려아연, '한 지붕 두 가족' 체제 되나…영풍·MBK 측 이사 늘어...",
+          "link": "https://www.businessplus.kr/news/articleView.html?idxno=109238",
+          "date": "2026-03-22"
+        },
+        {
+          "title": "자문사 7곳은 반대했는데… 국민연금 수책위, 고려아연 주총 앞두고 'MBK 임원' 지지",
+          "link": "https://www.s-journal.co.kr/news/articleView.html?idxno=39608",
+          "date": "2026-03-22"
+        },
+        {
+          "title": "고려아연 노조, 국민연금의 MBK 임원 선임 찬성 '성토'",
+          "link": "https://www.munhwa.com/article/11576387?ref=naver",
+          "date": "2026-03-22"
+        },
+        {
+          "title": "국민연금, 자문사 7곳 반대에도 MBK 임원 '찬성'…고려아연 노조 '강...'",
+          "link": "https://www.kyeonggi.com/article/20260322580197",
+          "date": "2026-03-22"
+        },
+        {
+          "title": "고려아연 노동조합 '국민연금의 비겁한 결정 규탄한다'",
+          "link": "http://www.fieldnews.kr/news/articleView.html?idxno=27278",
+          "date": "2026-03-22"
+        },
+        {
+          "title": "국민연금, 자문사 전원 반대한 MBK 임원 '찬성'… 고려아연 주총 표결 논...",
+          "link": "http://www.seoulwire.com/news/articleView.html?idxno=712516",
+          "date": "2026-03-22"
+        },
+        {
+          "title": "[여의도워치]본질 외면한 국민연금의 '기계적 중립'",
+          "link": "https://news.bizwatch.co.kr/article/industry/2026/03/22/0004",
+          "date": "2026-03-22"
+        },
+        {
+          "title": "국민연금 수책위, 고려아연 주총 앞두고 7개 자문사 반대한 'MBK 임원' 지지...",
+          "link": "https://www.etnews.com/20260322000151",
+          "date": "2026-03-22"
+        },
+        {
+          "title": "국민연금, 고려아연 주총 D-2 7개 자문사 반대 MBK 임원 지지",
+          "link": "https://news.bizwatch.co.kr/article/industry/2026/03/22/0003",
+          "date": "2026-03-22"
+        },
+        {
+          "title": "국민연금 수책위, 고려아연 주총 앞두고 'MBK 임원' 찬성…'7개 자문...'",
+          "link": "https://www.sentv.co.kr/article/view/sentv202603220023",
+          "date": "2026-03-22"
+        },
+        {
+          "title": "국민연금, 자문사 7곳 반대한 'MBK 임원' 찬성…고려아연 노조 반발",
+          "link": "https://www.sidae.com/article/2026032214542080940",
+          "date": "2026-03-22"
+        },
+        {
+          "title": "국민연금 수책위, 고려아연 의결권 '미행사' 결정…기술 안보·ESG 우...",
+          "link": "https://www.mk.co.kr/article/11994721",
+          "date": "2026-03-22"
+        },
+        {
+          "title": "국민연금 수책위, 고려아연 주총 앞두고 'MBK 임원' 찬성...자문사 7곳과...",
+          "link": "https://www.newsway.co.kr/news/view?ud=2026032214402131173",
+          "date": "2026-03-22"
+        },
+        {
+          "title": "'초박빙' 고려아연 주총 코앞으로…이사 표심 대결 주목",
+          "link": "http://www.metroseoul.co.kr/article/20260322500149",
+          "date": "2026-03-22"
+        },
+        {
+          "title": "국민연금 '의결권 미행사' 논란…고려아연 주총 앞두고 '전략적 판단...'",
+          "link": "https://www.kyeonggi.com/article/20260322580088",
+          "date": "2026-03-22"
+        },
+        {
+          "title": "'기술 자본' 최윤범 vs '금융 자본' MBK…24일 고려아연 주총서 격돌",
+          "link": "https://www.ebn.co.kr/news/articleView.html?idxno=1703016",
+          "date": "2026-03-22"
+        },
+        {
+          "title": "\"자문사 7곳 반대에도\" 국민연금, 고려아연 주총서 'MBK 임원' 찬성표",
+          "link": "https://www.news1.kr/industry/general-industry/6109483",
+          "date": "2026-03-22"
+        }
+      ],
+      "createdAt": "2026-03-16",
+      "updatedAt": "2026-03-23",
+      "history": [
+        {
+          "date": "2026-03-16",
+          "stage": "기타",
+          "summary": "영풍-고려아연 경영권 분쟁이 3월 24일 주주총회를 앞두고 최고조에 달하고 있음. 최윤범 측은 국민연금의 표심을 놓고 3중 딜레마에 처한 상황. 청호컴넷 거래 공방, 베인캐피탈 백기사 지분 처리 등 복잡한 이슈가 얽혀 있음."
+        },
+        {
+          "date": "2026-03-17",
+          "stage": "기타",
+          "summary": "고려아연 오너가(최윤범 회장)가 선투자한 기업에 800억원을 추가 투입한 사실이 단독 보도됨. 주총 시즌을 앞두고 영풍 측과의 경영권 분쟁이 지속 중이며, 관련 투자 의사결정의 적정성을 둘러싼 논란이 가열되고 있음. 베인캐피탈 지분 처리 등 백기사 구도 개편 이슈도 병행 진행 중."
+        },
+        {
+          "date": "2026-03-18",
+          "stage": "기타",
+          "summary": "주총 D-7을 앞두고 MBK·영풍 측이 최윤범 회장의 개인투자 후 회사 자금 1000억 투입 의혹을 제기하며 사익편취 논란 격화. 국내외 의결권 자문사(ISS·KCGS) 모두 최윤범 사내이사 재선임 반대 권고. 고려아연 노조는 현 경영진 지지 및 MBK·영풍의 적대적 M&A 반대 입장 표명. 고려아연 측은 허위사실이라며 법적 대응 예고."
+        },
+        {
+          "date": "2026-03-19",
+          "stage": "기타",
+          "summary": "영풍·MBK파트너스 연합이 최윤범 고려아연 회장의 1000억원 개인투자 후 회사 자금 후속투자 논란을 금융위에 안건으로 상정함. 고려아연 측은 미국 제련소 투자 전략의 중요성을 강조하며 외국인 이사 선임 논란에도 대응 중. 주주총회를 앞두고 양측의 공방이 격화되는 양상."
+        },
+        {
+          "date": "2026-03-20",
+          "stage": "기타",
+          "summary": "상법 개정 후 첫 주총을 앞두고 고려아연 경영권 분쟁이 최고조에 달함. 영풍은 최윤범 회장의 지배구조 리스크를 본질로 강조하며 주주들에게 지지 호소 중. 44년 흑자 고려아연 대 5년 적자 영풍의 실적 비교 논쟁도 벌어지며 국민연금 표심이 최대 변수로 부상."
+        },
+        {
+          "date": "2026-03-23",
+          "stage": "기타",
+          "summary": "고려아연 주총 D-1을 앞두고 국민연금이 최윤범 회장의 주주가치 훼손을 인정하며 표 행사 방향이 주목받고 있으며, 영풍·MBK 측과 최윤범 측의 표 대결이 경영권 향배를 결정할 핵심 변수로 부상함. 국민연금의 중립 표심 향방과 함께 영풍의 지배구조 리스크가 한국 제조업 전반에 미치는 영향도 함께 논의되는 상황임."
+        }
+      ]
+    },
+    {
+      "id": "deal_20260313_023",
+      "name": "왓챠 공개매각 전환",
+      "stage": "매각 검토중",
+      "summary": "CJ ENM이 왓챠 인수를 검토 중이며, 후보 기업이 5곳 안팎으로 거론되고 있음. 왓챠가 공개매각으로 전환한 가운데 CJ ENM을 포함한 복수의 인수 후보가 경쟁하는 구도가 형성됨.",
+      "repArticle": {
+        "title": "[더벨]CJ ENM, '왓챠' 인수 검토…후보 5곳 안팎 거론",
+        "link": "https://www.thebell.co.kr/free/content/ArticleView.asp?key=202603190819340080107379",
+        "date": "2026-03-23",
+        "source": "thebell"
+      },
+      "articles": [
+        {
+          "title": "[더벨]왓챠, 공개매각전환…SI 중심 인수전 예고",
+          "link": "https://www.thebell.co.kr/free/content/ArticleView.asp?key=202603101319553560105851",
+          "date": "2026-03-12"
+        },
+        {
+          "title": "[더벨]CJ ENM, '왓챠' 인수 검토…후보 5곳 안팎 거론",
+          "link": "https://www.thebell.co.kr/free/content/ArticleView.asp?key=202603190819340080107379",
+          "date": "2026-03-23"
+        },
+        {
+          "title": "[단독] 키노라이츠, 왓챠 인수 추진…컨소시엄 꾸린다",
+          "link": "https://it.chosun.com/news/articleView.html?idxno=2023092158805",
+          "date": "2026-03-18"
+        }
+      ],
+      "createdAt": "2026-03-13",
+      "updatedAt": "2026-03-23",
+      "history": [
+        {
+          "date": "2026-03-13",
+          "stage": "매각 검토중",
+          "summary": "왓챠가 기존 방식에서 공개매각으로 전환하며 SI(전략적 투자자) 중심의 인수전을 예고함. OTT 플랫폼 시장 재편 속 새 주인 찾기에 나선 상황으로 SI 중심 인수전이 펼쳐질 전망."
+        },
+        {
+          "date": "2026-03-19",
+          "stage": "매각 검토중",
+          "summary": "키노라이츠가 왓챠 인수를 추진하며 컨소시엄을 꾸리는 것으로 알려짐. 왓챠는 공개매각으로 전환한 상태이며, 다수의 인수 후보가 검토 중인 것으로 보임."
+        },
+        {
+          "date": "2026-03-23",
+          "stage": "매각 검토중",
+          "summary": "CJ ENM이 왓챠 인수를 검토 중이며, 후보 기업이 5곳 안팎으로 거론되고 있음. 왓챠가 공개매각으로 전환한 가운데 CJ ENM을 포함한 복수의 인수 후보가 경쟁하는 구도가 형성됨."
+        }
+      ]
+    },
+    {
+      "id": "deal_20260312_009",
+      "name": "MBK파트너스 홈플러스 긴급 자금 수혈",
+      "stage": "기타",
+      "summary": "고려아연 주총을 앞두고 홈플러스 사태를 초래한 MBK파트너스에 대한 비판 여론이 재부상하며, MBK 임원에 찬성표를 행사한 기관투자자에 대한 비판이 제기됨. 홈플러스 비극을 계기로 사모펀드의 기업 경영 방식에 대한 사회적 논의가 활발해지는 상황임.",
+      "repArticle": {
+        "title": "\"홈플러스 비극 잊었나\" 고려아연 주총 앞두고 'MBK 임원' 찬성한 ...",
+        "link": "https://www.etoday.co.kr/news/view/2568065",
+        "date": "2026-03-23",
+        "source": "기타매체명"
+      },
+      "articles": [
+        {
+          "title": "MBK파트너스, 홈플러스에 1,000억 긴급 수혈… 김병주 회장 '자택 담보'...",
+          "link": "https://www.dailysportshankook.co.kr/news/articleView.html?idxno=425542",
+          "date": "2026-03-11"
+        },
+        {
+          "title": "[K-자본의 그늘 MBK파트너스/③(끝)]규제 칼날 앞에 선 자본…'MBK 방지법'...",
+          "link": "https://www.businessplus.kr/news/articleView.html?idxno=108683",
+          "date": "2026-03-12"
+        },
+        {
+          "title": "\"홈플러스 비극 잊었나\" 고려아연 주총 앞두고 'MBK 임원' 찬성한 ...",
+          "link": "https://www.etoday.co.kr/news/view/2568065",
+          "date": "2026-03-23"
+        }
+      ],
+      "createdAt": "2026-03-12",
+      "updatedAt": "2026-03-23",
+      "history": [
+        {
+          "date": "2026-03-12",
+          "stage": "기타",
+          "summary": "MBK파트너스가 홈플러스에 1000억원 긴급 자금을 수혈하고, 김병주 회장이 자택을 담보로 제공한 것으로 알려짐. 홈플러스의 재무 위기가 심화되는 가운데 MBK 관련 규제 입법('MBK 방지법') 논의도 국회에서 부상 중."
+        },
+        {
+          "date": "2026-03-23",
+          "stage": "기타",
+          "summary": "고려아연 주총을 앞두고 홈플러스 사태를 초래한 MBK파트너스에 대한 비판 여론이 재부상하며, MBK 임원에 찬성표를 행사한 기관투자자에 대한 비판이 제기됨. 홈플러스 비극을 계기로 사모펀드의 기업 경영 방식에 대한 사회적 논의가 활발해지는 상황임."
+        }
+      ]
+    },
+    {
+      "id": "deal_20260310_003",
+      "name": "한앤코 → SK이터닉스 투자",
+      "stage": "딜 클로즈",
+      "summary": "KKR이 한앤코와의 SK이터닉스 투자를 통해 국내 청정에너지 시장 진입 교두보를 마련함. SK이터닉스는 국내 청정에너지 시장에서의 핵심 플레이어로, 글로벌 PE의 국내 에너지 전환 투자 흐름을 반영한 딜임.",
+      "repArticle": {
+        "title": "SK이터닉스, KKR의 '국내 청정에너지 시장' 진입 교두보",
+        "link": "http://www.newsfc.co.kr/news/articleView.html?idxno=77524",
+        "date": "2026-03-23",
+        "source": "기타매체명"
+      },
+      "articles": [
+        {
+          "title": "[더벨]한앤코, SK이터닉스 투자 '마침표'…밸류업 스토리 '주목'",
+          "link": "https://www.thebell.co.kr/free/content/ArticleView.asp?key=202603060929456800107618",
+          "date": "2026-03-10"
+        },
+        {
+          "title": "[더벨][PE 포트폴리오 엿보기] SK이터닉스, 실적·수주 동반 성장…KKR 인수 검토",
+          "link": "https://www.thebell.co.kr/free/content/ArticleView.asp?key=202603181346321320101558",
+          "date": "2026-03-20"
+        },
+        {
+          "title": "'생산적금융' 붐에 … SK발전소 투자 몰려",
+          "link": "https://www.mk.co.kr/article/11983048",
+          "date": "2026-03-09"
+        },
+        {
+          "title": "'생산적금융' 붐 타고…울산 전력인프라에 자금 몰려",
+          "link": "https://www.mk.co.kr/article/11982892",
+          "date": "2026-03-09"
+        },
+        {
+          "title": "DS투자증권 \"SK이터닉스, 태양광 사업 주목…목표가 4만3000원\"",
+          "link": "https://www.etoday.co.kr/news/view/2563970",
+          "date": "2026-03-11"
+        },
+        {
+          "title": "[주간사모펀드] 한앤컴퍼니, 8년 만에 SK이터닉스 투자 '졸업'",
+          "link": "https://news.tf.co.kr/read/economy/2302026.htm",
+          "date": "2026-03-14"
+        },
+        {
+          "title": "수확의 계절…엑시트 속도 내는 한앤컴퍼니",
+          "link": "https://news.einfomax.co.kr/news/articleView.html?idxno=4403477",
+          "date": "2026-03-13"
+        },
+        {
+          "title": "남양유업, 오너 경영 지우고 '주주 중심'으로…한앤코표 밸류업 가속",
+          "link": "https://www.bloter.net/news/articleView.html?idxno=656639",
+          "date": "2026-03-15"
+        },
+        {
+          "title": "SK이터닉스, KKR의 '국내 청정에너지 시장' 진입 교두보",
+          "link": "http://www.newsfc.co.kr/news/articleView.html?idxno=77524",
+          "date": "2026-03-23"
+        }
+      ],
+      "createdAt": "2026-03-10",
+      "updatedAt": "2026-03-23",
+      "history": [
+        {
+          "date": "2026-03-10",
+          "stage": "딜 클로즈",
+          "summary": "한앤컴퍼니가 SK이터닉스에 대한 투자를 마무리한 것으로 확인됨. 생산적 금융 붐과 맞물려 국내 재생에너지 인프라에 대한 PE 자금 유입이 확대되는 흐름 속에서 이루어진 투자임. 향후 밸류업 스토리 및 엑시트 전략이 시장의 주목을 받고 있음."
+        },
+        {
+          "date": "2026-03-11",
+          "stage": "딜 클로즈",
+          "summary": "한앤코가 SK이터닉스에 대한 투자를 완료하며 딜 클로즈. SK이터닉스의 태양광 사업을 중심으로 한 밸류업 스토리가 주목받고 있으며, DS투자증권은 목표주가 4만3000원을 제시함."
+        },
+        {
+          "date": "2026-03-16",
+          "stage": "딜 클로즈",
+          "summary": "한앤컴퍼니가 8년 만에 SK이터닉스 투자를 졸업(엑시트)함. 주간 사모펀드 동향으로 보도되며 장기 보유 후 성공적 회수 사례로 주목됨."
+        },
+        {
+          "date": "2026-03-20",
+          "stage": "딜 클로즈",
+          "summary": "한앤코가 투자한 SK이터닉스의 실적 및 수주가 동반 성장세를 보이며 KKR의 인수 검토 가능성이 언급됨. 더벨 보도에 따르면 SK이터닉스는 안정적 현금흐름을 바탕으로 PE의 차기 엑시트 후보로 거론됨. 재생에너지 자산 가치 부각."
+        },
+        {
+          "date": "2026-03-23",
+          "stage": "딜 클로즈",
+          "summary": "KKR이 한앤코와의 SK이터닉스 투자를 통해 국내 청정에너지 시장 진입 교두보를 마련함. SK이터닉스는 국내 청정에너지 시장에서의 핵심 플레이어로, 글로벌 PE의 국내 에너지 전환 투자 흐름을 반영한 딜임."
+        }
+      ]
+    },
+    {
+      "id": "deal_20260310_010",
+      "name": "EQT → KJ환경 인수 재실사",
+      "stage": "실사 진행중",
+      "summary": "EQT파트너스 인프라가 KJ환경 인수 재실사에 돌입하면서 기존 폐기물 볼트온 딜을 전면 중단함. 재실사 과정에서 추가 리스크 검토가 진행 중이며, 볼트온 전략 전반에 제동이 걸린 상황임.",
+      "repArticle": {
+        "title": "[더벨]'재실사 돌입' EQT파트너스 인프라, 폐기물 볼트온 전면 중단",
+        "link": "https://www.thebell.co.kr/free/content/ArticleView.asp?key=202603181450027120103261",
+        "date": "2026-03-23",
+        "source": "thebell"
+      },
+      "articles": [
+        {
+          "title": "[더벨]서상준 EQT파트너스 한국 대표, '친정' 앵커 복귀 유력",
+          "link": "https://www.thebell.co.kr/free/content/ArticleView.asp?key=202602111555216360106686",
+          "date": "2026-03-11"
+        },
+        {
+          "title": "[더벨]'재실사 돌입' EQT파트너스 인프라, 폐기물 볼트온 전면 중단",
+          "link": "https://www.thebell.co.kr/free/content/ArticleView.asp?key=202603181450027120103261",
+          "date": "2026-03-23"
+        },
+        {
+          "title": "[Invest]EQT, '고밸류 인수' KJ환경 재실사…인프라 수장 공백에 조직...",
+          "link": "https://www.investchosun.com/site/data/html_dir/2026/03/09/2026030980057.html",
+          "date": "2026-03-10"
+        }
+      ],
+      "createdAt": "2026-03-10",
+      "updatedAt": "2026-03-23",
+      "history": [
+        {
+          "date": "2026-03-10",
+          "stage": "실사 진행중",
+          "summary": "EQT가 고밸류 논란을 빚었던 KJ환경 인수 건에 대해 재실사를 진행 중임. 인프라 부문 수장 공백 등 조직 이슈가 겹치며 딜 불확실성이 높아진 상황. 최종 거래 성사 여부에 시장의 관심이 집중되고 있음."
+        },
+        {
+          "date": "2026-03-11",
+          "stage": "실사 진행중",
+          "summary": "EQT파트너스가 KJ환경 인수를 위한 재실사를 진행 중. 고밸류 인수에 대한 부담과 인프라 부문 수장 공백으로 인한 조직 불안정 이슈가 겹치며 딜 진행이 지연되는 양상. EQT 한국 대표인 서상준이 '친정' 앵커PE로 복귀 유력하다는 보도도 이어지며 딜 불확실성이 높아진 상황."
+        },
+        {
+          "date": "2026-03-23",
+          "stage": "실사 진행중",
+          "summary": "EQT파트너스 인프라가 KJ환경 인수 재실사에 돌입하면서 기존 폐기물 볼트온 딜을 전면 중단함. 재실사 과정에서 추가 리스크 검토가 진행 중이며, 볼트온 전략 전반에 제동이 걸린 상황임."
+        }
+      ]
+    },
+    {
+      "id": "deal_20260310_019",
+      "name": "롯데손보 매각",
+      "stage": "매각 검토중",
+      "summary": "롯데손해보험 매각과 관련하여 강민균 기타비상무이사가 복귀하며 매각 시그널로 해석되고 있음. 이사회 구성 변화가 매각 준비 과정의 일환으로 읽히며 시장의 관심이 집중되고 있음.",
+      "repArticle": {
+        "title": "롯데손보, 강민균 기타비상무 컴백…매각 시그널 읽힌 까닭",
+        "link": "https://www.bloter.net/news/articleView.html?idxno=657235",
+        "date": "2026-03-22",
+        "source": "기타매체명"
+      },
+      "articles": [
+        {
+          "title": "[롯데손보 M&A] '권고→요구'로 수위 높인 금융당국…매각 압박 커졌다",
+          "link": "https://dealsite.co.kr/articles/158203",
+          "date": "2026-03-12"
+        },
+        {
+          "title": "[롯데손보 M&A] 매각 다시 안갯속…'자본 부담·감독 리스크'에 거래 불...",
+          "link": "https://dealsite.co.kr/articles/158308",
+          "date": "2026-03-16"
+        },
+        {
+          "title": "[롯데손보 M&A] 희망가 2조 vs 시총 6500억…자본확충은 우발채무",
+          "link": "https://dealsite.co.kr/articles/157882",
+          "date": "2026-03-19"
+        },
+        {
+          "title": "[마켓인]새 주인 찾기 사실상 시계제로…신평사도 고개 저은 롯데손보...",
+          "link": "http://www.edaily.co.kr/news/newspath.asp?newsid=01420246645382008",
+          "date": "2026-03-10"
+        },
+        {
+          "title": "금융위는 안심하라는데…롯데손보 신용등급 하락 왜?",
+          "link": "https://www.newspost.kr/news/articleView.html?idxno=221601",
+          "date": "2026-03-10"
+        },
+        {
+          "title": "롯데손보 리스크 털어내기 총력…'매각 시계' 다시 돌아가나",
+          "link": "https://www.newsis.com/view/NISX20260310_0003542637",
+          "date": "2026-03-11"
+        },
+        {
+          "title": "JKL파트너스, 롯데손보 매각 나서나...대주주 인사 개편 병행",
+          "link": "http://www.hansbiz.co.kr/news/articleView.html?idxno=825271",
+          "date": "2026-03-19"
+        },
+        {
+          "title": "롯데손보, 강민균 기타비상무 컴백…매각 시그널 읽힌 까닭",
+          "link": "https://www.bloter.net/news/articleView.html?idxno=657235",
+          "date": "2026-03-22"
+        }
+      ],
+      "createdAt": "2026-03-10",
+      "updatedAt": "2026-03-23",
+      "history": [
+        {
+          "date": "2026-03-10",
+          "stage": "매각 검토중",
+          "summary": "롯데손해보험 매각이 새 주인 찾기에 사실상 시계 제로 상태에 빠진 것으로 전해짐. 신용평가사들도 부정적 시각을 보내는 등 인수 후보자 확보에 어려움을 겪고 있음. 금융당국은 안심하라고 하나, 시장 우려는 지속되고 있음."
+        },
+        {
+          "date": "2026-03-11",
+          "stage": "매각 검토중",
+          "summary": "롯데손해보험이 리스크 해소에 총력을 기울이며 매각 추진에 속도를 내고 있음. 과거 매각 무산 이후 다시 매각 시계가 돌아가는 분위기로, 잠재 원매자와의 접촉 여부가 관건."
+        },
+        {
+          "date": "2026-03-12",
+          "stage": "매각 검토중",
+          "summary": "금융당국이 롯데손보 매각에 대해 권고에서 요구 수준으로 압박 수위를 높임. 매각 지연 시 당국 제재 가능성이 커지면서 매각 절차가 본격화될 것으로 전망됨."
+        },
+        {
+          "date": "2026-03-16",
+          "stage": "매각 검토중",
+          "summary": "롯데손보 매각이 자본 부담 및 감독 리스크로 인해 다시 안갯속에 빠짐. 인수 후보자들의 자본 확충 부담과 금융당국 규제 이슈가 거래 성사의 핵심 변수로 작용 중. 매각 측과 잠재 인수자 간 가격 및 조건 협의에 난항이 지속되는 상황."
+        },
+        {
+          "date": "2026-03-19",
+          "stage": "매각 검토중",
+          "summary": "롯데손보 매각과 관련해 희망가 2조원 대비 시총 6500억원의 큰 괴리가 쟁점으로 부상함. 자본확충 필요성과 우발채무 리스크가 딜 성사의 핵심 변수로 작용 중. JKL파트너스가 대주주로서 매각을 추진하며 인사 개편도 병행하는 것으로 알려짐."
+        },
+        {
+          "date": "2026-03-20",
+          "stage": "매각 검토중",
+          "summary": "JKL파트너스가 롯데손보 매각을 추진하면서 대주주 인사 개편을 병행하는 것으로 보도됨. 매각 희망가 2조원 대 시총 6500억원의 큰 괴리와 자본확충 이슈 및 우발채무 문제가 걸림돌로 지적됨. 인수 후보의 가격 눈높이 맞추기가 관건."
+        },
+        {
+          "date": "2026-03-23",
+          "stage": "매각 검토중",
+          "summary": "롯데손해보험 매각과 관련하여 강민균 기타비상무이사가 복귀하며 매각 시그널로 해석되고 있음. 이사회 구성 변화가 매각 준비 과정의 일환으로 읽히며 시장의 관심이 집중되고 있음."
+        }
+      ]
+    },
+    {
+      "id": "deal_20260323_001",
+      "name": "영실업 매각 (대주주 EOD)",
+      "stage": "매각 검토중",
+      "summary": "국내 완구업계 1위 영실업이 대주주 EOD의 기한이익상실(EOD) 사유 발생으로 매물로 나온 것으로 파악됨. 채권단의 담보권 실행 등 재무적 압박이 매각을 촉발한 배경으로, 향후 인수 후보 탐색이 진행될 전망임.",
+      "repArticle": {
+        "title": "토종 완구업체 영실업, 대주주 EOD에 매물로 [시그널]",
+        "link": "https://www.sedaily.com/article/20022024?ref=naver",
+        "date": "2026-03-20",
+        "source": "기타매체명"
+      },
+      "articles": [
+        {
+          "title": "토종 완구업체 영실업, 대주주 EOD에 매물로 [시그널]",
+          "link": "https://www.sedaily.com/article/20022024?ref=naver",
+          "date": "2026-03-20"
+        }
+      ],
+      "createdAt": "2026-03-23",
+      "updatedAt": "2026-03-23",
+      "history": [
+        {
+          "date": "2026-03-23",
+          "stage": "매각 검토중",
+          "summary": "국내 완구업계 1위 영실업이 대주주 EOD의 기한이익상실(EOD) 사유 발생으로 매물로 나온 것으로 파악됨. 채권단의 담보권 실행 등 재무적 압박이 매각을 촉발한 배경으로, 향후 인수 후보 탐색이 진행될 전망임."
+        }
+      ]
+    },
+    {
+      "id": "deal_20260323_002",
+      "name": "스틱한투PE·하나증권 SK울산 투자 장고",
+      "stage": "기타",
+      "summary": "스틱한투인프라PE가 약 400억 규모의 SK울산 관련 딜에서 투자 결정을 놓고 장고를 거듭하고 있으며, 하나증권도 공동 검토 중인 것으로 전해짐. 구체적 투자 구조 및 조건 협의가 진행 중인 상황임.",
+      "repArticle": {
+        "title": "스틱한투PE 400억 딜레마…하나증권 SK울산 장고",
+        "link": "https://dealsite.co.kr/articles/158670",
+        "date": "2026-03-20",
+        "source": "dealsite"
+      },
+      "articles": [
+        {
+          "title": "스틱한투PE 400억 딜레마…하나증권 SK울산 장고",
+          "link": "https://dealsite.co.kr/articles/158670",
+          "date": "2026-03-20"
+        },
+        {
+          "title": "스틱인베스트먼트, 스틱한투인프라 사모투자합자회사 지분 4.99% 취득 결정",
+          "link": "https://www.digitaltoday.co.kr/news/articleView.html?idxno=643796",
+          "date": "2026-03-20"
+        }
+      ],
+      "createdAt": "2026-03-23",
+      "updatedAt": "2026-03-23",
+      "history": [
+        {
+          "date": "2026-03-23",
+          "stage": "기타",
+          "summary": "스틱한투인프라PE가 약 400억 규모의 SK울산 관련 딜에서 투자 결정을 놓고 장고를 거듭하고 있으며, 하나증권도 공동 검토 중인 것으로 전해짐. 구체적 투자 구조 및 조건 협의가 진행 중인 상황임."
+        }
+      ]
+    },
+    {
+      "id": "deal_20260323_003",
+      "name": "이마트 PACM 2000억 출자 (콘텐츠 투자 확대)",
+      "stage": "딜 클로즈",
+      "summary": "이마트가 PACM(파라마운트 관련 사모펀드)에 약 2,000억 원을 출자하며 콘텐츠 투자 영역으로 접점을 확대함. 유통 대기업이 미디어·콘텐츠 분야 대체투자에 직접 나선 사례로, 향후 시너지 창출 전략에 주목됨.",
+      "repArticle": {
+        "title": "이마트, PACM 2000억 출자…콘텐츠 투자 접점 확대",
+        "link": "https://www.bloter.net/news/articleView.html?idxno=657179",
+        "date": "2026-03-21",
+        "source": "기타매체명"
+      },
+      "articles": [
+        {
+          "title": "이마트, PACM 2000억 출자…콘텐츠 투자 접점 확대",
+          "link": "https://www.bloter.net/news/articleView.html?idxno=657179",
+          "date": "2026-03-21"
+        }
+      ],
+      "createdAt": "2026-03-23",
+      "updatedAt": "2026-03-23",
+      "history": [
+        {
+          "date": "2026-03-23",
+          "stage": "딜 클로즈",
+          "summary": "이마트가 PACM(파라마운트 관련 사모펀드)에 약 2,000억 원을 출자하며 콘텐츠 투자 영역으로 접점을 확대함. 유통 대기업이 미디어·콘텐츠 분야 대체투자에 직접 나선 사례로, 향후 시너지 창출 전략에 주목됨."
+        }
+      ]
+    },
+    {
+      "id": "deal_20260323_004",
+      "name": "SG PE 체질 개선 및 성장투자 전략 전환",
+      "stage": "기타",
+      "summary": "SG PE가 김양우 대표를 앞세워 기존 바이아웃 중심에서 성장투자 전략으로 체질 개선을 추진 중임. 포트폴리오 재편 및 신규 딜 소싱 역량 강화를 통한 반등을 목표로 하고 있음.",
+      "repArticle": {
+        "title": "SG PE, 김양우 대표 앞세워 체질 개선…성장투자로 반등 노려 [넘버스]",
+        "link": "https://www.bloter.net/news/articleView.html?idxno=657318",
+        "date": "2026-03-20",
+        "source": "기타매체명"
+      },
+      "articles": [
+        {
+          "title": "SG PE, 김양우 대표 앞세워 체질 개선…성장투자로 반등 노려 [넘버스]",
+          "link": "https://www.bloter.net/news/articleView.html?idxno=657318",
+          "date": "2026-03-20"
+        }
+      ],
+      "createdAt": "2026-03-23",
+      "updatedAt": "2026-03-23",
+      "history": [
+        {
+          "date": "2026-03-23",
+          "stage": "기타",
+          "summary": "SG PE가 김양우 대표를 앞세워 기존 바이아웃 중심에서 성장투자 전략으로 체질 개선을 추진 중임. 포트폴리오 재편 및 신규 딜 소싱 역량 강화를 통한 반등을 목표로 하고 있음."
+        }
+      ]
+    },
+    {
+      "id": "deal_20260323_005",
+      "name": "우주·AI·바이오 분야 VC 투자 동향 (3월 셋째 주)",
+      "stage": "기타",
+      "summary": "3월 셋째 주 VC 시장에서 우주, AI, 바이오 분야로 투자가 집중되며 온기가 확산되고 있는 것으로 나타남. 글로벌 성장 가능성이 높은 섹터를 중심으로 뭉칫돈이 몰리는 추세가 이어짐.",
+      "repArticle": {
+        "title": "우주·AI·바이오로 쏠린 투자…3월 셋째주 VC 시장 '온기 확산'",
+        "link": "https://www.mt.co.kr/future/2026/03/22/2026032214201389436",
+        "date": "2026-03-22",
+        "source": "기타매체명"
+      },
+      "articles": [
+        {
+          "title": "우주·AI·바이오로 쏠린 투자…3월 셋째주 VC 시장 '온기 확산'",
+          "link": "https://www.mt.co.kr/future/2026/03/22/2026032214201389436",
+          "date": "2026-03-22"
+        },
+        {
+          "title": "[VC's Pick]우주 AI부터 의약품까지…글로벌 성장 가능성에 뭉칫돈",
+          "link": "http://www.edaily.co.kr/news/newspath.asp?newsid=02115606645385616",
+          "date": "2026-03-21"
+        }
+      ],
+      "createdAt": "2026-03-23",
+      "updatedAt": "2026-03-23",
+      "history": [
+        {
+          "date": "2026-03-23",
+          "stage": "기타",
+          "summary": "3월 셋째 주 VC 시장에서 우주, AI, 바이오 분야로 투자가 집중되며 온기가 확산되고 있는 것으로 나타남. 글로벌 성장 가능성이 높은 섹터를 중심으로 뭉칫돈이 몰리는 추세가 이어짐."
+        }
+      ]
+    },
+    {
+      "id": "deal_20260323_006",
+      "name": "고려아연 경영권 분쟁 주총 표심 격돌 (영풍·MBK vs 최윤범)",
+      "stage": "기타",
+      "summary": "고려아연 경영권 분쟁에서 최윤범 책임론이 확전되며 영풍·MBK파트너스 측과 최윤범 측 간 주총 표심 대결이 격화됨. 베인캐피탈 지분 처리 등 백기사 교체 이슈도 맞물려 향후 지배구조 귀추가 주목됨.",
+      "repArticle": {
+        "title": "[주간사모펀드] '최윤범 책임론' 확전…영풍·MBK vs 고려아연 표심 격돌",
+        "link": "https://news.tf.co.kr/read/economy/2304570.htm",
+        "date": "2026-03-21",
+        "source": "기타매체명"
+      },
+      "articles": [
+        {
+          "title": "[주간사모펀드] '최윤범 책임론' 확전…영풍·MBK vs 고려아연 표심 격돌",
+          "link": "https://news.tf.co.kr/read/economy/2304570.htm",
+          "date": "2026-03-21"
+        }
+      ],
+      "createdAt": "2026-03-23",
+      "updatedAt": "2026-03-23",
+      "history": [
+        {
+          "date": "2026-03-23",
+          "stage": "기타",
+          "summary": "고려아연 경영권 분쟁에서 최윤범 책임론이 확전되며 영풍·MBK파트너스 측과 최윤범 측 간 주총 표심 대결이 격화됨. 베인캐피탈 지분 처리 등 백기사 교체 이슈도 맞물려 향후 지배구조 귀추가 주목됨."
+        }
+      ]
+    },
+    {
+      "id": "deal_20260323_007",
+      "name": "하나투어 대주주 체제 강화 및 PE 관련 주주구조 이슈",
+      "stage": "기타",
+      "summary": "하나투어가 실적과 주가 흔들림에도 불구하고 대주주 체제가 더욱 공고해지고 있는 것으로 분석됨. PE 관련 주주 구조 변화와 경영권 방어 동향이 주목됨.",
+      "repArticle": {
+        "title": "[핀포인트] [하나투어] 실적·주가 흔들리는데…'대주주 체제' 더 굳어지나",
+        "link": "https://news.dealsitetv.com/articles/167249",
+        "date": "2026-03-23",
+        "source": "dealsite"
+      },
+      "articles": [
+        {
+          "title": "[핀포인트] [하나투어] 실적·주가 흔들리는데…'대주주 체제' 더 굳어지나",
+          "link": "https://news.dealsitetv.com/articles/167249",
+          "date": "2026-03-23"
+        }
+      ],
+      "createdAt": "2026-03-23",
+      "updatedAt": "2026-03-23",
+      "history": [
+        {
+          "date": "2026-03-23",
+          "stage": "기타",
+          "summary": "하나투어가 실적과 주가 흔들림에도 불구하고 대주주 체제가 더욱 공고해지고 있는 것으로 분석됨. PE 관련 주주 구조 변화와 경영권 방어 동향이 주목됨."
+        }
+      ]
+    },
+    {
+      "id": "deal_20260323_008",
+      "name": "증권사 모험자본 배분 구조 변화 (생산적 금융)",
+      "stage": "기타",
+      "summary": "국내 증권사들이 생산적 금융 기조 아래 모험자본으로의 자금 배분 구조 전환을 시작한 것으로 나타남. PE·VC 출자 확대 및 직접 투자 강화 방향으로 자본 배치 전략이 재편되고 있음.",
+      "repArticle": {
+        "title": "[생산적금융ㆍ증권中] 모험자본으로 이동 시작…증권사 자금 배분 구조 변화",
+        "link": "http://www.ftoday.co.kr/news/articleView.html?idxno=356667",
+        "date": "2026-03-20",
+        "source": "기타매체명"
+      },
+      "articles": [
+        {
+          "title": "[생산적금융ㆍ증권中] 모험자본으로 이동 시작…증권사 자금 배분 구조 변화",
+          "link": "http://www.ftoday.co.kr/news/articleView.html?idxno=356667",
+          "date": "2026-03-20"
+        }
+      ],
+      "createdAt": "2026-03-23",
+      "updatedAt": "2026-03-23",
+      "history": [
+        {
+          "date": "2026-03-23",
+          "stage": "기타",
+          "summary": "국내 증권사들이 생산적 금융 기조 아래 모험자본으로의 자금 배분 구조 전환을 시작한 것으로 나타남. PE·VC 출자 확대 및 직접 투자 강화 방향으로 자본 배치 전략이 재편되고 있음."
+        }
+      ]
+    },
+    {
+      "id": "deal_20260323_009",
+      "name": "덕산그룹 중복상장 영향권 및 외형 확장 속도 조절",
+      "stage": "기타",
+      "summary": "덕산그룹이 중복상장 금지 규제 영향권에 들면서 기존 외형 확장 전략에 제동이 걸릴 가능성이 높아짐. 계열사 IPO 플랜 재검토 및 지배구조 정비가 불가피한 상황임.",
+      "repArticle": {
+        "title": "덕산그룹, 중복상장 영향권…외형확장 속도조절",
+        "link": "https://www.the-stock.kr/news/articleView.html?idxno=32206",
+        "date": "2026-03-20",
+        "source": "기타매체명"
+      },
+      "articles": [
+        {
+          "title": "덕산그룹, 중복상장 영향권…외형확장 속도조절",
+          "link": "https://www.the-stock.kr/news/articleView.html?idxno=32206",
+          "date": "2026-03-20"
+        }
+      ],
+      "createdAt": "2026-03-23",
+      "updatedAt": "2026-03-23",
+      "history": [
+        {
+          "date": "2026-03-23",
+          "stage": "기타",
+          "summary": "덕산그룹이 중복상장 금지 규제 영향권에 들면서 기존 외형 확장 전략에 제동이 걸릴 가능성이 높아짐. 계열사 IPO 플랜 재검토 및 지배구조 정비가 불가피한 상황임."
+        }
+      ]
+    },
+    {
+      "id": "deal_20260323_010",
+      "name": "크린랩 경영권 매각 자금조달 차질 (포인터스PE·이상파트너스)",
+      "stage": "기타",
+      "summary": "주방용품 1위 크린랩의 경영권 매각이 포인터스PE와 이상파트너스의 자금 조달 차질로 무산 위기에 처한 것으로 전해짐. 인수금융 마련에 어려움을 겪으며 거래 성사 여부가 불투명해진 상황임.",
+      "repArticle": {
+        "title": "'주방용품 1위' 크린랩 거래 무산되나… 포인터스PE·이상파트너스 자금조달 차질",
+        "link": "https://biz.chosun.com/stock/market_trend/2026/03/20/MQUXI3MB3FE4XFLLUTB5H5IIYY/?utm_source=naver&utm_medium=original&utm_campaign=biz",
+        "date": "2026-03-20",
+        "source": "기타매체명"
+      },
+      "articles": [
+        {
+          "title": "'주방용품 1위' 크린랩 거래 무산되나… 포인터스PE·이상파트너스 자금조달 차질",
+          "link": "https://biz.chosun.com/stock/market_trend/2026/03/20/MQUXI3MB3FE4XFLLUTB5H5IIYY/?utm_source=naver&utm_medium=original&utm_campaign=biz",
+          "date": "2026-03-20"
+        }
+      ],
+      "createdAt": "2026-03-23",
+      "updatedAt": "2026-03-23",
+      "history": [
+        {
+          "date": "2026-03-23",
+          "stage": "기타",
+          "summary": "주방용품 1위 크린랩의 경영권 매각이 포인터스PE와 이상파트너스의 자금 조달 차질로 무산 위기에 처한 것으로 전해짐. 인수금융 마련에 어려움을 겪으며 거래 성사 여부가 불투명해진 상황임."
+        }
+      ]
+    },
+    {
+      "id": "deal_20260323_011",
+      "name": "KKR HD현대마린솔루션 지분 매각 (오버행 이슈)",
+      "stage": "매각 검토중",
+      "summary": "KKR이 보유한 HD현대마린솔루션 지분 매각 관련 오버행 우려가 제기되고 있으나, 지분 매각 시 저가매수 기회로 활용될 수 있다는 시각도 존재함. 증익 지속 및 오버행 해소 기대감이 맞물리며 주가 향방이 주목받는 상황임.",
+      "repArticle": {
+        "title": "HD현대마린솔루션, KKR 오버행 우려 해소…지분 매각 시 저가매수 기회",
+        "link": "https://www.etoday.co.kr/news/view/2568046",
+        "date": "2026-03-23",
+        "source": "기타매체명"
+      },
+      "articles": [
+        {
+          "title": "HD현대마린솔루션, KKR 오버행 우려 해소…지분 매각 시 저가매수 기회",
+          "link": "https://www.etoday.co.kr/news/view/2568046",
+          "date": "2026-03-23"
+        },
+        {
+          "title": "[클릭e종목] \"HD현대마린솔루션, 증익 지속·오버행 해소 기대감\"",
+          "link": "https://view.asiae.co.kr/article/2026032308002618713",
+          "date": "2026-03-23"
+        }
+      ],
+      "createdAt": "2026-03-23",
+      "updatedAt": "2026-03-23",
+      "history": [
+        {
+          "date": "2026-03-23",
+          "stage": "매각 검토중",
+          "summary": "KKR이 보유한 HD현대마린솔루션 지분 매각 관련 오버행 우려가 제기되고 있으나, 지분 매각 시 저가매수 기회로 활용될 수 있다는 시각도 존재함. 증익 지속 및 오버행 해소 기대감이 맞물리며 주가 향방이 주목받는 상황임."
+        }
+      ]
+    },
+    {
+      "id": "deal_20260323_012",
+      "name": "디티앤인베스트 PE 확장 (신화철 부문 대표 영입)",
+      "stage": "기타",
+      "summary": "디티앤인베스트가 PE 부문 확장을 위해 신화철 부문 대표를 영입하며 덩치 키우기에 나섬. PE 역량 강화를 통한 사업 확대 전략을 본격화하는 움직임으로 해석됨.",
+      "repArticle": {
+        "title": "덩치 키우는 디티앤인베스트…PE 확장 신화철 부문 대표 영입",
+        "link": "https://news.einfomax.co.kr/news/articleView.html?idxno=4405222",
+        "date": "2026-03-23",
+        "source": "기타매체명"
+      },
+      "articles": [
+        {
+          "title": "덩치 키우는 디티앤인베스트…PE 확장 신화철 부문 대표 영입",
+          "link": "https://news.einfomax.co.kr/news/articleView.html?idxno=4405222",
+          "date": "2026-03-23"
+        }
+      ],
+      "createdAt": "2026-03-23",
+      "updatedAt": "2026-03-23",
+      "history": [
+        {
+          "date": "2026-03-23",
+          "stage": "기타",
+          "summary": "디티앤인베스트가 PE 부문 확장을 위해 신화철 부문 대표를 영입하며 덩치 키우기에 나섬. PE 역량 강화를 통한 사업 확대 전략을 본격화하는 움직임으로 해석됨."
+        }
+      ]
+    },
+    {
+      "id": "deal_20260323_013",
+      "name": "키움-큐이디에쿼티 UHC(호텔 브랜드 운영사) 100억 투자",
+      "stage": "딜 클로즈",
+      "summary": "키움과 큐이디에쿼티가 호텔 브랜드 운영사 UHC에 100억 원을 투자하는 딜을 클로징함. 호텔·레저 섹터에 대한 PE/증권사 연합 투자 구조로 진행된 딜임.",
+      "repArticle": {
+        "title": "[더벨]키움-큐이디에쿼티, 호텔 브랜드 운영 'UHC'에 100억 투자",
+        "link": "https://www.thebell.co.kr/free/content/ArticleView.asp?key=202603191420379120104687",
+        "date": "2026-03-23",
+        "source": "thebell"
+      },
+      "articles": [
+        {
+          "title": "[더벨]키움-큐이디에쿼티, 호텔 브랜드 운영 'UHC'에 100억 투자",
+          "link": "https://www.thebell.co.kr/free/content/ArticleView.asp?key=202603191420379120104687",
+          "date": "2026-03-23"
+        }
+      ],
+      "createdAt": "2026-03-23",
+      "updatedAt": "2026-03-23",
+      "history": [
+        {
+          "date": "2026-03-23",
+          "stage": "딜 클로즈",
+          "summary": "키움과 큐이디에쿼티가 호텔 브랜드 운영사 UHC에 100억 원을 투자하는 딜을 클로징함. 호텔·레저 섹터에 대한 PE/증권사 연합 투자 구조로 진행된 딜임."
+        }
+      ]
+    },
+    {
+      "id": "deal_20260323_014",
+      "name": "현대투자파트너스 제이에스티(JST) 인수 추진 (씨엘파트너스 경쟁)",
+      "stage": "실사 진행중",
+      "summary": "현대투자파트너스가 제이에스티(JST) 인수를 추진하며 씨엘파트너스와 경쟁 구도를 형성하고 있음. 두 PE 간의 인수 경쟁이 본격화되는 상황으로, 최종 인수자 선정이 주목됨.",
+      "repArticle": {
+        "title": "[더벨]'제이에스티 인수 추진' 현대투자파트너스, 씨엘파트너스와 맞...",
+        "link": "https://www.thebell.co.kr/free/content/ArticleView.asp?key=202603181610186160104775",
+        "date": "2026-03-23",
+        "source": "thebell"
+      },
+      "articles": [
+        {
+          "title": "[더벨]'제이에스티 인수 추진' 현대투자파트너스, 씨엘파트너스와 맞...",
+          "link": "https://www.thebell.co.kr/free/content/ArticleView.asp?key=202603181610186160104775",
+          "date": "2026-03-23"
+        }
+      ],
+      "createdAt": "2026-03-23",
+      "updatedAt": "2026-03-23",
+      "history": [
+        {
+          "date": "2026-03-23",
+          "stage": "실사 진행중",
+          "summary": "현대투자파트너스가 제이에스티(JST) 인수를 추진하며 씨엘파트너스와 경쟁 구도를 형성하고 있음. 두 PE 간의 인수 경쟁이 본격화되는 상황으로, 최종 인수자 선정이 주목됨."
+        }
+      ]
+    },
+    {
+      "id": "deal_20260323_015",
+      "name": "VIG파트너스 반도체社 PTC 투자",
+      "stage": "딜 클로즈",
+      "summary": "VIG파트너스가 반도체 기업 PTC에 투자를 집행함. 구체적 투자 금액 및 지분율은 미공개 상태이나 신규 포트폴리오 편입 딜로 확인됨.",
+      "repArticle": {
+        "title": "VIG파트너스, 반도체社 PTC 투자한다",
+        "link": "https://www.newstopkorea.com/news/articleView.html?idxno=43953",
+        "date": "2026-03-23",
+        "source": "기타매체명"
+      },
+      "articles": [
+        {
+          "title": "VIG파트너스, 반도체社 PTC 투자한다",
+          "link": "https://www.newstopkorea.com/news/articleView.html?idxno=43953",
+          "date": "2026-03-23"
+        }
+      ],
+      "createdAt": "2026-03-23",
+      "updatedAt": "2026-03-23",
+      "history": [
+        {
+          "date": "2026-03-23",
+          "stage": "딜 클로즈",
+          "summary": "VIG파트너스가 반도체 기업 PTC에 투자를 집행함. 구체적 투자 금액 및 지분율은 미공개 상태이나 신규 포트폴리오 편입 딜로 확인됨."
+        }
+      ]
+    },
+    {
+      "id": "deal_20260323_016",
+      "name": "요아정 매각 무산",
+      "stage": "기타",
+      "summary": "프랜차이즈 요아정의 경영권 매각이 무산됨. 인수 희망 측이 '1000억원 이상은 불가'라는 입장을 밝히며 가격 이견으로 딜이 성사되지 못한 것으로 전해짐.",
+      "repArticle": {
+        "title": "[단독] \"1000억원 이상은 못 줘요\" 프랜차이즈 요아정 매각 무산",
+        "link": "https://biz.chosun.com/stock/market_trend/2026/03/23/EHICRKEWTVH2LPLKF76X2H77EA/?utm_source=naver&utm_medium=original&utm_campaign=biz",
+        "date": "2026-03-23",
+        "source": "기타매체명"
+      },
+      "articles": [
+        {
+          "title": "[단독] \"1000억원 이상은 못 줘요\" 프랜차이즈 요아정 매각 무산",
+          "link": "https://biz.chosun.com/stock/market_trend/2026/03/23/EHICRKEWTVH2LPLKF76X2H77EA/?utm_source=naver&utm_medium=original&utm_campaign=biz",
+          "date": "2026-03-23"
+        }
+      ],
+      "createdAt": "2026-03-23",
+      "updatedAt": "2026-03-23",
+      "history": [
+        {
+          "date": "2026-03-23",
+          "stage": "기타",
+          "summary": "프랜차이즈 요아정의 경영권 매각이 무산됨. 인수 희망 측이 '1000억원 이상은 불가'라는 입장을 밝히며 가격 이견으로 딜이 성사되지 못한 것으로 전해짐."
+        }
+      ]
+    },
+    {
+      "id": "deal_20260323_017",
+      "name": "블랙스톤 BCRED 사모대출 손실 및 사모대출 시장 균열 이슈",
+      "stage": "기타",
+      "summary": "블랙스톤의 BCRED가 3년 만에 첫 손실을 기록하며 글로벌 사모대출(Private Credit) 시장의 균열 신호가 포착됨. BDC 주가가 25% 폭락하고 1조 달러 규모 시장의 환매 절벽 위기가 부상하는 가운데, 미국 블루아울펀드 환매중단 사태가 2008년식 시스템 위기로 번지지 않을지 우려가 확산되고 있음.",
+      "repArticle": {
+        "title": "블랙스톤 BCRED, 3년 만에 첫 손실…사모대출 시장 균열 시작됐나",
+        "link": "https://www.g-enews.com/view.php?ud=2026032219242677302bd56fbc3c_1",
+        "date": "2026-03-23",
+        "source": "기타매체명"
+      },
+      "articles": [
+        {
+          "title": "블랙스톤 BCRED, 3년 만에 첫 손실…사모대출 시장 균열 시작됐나",
+          "link": "https://www.g-enews.com/view.php?ud=2026032219242677302bd56fbc3c_1",
+          "date": "2026-03-23"
+        },
+        {
+          "title": "사모대출 BDC 주가 25% 폭락... 1조 달러 시장 '환매 절벽' 위기 [사모대출...]",
+          "link": "https://www.g-enews.com/view.php?ud=202603221706165485fbbec65dfb_1",
+          "date": "2026-03-23"
+        },
+        {
+          "title": "\"美 블루아울펀드환매중단 … 2008년식 시스템 위기 아냐\"",
+          "link": "https://www.mk.co.kr/article/11995095",
+          "date": "2026-03-22"
+        },
+        {
+          "title": "황금기 끝나가는사모대출의 '5가지 위험 신호'",
+          "link": "https://www.hankyung.com/article/2026032281231",
+          "date": "2026-03-22"
+        },
+        {
+          "title": "국내 보험·증권·연기금 38조 투자…개인투자자 손실 촉각",
+          "link": "https://www.hankyung.com/article/2026032281291",
+          "date": "2026-03-22"
+        }
+      ],
+      "createdAt": "2026-03-23",
+      "updatedAt": "2026-03-23",
+      "history": [
+        {
+          "date": "2026-03-23",
+          "stage": "기타",
+          "summary": "블랙스톤의 BCRED가 3년 만에 첫 손실을 기록하며 글로벌 사모대출(Private Credit) 시장의 균열 신호가 포착됨. BDC 주가가 25% 폭락하고 1조 달러 규모 시장의 환매 절벽 위기가 부상하는 가운데, 미국 블루아울펀드 환매중단 사태가 2008년식 시스템 위기로 번지지 않을지 우려가 확산되고 있음."
+        }
+      ]
+    },
+    {
+      "id": "deal_20260323_018",
+      "name": "뱅크샐러드 기관투자자 투자 회수",
+      "stage": "기타",
+      "summary": "뱅크샐러드에 투자한 기관투자자들이 투자 회수에 속도를 내고 있는 것으로 알려짐. 구체적인 매각 방식 및 엑시트 일정은 아직 확정되지 않은 상황으로, 향후 IPO 또는 지분 매각 등 다양한 회수 경로가 검토될 것으로 보임.",
+      "repArticle": {
+        "title": "기관투자자들, '뱅크샐러드', 투자회수 속도 내나",
+        "link": "https://www.etoday.co.kr/news/view/2567710",
+        "date": "2026-03-22",
+        "source": "기타매체명"
+      },
+      "articles": [
+        {
+          "title": "기관투자자들, '뱅크샐러드', 투자회수 속도 내나",
+          "link": "https://www.etoday.co.kr/news/view/2567710",
+          "date": "2026-03-22"
+        }
+      ],
+      "createdAt": "2026-03-23",
+      "updatedAt": "2026-03-23",
+      "history": [
+        {
+          "date": "2026-03-23",
+          "stage": "기타",
+          "summary": "뱅크샐러드에 투자한 기관투자자들이 투자 회수에 속도를 내고 있는 것으로 알려짐. 구체적인 매각 방식 및 엑시트 일정은 아직 확정되지 않은 상황으로, 향후 IPO 또는 지분 매각 등 다양한 회수 경로가 검토될 것으로 보임."
+        }
+      ]
+    },
+    {
+      "id": "deal_20260323_019",
+      "name": "맥쿼리PE 어프로티움 매각",
+      "stage": "매각 검토중",
+      "summary": "맥쿼리PE가 2연속 잭팟을 기록한 데 이어 어프로티움 매각을 숨고르기 중인 것으로 파악됨. 구체적인 매각 일정 및 조건은 아직 확정되지 않은 상태로, 시장의 관심이 집중됨.",
+      "repArticle": {
+        "title": "[더벨]'2연속 잭팟' 맥쿼리PE, 어프로티움 매각은 숨고르기",
+        "link": "https://www.thebell.co.kr/free/content/ArticleView.asp?key=202603190951111120105574",
+        "date": "2026-03-23",
+        "source": "thebell"
+      },
+      "articles": [
+        {
+          "title": "[더벨]'2연속 잭팟' 맥쿼리PE, 어프로티움 매각은 숨고르기",
+          "link": "https://www.thebell.co.kr/free/content/ArticleView.asp?key=202603190951111120105574",
+          "date": "2026-03-23"
+        }
+      ],
+      "createdAt": "2026-03-23",
+      "updatedAt": "2026-03-23",
+      "history": [
+        {
+          "date": "2026-03-23",
+          "stage": "매각 검토중",
+          "summary": "맥쿼리PE가 2연속 잭팟을 기록한 데 이어 어프로티움 매각을 숨고르기 중인 것으로 파악됨. 구체적인 매각 일정 및 조건은 아직 확정되지 않은 상태로, 시장의 관심이 집중됨."
+        }
+      ]
+    },
+    {
+      "id": "deal_20260323_020",
+      "name": "여수 석유화학 구조개편 (롯데케미칼·여천NCC 통합)",
+      "stage": "기타",
+      "summary": "롯데케미칼이 여천NCC 여수 2·3공장을 폐쇄하고 자사 여수공장과 통합하는 신설법인을 추진하며 석유화학 사업재편 2호를 본격화함. 한화·DL·롯데의 '여천 동맹'을 통해 범용 설비를 줄이고 고부가 스페셜티 화학기업으로 전환하는 구조개편 계획서 최종안을 제출함. 산업장관은 여수 재편 항해 시작을 선언하며 다음 단계로 울산 구조조정을 독려함.",
+      "repArticle": {
+        "title": "롯데케미칼·여천NCC 여수공장 합친다…석유화학 '2호 재편'",
+        "link": "https://www.segye.com/newsView/20260320514020?OutUrl=naver",
+        "date": "2026-03-21",
+        "source": "세계일보"
+      },
+      "articles": [
+        {
+          "title": "롯데케미칼, 스페셜티 화학기업 대전환... 사업재편 계획서 최종안 제출",
+          "link": "https://www.todayenergy.kr/news/articleView.html?idxno=295531",
+          "date": "2026-03-22"
+        },
+        {
+          "title": "석유화학 재편 속도 붙었지만… '울산'·'여수2호' 줄다리기 여전",
+          "link": "https://www.segye.com/newsView/20260322509461?OutUrl=naver",
+          "date": "2026-03-23"
+        },
+        {
+          "title": "여수 석유화학 구조개편 본격화…김정관 산업장관 '이제 울산의 시간'",
+          "link": "https://www.ajunews.com/view/20260322112614730",
+          "date": "2026-03-22"
+        },
+        {
+          "title": "석화 사업재편 중심에 선 롯데케미칼…여수도 통폐합 확정",
+          "link": "https://www.asiatime.co.kr/article/20260322500128",
+          "date": "2026-03-22"
+        },
+        {
+          "title": "석유화학 구조조정 대산 1호, 여수 2호…울산만 남았다",
+          "link": "https://www.etoday.co.kr/news/view/2567736",
+          "date": "2026-03-22"
+        },
+        {
+          "title": "석화 구조조정 2호 첫 발...롯데·한화·DL '여천 동맹'",
+          "link": "https://www.m-i.kr/news/articleView.html?idxno=1356311",
+          "date": "2026-03-22"
+        },
+        {
+          "title": "김정관 장관, 석화산업 구조 개편 '이제 울산의 시간'",
+          "link": "https://www.viva100.com/article/20260321500230",
+          "date": "2026-03-21"
+        },
+        {
+          "title": "산업장관 '여수 석화 구조개편 항해 시작…이제 울산 나아가야'",
+          "link": "https://www.newsis.com/view/NISX20260321_0003558107",
+          "date": "2026-03-21"
+        },
+        {
+          "title": "한화·DL·롯데, 여수서 설비 통합... 범용 줄이고 고부가로 간다",
+          "link": "https://www.insight.co.kr/news/547258",
+          "date": "2026-03-21"
+        },
+        {
+          "title": "여수는 통합·울산은 난항 …석화 사업재편 온도차",
+          "link": "https://www.etnews.com/20260320000184",
+          "date": "2026-03-21"
+        },
+        {
+          "title": "롯데케미칼·여천NCC 여수공장 합친다…석유화학 '2호 재편'",
+          "link": "https://www.segye.com/newsView/20260320514020?OutUrl=naver",
+          "date": "2026-03-21"
+        },
+        {
+          "title": "롯데케미칼 여수 NCC 분할, 여천엔씨씨와 통합 신설법인 추진",
+          "link": "http://www.e-platform.net/news/articleView.html?idxno=100834",
+          "date": "2026-03-21"
+        },
+        {
+          "title": "여수 석화 구조조정, 여천NCC·롯데 합친다",
+          "link": "https://www.joongang.co.kr/article/25413549",
+          "date": "2026-03-21"
+        },
+        {
+          "title": "여천NCC, 여수 2·3공장 폐쇄…석화 재편 2호 돌입",
+          "link": "https://magazine.hankyung.com/business/article/202603206282b",
+          "date": "2026-03-20"
+        }
+      ],
+      "createdAt": "2026-03-23",
+      "updatedAt": "2026-03-23",
+      "history": [
+        {
+          "date": "2026-03-23",
+          "stage": "기타",
+          "summary": "롯데케미칼이 여천NCC 여수 2·3공장을 폐쇄하고 자사 여수공장과 통합하는 신설법인을 추진하며 석유화학 사업재편 2호를 본격화함. 한화·DL·롯데의 '여천 동맹'을 통해 범용 설비를 줄이고 고부가 스페셜티 화학기업으로 전환하는 구조개편 계획서 최종안을 제출함. 산업장관은 여수 재편 항해 시작을 선언하며 다음 단계로 울산 구조조정을 독려함."
+        }
+      ]
+    },
+    {
+      "id": "deal_20260323_021",
+      "name": "군인공제회 PE 출자사업 (2000억, 기존 GP 공동투자)",
+      "stage": "주관사 선정",
+      "summary": "군인공제회가 기존 GP와의 공동투자 방식으로 약 2000억 원 규모의 PE 출자사업을 추진함. 기존 관계 GP와의 협업을 통해 안정적인 투자 구조를 모색하는 것으로 파악됨.",
+      "repArticle": {
+        "title": "군인공제회, 기존 GP와 공동투자…2000억PE출자",
+        "link": "https://dealsite.co.kr/articles/158862",
+        "date": "2026-03-21",
+        "source": "dealsite"
+      },
+      "articles": [
+        {
+          "title": "군인공제회, 기존 GP와 공동투자…2000억PE출자",
+          "link": "https://dealsite.co.kr/articles/158862",
+          "date": "2026-03-21"
+        }
+      ],
+      "createdAt": "2026-03-23",
+      "updatedAt": "2026-03-23",
+      "history": [
+        {
+          "date": "2026-03-23",
+          "stage": "주관사 선정",
+          "summary": "군인공제회가 기존 GP와의 공동투자 방식으로 약 2000억 원 규모의 PE 출자사업을 추진함. 기존 관계 GP와의 협업을 통해 안정적인 투자 구조를 모색하는 것으로 파악됨."
+        }
+      ]
+    },
+    {
+      "id": "deal_20260323_022",
+      "name": "여천NCC·롯데케미칼 통합법인 설립 (석유화학 구조개편 2호)",
+      "stage": "기타",
+      "summary": "한화·롯데·DL 3사가 공동지배하는 여천NCC를 중심으로 신설 통합법인을 설립하고 여수 2·3공장 폐쇄 및 NCC 설비 약 140만 톤 감축을 추진하는 석화 구조개편 2호 프로젝트가 본격화됨. 공정거래위원회가 롯데케미칼·여천NCC 결합심사에 착수하였으며, 한신평은 동 재편이 롯데케미칼과 여천NCC의 재무부담을 완화할 것으로 평가함. 국내 석유화학 업계의 과잉설비 해소 및 고부가 사업 전환을 목표로 하는 대규모 산업 재편임.",
+      "repArticle": {
+        "title": "공정위, '석유화학 사업재편 2호' 롯데케미칼·여천NCC 결합 심사 착수",
+        "link": "https://www.pinpointnews.co.kr/news/articleView.html?idxno=438627",
+        "date": "2026-03-20",
+        "source": "기타매체명"
+      },
+      "articles": [
+        {
+          "title": "여천NCC, 통합법인 추진…석유화학 '2호 재편'",
+          "link": "https://www.g-enews.com/view.php?ud=20260320165008930524debea800_1",
+          "date": "2026-03-20"
+        },
+        {
+          "title": "여천NCC 2·3공장 닫고 롯데케미칼과 통합…석유화학 '2호 재편' 속도",
+          "link": "http://www.srtimes.kr/news/articleView.html?idxno=199177",
+          "date": "2026-03-20"
+        },
+        {
+          "title": "공정위, '석유화학 사업재편 2호' 롯데케미칼·여천NCC 결합 심사 착수",
+          "link": "https://www.pinpointnews.co.kr/news/articleView.html?idxno=438627",
+          "date": "2026-03-20"
+        },
+        {
+          "title": "석화 재편안 2호 나왔다…여천NCC 중심 신설법인 설립",
+          "link": "http://www.sisaon.co.kr/news/articleView.html?idxno=181643",
+          "date": "2026-03-20"
+        },
+        {
+          "title": "여천NCC, 사업 재편 본격화···여수 2·3공장 폐쇄 추진",
+          "link": "https://www.newsway.co.kr/news/view?ud=2026032019515003328",
+          "date": "2026-03-20"
+        },
+        {
+          "title": "한신평, 여수 석화 사업재편에 '롯데케미칼·여천NCC 재무부담 덜 것'",
+          "link": "https://www.ajunews.com/view/20260320190924300",
+          "date": "2026-03-20"
+        },
+        {
+          "title": "'여수 1호' 밑그림 완성…DL·한화·롯데 NCC '통합'",
+          "link": "https://www.sentv.co.kr/article/view/sentv202603200118",
+          "date": "2026-03-20"
+        },
+        {
+          "title": "'여수 1호 프로젝트'로 석화 4사 뭉친다…고부가 전환 밑그림 드러나",
+          "link": "https://www.econovill.com/news/articleView.html?idxno=734142",
+          "date": "2026-03-20"
+        },
+        {
+          "title": "여수 석화 재편 1호 나왔다…여천NCC·롯데 여수 NCC 통합·설비 조정",
+          "link": "https://www.ekn.kr/web/view.php?key=20260320021449635",
+          "date": "2026-03-20"
+        },
+        {
+          "title": "여천NCC 2·3공장 폐쇄… 롯데·한화·DL 통합",
+          "link": "https://www.newscj.com/news/articleView.html?idxno=3386665",
+          "date": "2026-03-20"
+        },
+        {
+          "title": "여수 석화단지 재편…여천NCC 중심 통합법인 설립",
+          "link": "http://www.e2news.com/news/articleView.html?idxno=328856",
+          "date": "2026-03-20"
+        },
+        {
+          "title": "한화·롯데·DL, 여천NCC 공동지배...석화 구조개편 2호 본격화",
+          "link": "http://www.joseilbo.com/news/news_read.php?uid=565023&class=17&grp=",
+          "date": "2026-03-20"
+        },
+        {
+          "title": "여수화학산단, 대규모 구조조정에 대한 밑그림 구체화",
+          "link": "http://www.engdaily.com/news/articleView.html?idxno=21913",
+          "date": "2026-03-20"
+        },
+        {
+          "title": "석화 개편 '여수 1호' 최종안 제출…NCC 설비 약 140만 톤 감축",
+          "link": "https://www.sedaily.com/article/20022092?ref=naver",
+          "date": "2026-03-20"
+        },
+        {
+          "title": "롯데·한화·DL 'NCC 통합' 추진…석유화학 구조개편 본격",
+          "link": "http://www.4th.kr/news/articleView.html?idxno=2109344",
+          "date": "2026-03-20"
+        },
+        {
+          "title": "140만t 멈춘다…여수산단 구조개편 '실행 단계' 돌입",
+          "link": "https://theviewers.co.kr/View.aspx?No=4011753",
+          "date": "2026-03-20"
+        }
+      ],
+      "createdAt": "2026-03-23",
+      "updatedAt": "2026-03-23",
+      "history": [
+        {
+          "date": "2026-03-23",
+          "stage": "기타",
+          "summary": "한화·롯데·DL 3사가 공동지배하는 여천NCC를 중심으로 신설 통합법인을 설립하고 여수 2·3공장 폐쇄 및 NCC 설비 약 140만 톤 감축을 추진하는 석화 구조개편 2호 프로젝트가 본격화됨. 공정거래위원회가 롯데케미칼·여천NCC 결합심사에 착수하였으며, 한신평은 동 재편이 롯데케미칼과 여천NCC의 재무부담을 완화할 것으로 평가함. 국내 석유화학 업계의 과잉설비 해소 및 고부가 사업 전환을 목표로 하는 대규모 산업 재편임."
+        }
+      ]
+    },
+    {
+      "id": "deal_20260323_023",
+      "name": "군인공제회 PE 출자사업 GP 선정 (2000억)",
+      "stage": "주관사 선정",
+      "summary": "군인공제회가 약 2,000억 원 규모의 PE 운용사(GP) 선정 절차를 추진 중임. 국내 주요 공제회의 대체투자 출자사업으로 PE 업계의 관심이 집중되고 있음.",
+      "repArticle": {
+        "title": "군인공제회, '2000억 운용'PE뽑는다",
+        "link": "https://www.bloter.net/news/articleView.html?idxno=657264",
+        "date": "2026-03-20",
+        "source": "bloter"
+      },
+      "articles": [
+        {
+          "title": "군인공제회, '2000억 운용'PE뽑는다",
+          "link": "https://www.bloter.net/news/articleView.html?idxno=657264",
+          "date": "2026-03-20"
+        }
+      ],
+      "createdAt": "2026-03-23",
+      "updatedAt": "2026-03-23",
+      "history": [
+        {
+          "date": "2026-03-23",
+          "stage": "주관사 선정",
+          "summary": "군인공제회가 약 2,000억 원 규모의 PE 운용사(GP) 선정 절차를 추진 중임. 국내 주요 공제회의 대체투자 출자사업으로 PE 업계의 관심이 집중되고 있음."
+        }
+      ]
+    },
+    {
       "id": "deal_20260320_001",
       "name": "카카오모빌리티 나스닥 IPO 검토 (FI 엑시트)",
       "stage": "매각 검토중",
@@ -337,54 +2919,6 @@
       ]
     },
     {
-      "id": "deal_20260320_008",
-      "name": "적대적 M&A 관련 경영권 방어 이슈 (상법 개정 영향)",
-      "stage": "기타",
-      "summary": "우리금융그룹이 편입한 동양생명과 ABL생명의 통합을 검토 중으로, 양사의 유동성 상황이 엇갈리는 가운데 통합 비용 부담이 변수로 부각됨. 동양생명 100% 편입 완료 이후 후속 절차로 통합 논의가 본격화된 것으로 파악됨.",
-      "repArticle": {
-        "title": "문 열린 적대적 M&A…기업들 경영권 방어 고심 깊어진다 [시그널INSIDE]",
-        "link": "https://www.sedaily.com/article/20021613?ref=naver",
-        "date": "2026-03-19",
-        "source": "기타"
-      },
-      "articles": [
-        {
-          "title": "문 열린 적대적 M&A…기업들 경영권 방어 고심 깊어진다 [시그널INSIDE]",
-          "link": "https://www.sedaily.com/article/20021613?ref=naver",
-          "date": "2026-03-19"
-        },
-        {
-          "title": "증권사 주총 시즌 돌입… 키워드는 '집중투표제·감사위 강화'",
-          "link": "https://www.asiatoday.co.kr/view.php?key=20260320010006030",
-          "date": "2026-03-19"
-        },
-        {
-          "title": "대주주에 유리한 합병 비율 개선… 당정, 자본시장법도 개정 시동",
-          "link": "https://www.hankookilbo.com/news/article/A2026031916060004371?did=NA",
-          "date": "2026-03-19"
-        },
-        {
-          "title": "[우리금융보험사 통합] ② 유동성 엇갈린 동양·ABL…통합 비용 부담은",
-          "link": "https://www.topdaily.kr/articles/109295",
-          "date": "2026-03-20"
-        }
-      ],
-      "createdAt": "2026-03-20",
-      "updatedAt": "2026-03-20",
-      "history": [
-        {
-          "date": "2026-03-20",
-          "stage": "기타",
-          "summary": "상법 개정 이후 적대적 M&A에 대한 문이 열리면서 기업들의 경영권 방어 고심이 깊어지고 있음. 행동주의 펀드 및 외부 세력의 주주권 강화와 함께 기업 지배구조 취약 기업들의 경영권 불안 고조. 집중투표제·감사위 강화 등이 주총 시즌 핵심 키워드로 부상."
-        },
-        {
-          "date": "2026-03-20",
-          "stage": "기타",
-          "summary": "우리금융그룹이 편입한 동양생명과 ABL생명의 통합을 검토 중으로, 양사의 유동성 상황이 엇갈리는 가운데 통합 비용 부담이 변수로 부각됨. 동양생명 100% 편입 완료 이후 후속 절차로 통합 논의가 본격화된 것으로 파악됨."
-        }
-      ]
-    },
-    {
       "id": "deal_20260320_009",
       "name": "AI 페퍼스 배구단 매각",
       "stage": "기타",
@@ -517,34 +3051,6 @@
       ]
     },
     {
-      "id": "deal_20260320_013",
-      "name": "JW홀딩스 솔리더스인베스트먼트 100% 자회사 편입",
-      "stage": "딜 클로즈",
-      "summary": "JW홀딩스가 솔리더스인베스트먼트를 100% 자회사로 편입하는 딜을 마무리하고 김정현 대표와 새 출발을 알리는 것으로 더벨이 보도. 딜 클로징 이후 경영진 체계 및 투자 전략 방향 주목.",
-      "repArticle": {
-        "title": "[더벨][새주인 맞은 솔리더스인베] '딜 마침표' JW홀딩스, 김정현 대표와...",
-        "link": "https://www.thebell.co.kr/free/content/ArticleView.asp?key=202603161405130080107235",
-        "date": "2026-03-19",
-        "source": "thebell"
-      },
-      "articles": [
-        {
-          "title": "[더벨][새주인 맞은 솔리더스인베] '딜 마침표' JW홀딩스, 김정현 대표와...",
-          "link": "https://www.thebell.co.kr/free/content/ArticleView.asp?key=202603161405130080107235",
-          "date": "2026-03-19"
-        }
-      ],
-      "createdAt": "2026-03-20",
-      "updatedAt": "2026-03-20",
-      "history": [
-        {
-          "date": "2026-03-20",
-          "stage": "딜 클로즈",
-          "summary": "JW홀딩스가 솔리더스인베스트먼트를 100% 자회사로 편입하는 딜을 마무리하고 김정현 대표와 새 출발을 알리는 것으로 더벨이 보도. 딜 클로징 이후 경영진 체계 및 투자 전략 방향 주목."
-        }
-      ]
-    },
-    {
       "id": "deal_20260320_014",
       "name": "키스톤PE A캐피탈 인수자금 관련 이슈",
       "stage": "기타",
@@ -625,34 +3131,6 @@
           "date": "2026-03-20",
           "stage": "딜 클로즈",
           "summary": "KB PE와 SBI인베스트먼트가 에코프로 투자 지분을 매각하며 IRR 39%의 성과로 엑시트 완료. 기존 하이브 엑시트(IRR 46%)에 이어 연이은 고수익 엑시트 달성. 에코프로그룹 성장에 따른 FI 보유 지분 회수로 풀이됨."
-        }
-      ]
-    },
-    {
-      "id": "deal_20260320_017",
-      "name": "국민성장펀드 간접투자 GP 선정 (1.5조)",
-      "stage": "주관사 선정",
-      "summary": "국민성장펀드의 간접투자 GP 선정 절차가 착수되며 총 1.5조원 규모의 큰 장이 열릴 예정. GP 선정 작업이 본격화되며 국내 주요 PE·VC들의 경쟁이 예상됨. 정부 주도 정책 펀드의 대규모 위탁운용사 선정 프로세스로 업계 주목.",
-      "repArticle": {
-        "title": "[더벨][국민성장펀드 시동] 간접투자 GP 선정 착수 '1.5조' 큰 장 열린다",
-        "link": "https://www.thebell.co.kr/free/content/ArticleView.asp?key=202603170822399580105244",
-        "date": "2026-03-20",
-        "source": "thebell"
-      },
-      "articles": [
-        {
-          "title": "[더벨][국민성장펀드 시동] 간접투자 GP 선정 착수 '1.5조' 큰 장 열린다",
-          "link": "https://www.thebell.co.kr/free/content/ArticleView.asp?key=202603170822399580105244",
-          "date": "2026-03-20"
-        }
-      ],
-      "createdAt": "2026-03-20",
-      "updatedAt": "2026-03-20",
-      "history": [
-        {
-          "date": "2026-03-20",
-          "stage": "주관사 선정",
-          "summary": "국민성장펀드의 간접투자 GP 선정 절차가 착수되며 총 1.5조원 규모의 큰 장이 열릴 예정. GP 선정 작업이 본격화되며 국내 주요 PE·VC들의 경쟁이 예상됨. 정부 주도 정책 펀드의 대규모 위탁운용사 선정 프로세스로 업계 주목."
         }
       ]
     },
@@ -1442,74 +3920,6 @@
       ]
     },
     {
-      "id": "deal_20260319_007",
-      "name": "교보생명 SBI저축은행 인수 및 지주사 전환·IPO",
-      "stage": "기타",
-      "summary": "교보생명이 SBI저축은행 인수를 통해 종합금융그룹으로 도약 및 IPO 발판 마련 추진. FI와의 지분 가격 갈등이 지주전환·상장의 발목을 잡는 상황. 신창재 회장의 승부수 또는 보은 성격으로 해석되며 인수 시너지 기대감과 불확실성 공존.",
-      "repArticle": {
-        "title": "'SBI저축은행' 품은 교보생명…지주사 전환·IPO 속도 붙나",
-        "link": "https://www.newsis.com/view/NISX20260318_0003554214",
-        "date": "2026-03-19",
-        "source": "기타매체명"
-      },
-      "articles": [
-        {
-          "title": "'SBI저축은행' 품은 교보생명…지주사 전환·IPO 속도 붙나",
-          "link": "https://www.newsis.com/view/NISX20260318_0003554214",
-          "date": "2026-03-19"
-        },
-        {
-          "title": "닻올린 '정부 주도' 해상풍력 민간사업자 편입은 해결과제",
-          "link": "http://www.edaily.co.kr/news/newspath.asp?newsid=01626886645384632",
-          "date": "2026-03-18"
-        },
-        {
-          "title": "SBI저축銀 품은 교보생명,인수시너지 '군불'...IPO 재추진 '분수령'",
-          "link": "https://www.youthdaily.co.kr/news/article.html?no=215750",
-          "date": "2026-03-20"
-        },
-        {
-          "title": "[N2 포커스] 신창재 교보생명 의장, SBI저축은행 품고 '종합금융' 질주…",
-          "link": "https://www.news2day.co.kr/article/20260319500254",
-          "date": "2026-03-20"
-        },
-        {
-          "title": "교보생명, SBI저축은행 인수로 IPO 발판 마련…발목 잡는FI갈등",
-          "link": "https://www.mediapen.com/news/view/1087916",
-          "date": "2026-03-19"
-        },
-        {
-          "title": "[교보+SBI②] 교보생명의 '보은'인가 '승부수'인가",
-          "link": "https://www.ebn.co.kr/news/articleView.html?idxno=1702827",
-          "date": "2026-03-19"
-        },
-        {
-          "title": "\"지분 비싸게 사달라\"FI버티기…교보생명, 지주전환·증시상장 발목",
-          "link": "https://www.g-enews.com/view.php?ud=202603181546112518e30fcb1ba8_1",
-          "date": "2026-03-19"
-        }
-      ],
-      "createdAt": "2026-03-19",
-      "updatedAt": "2026-03-19",
-      "history": [
-        {
-          "date": "2026-03-19",
-          "stage": "기타",
-          "summary": "교보생명이 SBI저축은행을 인수하며 지주사 전환 및 IPO 추진에 속도가 붙을 것으로 기대됨. SBI저축은행 편입을 통해 금융그룹으로서의 포트폴리오 확장을 도모하는 전략. 기존 교보생명 IPO 추진 딜과 연계되는 움직임."
-        },
-        {
-          "date": "2026-03-19",
-          "stage": "기타",
-          "summary": "정부 주도의 해상풍력 계획입지 체계로의 전환이 닻을 올리며 민간사업자 편입 방안이 핵심 과제로 부상함. 기존 민간 주도 개발 방식에서 정부가 입지를 선정하고 민간이 참여하는 구조로 전환되며, 인허가 간소화와 함께 투자 환경 변화에 관심이 집중됨."
-        },
-        {
-          "date": "2026-03-20",
-          "stage": "기타",
-          "summary": "교보생명이 SBI저축은행 인수를 통해 종합금융그룹으로 도약 및 IPO 발판 마련 추진. FI와의 지분 가격 갈등이 지주전환·상장의 발목을 잡는 상황. 신창재 회장의 승부수 또는 보은 성격으로 해석되며 인수 시너지 기대감과 불확실성 공존."
-        }
-      ]
-    },
-    {
       "id": "deal_20260319_008",
       "name": "SK네트웍스 신사업 투자 확대 및 성장통",
       "stage": "기타",
@@ -1549,180 +3959,6 @@
           "date": "2026-03-20",
           "stage": "기타",
           "summary": "SK네트웍스가 신사업 투자를 확대하며 성장통을 겪고 있는 상황이 지속됨. 민팃 지분 양도 이후 AI·플랫폼 중심의 사업 재편을 가속화하는 추세. 신사업 분야 투자 확대에 따른 단기 수익성 압박과 중장기 성장 사이의 균형이 과제."
-        }
-      ]
-    },
-    {
-      "id": "deal_20260319_009",
-      "name": "중복상장 원칙금지 관련 롯데글로벌로지스·SK에코플랜트 IPO 영향",
-      "stage": "기타",
-      "summary": "중복상장 전면 금지 정책으로 SK에코플랜트의 IPO 추진이 시계제로 상황에 빠짐. 금융위원회가 15% 모회사 주주 선배정을 주장하는 반면 여당은 70%를 요구하며 온도차 노출. SK에코플랜트의 정면돌파 여부 및 IPO 플랜B 모색 필요성 부각.",
-      "repArticle": {
-        "title": "[막 내린 중복상장] IPO 물 건너간 롯데글로벌로지스, 롯데지주 부담만...",
-        "link": "https://www.topdaily.kr/articles/109263",
-        "date": "2026-03-19",
-        "source": "기타매체명"
-      },
-      "articles": [
-        {
-          "title": "[Invest]중복상장 '원칙금지' 내건 정부…\"기업도 FI도 다 죽는다\" 우...",
-          "link": "https://www.investchosun.com/site/data/html_dir/2026/03/18/2026031880192.html",
-          "date": "2026-03-18"
-        },
-        {
-          "title": "[막 내린 중복상장] IPO 물 건너간 롯데글로벌로지스, 롯데지주 부담만...",
-          "link": "https://www.topdaily.kr/articles/109263",
-          "date": "2026-03-19"
-        },
-        {
-          "title": "[막 내린 중복상장] '시계제로' SK에코플랜트, 정면돌파 할까",
-          "link": "https://www.topdaily.kr/articles/109271",
-          "date": "2026-03-19"
-        },
-        {
-          "title": "로빈후드, 비상장 투자 문 열었다…스트라이프·일레븐랩스 첫 편입",
-          "link": "https://www.tokenpost.kr/news/market/340706",
-          "date": "2026-03-18"
-        },
-        {
-          "title": "로빈후드 벤처펀드, 스트라이프·ElevenLabs 첫 투자 공개",
-          "link": "https://www.tokenpost.kr/news/breaking/340428",
-          "date": "2026-03-18"
-        },
-        {
-          "title": "중복상장 '모회사 주주 先배정률' 온도차…금융위 15% vs 與 70%",
-          "link": "https://www.hankyung.com/article/2026031933181",
-          "date": "2026-03-19"
-        }
-      ],
-      "createdAt": "2026-03-19",
-      "updatedAt": "2026-03-19",
-      "history": [
-        {
-          "date": "2026-03-19",
-          "stage": "기타",
-          "summary": "정부의 중복상장 원칙금지 방침으로 롯데글로벌로지스의 IPO가 사실상 물 건너간 것으로 평가되며 롯데지주의 부담이 가중됨. SK에코플랜트는 시계제로 상황에서 정면돌파를 검토 중. FI 입장에서도 엑시트 루트가 막히는 상황에 처하며 업계 우려가 커지는 중."
-        },
-        {
-          "date": "2026-03-19",
-          "stage": "딜 클로즈",
-          "summary": "미국 로빈후드가 비상장 투자 서비스를 출시하며 스트라이프, ElevenLabs 등을 첫 편입 종목으로 공개함. 개인 투자자들에게 비상장 기업 투자 기회를 제공하는 새로운 플랫폼 서비스로 글로벌 사모시장 접근성 확대라는 측면에서 주목받고 있음."
-        },
-        {
-          "date": "2026-03-20",
-          "stage": "기타",
-          "summary": "중복상장 전면 금지 정책으로 SK에코플랜트의 IPO 추진이 시계제로 상황에 빠짐. 금융위원회가 15% 모회사 주주 선배정을 주장하는 반면 여당은 70%를 요구하며 온도차 노출. SK에코플랜트의 정면돌파 여부 및 IPO 플랜B 모색 필요성 부각."
-        }
-      ]
-    },
-    {
-      "id": "deal_20260319_010",
-      "name": "AIM인베스트먼트 M&A 자문 역량 강화",
-      "stage": "기타",
-      "summary": "IMA 조달 경쟁이 종료되며 운용 성과에 따라 향후 선별이 이루어질 전망임. 국내 M&A 자문 시장에서 운용사 간 성과 경쟁이 본격화되는 구도임. 자문사별 트랙레코드 및 딜 실행력이 핵심 차별화 요소로 부각됨.",
-      "repArticle": {
-        "title": "[더벨]AIM인베, PE 역량 앞세워 M&A 자문도 '실력 입증'",
-        "link": "https://www.thebell.co.kr/free/content/ArticleView.asp?key=202603161120188040106623",
-        "date": "2026-03-18",
-        "source": "thebell"
-      },
-      "articles": [
-        {
-          "title": "[더벨]AIM인베, PE 역량 앞세워 M&A 자문도 '실력 입증'",
-          "link": "https://www.thebell.co.kr/free/content/ArticleView.asp?key=202603161120188040106623",
-          "date": "2026-03-18"
-        },
-        {
-          "title": "[더벨][매니저 프로파일 | 삼호그린인베스트먼트] '흐름을 읽는 베테랑'",
-          "link": "https://www.thebell.co.kr/free/content/ArticleView.asp?key=202603131247347280103270",
-          "date": "2026-03-18"
-        },
-        {
-          "title": "IMA 조달 경쟁 종료…운용 성과로 갈린다",
-          "link": "http://www.ftoday.co.kr/news/articleView.html?idxno=356637",
-          "date": "2026-03-19"
-        }
-      ],
-      "createdAt": "2026-03-19",
-      "updatedAt": "2026-03-19",
-      "history": [
-        {
-          "date": "2026-03-19",
-          "stage": "기타",
-          "summary": "AIM인베스트먼트가 PE 역량을 앞세워 M&A 자문 분야에서도 실력을 입증하고 있음. PE 운용사가 자문 역량까지 겸비하는 새로운 비즈니스 모델로 주목받는 중."
-        },
-        {
-          "date": "2026-03-19",
-          "stage": "기타",
-          "summary": "더벨이 삼호그린인베스트먼트의 핵심 매니저를 조명하며 투자 철학과 운용 전략을 분석함. 흐름을 읽는 베테랑 투자자로 평가받으며 국내 PE/VC 시장에서의 차별화된 접근 방식이 소개됨."
-        },
-        {
-          "date": "2026-03-20",
-          "stage": "기타",
-          "summary": "IMA 조달 경쟁이 종료되며 운용 성과에 따라 향후 선별이 이루어질 전망임. 국내 M&A 자문 시장에서 운용사 간 성과 경쟁이 본격화되는 구도임. 자문사별 트랙레코드 및 딜 실행력이 핵심 차별화 요소로 부각됨."
-        }
-      ]
-    },
-    {
-      "id": "deal_20260319_011",
-      "name": "미국 사모대출(Private Credit) 부실화 우려 확산",
-      "stage": "기타",
-      "summary": "사모대출 펀드 포트폴리오 중 0.5배 이하 260여개, 심지어 0.1배짜리 딜도 존재하며 부실화 우려 확산. LP들의 낙인 우려로 GP들이 실적 공개를 꺼리는 분위기. 글로벌 사모대출 시장 전반의 건전성 이슈로 번질 가능성 주목.",
-      "repArticle": {
-        "title": "'그림자 금융' 그 속엔 '바퀴벌레' 득실?...월가 비명 터진다",
-        "link": "https://www.mt.co.kr/world/2026/03/19/2026031818120069560",
-        "date": "2026-03-19",
-        "source": "기타매체명"
-      },
-      "articles": [
-        {
-          "title": "'그림자 금융' 그 속엔 '바퀴벌레' 득실?...월가 비명 터진다",
-          "link": "https://www.mt.co.kr/world/2026/03/19/2026031818120069560",
-          "date": "2026-03-19"
-        },
-        {
-          "title": "환매중단→파산 재현?…2조달러사모신용에 2008년 떠올린다",
-          "link": "https://www.mt.co.kr/world/2026/03/19/2026031716175053024",
-          "date": "2026-03-18"
-        },
-        {
-          "title": "\"투자금 뺀다고? 지금은 안돼\"...자꾸만 떠오르는 2008년 악몽, 왜",
-          "link": "https://www.mt.co.kr/world/2026/03/19/2026031818353099233",
-          "date": "2026-03-19"
-        },
-        {
-          "title": "美사모대출 리스크 확산 우려…국내 증시 '잠재 위험 변수'로",
-          "link": "http://www.opinionnews.co.kr/news/articleView.html?idxno=135160",
-          "date": "2026-03-18"
-        },
-        {
-          "title": "'태광이 뿔났다'…이호진 전 회장 경영복귀 앞두고 이슈 대응 '강경'",
-          "link": "https://biz.newdaily.co.kr/site/data/html/2026/03/18/2026031800170.html",
-          "date": "2026-03-18"
-        },
-        {
-          "title": "0.5배 이하 260여개, 심지어 0.1배짜리도 … '낙인 찍힐까' 벌벌떠는 저...",
-          "link": "https://biz.newdaily.co.kr/site/data/html/2026/03/19/2026031900103.html",
-          "date": "2026-03-19"
-        }
-      ],
-      "createdAt": "2026-03-19",
-      "updatedAt": "2026-03-19",
-      "history": [
-        {
-          "date": "2026-03-19",
-          "stage": "기타",
-          "summary": "미국 사모대출펀드(Private Credit) 시장에서 부실화 우려가 확산되며 월가에 2008년 금융위기 악몽이 재현될 수 있다는 경고가 나옴. 환매중단 및 파산 가능성이 제기되며 국내 증시에도 잠재적 위험 변수로 인식됨. 2조달러 규모의 사모신용 시장이 흔들릴 경우 글로벌 금융시장 전반에 충격이 예상됨."
-        },
-        {
-          "date": "2026-03-19",
-          "stage": "기타",
-          "summary": "이호진 전 태광그룹 회장의 경영 복귀가 임박한 가운데 태광이 주요 이슈에 대한 강경 대응에 나서고 있음. 애경산업 티투PE 투자 등 그룹 관련 PE 딜과 맞물려 향후 태광그룹의 지배구조 변화에 관심이 집중되고 있음."
-        },
-        {
-          "date": "2026-03-20",
-          "stage": "기타",
-          "summary": "사모대출 펀드 포트폴리오 중 0.5배 이하 260여개, 심지어 0.1배짜리 딜도 존재하며 부실화 우려 확산. LP들의 낙인 우려로 GP들이 실적 공개를 꺼리는 분위기. 글로벌 사모대출 시장 전반의 건전성 이슈로 번질 가능성 주목."
         }
       ]
     },
@@ -1789,149 +4025,6 @@
           "date": "2026-03-19",
           "stage": "기타",
           "summary": "신사업마저 막힌 SW산업에서 JP모건이 M&A 지원을 중단하기로 한 것으로 보도됨. 글로벌 IB의 국내 SW 섹터 M&A 자문 시장 이탈로 관련 업계의 딜 환경이 악화될 것으로 우려됨."
-        }
-      ]
-    },
-    {
-      "id": "deal_20260319_014",
-      "name": "신한투자증권·SKS PE 수양켐텍 경영권 인수",
-      "stage": "딜 클로즈",
-      "summary": "신한투자증권이 SKS PE와 함께 추진한 수양켐텍 M&A 딜이 성공적으로 클로징됨. 첨단전략산업 강소기업 성장 지원 목적으로 추진된 딜로, 신한투자증권의 M&A 자문 역량 강화 사례로 주목. 관련 기사 다수 보도.",
-      "repArticle": {
-        "title": "\"500억 투입해 60% 확보\"… 신한투자증권·SKS PE, 수양켐텍 경영권 인수",
-        "link": "http://www.economytalk.kr/news/articleView.html?idxno=419177",
-        "date": "2026-03-18",
-        "source": "이코노미톡뉴스"
-      },
-      "articles": [
-        {
-          "title": "신한투자증권, 수양켐텍 경영권인수거래 마무리",
-          "link": "http://www.seoulwire.com/news/articleView.html?idxno=711920",
-          "date": "2026-03-18"
-        },
-        {
-          "title": "신한투자증권, 수양켐텍 경영권인수거래 마무리",
-          "link": "http://www.thefirstmedia.net/news/articleView.html?idxno=195808",
-          "date": "2026-03-18"
-        },
-        {
-          "title": "신한투자증권, 수양켐텍 경영권인수거래 마무리",
-          "link": "https://economist.co.kr/article/view/ecn202603180050",
-          "date": "2026-03-18"
-        },
-        {
-          "title": "신한투자증권, 수양켐텍 경영권인수마무리",
-          "link": "https://www.cstimes.com/news/articleView.html?idxno=698146",
-          "date": "2026-03-18"
-        },
-        {
-          "title": "신한투자증권, 수양켐텍 경영권 인수거래 마무리",
-          "link": "https://www.newsis.com/view/NISX20260318_0003553753",
-          "date": "2026-03-18"
-        },
-        {
-          "title": "신한투자증권, 수양켐텍 M&A딜 성공적 클로징",
-          "link": "https://www.pinpointnews.co.kr/news/articleView.html?idxno=437773",
-          "date": "2026-03-18"
-        },
-        {
-          "title": "신한투 'IB종합금융부' 역할 확대…수양켐텍 M&A딜 클로징",
-          "link": "http://www.newsfc.co.kr/news/articleView.html?idxno=77442",
-          "date": "2026-03-18"
-        },
-        {
-          "title": "신한투자증권, 수양켐텍 M&A딜 마무리…\"모험자본 공급 지속 실천\"",
-          "link": "http://www.smarttimes.co.kr/news/articleView.html?idxno=43813",
-          "date": "2026-03-18"
-        },
-        {
-          "title": "신한투자증권, 수양켐텍 경영권 인수 딜 성료…모험자본 공급 확대",
-          "link": "https://www.ezyeconomy.com/news/articleView.html?idxno=233563",
-          "date": "2026-03-18"
-        },
-        {
-          "title": "신한투자증권, 수양켐텍 M&A딜 마무리…'IB종합금융부' 첫 성과",
-          "link": "http://www.popcornnews.net/news/articleView.html?idxno=115479",
-          "date": "2026-03-18"
-        },
-        {
-          "title": "신한투자증권, 수양켐텍 M&A 딜 클로징",
-          "link": "https://www.mydaily.co.kr/page/view/2026031814010154333",
-          "date": "2026-03-18"
-        },
-        {
-          "title": "신한투자증권, 수양켐텍 M&A딜 클로징",
-          "link": "https://www.financialpost.co.kr/news/articleView.html?idxno=251855",
-          "date": "2026-03-18"
-        },
-        {
-          "title": "신한투자증권, 수양켐텍 경영권 인수 마무리",
-          "link": "https://www.newspim.com/news/view/20260318000789",
-          "date": "2026-03-18"
-        },
-        {
-          "title": "신한證, 수양켐텍 M&A딜 성공적 마무리…IB종합금융부 첫 성과",
-          "link": "http://www.fnnews.com/news/202603181329541270",
-          "date": "2026-03-18"
-        },
-        {
-          "title": "신한투자증권, 수양켐텍 M&A딜 클로징",
-          "link": "https://daily.hankooki.com/news/articleView.html?idxno=1348464",
-          "date": "2026-03-18"
-        },
-        {
-          "title": "신한투증, SKS PE와 수양켐텍 M&A 성공적 마무리",
-          "link": "https://www.newsinside.kr/news/articleView.html?idxno=4514626",
-          "date": "2026-03-18"
-        },
-        {
-          "title": "신한證, 수양켐텍 M&A딜 클로징…\"IB종합금융부 첫 성과\"",
-          "link": "https://www.sedaily.com/article/20020912?ref=naver",
-          "date": "2026-03-18"
-        },
-        {
-          "title": "신한투자증권, 수양켐텍 M&A딜 성공적 클로징...강소기업 성장 지원 '첫 성과'",
-          "link": "https://www.greened.kr/news/articleView.html?idxno=338152",
-          "date": "2026-03-18"
-        },
-        {
-          "title": "신한투자증권, 수양켐텍 M&A딜 마무리…\"모험자본 공급 박차\"",
-          "link": "https://www.delighti.co.kr/news/articleView.html?idxno=113634",
-          "date": "2026-03-18"
-        },
-        {
-          "title": "신한투자증권, 수양켐텍 M&A딜 마무리…\"모험자본 공급 박차\"",
-          "link": "http://www.edaily.co.kr/news/newspath.asp?newsid=03814646645384632",
-          "date": "2026-03-18"
-        },
-        {
-          "title": "[오늘 뭐했니?] 신한은행·신한투자증권",
-          "link": "http://www.financialreview.co.kr/news/articleView.html?idxno=41004",
-          "date": "2026-03-18"
-        },
-        {
-          "title": "신한투자증권, 수양켐텍 M&A딜 성공…첨단전략산업 강소기업 성장 지원",
-          "link": "http://www.sisacast.kr/news/articleView.html?idxno=93606",
-          "date": "2026-03-19"
-        },
-        {
-          "title": "신한투자증권, 수양켐텍 M&A딜 성공적 클로징",
-          "link": "https://www.inthenews.co.kr/news/article.html?no=84457",
-          "date": "2026-03-19"
-        }
-      ],
-      "createdAt": "2026-03-19",
-      "updatedAt": "2026-03-19",
-      "history": [
-        {
-          "date": "2026-03-19",
-          "stage": "딜 클로즈",
-          "summary": "신한투자증권과 SKS PE가 약 500억원을 투입해 수양켐텍 경영권 지분 60%를 인수하는 M&A 딜을 성공적으로 클로징함. 신한투자증권 IB종합금융부의 첫 성과로 주목받으며, 강소기업 성장 지원 및 모험자본 공급 확대 차원에서 추진됨. 수양켐텍은 화학 소재 관련 기업으로 파악됨."
-        },
-        {
-          "date": "2026-03-20",
-          "stage": "딜 클로즈",
-          "summary": "신한투자증권이 SKS PE와 함께 추진한 수양켐텍 M&A 딜이 성공적으로 클로징됨. 첨단전략산업 강소기업 성장 지원 목적으로 추진된 딜로, 신한투자증권의 M&A 자문 역량 강화 사례로 주목. 관련 기사 다수 보도."
         }
       ]
     },
@@ -2018,59 +4111,6 @@
           "date": "2026-03-19",
           "stage": "주관사 선정",
           "summary": "SGPE가 5일 준비 만에 IBK상생펀드 GP를 거머쥔 것으로 알려짐. 단기간 내 GP 선정에 성공한 배경과 전략이 주목받고 있으며, SGPE의 공격적인 펀드 결성 행보가 지속되는 상황."
-        }
-      ]
-    },
-    {
-      "id": "deal_20260319_017",
-      "name": "경찰공제회 PE 출자사업 GP 선정",
-      "stage": "주관사 선정",
-      "summary": "경찰공제회가 PE 블라인드펀드 출자사업 GP로 케이스톤PE, 제네시스PE, BNW인베스트먼트 3곳을 선정함. 복수 GP 낙점을 통해 포트폴리오 분산 효과 도모. 국내 중견 PE들의 LP 확보 경쟁에서 의미 있는 성과.",
-      "repArticle": {
-        "title": "숏리스트 PE 정성평가 마친 경찰공제회, 이르면 내주 결과[마켓인]",
-        "link": "http://www.edaily.co.kr/news/newspath.asp?newsid=05064326645384632",
-        "date": "2026-03-18",
-        "source": "이데일리"
-      },
-      "articles": [
-        {
-          "title": "[더벨][LP Radar] 경찰공제회 VC 출자사업, K2인베·우리벤처·SBVA 선정",
-          "link": "https://www.thebell.co.kr/free/content/ArticleView.asp?key=202603191051248720108452",
-          "date": "2026-03-20"
-        },
-        {
-          "title": "숏리스트 PE 정성평가 마친 경찰공제회, 이르면 내주 결과[마켓인]",
-          "link": "http://www.edaily.co.kr/news/newspath.asp?newsid=05064326645384632",
-          "date": "2026-03-18"
-        },
-        {
-          "title": "경찰공제회, PE 블라인드에 제네시스·케이스톤·BNW 선정",
-          "link": "https://www.bloter.net/news/articleView.html?idxno=657127",
-          "date": "2026-03-19"
-        },
-        {
-          "title": "경찰공제회 PE 출자 케이스톤·제네시스·BNW인베 낙점[only이데일리]",
-          "link": "http://www.edaily.co.kr/news/newspath.asp?newsid=03991766645384960",
-          "date": "2026-03-19"
-        },
-        {
-          "title": "경찰공제회 PE 출자에 케이스톤·제네시스·BNW인베 [시그널]",
-          "link": "https://www.sedaily.com/article/20021622?ref=naver",
-          "date": "2026-03-20"
-        }
-      ],
-      "createdAt": "2026-03-19",
-      "updatedAt": "2026-03-19",
-      "history": [
-        {
-          "date": "2026-03-19",
-          "stage": "주관사 선정",
-          "summary": "경찰공제회가 PE 대상 정성평가를 마치고 이르면 다음 주 GP 선정 결과를 발표할 예정임. 숏리스트에 오른 PE들의 최종 선정을 앞두고 있으며 결과에 따른 자금 흐름이 주목됨."
-        },
-        {
-          "date": "2026-03-20",
-          "stage": "주관사 선정",
-          "summary": "경찰공제회가 PE 블라인드펀드 출자사업 GP로 케이스톤PE, 제네시스PE, BNW인베스트먼트 3곳을 선정함. 복수 GP 낙점을 통해 포트폴리오 분산 효과 도모. 국내 중견 PE들의 LP 확보 경쟁에서 의미 있는 성과."
         }
       ]
     },
@@ -3079,44 +5119,6 @@
       ]
     },
     {
-      "id": "deal_20260318_007",
-      "name": "이지스자산운용 외국 PEF 매각",
-      "stage": "SPA 체결",
-      "summary": "이지스자산운용이 외국계 사모펀드(PEF)로의 매각이 막바지 단계에 접어든 것으로 보도됨. 외국계 PEF로의 매각 가능성이 높은 것으로 전해지며 SPA 체결 단계에 근접한 상황.",
-      "repArticle": {
-        "title": "전략인프라 등 자산 73조 이지스운용, 외국 PEF로 매각 막바지",
-        "link": "https://www.yna.co.kr/view/AKR20260317173200002?input=1195m",
-        "date": "2026-03-18",
-        "source": "기타매체명"
-      },
-      "articles": [
-        {
-          "title": "전략인프라 등 자산 73조 이지스운용, 외국 PEF로 매각 막바지",
-          "link": "https://www.yna.co.kr/view/AKR20260317173200002?input=1195m",
-          "date": "2026-03-18"
-        },
-        {
-          "title": "이지스자산운용,매각막바지…외국계사모펀드(PEF)로의매각가능성",
-          "link": "http://www.press9.kr/news/articleView.html?idxno=73707",
-          "date": "2026-03-18"
-        }
-      ],
-      "createdAt": "2026-03-18",
-      "updatedAt": "2026-03-18",
-      "history": [
-        {
-          "date": "2026-03-18",
-          "stage": "SPA 체결",
-          "summary": "전략인프라 등 자산 73조원을 운용하는 이지스자산운용의 외국 PEF 매각이 막바지 단계에 진입한 것으로 알려짐. 구체적인 매수자 및 매각 금액은 미공개 상태이며, 국내 부동산·인프라 대형 운용사에 대한 외국계 PE의 인수로 시장 주목. 딜 클로즈가 임박한 것으로 보임."
-        },
-        {
-          "date": "2026-03-19",
-          "stage": "SPA 체결",
-          "summary": "이지스자산운용이 외국계 사모펀드(PEF)로의 매각이 막바지 단계에 접어든 것으로 보도됨. 외국계 PEF로의 매각 가능성이 높은 것으로 전해지며 SPA 체결 단계에 근접한 상황."
-        }
-      ]
-    },
-    {
       "id": "deal_20260318_008",
       "name": "기업결합 법률 자문 경쟁 (태평양·세종 수임 분쟁)",
       "stage": "기타",
@@ -4033,49 +6035,6 @@
       ]
     },
     {
-      "id": "deal_20260317_002",
-      "name": "MG손보 법인 파산 절차 및 새 주인 찾기",
-      "stage": "기타",
-      "summary": "우리금융이 동양생명 완전자회사화를 추진하며 ABL생명과의 통합 사전 작업에 나선 것으로 알려짐. 우리금융 측은 '결정된 것 없다'는 입장이나 하나증권 등 시장에서는 통합 가능성을 높게 보고 있음. 동양·ABL생명 통합은 우리금융의 보험 부문 경쟁력 강화를 위한 구조 재편 일환으로 분석됨.",
-      "repArticle": {
-        "title": "[단독] MG손보 법인도 파산 절차…새 주인 찾기는 여전히 오리무중",
-        "link": "https://www.bizhankook.com/bk/article/31748",
-        "date": "2026-03-16",
-        "source": "기타매체명"
-      },
-      "articles": [
-        {
-          "title": "[단독] MG손보 법인도 파산 절차…새 주인 찾기는 여전히 오리무중",
-          "link": "https://www.bizhankook.com/bk/article/31748",
-          "date": "2026-03-16"
-        },
-        {
-          "title": "우리금융, 동양·ABL생명 통합? \"결정된 것 없어\"",
-          "link": "http://www.newswatch.kr/news/articleView.html?idxno=78509",
-          "date": "2026-03-18"
-        },
-        {
-          "title": "우리금융, 동양생명 완전자회사화 추진…\"ABL생명 통합 사전작업\"",
-          "link": "http://www.joseilbo.com/news/news_read.php?uid=564809&class=53&grp=",
-          "date": "2026-03-18"
-        }
-      ],
-      "createdAt": "2026-03-17",
-      "updatedAt": "2026-03-17",
-      "history": [
-        {
-          "date": "2026-03-17",
-          "stage": "매각 검토중",
-          "summary": "MG손해보험 법인이 파산 절차에 돌입한 가운데 새 주인 찾기는 여전히 난항을 겪고 있음. 인수 희망자 확보가 되지 않으면서 매각 작업이 오리무중인 상황임. 금융당국 및 관련 채권단의 대응 방안이 주목됨."
-        },
-        {
-          "date": "2026-03-18",
-          "stage": "기타",
-          "summary": "우리금융이 동양생명 완전자회사화를 추진하며 ABL생명과의 통합 사전 작업에 나선 것으로 알려짐. 우리금융 측은 '결정된 것 없다'는 입장이나 하나증권 등 시장에서는 통합 가능성을 높게 보고 있음. 동양·ABL생명 통합은 우리금융의 보험 부문 경쟁력 강화를 위한 구조 재편 일환으로 분석됨."
-        }
-      ]
-    },
-    {
       "id": "deal_20260317_003",
       "name": "LG화학 헝가리 합작사 완전 자회사 편입 및 원단 분리막 사업 재편",
       "stage": "딜 클로즈",
@@ -4930,77 +6889,6 @@
       ]
     },
     {
-      "id": "deal_20260317_026",
-      "name": "글로벌 PE 세컨더리 딜 투자 확대",
-      "stage": "기타",
-      "summary": "글로벌 PE들이 세컨더리 딜 투자를 확대하는 추세로 또다시 세컨더리 거래가 터지는 상황. 유동성 확보를 위한 GP-led 세컨더리 및 LP 지분 매각이 증가하는 시장 환경 분석. 국내외 세컨더리 시장 확대에 대한 트렌드 기사.",
-      "repArticle": {
-        "title": "[마켓인] 또 터진 세컨더리 딜…투자 확대하는 글로벌 PE들",
-        "link": "http://www.edaily.co.kr/news/newspath.asp?newsid=04798646645383976",
-        "date": "2026-03-16",
-        "source": "edaily"
-      },
-      "articles": [
-        {
-          "title": "[마켓인] 또 터진 세컨더리 딜…투자 확대하는 글로벌 PE들",
-          "link": "http://www.edaily.co.kr/news/newspath.asp?newsid=04798646645383976",
-          "date": "2026-03-16"
-        }
-      ],
-      "createdAt": "2026-03-17",
-      "updatedAt": "2026-03-17",
-      "history": [
-        {
-          "date": "2026-03-17",
-          "stage": "기타",
-          "summary": "글로벌 PE들이 세컨더리 딜 투자를 확대하는 추세로 또다시 세컨더리 거래가 터지는 상황. 유동성 확보를 위한 GP-led 세컨더리 및 LP 지분 매각이 증가하는 시장 환경 분석. 국내외 세컨더리 시장 확대에 대한 트렌드 기사."
-        }
-      ]
-    },
-    {
-      "id": "deal_20260317_027",
-      "name": "남궁견 회장 구조조정 완료 기업 전략적 매각 (K-콘텐츠 중심 전환)",
-      "stage": "매각 검토중",
-      "summary": "남궁견 회장이 구조조정을 완료한 기업들을 전략적으로 매각하고 엔터테인먼트·K-콘텐츠 중심으로 사업 포트폴리오를 재편 중. 상장사 일부 매각을 추진하며 투자 무게 중심을 이동. 구체적 매각 대상 기업 및 규모는 미공개.",
-      "repArticle": {
-        "title": "남궁견 회장, 구조조정 완료 기업 전략적 매각… 엔터테인먼트 중심 투자",
-        "link": "http://www.thebigdata.co.kr/view.php?ud=2026031617555940479aeda69934_23",
-        "date": "2026-03-16",
-        "source": "기타"
-      },
-      "articles": [
-        {
-          "title": "남궁견 회장, 구조조정 완료 기업 전략적 매각… 엔터테인먼트 중심 투자",
-          "link": "http://www.thebigdata.co.kr/view.php?ud=2026031617555940479aeda69934_23",
-          "date": "2026-03-16"
-        },
-        {
-          "title": "남궁견 회장, 구조조정 완료 기업 전략적 매각",
-          "link": "https://www.getnews.co.kr/news/articleView.html?idxno=864414",
-          "date": "2026-03-16"
-        },
-        {
-          "title": "남궁견 회장, 상장사 일부 매각…구조조정 투자에서 K-콘텐츠로 무게 이동",
-          "link": "https://www.job-post.co.kr/news/articleView.html?idxno=210431",
-          "date": "2026-03-16"
-        },
-        {
-          "title": "남궁견 회장, 구조조정 마친 기업 전략적 매각 나서… '엔터 중심 사업'",
-          "link": "https://www.apnews.kr/news/articleView.html?idxno=3046807",
-          "date": "2026-03-16"
-        }
-      ],
-      "createdAt": "2026-03-17",
-      "updatedAt": "2026-03-17",
-      "history": [
-        {
-          "date": "2026-03-17",
-          "stage": "매각 검토중",
-          "summary": "남궁견 회장이 구조조정을 완료한 기업들을 전략적으로 매각하고 엔터테인먼트·K-콘텐츠 중심으로 사업 포트폴리오를 재편 중. 상장사 일부 매각을 추진하며 투자 무게 중심을 이동. 구체적 매각 대상 기업 및 규모는 미공개."
-        }
-      ]
-    },
-    {
       "id": "deal_20260317_028",
       "name": "대신증권 MBK 대체 3세대 PE 선점 공격적 출자",
       "stage": "기타",
@@ -5134,69 +7022,6 @@
           "date": "2026-03-17",
           "stage": "기타",
           "summary": "이란발 지정학적 리스크로 인해 국내 투자사 주가가 급락하며 PE 엑시트 전략에 타격. 주식시장 변동성 확대로 PE들의 포트폴리오 기업 IPO 및 블록딜 엑시트 계획에 차질 우려. 시장 안정화 시점 예측이 어려운 상황."
-        }
-      ]
-    },
-    {
-      "id": "deal_20260317_032",
-      "name": "글로벌 사모대출펀드 블루아울 헤지펀드 공격 및 부실화 이슈",
-      "stage": "기타",
-      "summary": "글로벌 사모대출(Private Credit) 시장에서 부도율이 9.2%로 금융위기 수준을 넘어섰다는 경고가 나오며 3조 달러 규모 시장에 경보가 발령됨. FT 등 외신에서도 환매 폭탄 위험 수준을 경고하고 있으며, 중국 그림자금융 및 LBO 버블과의 데자뷔 현상으로 평가됨. 국내에서도 K-BDC 도입 논의와 맞물려 사모대출 시장의 안전성에 대한 논쟁이 이어지는 중.",
-      "repArticle": {
-        "title": "흔들리는사모대출펀드블루아울 노리는 헤지펀드…\"지분 헐값에 넘겨...\"",
-        "link": "https://www.mk.co.kr/article/11989906",
-        "date": "2026-03-17",
-        "source": "매일경제"
-      },
-      "articles": [
-        {
-          "title": "흔들리는사모대출펀드블루아울 노리는 헤지펀드…\"지분 헐값에 넘겨...\"",
-          "link": "https://www.mk.co.kr/article/11989906",
-          "date": "2026-03-17"
-        },
-        {
-          "title": "\"사모대출 환매 압박, 과거에서 해법 찾아야\"",
-          "link": "https://view.asiae.co.kr/article/2026031708453798881",
-          "date": "2026-03-17"
-        },
-        {
-          "title": "[Why&Next]'펀드런' 올까…사모대출 시장 어디로",
-          "link": "https://view.asiae.co.kr/article/2026031717124337038",
-          "date": "2026-03-18"
-        },
-        {
-          "title": "중국 그림자금융부터 LBO 버블까지…사모대출 위기 '데자뷔' [그림자...]",
-          "link": "https://www.etoday.co.kr/news/view/2566389",
-          "date": "2026-03-18"
-        },
-        {
-          "title": "[사모신용 경보] \"부도율 9.2% 금융위기 넘었다\"… 3조 달러사모신용 '...",
-          "link": "https://www.g-enews.com/view.php?ud=202603171730382870fbbec65dfb_1",
-          "date": "2026-03-18"
-        },
-        {
-          "title": "뉴욕증시사모대출 환매 폭탄 \"위험 수준\" ... 파이낸셜타임스(FT)",
-          "link": "https://www.g-enews.com/view.php?ud=202603180501089172906806b77b_1",
-          "date": "2026-03-18"
-        },
-        {
-          "title": "사모대출 한파 뚫고 'K-BDC' 출격…미국과는 다르다는데?",
-          "link": "https://www.newsquest.co.kr/news/articleView.html?idxno=263301",
-          "date": "2026-03-17"
-        }
-      ],
-      "createdAt": "2026-03-17",
-      "updatedAt": "2026-03-17",
-      "history": [
-        {
-          "date": "2026-03-17",
-          "stage": "기타",
-          "summary": "글로벌 사모대출펀드 블루아울이 헤지펀드의 지분 헐값 매입 시도로 위기에 처함. 사모대출 환매 압박이 심화되고 있어 과거 사례에서 해법을 찾아야 한다는 분석. 글로벌 사모대출 시장 전반의 부실화 우려가 고조되는 상황."
-        },
-        {
-          "date": "2026-03-18",
-          "stage": "기타",
-          "summary": "글로벌 사모대출(Private Credit) 시장에서 부도율이 9.2%로 금융위기 수준을 넘어섰다는 경고가 나오며 3조 달러 규모 시장에 경보가 발령됨. FT 등 외신에서도 환매 폭탄 위험 수준을 경고하고 있으며, 중국 그림자금융 및 LBO 버블과의 데자뷔 현상으로 평가됨. 국내에서도 K-BDC 도입 논의와 맞물려 사모대출 시장의 안전성에 대한 논쟁이 이어지는 중."
         }
       ]
     },
@@ -7506,74 +9331,6 @@
       ]
     },
     {
-      "id": "deal_20260316_052",
-      "name": "한앤코 남양유업 밸류업 경영 성과",
-      "stage": "기타",
-      "summary": "한앤코 PE 포트폴리오인 남양유업이 흑자전환에 이어 중앙아시아·동아시아 등 아시아 시장 공략을 본격화함. 테이크핏·컵커피 등 핵심 제품으로 편의점 채널 확장 전략을 추진 중. 한앤코는 남양유업 사옥 매각에서도 높은 매각가를 고집하며 엑시트 가치 극대화를 도모하고 있음.",
-      "repArticle": {
-        "title": "남양유업, 오너 경영 지우고 '주주 중심'으로…한앤코표 밸류업 가속",
-        "link": "https://www.bloter.net/news/articleView.html?idxno=656639",
-        "date": "2026-03-15",
-        "source": "블로터"
-      },
-      "articles": [
-        {
-          "title": "[더벨]한앤코, '남양유업 사옥' 비싼 매각가 고집 이유는",
-          "link": "https://www.thebell.co.kr/free/content/ArticleView.asp?key=202603121018521440107021",
-          "date": "2026-03-17"
-        },
-        {
-          "title": "한앤컴퍼니체제 전환 5년, '남양유업' 경영 초록불",
-          "link": "https://www.ilyoseoul.co.kr/news/articleView.html?idxno=514217",
-          "date": "2026-03-16"
-        },
-        {
-          "title": "남양유업, 오너 경영 지우고 '주주 중심'으로…한앤코표 밸류업 가속",
-          "link": "https://www.bloter.net/news/articleView.html?idxno=656639",
-          "date": "2026-03-15"
-        },
-        {
-          "title": "'김승언 매직 통했다' 남양유업, 흑자 전환에 310억원 규모 '통큰' 주주환원",
-          "link": "https://www.megaeconomy.co.kr/news/newsview.php?ncode=1065598084045896",
-          "date": "2026-03-16"
-        },
-        {
-          "title": "주가 띄운 남양유업 환원책…인수금융 짊어진 한앤코 셈법 복잡",
-          "link": "https://www.topdaily.kr/articles/109223",
-          "date": "2026-03-16"
-        },
-        {
-          "title": "남양유업, 흑자전환에 이은 '아시아 공략' 밸류업 본격화",
-          "link": "https://www.fetv.co.kr/news/article.html?no=215194",
-          "date": "2026-03-18"
-        },
-        {
-          "title": "남양유업, 중앙아시아·동아시아, '테이크핏·컵커피'로 편의점 채널 속공",
-          "link": "https://www.ilyoseoul.co.kr/news/articleView.html?idxno=514334",
-          "date": "2026-03-18"
-        }
-      ],
-      "createdAt": "2026-03-16",
-      "updatedAt": "2026-03-16",
-      "history": [
-        {
-          "date": "2026-03-16",
-          "stage": "기타",
-          "summary": "한앤컴퍼니가 남양유업 인수 후 오너 경영 색채를 지우고 주주 중심의 밸류업 전략을 가속화 중임. 체제 전환 5년 만에 경영 성과가 가시화되며 실적 개선과 주주환원 확대가 동시에 이뤄지고 있음. PE 운용사의 포트폴리오 기업 경영 개선 사례로 주목받고 있음."
-        },
-        {
-          "date": "2026-03-17",
-          "stage": "기타",
-          "summary": "한앤코가 보유 중인 남양유업이 흑자 전환에 성공하며 310억원 규모 주주환원책을 발표함. 남양유업 사옥 매각과 관련해 한앤코가 높은 매각가를 고집하는 이유가 인수금융 상환 부담 때문인 것으로 분석됨. 케이카 이사회에 한앤코 2세대 인력이 전면 배치되는 등 포트폴리오 관리 강화 중."
-        },
-        {
-          "date": "2026-03-18",
-          "stage": "기타",
-          "summary": "한앤코 PE 포트폴리오인 남양유업이 흑자전환에 이어 중앙아시아·동아시아 등 아시아 시장 공략을 본격화함. 테이크핏·컵커피 등 핵심 제품으로 편의점 채널 확장 전략을 추진 중. 한앤코는 남양유업 사옥 매각에서도 높은 매각가를 고집하며 엑시트 가치 극대화를 도모하고 있음."
-        }
-      ]
-    },
-    {
       "id": "deal_20260316_053",
       "name": "K뷰티 ODM사 인수전 (화장품 제조 인프라 쟁탈전)",
       "stage": "기타",
@@ -8093,239 +9850,6 @@
           "date": "2026-03-19",
           "stage": "매각 검토중",
           "summary": "케이엘앤파트너스가 보유한 맘스터치 매각이 재추진되고 있음. 협업 파트너 발굴을 통한 기업가치 상승 효과를 노리는 전략도 병행되는 것으로 전해짐. 매각 성사를 위한 다양한 협력 방안이 검토 중."
-        }
-      ]
-    },
-    {
-      "id": "deal_20260316_064",
-      "name": "고려아연 경영권 분쟁 (영풍 vs 최윤범 주총)",
-      "stage": "기타",
-      "summary": "상법 개정 후 첫 주총을 앞두고 고려아연 경영권 분쟁이 최고조에 달함. 영풍은 최윤범 회장의 지배구조 리스크를 본질로 강조하며 주주들에게 지지 호소 중. 44년 흑자 고려아연 대 5년 적자 영풍의 실적 비교 논쟁도 벌어지며 국민연금 표심이 최대 변수로 부상.",
-      "repArticle": {
-        "title": "[더벨][영풍-고려아연 경영권 분쟁] 청호컴넷 거래 둘러싼 공방, 공시로",
-        "link": "https://www.thebell.co.kr/free/content/ArticleView.asp?key=202603111457375560107418",
-        "date": "2026-03-13",
-        "source": "thebell"
-      },
-      "articles": [
-        {
-          "title": "[더벨][영풍-고려아연 경영권 분쟁] 청호컴넷 거래 둘러싼 공방, 공시로",
-          "link": "https://www.thebell.co.kr/free/content/ArticleView.asp?key=202603111457375560107418",
-          "date": "2026-03-13"
-        },
-        {
-          "title": "[더벨][영풍-고려아연 경영권 분쟁] 누가 결정하고 누가 책임지나…팽팽한 공방",
-          "link": "https://www.thebell.co.kr/free/content/ArticleView.asp?key=202603091329320760101386",
-          "date": "2026-03-13"
-        },
-        {
-          "title": "[더벨][thebell note] 고려아연 '왕좌의 게임'",
-          "link": "https://www.thebell.co.kr/free/content/ArticleView.asp?key=202603131456575320102543",
-          "date": "2026-03-18"
-        },
-        {
-          "title": "24일 고려아연 주총, 최윤범 표심 '3중 딜레마' 국민연금",
-          "link": "http://www.newsfc.co.kr/news/articleView.html?idxno=77371",
-          "date": "2026-03-16"
-        },
-        {
-          "title": "[단독] 고려아연, 오너가 선투자한 기업에 800억 투입",
-          "link": "https://www.hankyung.com/article/2026031647951",
-          "date": "2026-03-16"
-        },
-        {
-          "title": "[기획] 고려아연 주총 '이사 1석' 전쟁…표심 가를 변수는",
-          "link": "http://www.newswatch.kr/news/articleView.html?idxno=78465",
-          "date": "2026-03-16"
-        },
-        {
-          "title": "고려아연 주총 D-7…\"적대적 M&A\" vs \"경영 실패 책임\"",
-          "link": "https://www.ezyeconomy.com/news/articleView.html?idxno=233517",
-          "date": "2026-03-18"
-        },
-        {
-          "title": "고려아연 노동조합, 주총 앞두고 최윤범 회장 등 현 경영진 지지",
-          "link": "https://www.tournews21.com/news/articleView.html?idxno=131869",
-          "date": "2026-03-18"
-        },
-        {
-          "title": "ISS 이어 KCGS도 최윤범 사내이사 재선임안 '반대 권고'",
-          "link": "http://www.newsbrite.net/news/articleView.html?idxno=196969",
-          "date": "2026-03-17"
-        },
-        {
-          "title": "국내외 의결권 자문사, 고려아연 최윤범 회장 재선임 잇따라 '반대' 권고",
-          "link": "http://www.finomy.com/news/articleView.html?idxno=251595",
-          "date": "2026-03-17"
-        },
-        {
-          "title": "\"고려아연은 제2의 홈플러스 되어선 안 돼\" 노조, 회사 끝까지 지킨다",
-          "link": "http://www.fnnews.com/news/202603171806375158",
-          "date": "2026-03-17"
-        },
-        {
-          "title": "\"주총전야\"…영풍·MBK vs 고려아연, '경영권 공방' 격화",
-          "link": "https://www.seoultimes.news/news/article.html?no=2000093726",
-          "date": "2026-03-17"
-        },
-        {
-          "title": "MBK·영풍, 최윤범 투자 의혹 제기…고려아연 정면 반박",
-          "link": "https://www.asiatime.co.kr/article/20260318500002",
-          "date": "2026-03-18"
-        },
-        {
-          "title": "최윤범회장 개인투자 후 회사자금 1000억 투입에 '사익편취 논란'",
-          "link": "http://www.newsbrite.net/news/articleView.html?idxno=196966",
-          "date": "2026-03-17"
-        },
-        {
-          "title": "MBK \"崔 투자에 회사 자금 투입\"…고려아연 \"허위사실, 법적조치\"(종합)",
-          "link": "https://www.news1.kr/industry/general-industry/6104574",
-          "date": "2026-03-17"
-        },
-        {
-          "title": "고려아연 주총 앞두고 투자금 관련 논쟁 격화…MBK·영풍 \"사익편취\" vs ...",
-          "link": "https://www.industrynews.co.kr/news/articleView.html?idxno=79087",
-          "date": "2026-03-17"
-        },
-        {
-          "title": "고려아연, MBK·영풍 '최윤범 회장 개인투자에 회사자금 투입 논란으로...",
-          "link": "http://www.thebigdata.co.kr/view.php?ud=202603171806104697570d99e4c8_23",
-          "date": "2026-03-17"
-        },
-        {
-          "title": "고려아연 노조 , 주총 앞두고 \"MBK·영풍 적대적 M&A 반대\"",
-          "link": "https://www.industrynews.co.kr/news/articleView.html?idxno=79079",
-          "date": "2026-03-17"
-        },
-        {
-          "title": "고려아연, 개인 투자 뒤 회사자금 1000억 투입 구조 논란 확산",
-          "link": "http://www.ikld.kr/news/articleView.html?idxno=331052",
-          "date": "2026-03-17"
-        },
-        {
-          "title": "영풍·MBK \"최윤범 회장 투자 뒤 고려아연 자금 1000억 투입...사익 편취...\"",
-          "link": "http://www.econonews.co.kr/news/articleView.html?idxno=431381",
-          "date": "2026-03-17"
-        },
-        {
-          "title": "MBK·영풍, 최윤범 고려아연 회장의 사익편취 의혹 제기",
-          "link": "https://www.businesskorea.co.kr/news/articleView.html?idxno=265408",
-          "date": "2026-03-17"
-        },
-        {
-          "title": "영풍·MBK \"최윤범 개인투자 뒤 고려아연 자금 1000억원 투입…사익편취\"",
-          "link": "https://view.asiae.co.kr/article/2026031715304629698",
-          "date": "2026-03-17"
-        },
-        {
-          "title": "영풍·MBK \"최 회장 투자 뒤 회사서 1000억 투자…사익편취\" [시그널]",
-          "link": "https://www.sedaily.com/article/20020435?ref=naver",
-          "date": "2026-03-17"
-        },
-        {
-          "title": "고려아연 노조, 주총 앞두고 \"MBK·영풍의 결탁 규탄, 적대적 M&A 중단해\"",
-          "link": "https://www.newsis.com/view/NISX20260317_0003552416",
-          "date": "2026-03-17"
-        },
-        {
-          "title": "고려아연 노조, \"제2의 홈플러스 안 돼…영풍·MBK경영권확보 규탄\"",
-          "link": "http://www.ferrotimes.com/news/articleView.html?idxno=46903",
-          "date": "2026-03-18"
-        },
-        {
-          "title": "영풍 \"고려아연 투자 구조 논란…개인 투자 후 회사 자금 유입\" 지배구...",
-          "link": "https://www.megaeconomy.co.kr/news/newsview.php?ncode=1065601228459677",
-          "date": "2026-03-18"
-        },
-        {
-          "title": "영풍·MBK \"최윤범 고려아연 회장 1000억 유용 논란\"...금융위 안건 상정",
-          "link": "https://hbnpress.com/news/view/1065601879593354",
-          "date": "2026-03-18"
-        },
-        {
-          "title": "고려아연, 최윤범 회장 개인투자에 회삿돈 1000억원 '후속투자' 논란...",
-          "link": "https://swtvnews.com/news/newsview.php?ncode=1065600279616145",
-          "date": "2026-03-18"
-        },
-        {
-          "title": "주총 앞두고 '외국인 이사' 공방에... 고려아연 \"기술 유출과는 무관, 美...\"",
-          "link": "https://www.greened.kr/news/articleView.html?idxno=338191",
-          "date": "2026-03-18"
-        },
-        {
-          "title": "세계 정세 불안 속 고려아연의 미국 제련소 투자 '왜 중요한가'",
-          "link": "https://economist.co.kr/article/view/ecn202603180065",
-          "date": "2026-03-19"
-        },
-        {
-          "title": "[EBN 칼럼] 상법개정 후 첫 주총…고려아연 주주는 어떤 선택을 할까",
-          "link": "https://www.ebn.co.kr/news/articleView.html?idxno=1702886",
-          "date": "2026-03-20"
-        },
-        {
-          "title": "영풍 '고려아연 주총 본질은 지배구조 리스크… 논점 흐리기 중단해야'",
-          "link": "http://www.newsbrite.net/news/articleView.html?idxno=197024",
-          "date": "2026-03-19"
-        },
-        {
-          "title": "'실적 비교는 본질 흐리기'… 영풍, 고려아연 주총 앞두고 '거버넌스 리스크' 부각",
-          "link": "https://www.sisaweek.com/news/articleView.html?idxno=234374",
-          "date": "2026-03-19"
-        },
-        {
-          "title": "영풍 '고려아연 주총 본질은 최윤범 회장 리스크···논점 흐리기 중단'",
-          "link": "http://www.finomy.com/news/articleView.html?idxno=251707",
-          "date": "2026-03-19"
-        },
-        {
-          "title": "[진단] 44년 흑자 고려아연, 5년 적자 영풍…주총 전 국민연금 표심에 '촉각'",
-          "link": "http://www.economytalk.kr/news/articleView.html?idxno=419240",
-          "date": "2026-03-19"
-        },
-        {
-          "title": "영풍 '왜곡된 지배구조가 본질...최윤범 체제, 주주가치 훼손'",
-          "link": "https://www.banronbodo.com/news/articleView.html?idxno=31950",
-          "date": "2026-03-19"
-        },
-        {
-          "title": "영풍 '고려아연 주총 본질은 지배구조…경영능력 프레임은 논점 흐리기'",
-          "link": "http://www.ikld.kr/news/articleView.html?idxno=331175",
-          "date": "2026-03-19"
-        },
-        {
-          "title": "고려아연 최윤범 회장 투자 논란… 주총 앞두고 공방 가열",
-          "link": "https://www.job-post.co.kr/news/articleView.html?idxno=210835",
-          "date": "2026-03-19"
-        }
-      ],
-      "createdAt": "2026-03-16",
-      "updatedAt": "2026-03-16",
-      "history": [
-        {
-          "date": "2026-03-16",
-          "stage": "기타",
-          "summary": "영풍-고려아연 경영권 분쟁이 3월 24일 주주총회를 앞두고 최고조에 달하고 있음. 최윤범 측은 국민연금의 표심을 놓고 3중 딜레마에 처한 상황. 청호컴넷 거래 공방, 베인캐피탈 백기사 지분 처리 등 복잡한 이슈가 얽혀 있음."
-        },
-        {
-          "date": "2026-03-17",
-          "stage": "기타",
-          "summary": "고려아연 오너가(최윤범 회장)가 선투자한 기업에 800억원을 추가 투입한 사실이 단독 보도됨. 주총 시즌을 앞두고 영풍 측과의 경영권 분쟁이 지속 중이며, 관련 투자 의사결정의 적정성을 둘러싼 논란이 가열되고 있음. 베인캐피탈 지분 처리 등 백기사 구도 개편 이슈도 병행 진행 중."
-        },
-        {
-          "date": "2026-03-18",
-          "stage": "기타",
-          "summary": "주총 D-7을 앞두고 MBK·영풍 측이 최윤범 회장의 개인투자 후 회사 자금 1000억 투입 의혹을 제기하며 사익편취 논란 격화. 국내외 의결권 자문사(ISS·KCGS) 모두 최윤범 사내이사 재선임 반대 권고. 고려아연 노조는 현 경영진 지지 및 MBK·영풍의 적대적 M&A 반대 입장 표명. 고려아연 측은 허위사실이라며 법적 대응 예고."
-        },
-        {
-          "date": "2026-03-19",
-          "stage": "기타",
-          "summary": "영풍·MBK파트너스 연합이 최윤범 고려아연 회장의 1000억원 개인투자 후 회사 자금 후속투자 논란을 금융위에 안건으로 상정함. 고려아연 측은 미국 제련소 투자 전략의 중요성을 강조하며 외국인 이사 선임 논란에도 대응 중. 주주총회를 앞두고 양측의 공방이 격화되는 양상."
-        },
-        {
-          "date": "2026-03-20",
-          "stage": "기타",
-          "summary": "상법 개정 후 첫 주총을 앞두고 고려아연 경영권 분쟁이 최고조에 달함. 영풍은 최윤범 회장의 지배구조 리스크를 본질로 강조하며 주주들에게 지지 호소 중. 44년 흑자 고려아연 대 5년 적자 영풍의 실적 비교 논쟁도 벌어지며 국민연금 표심이 최대 변수로 부상."
         }
       ]
     },
@@ -9757,44 +11281,6 @@
       ]
     },
     {
-      "id": "deal_20260313_023",
-      "name": "왓챠 공개매각 전환",
-      "stage": "매각 검토중",
-      "summary": "키노라이츠가 왓챠 인수를 추진하며 컨소시엄을 꾸리는 것으로 알려짐. 왓챠는 공개매각으로 전환한 상태이며, 다수의 인수 후보가 검토 중인 것으로 보임.",
-      "repArticle": {
-        "title": "[더벨]왓챠, 공개매각전환…SI 중심 인수전 예고",
-        "link": "https://www.thebell.co.kr/free/content/ArticleView.asp?key=202603101319553560105851",
-        "date": "2026-03-12",
-        "source": "thebell"
-      },
-      "articles": [
-        {
-          "title": "[더벨]왓챠, 공개매각전환…SI 중심 인수전 예고",
-          "link": "https://www.thebell.co.kr/free/content/ArticleView.asp?key=202603101319553560105851",
-          "date": "2026-03-12"
-        },
-        {
-          "title": "[단독] 키노라이츠, 왓챠 인수 추진…컨소시엄 꾸린다",
-          "link": "https://it.chosun.com/news/articleView.html?idxno=2023092158805",
-          "date": "2026-03-18"
-        }
-      ],
-      "createdAt": "2026-03-13",
-      "updatedAt": "2026-03-13",
-      "history": [
-        {
-          "date": "2026-03-13",
-          "stage": "매각 검토중",
-          "summary": "왓챠가 기존 방식에서 공개매각으로 전환하며 SI(전략적 투자자) 중심의 인수전을 예고함. OTT 플랫폼 시장 재편 속 새 주인 찾기에 나선 상황으로 SI 중심 인수전이 펼쳐질 전망."
-        },
-        {
-          "date": "2026-03-19",
-          "stage": "매각 검토중",
-          "summary": "키노라이츠가 왓챠 인수를 추진하며 컨소시엄을 꾸리는 것으로 알려짐. 왓챠는 공개매각으로 전환한 상태이며, 다수의 인수 후보가 검토 중인 것으로 보임."
-        }
-      ]
-    },
-    {
       "id": "deal_20260313_024",
       "name": "리센스메디컬 IPO",
       "stage": "기타",
@@ -10483,39 +11969,6 @@
           "date": "2026-03-12",
           "stage": "딜 클로즈",
           "summary": "KKR이 약 2조원을 투입해 동남아시아 국제학교 체인을 인수함. 글로벌 PE의 교육 시장 투자 트렌드를 반영하며 아시아 성장 시장 내 수익 창출을 노린 베팅으로 평가됨."
-        }
-      ]
-    },
-    {
-      "id": "deal_20260312_009",
-      "name": "MBK파트너스 홈플러스 긴급 자금 수혈",
-      "stage": "기타",
-      "summary": "MBK파트너스가 홈플러스에 1000억원 긴급 자금을 수혈하고, 김병주 회장이 자택을 담보로 제공한 것으로 알려짐. 홈플러스의 재무 위기가 심화되는 가운데 MBK 관련 규제 입법('MBK 방지법') 논의도 국회에서 부상 중.",
-      "repArticle": {
-        "title": "MBK파트너스, 홈플러스에 1,000억 긴급 수혈… 김병주 회장 '자택 담보'...",
-        "link": "https://www.dailysportshankook.co.kr/news/articleView.html?idxno=425542",
-        "date": "2026-03-11",
-        "source": "기타매체명"
-      },
-      "articles": [
-        {
-          "title": "MBK파트너스, 홈플러스에 1,000억 긴급 수혈… 김병주 회장 '자택 담보'...",
-          "link": "https://www.dailysportshankook.co.kr/news/articleView.html?idxno=425542",
-          "date": "2026-03-11"
-        },
-        {
-          "title": "[K-자본의 그늘 MBK파트너스/③(끝)]규제 칼날 앞에 선 자본…'MBK 방지법'...",
-          "link": "https://www.businessplus.kr/news/articleView.html?idxno=108683",
-          "date": "2026-03-12"
-        }
-      ],
-      "createdAt": "2026-03-12",
-      "updatedAt": "2026-03-12",
-      "history": [
-        {
-          "date": "2026-03-12",
-          "stage": "기타",
-          "summary": "MBK파트너스가 홈플러스에 1000억원 긴급 자금을 수혈하고, 김병주 회장이 자택을 담보로 제공한 것으로 알려짐. 홈플러스의 재무 위기가 심화되는 가운데 MBK 관련 규제 입법('MBK 방지법') 논의도 국회에서 부상 중."
         }
       ]
     },
@@ -11488,84 +12941,6 @@
       ]
     },
     {
-      "id": "deal_20260310_003",
-      "name": "한앤코 → SK이터닉스 투자",
-      "stage": "딜 클로즈",
-      "summary": "한앤코가 투자한 SK이터닉스의 실적 및 수주가 동반 성장세를 보이며 KKR의 인수 검토 가능성이 언급됨. 더벨 보도에 따르면 SK이터닉스는 안정적 현금흐름을 바탕으로 PE의 차기 엑시트 후보로 거론됨. 재생에너지 자산 가치 부각.",
-      "repArticle": {
-        "title": "[더벨]한앤코, SK이터닉스 투자 '마침표'…밸류업 스토리 '주목'",
-        "link": "https://www.thebell.co.kr/free/content/ArticleView.asp?key=202603060929456800107618",
-        "date": "2026-03-10",
-        "source": "thebell"
-      },
-      "articles": [
-        {
-          "title": "[더벨]한앤코, SK이터닉스 투자 '마침표'…밸류업 스토리 '주목'",
-          "link": "https://www.thebell.co.kr/free/content/ArticleView.asp?key=202603060929456800107618",
-          "date": "2026-03-10"
-        },
-        {
-          "title": "[더벨][PE 포트폴리오 엿보기] SK이터닉스, 실적·수주 동반 성장…KKR 인수 검토",
-          "link": "https://www.thebell.co.kr/free/content/ArticleView.asp?key=202603181346321320101558",
-          "date": "2026-03-20"
-        },
-        {
-          "title": "'생산적금융' 붐에 … SK발전소 투자 몰려",
-          "link": "https://www.mk.co.kr/article/11983048",
-          "date": "2026-03-09"
-        },
-        {
-          "title": "'생산적금융' 붐 타고…울산 전력인프라에 자금 몰려",
-          "link": "https://www.mk.co.kr/article/11982892",
-          "date": "2026-03-09"
-        },
-        {
-          "title": "DS투자증권 \"SK이터닉스, 태양광 사업 주목…목표가 4만3000원\"",
-          "link": "https://www.etoday.co.kr/news/view/2563970",
-          "date": "2026-03-11"
-        },
-        {
-          "title": "[주간사모펀드] 한앤컴퍼니, 8년 만에 SK이터닉스 투자 '졸업'",
-          "link": "https://news.tf.co.kr/read/economy/2302026.htm",
-          "date": "2026-03-14"
-        },
-        {
-          "title": "수확의 계절…엑시트 속도 내는 한앤컴퍼니",
-          "link": "https://news.einfomax.co.kr/news/articleView.html?idxno=4403477",
-          "date": "2026-03-13"
-        },
-        {
-          "title": "남양유업, 오너 경영 지우고 '주주 중심'으로…한앤코표 밸류업 가속",
-          "link": "https://www.bloter.net/news/articleView.html?idxno=656639",
-          "date": "2026-03-15"
-        }
-      ],
-      "createdAt": "2026-03-10",
-      "updatedAt": "2026-03-10",
-      "history": [
-        {
-          "date": "2026-03-10",
-          "stage": "딜 클로즈",
-          "summary": "한앤컴퍼니가 SK이터닉스에 대한 투자를 마무리한 것으로 확인됨. 생산적 금융 붐과 맞물려 국내 재생에너지 인프라에 대한 PE 자금 유입이 확대되는 흐름 속에서 이루어진 투자임. 향후 밸류업 스토리 및 엑시트 전략이 시장의 주목을 받고 있음."
-        },
-        {
-          "date": "2026-03-11",
-          "stage": "딜 클로즈",
-          "summary": "한앤코가 SK이터닉스에 대한 투자를 완료하며 딜 클로즈. SK이터닉스의 태양광 사업을 중심으로 한 밸류업 스토리가 주목받고 있으며, DS투자증권은 목표주가 4만3000원을 제시함."
-        },
-        {
-          "date": "2026-03-16",
-          "stage": "딜 클로즈",
-          "summary": "한앤컴퍼니가 8년 만에 SK이터닉스 투자를 졸업(엑시트)함. 주간 사모펀드 동향으로 보도되며 장기 보유 후 성공적 회수 사례로 주목됨."
-        },
-        {
-          "date": "2026-03-20",
-          "stage": "딜 클로즈",
-          "summary": "한앤코가 투자한 SK이터닉스의 실적 및 수주가 동반 성장세를 보이며 KKR의 인수 검토 가능성이 언급됨. 더벨 보도에 따르면 SK이터닉스는 안정적 현금흐름을 바탕으로 PE의 차기 엑시트 후보로 거론됨. 재생에너지 자산 가치 부각."
-        }
-      ]
-    },
-    {
       "id": "deal_20260310_004",
       "name": "에스앤에스밸브 인수 (미래에셋벤처PE)",
       "stage": "딜 클로즈",
@@ -11874,44 +13249,6 @@
       ]
     },
     {
-      "id": "deal_20260310_010",
-      "name": "EQT → KJ환경 인수 재실사",
-      "stage": "실사 진행중",
-      "summary": "EQT파트너스가 KJ환경 인수를 위한 재실사를 진행 중. 고밸류 인수에 대한 부담과 인프라 부문 수장 공백으로 인한 조직 불안정 이슈가 겹치며 딜 진행이 지연되는 양상. EQT 한국 대표인 서상준이 '친정' 앵커PE로 복귀 유력하다는 보도도 이어지며 딜 불확실성이 높아진 상황.",
-      "repArticle": {
-        "title": "[Invest]EQT, '고밸류 인수' KJ환경 재실사…인프라 수장 공백에 조직...",
-        "link": "https://www.investchosun.com/site/data/html_dir/2026/03/09/2026030980057.html",
-        "date": "2026-03-10",
-        "source": "기타"
-      },
-      "articles": [
-        {
-          "title": "[더벨]서상준 EQT파트너스 한국 대표, '친정' 앵커 복귀 유력",
-          "link": "https://www.thebell.co.kr/free/content/ArticleView.asp?key=202602111555216360106686",
-          "date": "2026-03-11"
-        },
-        {
-          "title": "[Invest]EQT, '고밸류 인수' KJ환경 재실사…인프라 수장 공백에 조직...",
-          "link": "https://www.investchosun.com/site/data/html_dir/2026/03/09/2026030980057.html",
-          "date": "2026-03-10"
-        }
-      ],
-      "createdAt": "2026-03-10",
-      "updatedAt": "2026-03-10",
-      "history": [
-        {
-          "date": "2026-03-10",
-          "stage": "실사 진행중",
-          "summary": "EQT가 고밸류 논란을 빚었던 KJ환경 인수 건에 대해 재실사를 진행 중임. 인프라 부문 수장 공백 등 조직 이슈가 겹치며 딜 불확실성이 높아진 상황. 최종 거래 성사 여부에 시장의 관심이 집중되고 있음."
-        },
-        {
-          "date": "2026-03-11",
-          "stage": "실사 진행중",
-          "summary": "EQT파트너스가 KJ환경 인수를 위한 재실사를 진행 중. 고밸류 인수에 대한 부담과 인프라 부문 수장 공백으로 인한 조직 불안정 이슈가 겹치며 딜 진행이 지연되는 양상. EQT 한국 대표인 서상준이 '친정' 앵커PE로 복귀 유력하다는 보도도 이어지며 딜 불확실성이 높아진 상황."
-        }
-      ]
-    },
-    {
       "id": "deal_20260310_011",
       "name": "KB-스톤브릿지 세컨더리 펀드 엑시트",
       "stage": "딜 클로즈",
@@ -12171,89 +13508,6 @@
       ]
     },
     {
-      "id": "deal_20260310_019",
-      "name": "롯데손보 매각",
-      "stage": "매각 검토중",
-      "summary": "JKL파트너스가 롯데손보 매각을 추진하면서 대주주 인사 개편을 병행하는 것으로 보도됨. 매각 희망가 2조원 대 시총 6500억원의 큰 괴리와 자본확충 이슈 및 우발채무 문제가 걸림돌로 지적됨. 인수 후보의 가격 눈높이 맞추기가 관건.",
-      "repArticle": {
-        "title": "[마켓인]새 주인 찾기 사실상 시계제로…신평사도 고개 저은 롯데손보...",
-        "link": "http://www.edaily.co.kr/news/newspath.asp?newsid=01420246645382008",
-        "date": "2026-03-10",
-        "source": "기타"
-      },
-      "articles": [
-        {
-          "title": "[롯데손보 M&A] '권고→요구'로 수위 높인 금융당국…매각 압박 커졌다",
-          "link": "https://dealsite.co.kr/articles/158203",
-          "date": "2026-03-12"
-        },
-        {
-          "title": "[롯데손보 M&A] 매각 다시 안갯속…'자본 부담·감독 리스크'에 거래 불...",
-          "link": "https://dealsite.co.kr/articles/158308",
-          "date": "2026-03-16"
-        },
-        {
-          "title": "[롯데손보 M&A] 희망가 2조 vs 시총 6500억…자본확충은 우발채무",
-          "link": "https://dealsite.co.kr/articles/157882",
-          "date": "2026-03-19"
-        },
-        {
-          "title": "[마켓인]새 주인 찾기 사실상 시계제로…신평사도 고개 저은 롯데손보...",
-          "link": "http://www.edaily.co.kr/news/newspath.asp?newsid=01420246645382008",
-          "date": "2026-03-10"
-        },
-        {
-          "title": "금융위는 안심하라는데…롯데손보 신용등급 하락 왜?",
-          "link": "https://www.newspost.kr/news/articleView.html?idxno=221601",
-          "date": "2026-03-10"
-        },
-        {
-          "title": "롯데손보 리스크 털어내기 총력…'매각 시계' 다시 돌아가나",
-          "link": "https://www.newsis.com/view/NISX20260310_0003542637",
-          "date": "2026-03-11"
-        },
-        {
-          "title": "JKL파트너스, 롯데손보 매각 나서나...대주주 인사 개편 병행",
-          "link": "http://www.hansbiz.co.kr/news/articleView.html?idxno=825271",
-          "date": "2026-03-19"
-        }
-      ],
-      "createdAt": "2026-03-10",
-      "updatedAt": "2026-03-10",
-      "history": [
-        {
-          "date": "2026-03-10",
-          "stage": "매각 검토중",
-          "summary": "롯데손해보험 매각이 새 주인 찾기에 사실상 시계 제로 상태에 빠진 것으로 전해짐. 신용평가사들도 부정적 시각을 보내는 등 인수 후보자 확보에 어려움을 겪고 있음. 금융당국은 안심하라고 하나, 시장 우려는 지속되고 있음."
-        },
-        {
-          "date": "2026-03-11",
-          "stage": "매각 검토중",
-          "summary": "롯데손해보험이 리스크 해소에 총력을 기울이며 매각 추진에 속도를 내고 있음. 과거 매각 무산 이후 다시 매각 시계가 돌아가는 분위기로, 잠재 원매자와의 접촉 여부가 관건."
-        },
-        {
-          "date": "2026-03-12",
-          "stage": "매각 검토중",
-          "summary": "금융당국이 롯데손보 매각에 대해 권고에서 요구 수준으로 압박 수위를 높임. 매각 지연 시 당국 제재 가능성이 커지면서 매각 절차가 본격화될 것으로 전망됨."
-        },
-        {
-          "date": "2026-03-16",
-          "stage": "매각 검토중",
-          "summary": "롯데손보 매각이 자본 부담 및 감독 리스크로 인해 다시 안갯속에 빠짐. 인수 후보자들의 자본 확충 부담과 금융당국 규제 이슈가 거래 성사의 핵심 변수로 작용 중. 매각 측과 잠재 인수자 간 가격 및 조건 협의에 난항이 지속되는 상황."
-        },
-        {
-          "date": "2026-03-19",
-          "stage": "매각 검토중",
-          "summary": "롯데손보 매각과 관련해 희망가 2조원 대비 시총 6500억원의 큰 괴리가 쟁점으로 부상함. 자본확충 필요성과 우발채무 리스크가 딜 성사의 핵심 변수로 작용 중. JKL파트너스가 대주주로서 매각을 추진하며 인사 개편도 병행하는 것으로 알려짐."
-        },
-        {
-          "date": "2026-03-20",
-          "stage": "매각 검토중",
-          "summary": "JKL파트너스가 롯데손보 매각을 추진하면서 대주주 인사 개편을 병행하는 것으로 보도됨. 매각 희망가 2조원 대 시총 6500억원의 큰 괴리와 자본확충 이슈 및 우발채무 문제가 걸림돌로 지적됨. 인수 후보의 가격 눈높이 맞추기가 관건."
-        }
-      ]
-    },
-    {
       "id": "deal_20260310_020",
       "name": "로킷헬스케어 625억 투자 유치",
       "stage": "딜 클로즈",
@@ -12383,7 +13637,7 @@
       ]
     }
   ],
-  "lastUpdated": "2026-03-23 09:19",
+  "lastUpdated": "2026-03-23 09:58",
   "realestate": [
     {
       "id": null,
