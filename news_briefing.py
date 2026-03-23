@@ -3,11 +3,10 @@ PE Deal Briefing — 딜별 아카이빙 시스템
 네이버 뉴스 크롤링 → Claude API 딜 추출/매칭 → deals.json 업데이트 → GitHub Pages 배포
 """
 
-import csv
-import io
 import json
 import os
 import random
+import shutil
 import subprocess
 import time
 from datetime import datetime, timedelta
@@ -16,7 +15,7 @@ from urllib.parse import quote
 import requests
 from bs4 import BeautifulSoup
 
-# ── 설정 ──────────────────────────────────────────────
+# ── 설정 ──────────────────────────────────────────────────────────────────────
 ANTHROPIC_API_KEY = os.environ.get("ANTHROPIC_API_KEY", "여기에_API_KEY_입력")
 MODEL = "claude-sonnet-4-6"
 
@@ -29,115 +28,42 @@ HEADERS = {
     "Accept-Language": "ko-KR,ko;q=0.9,en-US;q=0.8,en;q=0.7",
 }
 
-MAX_PAGES = 1
-MAX_PAGES_ACTION = 3  # PE 행위/구조 키워드는 3페이지 검색
-OUTPUT_DIR = os.path.dirname(os.path.abspath(__file__))
-DEALS_JSON_PATH = os.path.join(OUTPUT_DIR, "deals.json")
+OUTPUT_DIR       = os.path.dirname(os.path.abspath(__file__))
+DEALS_JSON_PATH  = os.path.join(OUTPUT_DIR, "deals.json")
 
-# 행위/구조 키워드 — 3페이지 검색 대상
-ACTION_KEYWORDS = {
-    "사모펀드 인수", "사모펀드 매각", "사모펀드 엑시트",
-    "PEF 인수", "PEF 매각", "PEF 결성",
-    "바이아웃", "경영권 매각", "경영권 인수",
-    "FI 매각", "FI 엑시트", "재무적투자자 매각",
-    "공개매수", "우선협상대상자", "우협 선정",
-    "인수금융", "세컨더리 펀드", "블라인드 펀드 결성",
-    "매각주관사 선정", "원매자 모집",
-    "예비입찰", "본입찰",
-}
+MAX_PAGES = 10   # 모든 키워드 동일하게 10페이지
+BATCH_SIZE = 30  # Claude API 배치 크기
 
-# 제외 키워드 — 제목에 포함 시 자동 필터링
-BLOCKLIST = [
-    # 부동산
-    "부동산", "아파트", "분양", "재개발", "재건축", "리츠", "REITs", "REIT",
-    "오피스텔", "상가", "토지", "주택", "임대", "빌딩", "부지", "용지",
-    "시공사", "시행사", "건설사", "건설사업", "시공", "시행",
-    "공사", "착공", "준공", "입주", "분양가", "청약",
-    "PF", "프로젝트파이낸싱", "부동산PF",
-    # VC / 벤처
-    "시리즈A", "시리즈B", "시리즈C", "시리즈D", "시리즈E",
-    "프리A", "Pre-A", "프리시리즈",
-    "벤처투자", "스타트업 투자", "액셀러레이터", "팁스",
-    "벤처캐피탈", "VC 투자", "창업투자",
-]
+# ── 키워드 ────────────────────────────────────────────────────────────────────
+KEYWORDS = ["프라이빗 에쿼티", "사모펀드", "PE"]
 
-KEYWORDS = [
-    # ── PE 행위 / 구조 ──────────────────────────────────
-    "사모펀드 인수", "사모펀드 매각", "사모펀드 엑시트",
-    "PEF 인수", "PEF 매각", "PEF 결성",
-    "바이아웃", "경영권 매각", "경영권 인수",
-    "FI 매각", "FI 엑시트", "재무적투자자 매각",
-    "공개매수", "우선협상대상자", "우협 선정",
-    "인수금융", "세컨더리 펀드", "블라인드 펀드 결성",
-    "매각주관사 선정", "원매자 모집",
-    "예비입찰", "본입찰",
+# ── 블록리스트 (제목에 포함 시 수집 제외) ─────────────────────────────────────
+BLOCKLIST = ["폴리에틸렌", "폴리머", "PVC", "고분자"]
 
-    # ── 국내 PE 하우스 (바이아웃 활성 하우스) ──────────────
-    # Tier 1 — 대형 바이아웃 (플래그십 펀드 운용 중)
-    "엠비케이파트너스",           # MBK Partners
-    "한앤컴퍼니",                 # H&Co.
-    "아이엠엠프라이빗에쿼티",     # IMM PE
-    "스카이레이크에쿼티파트너스",  # Skylake Equity
-    "글랜우드프라이빗에쿼티",     # Glenwood PE
-    "브이아이지파트너스",          # VIG Partners
-    "소시어스",                   # Societas
-
-    # Tier 2 — 미드마켓 바이아웃 (딜 활발)
-    "프랙시스캐피탈파트너스",     # Praxis Capital
-    "키스톤프라이빗에쿼티",       # Keystone PE
-    "센트로이드인베스트먼트파트너스",  # Centroid
-    "크레센도에쿼티파트너스",     # Crescendo Equity
-    "캑터스프라이빗에쿼티",       # Cactus PE
-    "파라투스인베스트먼트",       # Paratus
-    "도미누스인베스트먼트",       # Dominus
-    "코스톤아시아",               # Koston Asia
-    "한국투자프라이빗에쿼티",     # KIP
-    "이스트브릿지파트너스",       # Eastbridge
-    "에이치앤큐에쿼티파트너스",   # H&Q Korea
-    "스틱인베스트먼트",           # STIC Investment
-    "스틱얼터너티브자산운용",     # STIC Alternatives
-    "린드먼아시아인베스트먼트",   # Lindeman Asia
-    "노틱인베스트먼트",           # Nortic Investment
-    "노틱캐피탈코리아",
-    "큐캐피탈파트너스",           # Q Capital
-    "어펄마캐피탈매니져스코리아", # Affirma Capital Korea
-    "오릭스프라이빗에쿼티코리아", # ORIX PE Korea
-    "에스제이엘파트너스",         # SJL Partners
-    "제이케이엘파트너스",         # JKL Partners
-    "컴퍼니케이파트너스",         # Company K
-    "한앤브라더스",
-    "스카이레이크인베스트먼트",
-    "나우아이비캐피탈",           # NOWE IB Capital
-    "케이씨지아이",               # KCGI
-    "얼라인파트너스자산운용",     # Align Partners
-    "스톤브릿지캐피탈",           # Stonebridge
-    "아이엠엠인베스트먼트",       # IMM Investment
-    "웰투시인베스트먼트",         # Weltus
-    "케이엘앤파트너스",           # KL&Partners
-    "다올프라이빗에쿼티",         # Daol PE
-    "에버마운트캐피탈매니지먼트", # Evermount
-    "캡스톤파트너스",             # Capstone
-    "케이스톤파트너스",           # Keystone Partners
-    "위더스파트너스코리아지피",
-    "씨앤코어파트너스",           # CNCore Partners
-    "유씨케이파트너스",           # UCK Partners
-    "이음프라이빗에쿼티",
-    "씨엘에스에이캐피탈파트너스코리아",  # CLSA Capital Korea
-]
+# ── 출처 우선순위 ──────────────────────────────────────────────────────────────
+def source_priority(link: str) -> int:
+    if not link:
+        return 99
+    if "thebell.co.kr"    in link: return 0
+    if "dealsite.co.kr"   in link: return 1
+    if "investchosun.com" in link: return 2
+    return 3
 
 
-# ── 1단계: 크롤링 ──────────────────────────────────────
+# ══════════════════════════════════════════════════════════════════════════════
+# 1단계: 크롤링
+# ══════════════════════════════════════════════════════════════════════════════
 
 def get_cutoff_days() -> int:
-    """월요일이면 4일(금~월), 나머지 평일이면 2일(전날~당일)"""
+    """월요일 → 4일(금~월), 나머지 평일 → 2일"""
     return 4 if datetime.now().weekday() == 0 else 2
 
 
 def build_search_url(keyword: str, start: int = 1) -> str:
-    now = datetime.now()
-    cutoff_days = get_cutoff_days()
-    date_from = (now - timedelta(days=cutoff_days - 1)).strftime("%Y.%m.%d")
-    date_to = now.strftime("%Y.%m.%d")
+    now          = datetime.now()
+    cutoff_days  = get_cutoff_days()
+    date_from    = (now - timedelta(days=cutoff_days - 1)).strftime("%Y.%m.%d")
+    date_to      = now.strftime("%Y.%m.%d")
     params = (
         f"where=news"
         f"&query={quote(keyword)}"
@@ -150,36 +76,30 @@ def build_search_url(keyword: str, start: int = 1) -> str:
     return f"https://search.naver.com/search.naver?{params}"
 
 
-def parse_date_text(date_text: str) -> str:
-    date_text = date_text.strip()
-    now = datetime.now()
+def parse_date_text(text: str) -> str:
+    text = text.strip()
+    now  = datetime.now()
     try:
-        digits = "".join(filter(str.isdigit, date_text))
-        if "분 전" in date_text:
-            minutes = int(digits) if digits else 0
-            return (now - timedelta(minutes=minutes)).strftime("%Y-%m-%d %H:%M")
-        elif "시간 전" in date_text:
-            hours = int(digits) if digits else 0
-            return (now - timedelta(hours=hours)).strftime("%Y-%m-%d %H:%M")
-        elif "일 전" in date_text:
-            days = int(digits) if digits else 0
-            return (now - timedelta(days=days)).strftime("%Y-%m-%d")
-        else:
-            cleaned = date_text.rstrip(".")
-            return cleaned.replace(".", "-")
+        digits = "".join(filter(str.isdigit, text))
+        if   "분 전"  in text: return (now - timedelta(minutes=int(digits or 0))).strftime("%Y-%m-%d %H:%M")
+        elif "시간 전" in text: return (now - timedelta(hours=int(digits or 0))).strftime("%Y-%m-%d %H:%M")
+        elif "일 전"  in text: return (now - timedelta(days=int(digits or 0))).strftime("%Y-%m-%d")
+        else:                  return text.rstrip(".").replace(".", "-")
     except Exception:
         return now.strftime("%Y-%m-%d")
 
 
 def is_within_cutoff(date_str: str) -> bool:
-    cutoff_days = get_cutoff_days()
-    cutoff = datetime.now() - timedelta(days=cutoff_days - 1)
+    cutoff = datetime.now() - timedelta(days=get_cutoff_days() - 1)
     cutoff = cutoff.replace(hour=0, minute=0, second=0, microsecond=0)
     try:
-        dt = datetime.strptime(date_str[:10], "%Y-%m-%d")
-        return dt >= cutoff
+        return datetime.strptime(date_str[:10], "%Y-%m-%d") >= cutoff
     except ValueError:
-        return True
+        return True  # 날짜 파싱 실패 시 포함
+
+
+def is_blocked(title: str) -> bool:
+    return any(kw in title for kw in BLOCKLIST)
 
 
 def fetch_page(url: str) -> BeautifulSoup | None:
@@ -192,26 +112,52 @@ def fetch_page(url: str) -> BeautifulSoup | None:
         return None
 
 
+def extract_snippet(item) -> str:
+    """네이버 검색결과 미리보기 텍스트 추출 (다중 셀렉터 fallback)"""
+    for sel in [
+        "div[class*='news_dsc']",
+        "a[class*='news_dsc']",
+        "div[class*='sds-comps-text-type-ellipsis']",
+        "div[class*='dsc_wrap']",
+        ".news_dsc",
+        "div[class*='desc']",
+        "div[class*='summary']",
+    ]:
+        tag = item.select_one(sel)
+        if tag:
+            text = tag.get_text(strip=True)
+            if text:
+                return text[:200]
+    return ""
+
+
 def extract_articles(soup: BeautifulSoup) -> list[dict]:
     articles = []
+    # 신 UI → 구 UI 순서로 fallback
     news_items = soup.select("div[class*='sds-comps-vertical-layout']")
     if not news_items:
         news_items = soup.select("div.news_area")
+
     for item in news_items:
         try:
-            title_tag = item.select_one('a[data-heatmap-target=".tit"]')
-            if not title_tag:
-                title_tag = item.select_one("a.news_tit")
+            # 제목/링크 추출
+            title_tag = item.select_one('a[data-heatmap-target=".tit"]') \
+                     or item.select_one("a.news_tit")
             if not title_tag:
                 continue
             title = title_tag.get_text(strip=True)
-            link = title_tag.get("href", "")
-            date_str = ""
-            subtexts = item.select(".sds-comps-profile-info-subtext")
-            for st in subtexts:
+            link  = title_tag.get("href", "")
+            if not link:
+                continue
+            if is_blocked(title):
+                continue
+
+            # 날짜 추출
+            date_str   = ""
+            cur_year   = str(datetime.now().year)
+            for st in item.select(".sds-comps-profile-info-subtext"):
                 txt = st.get_text(strip=True)
-                current_year = str(datetime.now().year)
-                if txt and any(k in txt for k in ["전", ".", current_year]):
+                if txt and any(k in txt for k in ["전", ".", cur_year]):
                     date_str = parse_date_text(txt)
                     break
             if not date_str:
@@ -220,77 +166,66 @@ def extract_articles(soup: BeautifulSoup) -> list[dict]:
                     if any(k in txt for k in ["전", ".", "2025", "2026"]):
                         date_str = parse_date_text(txt)
                         break
+
+            # cutoff 필터 (날짜를 못 읽었으면 포함)
             if date_str and not is_within_cutoff(date_str):
                 continue
-            articles.append({"제목": title, "링크": link, "날짜": date_str})
+
+            snippet = extract_snippet(item)
+            articles.append({"제목": title, "링크": link, "날짜": date_str, "스니펫": snippet})
+
         except Exception as e:
-            print(f"  [경고] 기사 파싱 중 오류: {e}")
+            print(f"  [경고] 기사 파싱 오류: {e}")
+
     return articles
 
 
-def crawl_keyword(keyword: str, max_pages: int = MAX_PAGES) -> list[dict]:
-    all_articles = []
-    print(f'[검색] "{keyword}" ({max_pages}p)')
-    for page in range(max_pages):
+def crawl_keyword(keyword: str) -> list[dict]:
+    results = []
+    print(f'[검색] "{keyword}" ({MAX_PAGES}p)')
+    for page in range(MAX_PAGES):
         start = page * 10 + 1
-        url = build_search_url(keyword, start)
-        soup = fetch_page(url)
+        soup  = fetch_page(build_search_url(keyword, start))
         if soup is None:
             break
         articles = extract_articles(soup)
         if not articles:
             break
-        all_articles.extend(articles)
+        results.extend(articles)
         print(f"  페이지 {page + 1}: {len(articles)}건")
-        time.sleep(random.uniform(3.0, 6.0))
-    return all_articles
-
-
-def is_blocked(title: str) -> bool:
-    return any(kw in title for kw in BLOCKLIST)
-
-
-def deduplicate(articles: list[dict]) -> list[dict]:
-    seen = set()
-    unique = []
-    blocked = 0
-    no_link = 0
-    for a in articles:
-        link = a.get("링크", "").strip()
-        if not link:
-            no_link += 1
-            continue
-        if link not in seen:
-            seen.add(link)
-            if is_blocked(a["제목"]):
-                blocked += 1
-                continue
-            unique.append(a)
-    if no_link:
-        print(f"[링크 없음 필터] {no_link}건 제외")
-    print(f"[블록리스트 필터] {blocked}건 제외")
-    return unique
+        if page < MAX_PAGES - 1:
+            time.sleep(random.uniform(3.0, 6.0))
+    return results
 
 
 def crawl_all() -> list[dict]:
-    print("=" * 50)
+    print("=" * 55)
     print("  1단계: 네이버 뉴스 크롤링")
-    print(f"  키워드 {len(KEYWORDS)}개 | 범위 {get_cutoff_days()}일")
-    print("=" * 50)
-    all_articles = []
+    print(f"  키워드 {len(KEYWORDS)}개 × 최대 {MAX_PAGES}p | 범위 {get_cutoff_days()}일")
+    print("=" * 55)
+
+    raw = []
     for i, kw in enumerate(KEYWORDS, 1):
-        print(f"\n--- [{i}/{len(KEYWORDS)}] ---")
-        pages = MAX_PAGES_ACTION if kw in ACTION_KEYWORDS else MAX_PAGES
-        all_articles.extend(crawl_keyword(kw, max_pages=pages))
+        print(f"\n── [{i}/{len(KEYWORDS)}] ──")
+        raw.extend(crawl_keyword(kw))
         if i < len(KEYWORDS):
             time.sleep(random.uniform(5.0, 10.0))
-    before = len(all_articles)
-    unique = deduplicate(all_articles)
-    print(f"\n[중복 제거] {before}건 → {len(unique)}건")
+
+    # 링크 기준 중복 제거 (블록리스트는 extract_articles 단계에서 이미 처리)
+    seen, unique = set(), []
+    for a in raw:
+        lnk = a.get("링크", "").strip()
+        if lnk and lnk not in seen:
+            seen.add(lnk)
+            unique.append(a)
+
+    print(f"\n[중복 제거] {len(raw)}건 → {len(unique)}건")
     return unique
 
 
-# ── 2단계: Claude API — 딜 추출 및 매칭 ─────────────────
+# ══════════════════════════════════════════════════════════════════════════════
+# 2단계: Claude API — 딜 추출 및 매칭
+# ══════════════════════════════════════════════════════════════════════════════
 
 def load_deals() -> dict:
     if os.path.exists(DEALS_JSON_PATH):
@@ -304,55 +239,59 @@ def load_deals() -> dict:
 
 def save_deals(data: dict):
     data["lastUpdated"] = datetime.now().strftime("%Y-%m-%d %H:%M")
-    # 기존 파일 백업 후 저장 (손상 방지)
-    backup_path = DEALS_JSON_PATH + ".bak"
+    # 기존 파일 백업
     if os.path.exists(DEALS_JSON_PATH):
         try:
-            import shutil
-            shutil.copy2(DEALS_JSON_PATH, backup_path)
+            shutil.copy2(DEALS_JSON_PATH, DEALS_JSON_PATH + ".bak")
         except Exception as e:
             print(f"  [경고] 백업 실패: {e}")
     with open(DEALS_JSON_PATH, "w", encoding="utf-8") as f:
         json.dump(data, f, ensure_ascii=False, indent=2)
-    print(f"[저장] deals.json 업데이트 완료 (딜 {len(data['deals'])}건)")
+    print(f"[저장] deals.json 완료 (딜 {len(data['deals'])}건)")
 
 
-def call_claude_batch(articles_batch: list[dict], existing_deals: list[dict], batch_num: int, total_batches: int) -> list[dict]:
-    """기사 배치 하나를 Claude API로 처리"""
+def call_claude_batch(
+    batch: list[dict],
+    existing_deals: list[dict],
+    batch_num: int,
+    total_batches: int,
+) -> tuple[list[dict], list[dict]]:
+    """기사 배치를 Claude API로 처리. 항상 (deals, []) tuple 반환."""
+
     today = datetime.now().strftime("%Y년 %m월 %d일")
 
     existing_summary = ""
     if existing_deals:
         existing_summary = "\n[기존 딜 목록 (매칭 참고용)]\n"
-        for i, d in enumerate(existing_deals):
-            existing_summary += f"{i}. ID:{d['id']} | {d['name']} | 현재단계:{d['stage']}\n"
+        for d in existing_deals:
+            existing_summary += f"ID:{d['id']} | {d['name']} | 단계:{d['stage']}\n"
 
     articles_text = "\n".join(
-        [f"{a['제목']} | {a['링크']} | {a['날짜']}" for a in articles_batch]
+        f"{a['제목']} | {a['링크']} | {a['날짜']}"
+        + (f"\n  └ {a['스니펫']}" if a.get("스니펫") else "")
+        for a in batch
     )
 
     prompt = f"""당신은 국내 Private Equity 딜 분석 전문가입니다.
-아래는 {today} 기준 수집된 PE/M&A 관련 뉴스입니다. (배치 {batch_num}/{total_batches}, {len(articles_batch)}건)
+아래는 {today} 기준 수집된 PE/M&A 관련 뉴스입니다. (배치 {batch_num}/{total_batches}, {len(batch)}건)
 {existing_summary}
 
 [뉴스 목록]
 {articles_text}
 
 [지시사항]
-1. 위 뉴스 전체를 빠짐없이 분석하여 딜을 MECE하게 추출하세요. 뉴스에 언급된 딜을 임의로 누락하거나 선별하는 것은 절대 금지입니다.
+1. 위 뉴스 전체를 빠짐없이 분석하여 PE/M&A 딜을 MECE하게 추출하세요. 딜을 임의로 누락하거나 선별하는 것은 절대 금지입니다.
 2. 같은 딜을 다루는 여러 기사는 하나로 묶으세요.
 3. 기존 딜 목록과 같은 딜이면 해당 딜 ID를 그대로 사용하세요.
-4. 각 딜의 "repArticle"(대표 기사)은 반드시 1개만 선정하세요. 해당 딜 관련 기사 중 더벨(thebell.co.kr) 또는 딜사이트(dealsite.co.kr) 기사가 존재하면 반드시 그 중에서 선택하세요. 없을 경우 인베스트조선 > 기타 순으로 선택. 링크는 반드시 뉴스 목록에 실제 존재하는 값이어야 합니다.
-5. 딜 단계: "매각 검토중" | "주관사 선정" | "예비입찰" | "본입찰" | "우선협상자 선정" | "실사 진행중" | "SPA 체결" | "딜 클로즈" | "기타"
-6. 아래 유형의 딜은 "deals" 배열이 아닌 "realestate" 배열에 넣으세요:
-   - 부동산 자산 매매: 아파트, 오피스텔, 상가, 빌딩, 토지, 주택, 리츠(REITs), 물류센터, 호텔, 데이터센터
-   - 재개발/재건축: 시공사 선정, 시행사, 정비사업, 도시개발
-   - 프로젝트파이낸싱(PF): 부동산PF, 건설 자금 조달
-   - 건설/시공: 착공, 준공, 시공자 선정
-7. 아래 유형의 뉴스는 "deals"/"realestate" 어디에도 넣지 말고 완전히 무시하세요:
-   - VC/벤처 투자: 시리즈A/B/C/D, 프리A, 스타트업 투자유치, 벤처캐피탈 투자
-   - 창업투자조합 결성 (VC 운용사 주도)
-   - IPO/상장 (PE 엑시트 목적이 아닌 순수 공모)
+4. 각 딜의 repArticle(대표 기사)은 반드시 1개만 선정하세요. 더벨(thebell.co.kr) → 딜사이트(dealsite.co.kr) → 인베스트조선(investchosun.com) → 기타 순으로 선택. 링크는 반드시 위 뉴스 목록에 실제로 존재하는 값이어야 합니다.
+5. 딜 단계는 다음 중 하나로만 분류하세요: "매각 검토중" | "주관사 선정" | "예비입찰" | "본입찰" | "우선협상자 선정" | "실사 진행중" | "SPA 체결" | "딜 클로즈" | "기타"
+6. PE/M&A와 무관한 뉴스(단순 실적 발표, 인사, 주가 등)는 완전히 무시하세요.
+7. [엄수] 각 딜의 summary, repArticle, articles는 반드시 그 딜을 실제로 다루는 기사에서만 작성하세요. 다른 딜의 기사 내용을 절대 혼용하지 마세요.
+8. summary는 2~3문장 음슴체로 작성하세요. 거래 당사자(매도자·매수자·대상기업), 구체적 수치(금액·지분율·IRR 등), 딜 현황/단계, 배경·맥락을 포함하세요.
+   좋은 예시:
+   - "풍산이 역대 최대 실적을 기록 중인 방산 사업 매각을 추진 중이나, SI의 JV 선호 경향과 FI의 ESG 규제·회수 불확실성 등 복합적 제약 요인으로 거래 성사 셈법이 고차방정식화됨."
+   - "KB PE와 SBI인베스트먼트가 에코프로 투자 1년여 만에 교환사채(EB)를 주식으로 전환 후 전량 매도하여 IRR 39.5%의 우수한 회수 실적을 거둠."
+   - "E&F PE 컨소시엄이 JC파트너스로부터 KES환경개발 지분 약 80%를 2,000억 원대에 인수하는 SPA를 체결하며 환경 섹터 포트폴리오 강화에 나섬."
 
 반드시 아래 JSON 형식으로만 응답하세요. 다른 텍스트 일절 금지:
 
@@ -362,29 +301,13 @@ def call_claude_batch(articles_batch: list[dict], existing_deals: list[dict], ba
       "id": "기존딜이면 기존ID, 신규면 null",
       "name": "딜명",
       "stage": "딜 단계",
-      "summary": "3~4줄 요약. 거래 당사자, 추정 규모, 딜 단계, 배경 포함. 음슴체로 작성.",
+      "summary": "2~3문장 음슴체 요약",
       "repArticle": {{
         "title": "대표 기사 제목",
-        "link": "대표 기사 링크",
+        "link": "대표 기사 링크 (뉴스 목록에 실제 존재하는 값)",
         "date": "날짜",
-        "source": "thebell 또는 dealsite 또는 기타매체명"
+        "source": "thebell 또는 dealsite 또는 investchosun 또는 기타매체명"
       }},
-      "articles": [
-        {{
-          "title": "기사 제목",
-          "link": "기사 링크",
-          "date": "날짜"
-        }}
-      ],
-      "isNew": true
-    }}
-  ],
-  "realestate": [
-    {{
-      "id": null,
-      "name": "딜명",
-      "stage": "딜 단계",
-      "summary": "2~3줄 요약. 음슴체로 작성.",
       "articles": [
         {{
           "title": "기사 제목",
@@ -396,148 +319,138 @@ def call_claude_batch(articles_batch: list[dict], existing_deals: list[dict], ba
   ]
 }}"""
 
-    res = requests.post(
-        "https://api.anthropic.com/v1/messages",
-        headers={
-            "Content-Type": "application/json",
-            "x-api-key": ANTHROPIC_API_KEY,
-            "anthropic-version": "2023-06-01",
-        },
-        json={
-            "model": MODEL,
-            "max_tokens": 20000,
-            "messages": [{"role": "user", "content": prompt}],
-        },
-        timeout=180,
-    )
     try:
+        res = requests.post(
+            "https://api.anthropic.com/v1/messages",
+            headers={
+                "Content-Type": "application/json",
+                "x-api-key": ANTHROPIC_API_KEY,
+                "anthropic-version": "2023-06-01",
+            },
+            json={
+                "model": MODEL,
+                "max_tokens": 16000,
+                "messages": [{"role": "user", "content": prompt}],
+            },
+            timeout=180,
+        )
         res.raise_for_status()
     except requests.HTTPError as e:
-        print(f"  [API 오류] HTTP {res.status_code}: {res.text}")
+        print(f"  [API 오류] HTTP {res.status_code}: {res.text[:200]}")
         raise RuntimeError(f"API HTTP 오류: {e}") from e
+
     data = res.json()
     if "error" in data:
-        print(f"  [API 오류] {data['error']}")
         raise RuntimeError(f"API 오류: {data['error']['message']}")
 
     raw = "".join(b.get("text", "") for b in data.get("content", []))
+
+    # JSON 추출
     try:
         s = raw.index("{")
         e = raw.rindex("}") + 1
-    except ValueError:
-        print(f"  [경고] 배치 {batch_num} 응답에 JSON 없음, 건너뜀")
-        print(f"  응답 미리보기: {raw[:200]}")
-        return []
-    try:
         result = json.loads(raw[s:e])
-    except json.JSONDecodeError:
-        truncated = raw[s:e].rsplit("},", 1)[0] + "}]}}"
+    except (ValueError, json.JSONDecodeError):
+        # 응답이 잘린 경우 복구 시도
         try:
-            result = json.loads(truncated)
+            s = raw.index("{")
+            partial = raw[s:]
+            # 마지막 완전한 deal 객체까지만 잘라내기
+            partial = partial.rsplit('{"', 1)[0].rstrip(", \n")
+            if not partial.endswith("]"):
+                partial += "]}"
+            result = json.loads(partial)
         except Exception:
             print(f"  [경고] 배치 {batch_num} JSON 파싱 실패, 건너뜀")
-            return []
+            print(f"  응답 미리보기: {raw[:200]}")
+            return [], []
 
     deals_out = result.get("deals", [])
-    realestate_out = result.get("realestate", [])
-    # Claude가 id를 문자열 "null"로 반환하는 경우 None으로 정규화
-    for d in deals_out + realestate_out:
-        if d.get("id") in ("null", "None", "", "없음"):
+    # id 정규화
+    for d in deals_out:
+        if d.get("id") in ("null", "None", "", "없음", None):
             d["id"] = None
-        if "articles" not in d:
-            d["articles"] = []
-    return deals_out, realestate_out
+        d.setdefault("articles", [])
+
+    return deals_out, []  # realestate 없음
 
 
-def extract_and_match_deals(articles: list[dict], existing_deals: list[dict]) -> list[dict]:
-    print("\n" + "=" * 50)
+def extract_and_match_deals(
+    articles: list[dict],
+    existing_deals: list[dict],
+) -> list[dict]:
+    print("\n" + "=" * 55)
     print("  2단계: Claude API — 딜 추출 및 매칭")
-    print("=" * 50)
+    print("=" * 55)
 
-    BATCH_SIZE = 60
-    batches = [articles[i:i+BATCH_SIZE] for i in range(0, len(articles), BATCH_SIZE)]
+    batches       = [articles[i:i+BATCH_SIZE] for i in range(0, len(articles), BATCH_SIZE)]
     total_batches = len(batches)
-    print(f"  총 {len(articles)}건 → {total_batches}개 배치로 처리")
+    print(f"  총 {len(articles)}건 → {total_batches}개 배치")
 
-    all_deals = []
-    all_realestate = []
-    failed_batches = []
+    all_deals     = []
+    failed        = []
+
     for i, batch in enumerate(batches, 1):
-        print(f"  배치 {i}/{total_batches} 처리 중... ({len(batch)}건)")
+        print(f"\n  배치 {i}/{total_batches} ({len(batch)}건) 처리 중...")
         try:
-            batch_deals, batch_re = call_claude_batch(batch, existing_deals, i, total_batches)
-            print(f"  → 딜 {len(batch_deals)}건 추출 / 부동산 {len(batch_re)}건")
-            all_deals.extend(batch_deals)
-            all_realestate.extend(batch_re)
+            deals_out, _ = call_claude_batch(batch, existing_deals, i, total_batches)
+            print(f"  → 딜 {len(deals_out)}건 추출")
+            all_deals.extend(deals_out)
         except Exception as e:
-            print(f"  [오류] 배치 {i} 실패: {e} — 건너뜀")
-            failed_batches.append((i, batch))
+            print(f"  [오류] 배치 {i} 실패: {e} — 재시도 대기열 추가")
+            failed.append((i, batch))
         if i < total_batches:
-            time.sleep(60)  # Rate limit 방지 (Sonnet: 30k TPM, 60초 대기)
+            time.sleep(60)
 
     # 실패 배치 1회 재시도
-    if failed_batches:
-        print(f"\n  [재시도] 실패 배치 {[i for i,_ in failed_batches]}건 재처리 중...")
+    if failed:
+        print(f"\n  [재시도] {len(failed)}개 배치 재처리 중...")
         time.sleep(60)
-        for i, batch in failed_batches:
-            print(f"  배치 {i} 재시도 중... ({len(batch)}건)")
+        for i, batch in failed:
+            print(f"  배치 {i} 재시도...")
             try:
-                batch_deals, batch_re = call_claude_batch(batch, existing_deals, i, total_batches)
-                print(f"  → 재시도 성공: 딜 {len(batch_deals)}건 / 부동산 {len(batch_re)}건")
-                all_deals.extend(batch_deals)
-                all_realestate.extend(batch_re)
+                deals_out, _ = call_claude_batch(batch, existing_deals, i, total_batches)
+                print(f"  → 재시도 성공: 딜 {len(deals_out)}건")
+                all_deals.extend(deals_out)
             except Exception as e:
-                print(f"  [경고] 배치 {i} 재시도도 실패, 최종 누락: {e}")
+                print(f"  [경고] 배치 {i} 재시도도 실패, 누락: {e}")
 
-    # 배치 간 중복 딜 병합 (같은 딜명이면 합치기)
-    merged = {}
+    # 배치 간 중복 딜 병합 (같은 id 또는 같은 name)
+    merged: dict[str, dict] = {}
     for deal in all_deals:
         key = deal.get("id") or deal.get("name", "")
         if key in merged:
             existing_links = {a["link"] for a in merged[key].get("articles", [])}
             for art in deal.get("articles", []):
-                if art["link"] not in existing_links:
-                    merged[key].setdefault("articles", []).append(art)
+                if art.get("link") and art["link"] not in existing_links:
+                    merged[key]["articles"].append(art)
+                    existing_links.add(art["link"])
         else:
             merged[key] = deal
 
-    # 부동산 딜 중복 제거
-    re_merged = {}
-    for deal in all_realestate:
-        key = deal.get("name", "")
-        if key not in re_merged:
-            re_merged[key] = deal
-
     result = list(merged.values())
-    re_result = list(re_merged.values())
-    print(f"\n  최종 딜 {len(result)}건 / 부동산 {len(re_result)}건 (중복 제거 후)")
-    return result, re_result
+    print(f"\n  최종 딜 {len(result)}건 (중복 제거 후)")
+    return result
 
+
+# ══════════════════════════════════════════════════════════════════════════════
+# 딜 머지 및 저장
+# ══════════════════════════════════════════════════════════════════════════════
 
 def sort_articles(articles: list[dict]) -> list[dict]:
-    def priority(link: str) -> int:
-        if not link:
-            return 3
-        if "thebell.co.kr" in link:
-            return 0
-        if "dealsite.co.kr" in link:
-            return 1
-        if "investchosun.com" in link:
-            return 2
-        return 3
-    return sorted(articles, key=lambda a: priority(a.get("link", "")))
+    return sorted(articles, key=lambda a: source_priority(a.get("link", "")))
 
 
 def merge_deals(existing_deals: list[dict], new_deals: list[dict]) -> list[dict]:
-    """기존 딜에 새 딜 머지. 같은 ID면 업데이트, 신규면 추가."""
-    today = datetime.now().strftime("%Y-%m-%d")
+    """기존 딜에 새 딜 머지. 같은 ID면 업데이트, 신규면 추가. 딜 영구 보존."""
+    today       = datetime.now().strftime("%Y-%m-%d")
     date_prefix = datetime.now().strftime("%Y%m%d")
-    merged = {d["id"]: d for d in existing_deals}
+    merged      = {d["id"]: d for d in existing_deals}
 
-    # 신규 딜 ID 카운터 — 기존 ID와 충돌 방지
+    # 오늘 날짜 기준 serial 충돌 방지
     existing_serials = []
     for eid in merged:
-        if eid.startswith(f"deal_{date_prefix}_"):
+        if isinstance(eid, str) and eid.startswith(f"deal_{date_prefix}_"):
             try:
                 existing_serials.append(int(eid.split("_")[-1]))
             except ValueError:
@@ -549,54 +462,57 @@ def merge_deals(existing_deals: list[dict], new_deals: list[dict]) -> list[dict]
 
         if existing_id and existing_id in merged:
             # 기존 딜 업데이트
-            existing = merged[existing_id]
-            existing["stage"] = nd.get("stage", existing.get("stage", "기타"))
-            existing["summary"] = nd.get("summary", existing.get("summary", ""))
-            # 기사 중복 없이 추가
-            existing_links = {a["link"] for a in existing.get("articles", [])}
+            ex = merged[existing_id]
+            ex["stage"]   = nd.get("stage", ex.get("stage", "기타"))
+            ex["summary"] = nd.get("summary", ex.get("summary", ""))
+            if nd.get("repArticle"):
+                ex["repArticle"] = nd["repArticle"]
+            ex["updatedAt"] = today
+
+            existing_links = {a["link"] for a in ex.get("articles", [])}
             for art in nd.get("articles", []):
                 if art.get("link") and art["link"] not in existing_links:
-                    existing.setdefault("articles", []).append(art)
+                    ex.setdefault("articles", []).append(art)
                     existing_links.add(art["link"])
-            existing["articles"] = sort_articles(existing.get("articles", []))
-            if "history" not in existing:
-                existing["history"] = []
-            existing["history"].append({
-                "date": today,
-                "stage": nd.get("stage", "기타"),
+            ex["articles"] = sort_articles(ex.get("articles", []))
+
+            ex.setdefault("history", []).append({
+                "date":    today,
+                "stage":   nd.get("stage", "기타"),
                 "summary": nd.get("summary", ""),
             })
+
         else:
-            # 신규 딜 추가
-            new_id = f"deal_{date_prefix}_{next_serial:03d}"
+            # 신규 딜
+            new_id      = f"deal_{date_prefix}_{next_serial:03d}"
             next_serial += 1
-            nd["id"] = new_id
+            nd["id"]        = new_id
             nd["createdAt"] = today
             nd["updatedAt"] = today
-            nd["articles"] = sort_articles(nd.get("articles", []))
-            nd["history"] = [{
-                "date": today,
-                "stage": nd.get("stage", "기타"),
+            nd["articles"]  = sort_articles(nd.get("articles", []))
+            nd["history"]   = [{
+                "date":    today,
+                "stage":   nd.get("stage", "기타"),
                 "summary": nd.get("summary", ""),
             }]
-            nd.pop("isNew", None)
             merged[new_id] = nd
 
-    # 최신 업데이트 순 정렬
     return sorted(merged.values(), key=lambda d: d.get("updatedAt", ""), reverse=True)
 
 
-# ── 3단계: GitHub Push ─────────────────────────────────
+# ══════════════════════════════════════════════════════════════════════════════
+# 3단계: GitHub Push
+# ══════════════════════════════════════════════════════════════════════════════
 
 def git_push():
-    print("\n" + "=" * 50)
+    print("\n" + "=" * 55)
     print("  3단계: GitHub Push")
-    print("=" * 50)
+    print("=" * 55)
     try:
         subprocess.run(["git", "-C", OUTPUT_DIR, "add", "."], check=True)
         status = subprocess.run(
             ["git", "-C", OUTPUT_DIR, "status", "--porcelain"],
-            capture_output=True, text=True, check=True
+            capture_output=True, text=True, check=True,
         )
         if not status.stdout.strip():
             print("  변경사항 없음 — push 생략")
@@ -609,7 +525,9 @@ def git_push():
         print(f"  [경고] Git push 실패: {e}")
 
 
-# ── 메인 ───────────────────────────────────────────────
+# ══════════════════════════════════════════════════════════════════════════════
+# 메인
+# ══════════════════════════════════════════════════════════════════════════════
 
 def main():
     if not ANTHROPIC_API_KEY or ANTHROPIC_API_KEY == "여기에_API_KEY_입력":
@@ -623,44 +541,23 @@ def main():
         return
 
     # 2) 기존 딜 로드
-    deals_data = load_deals()
+    deals_data     = load_deals()
     existing_deals = deals_data.get("deals", [])
 
-    # 3) Claude로 딜 추출 및 매칭
-    new_deals, new_realestate = extract_and_match_deals(articles, existing_deals)
+    # 3) Claude API — 딜 추출 및 매칭
+    new_deals = extract_and_match_deals(articles, existing_deals)
 
     # 4) 머지 및 저장
-    merged = merge_deals(existing_deals, new_deals)
-
-    # 30일 지난 딜 자동 제거 (scrapped=True 제외)
-    cutoff = (datetime.now() - timedelta(days=30)).strftime("%Y-%m-%d")
-    before_cleanup = len(merged)
-    merged = [
-        d for d in merged
-        if d.get("updatedAt", "9999") >= cutoff or d.get("scrapped") == True
-    ]
-    removed = before_cleanup - len(merged)
-    if removed:
-        print(f"[정리] 30일 경과 딜 {removed}건 자동 제거")
-
+    merged             = merge_deals(existing_deals, new_deals)
     deals_data["deals"] = merged
-
-    # 부동산 딜 머지 (기존 + 신규, 이름 기준 중복 제거)
-    existing_re = {d["name"]: d for d in deals_data.get("realestate", [])}
-    today = datetime.now().strftime("%Y-%m-%d")
-    for rd in new_realestate:
-        rd.setdefault("updatedAt", today)
-        existing_re[rd["name"]] = rd
-    deals_data["realestate"] = sorted(existing_re.values(), key=lambda d: d.get("updatedAt", ""), reverse=True)
-
     save_deals(deals_data)
 
     # 5) GitHub Push
     git_push()
 
-    print(f"\n{'=' * 50}")
-    print(f"  완료! 딜 {len(merged)}건 / 부동산 {len(deals_data['realestate'])}건 아카이빙")
-    print(f"{'=' * 50}")
+    print(f"\n{'=' * 55}")
+    print(f"  완료! 딜 {len(merged)}건 아카이빙")
+    print(f"{'=' * 55}")
 
 
 if __name__ == "__main__":
